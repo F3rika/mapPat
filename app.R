@@ -99,42 +99,67 @@ server <- function(input, output){
     validate(need(dim(weeks_selector()),
                   "Select a weeks range"))
     
+    #Data are ordered in decreasing order according to the total number
+    #of sequenced genomes for each lineage.
+    ordering <- cbind(weeks_selector(),
+                            Total = rowSums(weeks_selector()))
+    
+    ordering <- ordering[order(ordering$Total, decreasing = T),]
+    
     #Lineages with a number of sequenced genomes above the selected
-    #threshold are selected.
-    weeks_selector()[rowSums(weeks_selector())>=as.numeric(input$nGenomes),]
+    #threshold are stored in the nGenomes_table variable.
+    nGenomes_table <- ordering[ordering$Total>=as.numeric(input$nGenomes),]
+    
+    #If the nGenomes_table variable contains at least a lineage a new row
+    #called Others, which collapses the n genomes values of all lineages
+    #below threshold, is added to the variable.
+    #Otherwise the nGenomes_table is define as a dataframe of 1 row (called Others)
+    #and n weeks columns, which collapses the n genomes of all lineages below
+    #threshold.
+    if (nrow(nGenomes_table)>=1) {
+      nGenomes_table <- rbind(nGenomes_table,
+                              Others = colSums(ordering[ordering$Total<as.numeric(input$nGenomes),]))
+    } else {
+      Others <- colSums(ordering[ordering$Total<as.numeric(input$nGenomes),])
+      names(Others) <- colnames(ordering)
+      nGenomes_table <- as.data.frame(t(Others), row.names = "Others")
+    }
+    
+    return(nGenomes_table)
   })
   
   #Processing the input table.
   inTablePreparation <- reactive({
-    #The final input table MUST contain at least 1 lineage.
-    validate(need(nrow(nGenomes_selector())>0,
-                  paste("0 lineages with more than",
-                        input$nGenomes,
-                        "sequenced genomes in the selected weeks range")))
-    
-    #Data are ordered in decreasing order according to the total number
-    #of sequenced genomes for each lineage.
-    processedData <- cbind(nGenomes_selector(),
-                           Total = rowSums(nGenomes_selector()))
-    
-    processedData <- processedData[order(processedData$Total, decreasing = T),]
-    
-    processedData$Total <- NULL
+    processedData <- nGenomes_selector()
     
     #If the input table contains at least 6 different lineages only the 5
     #most numerous are explicitly represented.
-    #All other lineages are collapsed in a single row called Others.
+    #All other lineages are collapsed in a single row called Others, which
+    #already contains data from lineages below the n genomes threshold.
     if (nrow(processedData)>6) {
      processedData <- rbind(processedData[1:5,], Others = colSums(processedData[6:nrow(processedData),])) 
     } else if (nrow(processedData)==6) {
       processedData <- rbind(processedData[1:5,], Others = processedData[6,])
     }
     
+    #The input table is filtered again for the minimum number of sequenced genomes.
+    #In fact Others could be excluded from the representation by this filter, even
+    #if it contains the by column sum of the n genomes of many lineages.
+    processedData <- processedData[processedData$Total>=as.numeric(input$nGenomes),]
+    
+    processedData$Total <- NULL
+    
     return(processedData)
   })
   
   #Converting the input table (a data frame) into a matrix.
   inTable <- reactive({
+    #The final input table MUST contain at least 1 lineage.
+    validate(need(nrow(inTablePreparation())>0,
+                  paste("0 lineages with more than",
+                        input$nGenomes,
+                        "sequenced genomes in the selected weeks range")))
+    
     as.matrix(inTablePreparation())
   })
   
