@@ -8,74 +8,69 @@ source("config.R")
 ui <- fluidPage(
   titlePanel("Lineages distribution by week"),
   
-  #Define the layout of the app.The page is divided in two columns,
-  #one for the input and one for the output region.
-  sidebarLayout(
-    #Define the layout of the input region. This region has width=3 columns.
-    #Each interactive widget is accompanied by an help text briefly explaining
-    #its function.
-    sidebarPanel(
-      #Generates a drop down menu that allows to select.
-      #a country to analyze.
-      #Default is Italy.
-      selectInput("country",
-                  "Country",
-                  choices = countryList,
-                  selected = "Italy"),
-      helpText("Visualize data for the selected country"),
-      
-      br(),
-      
-      #Generates a slider that allows to select a time lapse to analyze.
-      #Time is calculated in weeks from a fixed date (2019-12-30).
-      #Default is from week 1 to maxWeek.
-      sliderInput("weeksRange",
-                  "Weeks range",
-                  min = 1,
-                  max = maxWeek,
-                  value = c(1, maxWeek)),
-      helpText("Time lapse of interest (number of weeks from a fixed date)"),
-      
-      br(),
-      
-      #Generates a radio buttons selection that allows to select the
-      #minimum number of sequenced genomes that each lineage should
-      #have to be represented in the graphics.
-      #Default is 100.
-      radioButtons("nGenomes",
-                  "Min number of genomes",
-                  choices = list("1"=1,
-                                 "25"=25,
-                                 "50"=50,
-                                 "100"=100,
-                                 "500"=500,
-                                 "1000"=1000),
-                  selected = 100),
-      helpText("Minimum number of sequenced genomes required to display a lineage"),
-      
-      #Generates a drop down menu that allows to select a lineage
-      #for which produce a scatter plot.
-      #Lineages in the menu are selected among those surviving
-      #previous filters. The widget changes dynamically depending
-      #on the selected time lapse and n genomes threshold.
-      #No default set.
-      uiOutput("lineage"),
-      helpText("Produce a scatterplot for the selected lineage"),
-      
-      width = 3
-    ),
+  #Define the layout of the output region.
+  #Each plot is generated in a different panel.
+  tabsetPanel(
+    tabPanel("Barplot", plotOutput("byWeek_barplot")),
+    tabPanel("Pie Chart", plotOutput("byWeek_piechart")),
+    tabPanel("Scatterplot", plotOutput("byWeek_scatterplot"))
+  ),
+  
+  hr(),
+  
+  #Define the layout of the input region.
+  #Each interactive widget occupies a region of width=3 columns
+  #and is accompanied by an help text briefly explaining its function.
+  fluidRow(
+    column(3,
+           offset = 1,
+           #Generates a drop down menu that allows to select.
+           #a country to analyze.
+           #Default is Italy.
+           selectInput("country",
+                       "Country",
+                       choices = countryList,
+                       selected = "Italy"),
+           helpText("Visualize data for the selected country"),
+           
+           br(),
+           
+           #Generates a slider that allows to select a time lapse to analyze.
+           #Time is calculated in weeks from a fixed date (2019-12-30).
+           #Default is from week 1 to maxWeek.
+           sliderInput("weeksRange",
+                       "Weeks range",
+                       min = 1,
+                       max = maxWeek,
+                       value = c(1, maxWeek)),
+           helpText("Time lapse of interest (number of weeks from a fixed date)")),
     
-    #Define the layout of the output region. This region has width=9 columns.
-    #Each plot is generated in a different panel.
-    mainPanel(
-      tabsetPanel(
-        tabPanel("Barplot", plotOutput("byWeek_barplot")),
-        tabPanel("Pie Chart", plotOutput("byWeek_piechart")),
-        tabPanel("Scatterplot", plotOutput("byWeek_scatterplot"))
-      ),
-      
-      width = 9
-    )
+    column(3,
+           offset = 1,
+           #Generates a radio buttons selection that allows to select the
+           #minimum number of sequenced genomes that each lineage should
+           #have to be represented in the graphics.
+           #Default is 100.
+           radioButtons("nGenomes",
+                        "Min number of genomes",
+                        choices = list("1"=1,
+                                       "25"=25,
+                                       "50"=50,
+                                       "100"=100,
+                                       "500"=500,
+                                       "1000"=1000),
+                        selected = 100),
+           helpText("Minimum number of sequenced genomes required to display a lineage")),
+    
+    column(3,
+           #Generates a drop down menu that allows to select a lineage
+           #for which produce a scatter plot.
+           #Lineages in the menu are selected among those surviving
+           #previous filters. The widget changes dynamically depending
+           #on the selected time lapse and n genomes threshold.
+           #No default set.
+           uiOutput("lineage"),
+           helpText("Produce a scatterplot for the selected lineage"))
   )
 )
 
