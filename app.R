@@ -249,8 +249,8 @@ server <- function(input, output){
       secLineage <- inTable()[row.names(inTable())!=input$selLineage,]
     }
 
-    plot(colnames(inTable())[mainLineage>0],
-         mainLineage[mainLineage>0],
+    plot(colnames(inTable()),
+         mainLineage,
          type = "b",
          col = ifelse(input$selLineage%in%names(colVoc), colVoc[input$selLineage],randomColors[4]),
          lwd=3,
@@ -264,8 +264,8 @@ server <- function(input, output){
          cex.lab=1.5,
          cex.axis=1.5)
     
-    lines(colnames(inTable())[secLineage>0],
-          secLineage[secLineage>0],
+    lines(colnames(inTable()),
+          secLineage,
           type = "b",
           col = "darkgrey",
           lwd=3,
