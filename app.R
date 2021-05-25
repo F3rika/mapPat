@@ -6,7 +6,7 @@ source("config.R")
 
 #Define UI -----
 ui <- fluidPage(
-  titlePanel("Lineages distribution by week"),
+  titlePanel("CorGAT-tracker"),
   
   #Define the layout of the output region.
   #Each plot is generated in a different panel.
