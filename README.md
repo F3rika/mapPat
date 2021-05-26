@@ -12,7 +12,7 @@ A scatterplot that represents the number of genomic sequences associated with a 
 
 ### Control and customization of the plots
 
-Users can interact with **CorGAT-Tracker** by the means of the set of widgets displayed under the main plot area, including:  
+Users can interact with **CorGAT-tracker** by the means of the set of widgets displayed under the main plot area, including:  
 * The ***Country*** drop down menu, which allows the user to select the country of origin of the data to be visualized. Default is Italy.  
 * The ***Weeks range*** slider, which allows the selection of the interval of  time to be displayed. Intervals of time are computed in the form of non-overlapped windows of 7 days (or weeks if you prefer) starting from 2019-12-30 the reported date of isolation of the first SARS-CoV-2 genomic sequence. This widget defaults to the entire frame of time included in the latest version of the analysis (week 1 to current week).
 * The ***Min number of genomes*** radio button, which enables the user to select a lower bound for the numerosity of sequenced genomes required to a lineage to be represented in the plots. Only lineages surpassing this minimum threshold will be represented. Please be aware, irrespective of the selection, CorGAT-tracker is configured to allow the visualization of a maximum of 5 lineages at every time-point. Only the 5 most numerous lineages will be shown by default, remaining lineages are collapsed under *Others*. Default threshold for this widget is 100.
