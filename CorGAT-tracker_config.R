@@ -15,7 +15,7 @@ countryList <- list("Australia"="Australia",
                     )
 
 #Defining path for input files
-inputFilesPath <- "C:/Users/Erika/Desktop/CNR/Projects/CorGAT/ShinyApps/CorGAT_byWeek-App/inputTables/"
+inputFilesPath <- "CorGAT-tracker_data/"
 
 #Defining color palette
 library(RColorBrewer)
