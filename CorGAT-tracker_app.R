@@ -2,7 +2,7 @@
 
 #Upload packages and data -----
 library(shiny)
-source("config.R")
+source("CorGAT-tracker_config.R")
 
 #Define UI -----
 ui <- fluidPage(
