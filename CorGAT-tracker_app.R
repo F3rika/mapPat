@@ -2,7 +2,7 @@
 
 #Upload packages and data -----
 library(shiny)
-source("CorGAT-tracker_config.R")
+source("config.R")
 
 #Define UI -----
 ui <- fluidPage(
@@ -139,7 +139,7 @@ server <- function(input, output){
   
   #Subsetting the input table respect to the selected time lapse.
   weeks_selector <- reactive({
-    country_selector()[,which(colnames(country_selector())==as.character(input$weeksRange[1])):which(colnames(country_selector())==as.character(input$weeksRange[2]))]
+    country_selector()[,input$weeksRange[1]:input$weeksRange[2]]
   })
   
   #Subsetting the input table respect to the minimum number of sequenced
@@ -156,7 +156,7 @@ server <- function(input, output){
     #Data are ordered in decreasing order according to the total number
     #of sequenced genomes for each lineage.
     ordering <- cbind(weeks_selector(),
-                            Total = rowSums(weeks_selector()))
+                      Total = rowSums(weeks_selector()))
     
     ordering <- ordering[order(ordering$Total, decreasing = T),]
     
@@ -191,7 +191,7 @@ server <- function(input, output){
     #All other lineages are collapsed in a single row called Others, which
     #already contains data from lineages below the n genomes threshold.
     if (nrow(processedData)>6) {
-     processedData <- rbind(processedData[1:5,], Others = colSums(processedData[6:nrow(processedData),])) 
+      processedData <- rbind(processedData[1:5,], Others = colSums(processedData[6:nrow(processedData),])) 
     } else if (nrow(processedData)==6) {
       processedData <- rbind(processedData[1:5,], Others = processedData[6,])
     }
@@ -246,7 +246,7 @@ server <- function(input, output){
   
   #Generating a bar plot and the corresponding legend.
   output$byWeek_barplot <- renderPlot({
-    par(mar=c(5,5,2,10), mfcol=c(1,1))
+    par(mar=c(5,5,2,10),mfcol=c(1,1))
     
     barplot(inTable(),
             col=inPalette(),
@@ -268,13 +268,15 @@ server <- function(input, output){
       inLab <- row.names(inTable())
     }
     
+    par(mar = c(0,0,0,0))
+    
     pie(inPie, labels = inLab, col = inPalette())
   })
   
   #Generating the drop down menu that allows to select a lineage.
   output$lineage <- renderUI({
     #The final input table MUST contain at least 1 lineage.
-    validate(need(nrow(nGenomes_selector())>0,
+    validate(need(nrow(inTablePreparation())>0,
                   "Can not generate lineage selection"))
     
     #The list of lineages in the menu depends on which lineages are
@@ -283,9 +285,17 @@ server <- function(input, output){
     
     names(myLineages) <- row.names(inTable())
     
+    #Storing the lineage selected by the user in a variable called lineageDefault that,
+    #if the lineage is still present in the input table, is used as a default selection
+    #anytime the menu is generated.
+    lineageDefault <- isolate(input$selLineage)
+    
+    freezeReactiveValue(input, "selLineage")
+    
     selectInput("selLineage",
                 "Lineage",
-                choices = as.list(myLineages))
+                choices = as.list(myLineages),
+                selected = lineageDefault)
 
   })
   
@@ -302,38 +312,36 @@ server <- function(input, output){
     } else {
       secLineage <- inTable()[row.names(inTable())!=input$selLineage,]
     }
-
+    
     plot(colnames(inTable()),
          mainLineage,
          type = "b",
-         col = ifelse(input$selLineage%in%names(colVoc), colVoc[input$selLineage],randomColors[4]),
+         col = ifelse(input$selLineage%in%names(colVoc), colVoc[input$selLineage], "darksalmon"),
          lwd=3,
          pch=15,
          lty=13,
          ylim = c(0, max(colSums(inTable()))),
          main = input$selLineage,
          xlab = "Week",
-         ylab = "#Genomes",
-         cex.main=1.5,
-         cex.lab=1.5,
-         cex.axis=1.5)
+         ylab = "#Genomes", cex.main=1.5, cex.lab=1.5, cex.axis=1.5)
     
     lines(colnames(inTable()),
           secLineage,
           type = "b",
-          col = "darkgrey",
+          col = "dimgray",
           lwd=3,
           pch=15,
           lty=13)
     
     legend(legend = c(input$selLineage, "Other lineages"),
-           col = c(ifelse(input$selLineage%in%names(colVoc), colVoc[input$selLineage], randomColors[4]), "darkgrey"),
+           col = c(ifelse(input$selLineage%in%names(colVoc), colVoc[input$selLineage], "darksalmon"), "darkgrey"),
            pch = 15,
            cex = 1.25,
            x = "topleft",
            inset = c(0.05,0),
            bty = "n",
            xpd = TRUE)
+
   })
 }
 
