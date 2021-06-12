@@ -1,8 +1,8 @@
-#CorGAT Lineages by Week App
+#CorGAT-tracker App
 
 #Upload packages and data -----
 library(shiny)
-source("config.R")
+source("CorGAT-tracker_config.R")
 
 #Define UI -----
 ui <- fluidPage(
@@ -65,9 +65,38 @@ ui <- fluidPage(
                 em("Min number of genomes)"),
                 "and/or those lineages that do not rank among the 5 most abundant. If you are dissatisfied with this behaviour and/or would like to modify the default values, please feel free to contact us at",
                 em("e.ferrandi@ibiom.cnr.it."))),
-    tabPanel("Barplot", plotOutput("byWeek_barplot")),
-    tabPanel("Pie Chart", plotOutput("byWeek_piechart")),
-    tabPanel("Scatterplot", plotOutput("byWeek_scatterplot"))
+    
+    #The Barplots tab contains three different barplots, one for each of the input
+    #tables considered (all lineages, "special" lineages (lineages+) as annotated
+    #by CorGAT and mutations).
+    tabPanel("Barplots",
+             plotOutput("allLin_barplot"),
+             plotOutput("specialLin_barplot"),
+             plotOutput("mut_barplot")),
+    
+    #The Pie Charts tab is organized in three different areas of width = 4 columns.
+    #One contains the pie chart representing the proportion of sequenced
+    #genomes for lineages in the time lapse of interest.
+    #The second one contains the pie chart representing the proportion of
+    #sequenced genomes for "special" lineages (lineages+) as annotated by CorGAT in the
+    #time lapse of interest.
+    #The last one contains a pie chart representing the proportion
+    #of sequenced genomes for mutations of interest in the selected time lapse.
+    tabPanel("Pie Charts",
+             fluidRow(
+               column(4,
+                      plotOutput("allLin_piechart")),
+               column(4,
+                      plotOutput("specialLin_piechart")),
+               column(4,
+                      plotOutput("mut_piechart")))),
+    
+    #The scatterplot tab contains two different scatterplots, one for a user-selected
+    #lineage from the all lineages input table and one for a user-selected mutation
+    #from the mutations input table.
+    tabPanel("Scatterplots",
+             plotOutput("allLin_scatterplot"),
+             plotOutput("mut_scatterplot"))
   ),
   
   hr(),
@@ -105,8 +134,8 @@ ui <- fluidPage(
            #minimum number of sequenced genomes that each lineage should
            #have to be represented in the graphics.
            #Default is 100.
-           radioButtons("nGenomes",
-                        "Min number of genomes",
+           radioButtons("allLin_nGenomes",
+                        "Min number of genomes (Lineages)",
                         choices = list("1"=1,
                                        "25"=25,
                                        "50"=50,
@@ -114,7 +143,24 @@ ui <- fluidPage(
                                        "500"=500,
                                        "1000"=1000),
                         selected = 100),
-           helpText("Minimum number of sequenced genomes required to display a lineage")),
+           helpText("Minimum number of sequenced genomes required to display a Lineage"),
+           
+           br(),
+           
+           #Generates a radio buttons selection that allows to select the
+           #minimum number of sequenced genomes that each "special" lineage
+           #(lineages+) should have to be represented in the graphics.
+           #Default is 15.
+           radioButtons("specialLin_nGenomes",
+                        "Min number of genomes (Lineages+)",
+                        choices = list("1"=1,
+                                       "5"=5,
+                                       "10"=10,
+                                       "15"=15,
+                                       "25"=25,
+                                       "50"=50),
+                        selected = 15),
+           helpText("Minimum number of sequenced genomes required to display a Lineage+")),
     
     column(3,
            #Generates a drop down menu that allows to select a lineage
@@ -124,166 +170,383 @@ ui <- fluidPage(
            #on the selected time lapse and n genomes threshold.
            #No default set.
            uiOutput("lineage"),
-           helpText("Produce a scatterplot for the selected lineage"))
+           helpText("Produce a scatterplot for the selected Lineage"),
+           
+           br(),
+           
+           #Generates a drop down menu that allows to select a mutation
+           #for which produce a scatter plot.
+           #Mutations in the menu are selected among those surviving
+           #previous filters. The widget changes dynamically depending
+           #on the selected time lapse.
+           #No default set.
+           uiOutput("mutation"),
+           helpText("Produce a scatterplot for the selected Mutation")
+           )
   )
 )
 
 #Define server -----
 server <- function(input, output){
-  #Reading the input table for the selected country.
+  #Reading the input tables for the selected countries.
   country_selector <- reactive({
-    read.table(paste0(inputFilesPath, "Epiweek.", input$country, ".csv"),
-               sep = " ",
-               check.names = F)
-  })
-  
-  #Subsetting the input table respect to the selected time lapse.
-  weeks_selector <- reactive({
-    country_selector()[,input$weeksRange[1]:input$weeksRange[2]]
-  })
-  
-  #Subsetting the input table respect to the minimum number of sequenced
-  #genomes.
-  nGenomes_selector <- reactive({
-    #The selected time lapse MUST be > 1 week otherwise the app rises
-    #a warning.
-    #If a single week is selected, the input data are stored in a vector
-    #(not a table), which has dim()=NULL.
-    #Shiny considers a NULL value as a failure and rises a warning.
-    validate(need(dim(weeks_selector()),
-                  "Select a weeks range"))
+    allLin_countrySel <- read.table(paste0(allLin_inputFilesPath, "Epiweek.", input$country, ".csv"),
+                                    sep = " ",
+                                    check.names = F)
     
+    specialLin_countrySel <- read.table(paste0(specialLin_inputFilesPath, "Epiweek.SpecialLin.", input$country, ".csv"),
+                             sep = " ",
+                             check.names = F)
+    
+    mut_countrySel <- read.table(paste0(mut_inputFilesPath, "Epiweek.MutsSpike.", input$country, ".csv"),
+                                 sep = " ",
+                                 check.names = F)
+    
+    return(list(allLin=allLin_countrySel,
+                specialLin=specialLin_countrySel,
+                mut=mut_countrySel))
+  })
+  
+  #Subsetting the input tables respect to the selected time lapse.
+  weeks_selector <- reactive({
+    allLin_weeksSel <- country_selector()$allLin[,input$weeksRange[1]:input$weeksRange[2]]
+    
+    specialLin_weeksSel <- country_selector()$specialLin[,input$weeksRange[1]:input$weeksRange[2]]
+    
+    mut_weeksSel <- country_selector()$mut[,input$weeksRange[1]:input$weeksRange[2]]
+    
+    return(list(allLin=allLin_weeksSel,
+                specialLin=specialLin_weeksSel,
+                mut=mut_weeksSel))
+  })
+  
+  #Subsetting the input tables for all lineages and "special" lineages respect
+  #to the minimum number of sequenced genomes.
+  nGenomes_selector <- reactive({
+    #The selected time lapse MUST be >= 1 week otherwise the app rises
+    #a warning.
+    validate(need((input$weeksRange[2]-input$weeksRange[1])>=1,
+                  "Select a Weeks range"))
+    
+    #Data from the all lineages input table are processed in order to
+    #select the minimum number of sequenced genomes required to a lineage
+    #to be represented. The whole process is described below.
     #Data are ordered in decreasing order according to the total number
     #of sequenced genomes for each lineage.
-    ordering <- cbind(weeks_selector(),
-                      Total = rowSums(weeks_selector()))
+    allLin_ordering <- cbind(weeks_selector()$allLin,
+                      Total = rowSums(weeks_selector()$allLin))
     
-    ordering <- ordering[order(ordering$Total, decreasing = T),]
+    allLin_ordering <- allLin_ordering[order(allLin_ordering$Total, decreasing = T),]
     
     #Lineages with a number of sequenced genomes above the selected
-    #threshold are stored in the nGenomes_table variable.
-    nGenomes_table <- ordering[ordering$Total>=as.numeric(input$nGenomes),]
+    #threshold are stored in the allLin_nGenomes_table variable.
+    allLin_nGenomes_table <- allLin_ordering[allLin_ordering$Total>=as.numeric(input$allLin_nGenomes),]
     
-    #If the nGenomes_table variable contains at least a lineage a new row
+    #If the allLin_nGenomes_table variable contains at least a lineage, a new row
     #called Others, which collapses the n genomes values of all lineages
     #below threshold, is added to the variable.
-    #Otherwise the nGenomes_table is define as a dataframe of 1 row (called Others)
+    #Otherwise the allLin_nGenomes_table is define as a dataframe of 1 row (called Others)
     #and n weeks columns, which collapses the n genomes of all lineages below
     #threshold.
-    if (nrow(nGenomes_table)>=1) {
-      nGenomes_table <- rbind(nGenomes_table,
-                              Others = colSums(ordering[ordering$Total<as.numeric(input$nGenomes),]))
+    if (nrow(allLin_nGenomes_table)>=1) {
+      allLin_nGenomes_table <- rbind(allLin_nGenomes_table,
+                              Others = colSums(allLin_ordering[allLin_ordering$Total<as.numeric(input$allLin_nGenomes),]))
     } else {
-      Others <- colSums(ordering[ordering$Total<as.numeric(input$nGenomes),])
-      names(Others) <- colnames(ordering)
-      nGenomes_table <- as.data.frame(t(Others), row.names = "Others")
+      allLin_Others <- colSums(allLin_ordering[allLin_ordering$Total<as.numeric(input$allLin_nGenomes),])
+      names(allLin_Others) <- colnames(allLin_ordering)
+      allLin_nGenomes_table <- as.data.frame(t(allLin_Others), row.names = "Others")
     }
     
-    return(nGenomes_table)
+    #Data from the "special" lineages (lineages+) input table are processed in the same way
+    #explained above.
+    specialLin_ordering <- cbind(weeks_selector()$specialLin,
+                             Total = rowSums(weeks_selector()$specialLin))
+    
+    specialLin_ordering <- specialLin_ordering[order(specialLin_ordering$Total, decreasing = T),]
+    
+    specialLin_nGenomes_table <- specialLin_ordering[specialLin_ordering$Total>=as.numeric(input$specialLin_nGenomes),]
+    
+    if (nrow(specialLin_nGenomes_table)>=1) {
+      specialLin_nGenomes_table <- rbind(specialLin_nGenomes_table,
+                                     Others = colSums(specialLin_ordering[specialLin_ordering$Total<as.numeric(input$specialLin_nGenomes),]))
+    } else {
+      specialLin_Others <- colSums(specialLin_ordering[specialLin_ordering$Total<as.numeric(input$specialLin_nGenomes),])
+      names(specialLin_Others) <- colnames(specialLin_ordering)
+      specialLin_nGenomes_table <- as.data.frame(t(specialLin_Others), row.names = "Others")
+    }
+    
+    return(list(allLin=allLin_nGenomes_table,
+                specialLin=specialLin_nGenomes_table))
   })
   
-  #Processing the input table.
+  #Processing the input tables.
   inTablePreparation <- reactive({
-    processedData <- nGenomes_selector()
+    #Data from the all lineages input table are processed first. The whole
+    #process is explained below.
+    allLin_processedData <- nGenomes_selector()$allLin
     
     #If the input table contains at least 6 different lineages only the 5
     #most numerous are explicitly represented.
     #All other lineages are collapsed in a single row called Others, which
     #already contains data from lineages below the n genomes threshold.
-    if (nrow(processedData)>6) {
-      processedData <- rbind(processedData[1:5,], Others = colSums(processedData[6:nrow(processedData),])) 
-    } else if (nrow(processedData)==6) {
-      processedData <- rbind(processedData[1:5,], Others = processedData[6,])
+    if (nrow(allLin_processedData)>6) {
+      allLin_processedData <- rbind(allLin_processedData[1:5,], Others = colSums(allLin_processedData[6:nrow(allLin_processedData),])) 
+    } else if (nrow(allLin_processedData)==6) {
+      allLin_processedData <- rbind(allLin_processedData[1:5,], Others = allLin_processedData[6,])
     }
     
     #The input table is filtered again for the minimum number of sequenced genomes.
     #In fact Others could be excluded from the representation by this filter, even
     #if it contains the by column sum of the n genomes of many lineages.
-    processedData <- processedData[processedData$Total>=as.numeric(input$nGenomes),]
+    allLin_processedData <- allLin_processedData[allLin_processedData$Total>=as.numeric(input$allLin_nGenomes),]
     
-    processedData$Total <- NULL
+    allLin_processedData$Total <- NULL
     
-    return(processedData)
+    #Data from the "special" lineages (lineages+) input table are processed using the same
+    #method explained above.
+    specialLin_processedData <- nGenomes_selector()$specialLin
+    
+    if (nrow(specialLin_processedData)>6) {
+      specialLin_processedData <- rbind(specialLin_processedData[1:5,], Others = colSums(specialLin_processedData[6:nrow(specialLin_processedData),])) 
+    } else if (nrow(specialLin_processedData)==6) {
+      specialLin_processedData <- rbind(specialLin_processedData[1:5,], Others = specialLin_processedData[6,])
+    }
+    
+    specialLin_processedData <- specialLin_processedData[specialLin_processedData$Total>=as.numeric(input$specialLin_nGenomes),]
+    
+    specialLin_processedData$Total <- NULL
+    
+    #Data from the mutations input table are ordered in decreasing order and
+    #processed such that only the 10 most numerous mutations are explicitly
+    #represented. All others are collapsed in the Others variable.
+    mut_ordering <- cbind(weeks_selector()$mut,
+                             Total = rowSums(weeks_selector()$mut))
+    
+    mut_ordering <- mut_ordering[order(mut_ordering$Total, decreasing = T),]
+    
+    if (nrow(mut_ordering)>11) {
+      mut_processedData <- rbind(mut_ordering[1:10,], Others = colSums(mut_ordering[11:nrow(mut_ordering),]))
+    } else if (nrow(mut_ordering)==11) {
+      mut_processedData <- rbind(mut_ordering[1:10,], Others = mut_ordering[11,])
+    } else {
+      mut_processedData <- mut_ordering
+    }
+    
+    mut_processedData$Total <- NULL
+    
+    return(list(allLin=allLin_processedData,
+                specialLin=specialLin_processedData,
+                mut=mut_processedData))
   })
   
-  #Converting the input table (a data frame) into a matrix.
+  #Converting the input tables (data frames) into a matrices.
   inTable <- reactive({
-    #The final input table MUST contain at least 1 lineage.
-    validate(need(nrow(inTablePreparation())>0,
-                  paste("0 lineages with more than",
-                        input$nGenomes,
-                        "sequenced genomes in the selected weeks range")))
+    allLin_matrix <- as.matrix(inTablePreparation()$allLin)
+    specialLin_matrix <- as.matrix(inTablePreparation()$specialLin)
+    mut_matrix <- as.matrix(inTablePreparation()$mut)
     
-    as.matrix(inTablePreparation())
+    return(list(allLin=allLin_matrix,
+                specialLin=specialLin_matrix,
+                mut=mut_matrix))
   })
   
   #Creating a custom palette.
   inPalette <- reactive({
-    #Names of the lineages collected in the input table are stored in
-    #the lineages variable.
-    lineages <- row.names(inTable())
+    #Names of the lineages collected in the all lineages input table are stored in
+    #the allLin_lineages variable.
+    allLin_lineages <- row.names(inTable()$allLin)
     
-    #A n of colors equal to the n of elements in the lineages variable is
+    #A n of colors equal to the n of elements in the allLin_lineages variable is
     #is extracted from the random palette (called randomColors) defined in the
-    #config.R configuration file and stored in the myColors variable.
-    myColors <- randomColors[1:length(lineages)]
+    #config.R configuration file and stored in the allLin_myColors variable.
+    allLin_myColors <- randomColors[1:length(allLin_lineages)]
     
     #Checking if any of the lineages from the input table is a Variant of Concern
     #(VOC) and storing the index of TRUE values in the isVoc variable.
-    isVoc <- lineages%in%names(colVoc)
+    isVoc <- allLin_lineages%in%names(colVoc)
     
-    #If at least a single VOC is present in the lineages variable, the random color
-    #(in the myColors palette) corresponding to its index is replaced by the
+    #If at least a single VOC is present in the allLin_lineages variable, the random color
+    #(in the allLin_myColors palette) corresponding to its index is replaced by the
     #specific color assigned to that VOC from the colVoc. The latter is defined in
     #the config.R configuration file.
     if (sum(isVoc)>=1){
-      myVoc <- lineages[isVoc]
-      myColors[isVoc] <- colVoc[myVoc]
+      myVoc <- allLin_lineages[isVoc]
+      allLin_myColors[isVoc] <- colVoc[myVoc]
     }
     
-    return(myColors)
+    #A random palette is produced also for the "special" lineages (lineages+) input table.
+    specialLin_myColors <- randomColors[1:nrow(inTable()$specialLin)]
+    
+    if ("Others"%in%row.names(inTable()$specialLin)) {
+      specialLin_myColors[row.names(inTable()$specialLin)%in%"Others"] <- "mediumblue"
+    }
+    
+    #Finally a palette is produced for the mutations input table. Mutations Of Concern
+    #(MOC) have pre-determined colors which are defined by the colMoc variable
+    #in the config.R configuration file. The process is similar to the one used for VOC
+    #(see above)
+    allMut <- row.names(inTable()$mut)
+    
+    mut_myColors <- mut_randomColors[1:nrow(inTable()$mut)]
+    
+    isMoc <- allMut%in%names(colMoc)
+    
+    if (length(isMoc)>=1) {
+      myMoc <- allMut[isMoc]
+      mut_myColors[isMoc] <- colMoc[myMoc]
+    }
+    
+    return(list(allLinColors=allLin_myColors,
+                specialLinColors=specialLin_myColors,
+                mutColors=mut_myColors))
   })
   
-  #Generating a bar plot and the corresponding legend.
-  output$byWeek_barplot <- renderPlot({
-    par(mar=c(5,5,2,10),mfcol=c(1,1))
+  #Generating a bar plot and the corresponding legend for the all lineages
+  #input table.
+  output$allLin_barplot <- renderPlot({
+    #The final input table MUST contain at least 1 lineage.
+    validate(need(nrow(inTable()$allLin)>0,
+                  paste("0 Lineages with more than",
+                        input$allLin_nGenomes,
+                        "sequenced genomes in the selected weeks range")))
     
-    barplot(inTable(),
-            col=inPalette(),
+    par(mar=c(5,5,2,10), mfcol=c(1,1))
+    
+    barplot(inTable()$allLin,
+            col=inPalette()$allLinColors,
             legend = TRUE,
             args.legend = list(x = "topright", bty = "n", inset=c(-0.10, 0), xpd = TRUE),
             xlab = "Week",
             ylab = "#Genomes",
+            main = "Lineages",
             cex.lab=1.5,
-            cex.axis=1.5)
+            cex.axis=1.5,
+            cex.main=1.5)
   })
   
-  #Generating a pie chart.
-  output$byWeek_piechart <- renderPlot({
-    if (nrow(inTable())>=2) {
-      inPie <- rowSums(inTable())
-      inLab <- row.names(inTable())
+  #Generating a bar plot and the corresponding legend for the "special" lineages
+  #(lineages+) input table.
+  output$specialLin_barplot <- renderPlot({
+    #The final input table MUST contain at least 1 lineage.
+    validate(need(nrow(inTable()$specialLin)>0,
+                  paste("0 Lineages+ with more than",
+                        input$specialLin_nGenomes,
+                        "sequenced genomes in the selected weeks range")))
+    
+    par(mar=c(5,5,2,10), mfcol=c(1,1))
+    
+    barplot(inTable()$specialLin,
+            col=inPalette()$specialLinColors,
+            legend = TRUE,
+            args.legend = list(x = "topright", bty = "n", inset=c(-0.12, 0), xpd = TRUE, cex = 0.80),
+            xlab = "Week",
+            ylab = "#Genomes",
+            main = "Lineages+",
+            cex.lab=1.5,
+            cex.axis=1.5,
+            cex.main=1.5 )
+  })
+  
+  #Generating a bar plot and the corresponding legend for the mutations
+  #input table.
+  output$mut_barplot <- renderPlot({
+    #The final input table MUST contain at least 1 mutation.
+    validate(need(sum(inTable()$mut)>0,
+                  "0 Mutations of interest in the selected weeks range"))
+    
+    par(mar=c(5,5,2,10), mfcol=c(1,1))
+    
+    barplot(inTable()$mut,
+            col=inPalette()$mutColors,
+            legend = TRUE,
+            args.legend = list(x = "topright", bty = "n", inset=c(-0.10, 0), xpd = TRUE),
+            xlab = "Week",
+            ylab = "#Genomes",
+            main = "Mutations",
+            cex.lab=1.5,
+            cex.axis=1.5,
+            cex.main=1.5 )
+  })
+  
+  #Generating a pie chart for all lineages input table.
+  output$allLin_piechart <- renderPlot({
+    #The final input table MUST contain at least 1 lineage.
+    validate(need(nrow(inTable()$allLin)>0,
+                  paste("0 Lineages with more than",
+                        input$allLin_nGenomes,
+                        "sequenced genomes in the selected weeks range")))
+    
+    if (nrow(inTable()$allLin)>=2) {
+      allLin_inPie <- rowSums(inTable()$allLin)
+      allLin_inLab <- row.names(inTable()$allLin)
     } else {
-      inPie <- sum(inTable())
-      inLab <- row.names(inTable())
+      allLin_inPie <- sum(inTable()$allLin)
+      allLin_inLab <- row.names(inTable()$allLin)
     }
     
-    par(mar = c(0,0,0,0))
+    par(mar = c(0,0,0,0), xpd = T)
     
-    pie(inPie, labels = inLab, col = inPalette())
+    pie(allLin_inPie, labels = NA, col = inPalette()$allLinColors)
+    legend("bottomleft", legend = allLin_inLab, fill = inPalette()$allLinColors, bty = "n", cex = 0.80)
+    title(main = "Lineages", cex.main = 1.5, line = -1.5)
+  })
+  
+  #Generating a pie chart for "special" lineages (lineages+) input table.
+  output$specialLin_piechart <- renderPlot({
+    #The final input table MUST contain at least 1 lineage.
+    validate(need(nrow(inTable()$specialLin)>0,
+                  paste("0 Lineages+ with more than",
+                        input$specialLin_nGenomes,
+                        "sequenced genomes in the selected weeks range")))
+    
+    if (nrow(inTable()$specialLin)>=2) {
+      specialLin_inPie <- rowSums(inTable()$specialLin)
+      specialLin_inLab <- row.names(inTable()$specialLin)
+    } else {
+      specialLin_inPie <- sum(inTable()$specialLin)
+      specialLin_inLab <- row.names(inTable()$specialLin)
+    }
+    
+    par(mar = c(0,0,0,0), xpd = T)
+    
+    pie(specialLin_inPie, labels = NA, col = inPalette()$specialLinColors)
+    legend("bottomleft", legend = specialLin_inLab, fill = inPalette()$specialLinColors, bty = "n", cex = 0.80)
+    title(main = "Lineages+", cex.main = 1.5, line = -1.5)
+    
+  })
+  
+  #Generating a pie chart for mutations input table.
+  output$mut_piechart <- renderPlot({
+    #The final input table MUST contain at least 1 mutation.
+    validate(need(sum(inTable()$mut)>0,
+                  "0 Mutations of interest in the selected weeks range"))
+    
+    if (nrow(inTable()$mut)>=2) {
+      mut_inPie <- rowSums(inTable()$mut)
+      mut_inLab <- row.names(inTable()$mut)
+    } else {
+      mut_inPie <- sum(inTable()$mut)
+      mut_inLab <- row.names(inTable()$mut)
+    }
+    
+    par(mar = c(0,0,0,0), xpd = T)
+    
+    pie(mut_inPie, labels = NA, col = inPalette()$mutColors)
+    legend("bottomleft", legend = mut_inLab, fill = inPalette()$mutColors, bty = "n", cex = 0.80)
+    title(main = "Mutations", cex.main = 1.5, line = -1.5)
   })
   
   #Generating the drop down menu that allows to select a lineage.
   output$lineage <- renderUI({
     #The final input table MUST contain at least 1 lineage.
-    validate(need(nrow(inTablePreparation())>0,
-                  "Can not generate lineage selection"))
+    validate(need(nrow(inTable()$allLin)>0,
+                  "Can not generate Lineage selection"))
     
     #The list of lineages in the menu depends on which lineages are
-    #present in the input table.
-    myLineages <- row.names(inTable())
+    #present in the input table (lineages).
+    myLineages <- row.names(inTable()$allLin)
     
-    names(myLineages) <- row.names(inTable())
+    names(myLineages) <- row.names(inTable()$allLin)
     
     #Storing the lineage selected by the user in a variable called lineageDefault that,
     #if the lineage is still present in the input table, is used as a default selection
@@ -296,44 +559,79 @@ server <- function(input, output){
                 "Lineage",
                 choices = as.list(myLineages),
                 selected = lineageDefault)
-
+    
+  })
+  
+  #Generating the drop down menu that allows to select a mutation.
+  output$mutation <- renderUI({
+    #The final input table MUST contain at least 1 mutation.
+    validate(need(sum(inTable()$mut)>0,
+                  "Can not generate Mutation selection"))
+    
+    #The list of mutations in the menu depends on which mutations are
+    #present in the input table.
+    myMutations <- row.names(inTable()$mut)
+    
+    names(myMutations) <- row.names(inTable()$mut)
+    
+    #Storing the mutation selected by the user in a variable called mutationDefault that,
+    #if the mutation is still present in the input table, is used as a default selection
+    #anytime the menu is generated.
+    mutationDefault <- isolate(input$selMutation)
+    
+    freezeReactiveValue(input, "selMutation")
+    
+    selectInput("selMutation",
+                "Mutation",
+                choices = as.list(myMutations),
+                selected = mutationDefault)
+    
   })
   
   #Generating a scatter plot that allows to compare the lineage of interest
   #with all other lineages (if present) and the corresponding legend.
-  output$byWeek_scatterplot <- renderPlot({
+  output$allLin_scatterplot <- renderPlot({
+    #The final input table MUST contain at least 1 lineage.
+    validate(need(nrow(inTable()$allLin)>0,
+                  paste("0 Lineages with more than",
+                        input$allLin_nGenomes,
+                        "sequenced genomes in the selected weeks range")))
+    
     #Values for the lineage of interest (selected using the appropriate widget)
     #are stored in the mainLineage variable.
-    mainLineage <- inTable()[input$selLineage,]
+    mainLineage <- inTable()$allLin[input$selLineage,]
     
     #All other lineages (if present) are collapsed together.
-    if (nrow(inTable())>2) {
-      secLineage <- colSums(inTable()[row.names(inTable())!=input$selLineage,])
+    if (nrow(inTable()$allLin)>2) {
+      secLineage <- colSums(inTable()$allLin[row.names(inTable()$allLin)!=input$selLineage,])
     } else {
-      secLineage <- inTable()[row.names(inTable())!=input$selLineage,]
+      secLineage <- inTable()$allLin[row.names(inTable()$allLin)!=input$selLineage,]
     }
     
-    plot(colnames(inTable()),
+    plot(colnames(inTable()$allLin),
          mainLineage,
          type = "b",
          col = ifelse(input$selLineage%in%names(colVoc), colVoc[input$selLineage], "darksalmon"),
          lwd=3,
          pch=15,
          lty=13,
-         ylim = c(0, max(colSums(inTable()))),
+         ylim = c(0, max(colSums(inTable()$allLin))),
          main = input$selLineage,
          xlab = "Week",
          ylab = "#Genomes", cex.main=1.5, cex.lab=1.5, cex.axis=1.5)
     
-    lines(colnames(inTable()),
-          secLineage,
-          type = "b",
-          col = "dimgray",
-          lwd=3,
-          pch=15,
-          lty=13)
     
-    legend(legend = c(input$selLineage, "Other lineages"),
+    if (length(secLineage)!=0) {
+      lines(colnames(inTable()$allLin),
+            secLineage,
+            type = "b",
+            col = "dimgray",
+            lwd=3,
+            pch=15,
+            lty=13)
+    }
+    
+    legend(legend = c(input$selLineage, "Not selected lineages"),
            col = c(ifelse(input$selLineage%in%names(colVoc), colVoc[input$selLineage], "darksalmon"), "darkgrey"),
            pch = 15,
            cex = 1.25,
@@ -341,7 +639,58 @@ server <- function(input, output){
            inset = c(0.05,0),
            bty = "n",
            xpd = TRUE)
-
+    
+  })
+  
+  #Generating a scatter plot that allows to compare the mutation of interest
+  #with all other mutations (if present) and the corresponding legend.
+  output$mut_scatterplot <- renderPlot({
+    #The final input table MUST contain at least 1 mutation.
+    validate(need(sum(inTable()$mut)>0,
+                  "0 Mutations of interest in the selected weeks range"))
+    
+    #Values for the mutation of interest (selected using the appropriate widget)
+    #are stored in the mainMutation variable.
+    mainMutation <- inTable()$mut[input$selMutation,]
+    
+    #All other mutations (if present) are collapsed together.
+    if (nrow(inTable()$mut)>2) {
+      secMutation <- colSums(inTable()$mut[row.names(inTable()$mut)!=input$selMutation,])
+    } else {
+      secMutation <- inTable()$mut[row.names(inTable()$mut)!=input$selMutation,]
+    }
+    
+    plot(colnames(inTable()$mut),
+         mainMutation,
+         type = "b",
+         col = ifelse(input$selMutation%in%names(colMoc), colMoc[input$selMutation], "darksalmon"),
+         lwd=3,
+         pch=15,
+         lty=13,
+         ylim = c(0, max(colSums(inTable()$mut))),
+         main = input$selMutation,
+         xlab = "Week",
+         ylab = "#Genomes", cex.main=1.5, cex.lab=1.5, cex.axis=1.5)
+    
+    if (length(secMutation)!=0) {
+      lines(colnames(inTable()$mut),
+            secMutation,
+            type = "b",
+            col = "dimgray",
+            lwd=3,
+            pch=15,
+            lty=13)
+    }
+    
+    legend(legend = c(input$selMutation, "Not selected mutations"),
+           col = c(ifelse(input$selMutation%in%names(colMoc), colMoc[input$selMutation], "darksalmon"), "darkgrey"),
+           pch = 15,
+           cex = 1.25,
+           x = "topleft",
+           inset = c(0.05,0),
+           bty = "n",
+           xpd = TRUE)
+    
   })
 }
 
