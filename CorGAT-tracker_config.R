@@ -1,7 +1,7 @@
 #Defining path for input files
-allLin_inputFilesPath <- "C:/Users/Erika/Desktop/CNR/Projects/CorGAT/ShinyApps/CorGAT-tracker_App/CorGAT-tracker_inputTables/allLin/"
-specialLin_inputFilesPath <- "C:/Users/Erika/Desktop/CNR/Projects/CorGAT/ShinyApps/CorGAT-tracker_App/CorGAT-tracker_inputTables/SpecialLin/"
-mut_inputFilesPath <- "C:/Users/Erika/Desktop/CNR/Projects/CorGAT/ShinyApps/CorGAT-tracker_App/CorGAT-tracker_inputTables/Mut/"
+allLin_inputFilesPath <- "" #insert path to allLin input folder
+specialLin_inputFilesPath <- "" #insert path to specialLin input folder
+mut_inputFilesPath <- "" #insert path to Mut input folder
 
 #Defining max value for "Weeks range" widget
 maxWeek <- ncol(read.table(paste0(allLin_inputFilesPath, "Epiweek.","Italy",".csv"), sep = " ", check.names = F))
@@ -20,8 +20,8 @@ countryList <- as.list(countryNames)
 #Defining color palettes
 library(RColorBrewer)
 
-Voc <- c("B.1.1.7", "P.1", "B.1.351", "B.1.427", "B.1.429", "Others")
-colVoc <- c("chartreuse", "cyan", "gold", "maroon1", "darkorchid2", "mediumblue")
+Voc <- c("B.1.1.7", "P.1", "B.1.351", "B.1.617.2", "Others")
+colVoc <- c("chartreuse", "cyan", "gold", "darkorchid2", "mediumblue")
 names(colVoc) <- Voc
 
 randomColors <- brewer.pal(n = 6, name = "Pastel2")
