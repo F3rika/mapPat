@@ -13,7 +13,7 @@ A more detailed description of plots and parameters is reported below.
 Barplots are used to represent the total number of SARS-CoV-2 genomes sequenced on a weekly basis in different countries. Three different barplots are displayed and their data are stratified by 1) Pango Lineages, 2) Lineages+ (see below) and 3) MOC Mutations respectively. To keep the visualization compact only the top 5 most abundant Lineages/Lineages+ and the 10 most numerous Mutations are represented. Remaining Lineages, Lineages+ or Mutations are aggregated under *Others*.  
 * ***Pie charts panel***  
 Three pie charts are used to illustrate the cumulative prevalence of SARS-CoV-2 Lineages, Lineages+ and Mutations in a user-selected interval of time. Similar to barplots only the top 5 most-abundant Lineages/Lineages+ and the 10 most numerous Mutations are represented, while everything else is collapsed under *Others*.  
-* ***Scatterplot panel***  
+* ***Scatterplots panel***  
 Scatterplots are used to represent the number of genomic sequences associated with a user-selected Lineage or Mutation, in time (week, x axis). To facilitate the comparison, the total number of genomes not associated with the selected Lineage/Mutation is also displayed. Only Lineages and Mutations shown in the barplot and/or pie chart panel can be selected for a scatterplot, meaning that, for any selection of country and time, only the top 5 most prevalent individual Lineages and the 10 most numerous Mutations can be individually represented, all the remaining Lineages/Mutations, can still be visualized but only in a collapsed form under *Others*.
 
 ### Control and customization of the plots
