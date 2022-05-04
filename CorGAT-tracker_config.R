@@ -2,6 +2,7 @@
 allLin_inputFilesPath <- "" #insert path to allLin input folder
 specialLin_inputFilesPath <- "" #insert path to specialLin input folder
 mut_inputFilesPath <- "" #insert path to Mut input folder
+config_inputFilePath <- "" #insert path to the Config input folder
 
 #Defining max value for "Weeks range" widget
 maxWeek <- ncol(read.table(paste0(allLin_inputFilesPath, "Epiweek.","Italy",".csv"), sep = " ", check.names = F))
@@ -20,14 +21,23 @@ countryList <- as.list(countryNames)
 #Defining color palettes
 library(RColorBrewer)
 
-Voc <- c("B.1.1.7", "P.1", "B.1.351", "B.1.617.2", "Others")
-colVoc <- c("chartreuse", "cyan", "gold", "darkorchid2", "mediumblue")
-names(colVoc) <- Voc
+colVoc <- read.table(paste0(config_inputFilePath,"paletteVOC.txt"),
+                         sep = "\t",
+                         row.names = 1,
+                         check.names = F,
+                         comment.char = "")
 
 randomColors <- brewer.pal(n = 6, name = "Pastel2")
 
-Moc <- c("N501Y", "E484K", "Others")
-colMoc <- c("green", "deeppink", "mediumblue")
-names(colMoc) <- Moc
+colMoc <- read.table(paste0(config_inputFilePath,"paletteMOC.txt"),
+                     sep = "\t",
+                     row.names = 1,
+                     check.names = F)
 
 mut_randomColors <- brewer.pal(n = 11, name = "Set3")
+
+#Opening Lineage+ to Lineage conversion table
+specialLin_to_Lineage <- read.table(paste0(config_inputFilePath,"specialLin_to_Lineage.csv"),
+                     sep = "\t",
+                     row.names = 1,
+                     check.names = F)
