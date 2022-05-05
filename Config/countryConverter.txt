@@ -1,0 +1,106 @@
+Angola	Angola	AGO
+Argentina	Argentina	ARG
+Aruba	Aruba	ABW
+Australia	Australia	AUS
+Austria	Austria	AUT
+Bahrain	Bahrain	BHR
+Bangladesh	Bangladesh	BGD
+Belgium	Belgium	BEL
+Bonaire	Bonaire	BES
+Bosnia and Herzegovina	BosniaandHerzegovina	BIH
+Botswana	Botswana	BWA
+Brazil	Brazil	BRA
+Brunei	Brunei	BRN
+Bulgaria	Bulgaria	BGR
+Cambodia	Cambodia	KHM
+Canada	Canada	CAN
+Canary Islands	CanaryIslands	 -
+Chile	Chile	CHL
+China	China	CHN
+Colombia	Colombia	COL
+Costa Rica	CostaRica	CRI
+Croatia	Croatia	HRV
+Cuba	Cuba	CUB
+Curacao	Curacao	CUW
+Czech Republic	CzechRepublic	CZE
+Democratic Republic of the Congo	DemocraticRepublicoftheCongo	COD
+Denmark	Denmark	DNK
+Dominican Republic	DominicanRepublic	DOM
+Ecuador	Ecuador	ECU
+Egypt	Egypt	EGY
+Estonia	Estonia	EST
+Finland	Finland	FIN
+France	France	FRA
+French Guiana	FrenchGuiana	GUF
+Gambia	Gambia	GMB
+Georgia	Georgia	GEO
+Germany	Germany	DEU
+Ghana	Ghana	GHA
+Gibraltar	Gibraltar	GIB
+Greece	Greece	GRC
+Guatemala	Guatemala	GTM
+Hong Kong	HongKong	HKG
+Iceland	Iceland	ISL
+India	India	IND
+Indonesia	Indonesia	IDN
+Iran	Iran	IRN
+Ireland	Ireland	IRL
+Israel	Israel	ISR
+Italy	Italy	ITA
+Jamaica	Jamaica	JAM
+Japan	Japan	JPN
+Jordan	Jordan	JOR
+Kenya	Kenya	KEN
+Kosovo	Kosovo	XKX
+Latvia	Latvia	LVA
+Lebanon	Lebanon	LBN
+Liechtenstein	Liechtenstein	LIE
+Lithuania	Lithuania	LTU
+Luxembourg	Luxembourg	LUX
+Malawi	Malawi	MWI
+Malaysia	Malaysia	MYS
+Martinique	Martinique	MTQ
+Mauritius	Mauritius	MUS
+Mexico	Mexico	MEX
+Mozambique	Mozambique	MOZ
+Nepal	Nepal	NPL
+Netherlands	Netherlands	NLD
+New Zealand	NewZealand	NZL
+Nigeria	Nigeria	NGA
+Northern Mariana Islands	NorthernMarianaIslands	MNP
+Norway	Norway	NOR
+Pakistan	Pakistan	PAK
+Panama	Panama	PAN
+Papua New Guinea	PapuaNewGuinea	PNG
+Paraguay	Paraguay	PRY
+Peru	Peru	PER
+Philippines	Philippines	PHL
+Poland	Poland	POL
+Portugal	Portugal	PRT
+Puerto Rico	PuertoRico	PRI
+Qatar	Qatar	QAT
+Reunion	Reunion	REU
+Romania	Romania	ROU
+Russian Federation	Russia	RUS
+Saudi Arabia	SaudiArabia	SAU
+Senegal	Senegal	SEN
+Singapore	Singapore	SGP
+Sint Maarten	SintMaarten	SXM
+Slovakia	Slovakia	SVK
+Slovenia	Slovenia	SVN
+South Africa	SouthAfrica	ZAF
+Republic of Korea (South Korea)	SouthKorea	KOR
+Spain	Spain	ESP
+Sri Lanka	SriLanka	LKA
+Suriname	Suriname	SUR
+Sweden	Sweden	SWE
+Switzerland	Switzerland	CHE
+Thailand	Thailand	THA
+Trinidad and Tobago	TrinidadandTobago	TTO
+Turkey	Turkey	TUR
+United Arab Emirates	UnitedArabEmirates	ARE
+United Kingdom	UnitedKingdom	GBR
+United States of America	USA	USA
+Vietnam	Vietnam	VNM
+U.S. Virgin Islands	U.S.VirginIslands	VIR
+Zambia	Zambia	ZMB
