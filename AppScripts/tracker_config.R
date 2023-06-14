@@ -2,6 +2,21 @@
 #      DEFINING ALL THE CONFIGURATION PARAMETERS OF THE APP      #
 ##################################################################
 
+#######CHECKING REQUIREMENTS#######
+#Checking if all required packages are already installed.
+requiredPackages <- c("shiny", "RColorBrewer", "ggplot2", "pheatmap", "rgeoboundaries", "leaflet", "htmltools")
+installedPackages <- rownames(installed.packages())
+
+isInstalled <- requiredPackages%in%installedPackages
+
+#Installing missing packages.
+if (sum(isInstalled)<7) {
+  
+  toInstall <- requiredPackages[!isInstalled]
+  
+  install.packages(toInstall)
+}
+
 #######UPLOAD REQUIRED PACKAGES#######
 library(shiny)
 library(RColorBrewer)
@@ -12,12 +27,13 @@ library(leaflet)
 library(htmltools)
 
 #######DEFINIG PATHS FOR INPUT FILES#######
-config_path <- "" #Insert path to Configuration input folder
-var_path <- "" #Insert path to Variants input folder
-allLin_path <- "" #Insert path to Lineages input folder
-heatChoromap_path <- "" #Insert path to Heatmap and Choropleth Map input folder
-mut_path <- "" #Insert path to Mutations input folder
-totReg_path <- "" #Insert path to Regional Total input folder
+inputs_path <- #Path to the InputData folder
+config_path <- paste0(inputs_path,"Config/")
+var_path <- paste0(inputs_path,"Var/")
+allLin_path <- paste0(inputs_path,"Lin/")
+heatChoromap_path <- paste0(inputs_path,"Heatmaps_Choroplethmaps/")
+mut_path <- paste0(inputs_path,"Mut/")
+totReg_path <- paste0(inputs_path,"totReg/")
 
 #######OPENING USEFUL FILES#######
 #Opening the Countries List Tracker file. This file collects the ISO-3 codes for all the countries
