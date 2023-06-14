@@ -36,15 +36,21 @@ ui <- fluidPage(
     #5. Two Choropleth Maps (CM) that represent the regional frequency (%) of two Variants of
     #   choice for a user-selected country in the time period of interest.
     tabPanel("Variants",
-             plotOutput("variantsSAC"),
-             plotOutput("varTab_perWeekSeq"),
-             plotOutput("variantsBP_LinVar"),
-             plotOutput("variantsHM"),
+             plotOutput("variantsSAC",
+                        height = "500px"),
+             plotOutput("varTab_perWeekSeq",
+                        height = "500px"),
+             plotOutput("variantsBP_LinVar",
+                        height = "500px"),
+             div(style='height:500px;overflow-y: scroll;',
+                 uiOutput("varHM_plotUI")),
              fluidRow(
                column(6,
-                      leafletOutput("variantsCM_1")),
+                      leafletOutput("variantsCM_1",
+                                    height = "500px")),
                column(6,
-                      leafletOutput("variantsCM_2")))),
+                      leafletOutput("variantsCM_2",
+                                    height = "500px")))),
     
     #######LINEAGES TAB#######
     #Plots are produced using the input tables of Lineages counts.
@@ -60,15 +66,21 @@ ui <- fluidPage(
     #5. Two Choropleth Maps (CM) that represent the regional frequency (%) of two Lineages of
     #   choice for a user-selected country in the time period of interest.
     tabPanel("Lineages",
-             plotOutput("lineagesSAC"),
-             plotOutput("linTab_perWeekSeq"),
-             plotOutput("lineagesSP"),
-             plotOutput("lineagesHM"),
+             plotOutput("lineagesSAC",
+                        height = "500px"),
+             plotOutput("linTab_perWeekSeq",
+                        height = "500px"),
+             plotOutput("lineagesSP",
+                        height = "500px"),
+             div(style='height:500px;overflow-y: scroll;',
+                 uiOutput("allLinHM_plotUI")),
              fluidRow(
                column(6,
-                      leafletOutput("lineagesCM_1")),
+                      leafletOutput("lineagesCM_1",
+                                    height = "500px")),
                column(6,
-                      leafletOutput("lineagesCM_2")))),
+                      leafletOutput("lineagesCM_2",
+                                    height = "500px")))),
     
     #######MUTATIONS TAB#######
     #These plots are produced using the input tables of Mutations counts.
@@ -83,15 +95,21 @@ ui <- fluidPage(
     #4. Two Choropleth Maps (CM) that represent the regional frequency (%) of two non-defining Mutations of
     #   choice for the user-selected Lineage and country in the time period of interest.
     tabPanel("Mutations",
-             plotOutput("mutationsBP_1"),
-             plotOutput("mutationsBP_2"),
-             plotOutput("mutTab_perWeekSeq"),
-             plotOutput("mutationsHM"),
+             plotOutput("mutationsBP_1",
+                        height = "500px"),
+             plotOutput("mutationsBP_2",
+                        height = "500px"),
+             plotOutput("mutTab_perWeekSeq",
+                        height = "500px"),
+             div(style='height:500px;overflow-y: scroll;',
+                 uiOutput("mutHM_plotUI")),
              fluidRow(
                column(6,
-                      leafletOutput("mutationsCM_1")),
+                      leafletOutput("mutationsCM_1",
+                                    height = "500px")),
                column(6,
-                      leafletOutput("mutationsCM_2"))))
+                      leafletOutput("mutationsCM_2",
+                                    height = "500px"))))
   ),
   
   hr(style = "border-top: 1px solid #A9A9A9;"),
@@ -124,6 +142,7 @@ ui <- fluidPage(
                        "Weeks range",
                        min = 1,
                        max = maxWeek,
+                       step = 5,
                        value = c(maxWeek-20, maxWeek)),
            helpText("Time lapse of interest (in weeks from a fixed date)"),
            
