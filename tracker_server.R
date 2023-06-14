@@ -410,8 +410,8 @@ server <- function(input, output){
   })
   
   ###HEATMAP & MAPS###
-  ###Producing the common tables for the HeatMap (HM) and the Choropleth Maps
-  #(CM). Calculating the total number of sequenced genomes for each Lineage at
+  ###Producing the common tables for the HeatMap (HM) and the Choropleth Maps (CM).
+  #Calculating the total number of sequenced genomes for each Lineage at
   #regional level in the user-selected time lapse.
   varHMxCM_totSeq <- reactive({
     #Defining inputs.
@@ -509,10 +509,32 @@ server <- function(input, output){
     return(list(varHM = varHM_Pal))
   })
   
+  #Generating the plot area for the HeatMap (HM).
+  output$varHM_plotUI <- renderUI({
+    #Defining inputs.
+    varHM_plotUI_inTable <- varHM_Normalization()$varHM
+    varHM_plotUI_nReg <- nrow(varHM_plotUI_inTable)
+    varHM_plotUI_plotHeight <- 15*varHM_plotUI_nReg+100
+    
+    #Generating the plot area.
+    if (varHM_plotUI_plotHeight>500) {
+      
+      plotOutput("variantsHM",
+                 height = paste0(varHM_plotUI_plotHeight, "px"))
+      
+    } else {
+      
+      plotOutput("variantsHM",
+                 height = "500px")
+      
+    }
+    
+  })
+  
   #Generating the HeatMap (HM) and the corresponding legend.
   output$variantsHM <- renderPlot({
     #Defining inputs.
-    varHM_inTable <- t(varHM_Normalization()$varHM)
+    varHM_inTable <- varHM_Normalization()$varHM
     varHM_dataNum <- ncol(varHM_inTable)
     varHM_Palette <- varHM_Palette()$varHM
     varHM_Main <- "Variants Regional Frequency (%)"
@@ -892,6 +914,28 @@ server <- function(input, output){
     return(list(allLinHM = allLinHM_Pal))
   })
   
+  #Generating the plot area for the HeatMap (HM).
+  output$allLinHM_plotUI <- renderUI({
+    #Defining inputs.
+    allLinHM_plotUI_inTable <- allLinHM_Normalization()$allLinHM
+    allLinHM_plotUI_nReg <- nrow(allLinHM_plotUI_inTable)
+    allLinHM_plotUI_plotHeight <- 15*allLinHM_plotUI_nReg+100
+    
+    #Generating the plot area.
+    if (allLinHM_plotUI_plotHeight>500) {
+      
+      plotOutput("lineagesHM",
+                 height = paste0(allLinHM_plotUI_plotHeight, "px"))
+      
+    } else {
+      
+      plotOutput("lineagesHM",
+                 height = "500px")
+      
+    }
+    
+  })
+  
   #Generating the HeatMap (HM) and the corresponding legend.
   output$lineagesHM <- renderPlot({
     #Defining inputs.
@@ -1106,15 +1150,23 @@ server <- function(input, output){
   #2. Per week sequences in the user-selected time lapse for the
   #   user-selected Lineage.
   #Starting from national counts.
+  #3. Per region sequences in the user-selected time lapse for the
+  #   user-selected Lineage
+  #Starting from regional counts.
   #These values will be used to sort data by frequency (%) and
   #to normalize data.
   mutTab_seqSum <- reactive({
     #Defining inputs.
     mutTab_seqSum_inTable <- weeksSelector()$allLin
+    mutTab_seqSum_inTable_perReg <- weeksSelector()$heatChoroM
     mutTab_seqSum_linSel <- input$lineageSel_mutTab
     
     #Selecting data for the user-selected Lineage.
     mutTab_seqSum_dataSel <- mutTab_seqSum_inTable[row.names(mutTab_seqSum_inTable)%in%mutTab_seqSum_linSel,]
+    mutTab_seqSum_dataSel_perReg <- mutTab_seqSum_inTable_perReg[mutTab_seqSum_inTable_perReg$lin%in%mutTab_seqSum_linSel,]
+    mutTab_seqSum_dataSel_perReg$lin <- NULL
+    row.names(mutTab_seqSum_dataSel_perReg) <- mutTab_seqSum_dataSel_perReg$reg
+    mutTab_seqSum_dataSel_perReg$reg <- NULL
     
     #Calculating the total number of sequences in the user-selected time
     #lapse of interest.
@@ -1124,13 +1176,18 @@ server <- function(input, output){
     #user-selected time lapse of interest
     mutTab_seqSum_totSeq_perWeek <- mutTab_seqSum_dataSel
     
+    #Calculating the regional number of sequences in the user-selected time
+    #lapse of interest.
+    mutTab_seqSum_totSeq_perReg <- rowSums(mutTab_seqSum_dataSel_perReg)
+    
     #The total number of genomes sequenced in the time period of interest MUST be >0
     #otherwise the app rises a warning.
     validate(need(mutTab_seqSum_totSeq>0,
                   "0 sequenced genomes in the selected weeks range"))
     
     return(list(mutTab_totSeq = mutTab_seqSum_totSeq,
-                mutTab_totSeq_perWeek = mutTab_seqSum_totSeq_perWeek))
+                mutTab_totSeq_perWeek = mutTab_seqSum_totSeq_perWeek,
+                mutTab_totSeq_perReg = mutTab_seqSum_totSeq_perReg))
   })
   
   #Collecting data for the user-selected Lineage of interest from the
@@ -1293,18 +1350,14 @@ server <- function(input, output){
     return(list(mutHM = mutHM_SubsetSorted))
   })
   
-  #Normalizing the HeatMap (HM) input table. In the case of the Mutations Tab
-  #normalization is performed using the total number of sequenced genomes for
-  #the user-selected Lineage calculated at national level (not regional as in
-  #other instances) in order to evaluate the regional distribution of Mutations
-  #with respect to the national diffusion of the corresponding Lineage.
+  #Normalizing the HeatMap (HM) input table.
   mutHM_Normalization <- reactive({
     #Defining inputs.
     mutHM_Normalization_inTable <- mutHM_SubsetSort()$mutHM
-    mutTab_totSeq <- mutTab_seqSum()$mutTab_totSeq
+    mutTab_totSeq_perReg <- mutTab_seqSum()$mutTab_totSeq_perReg
     
     #Normalizing data.
-    mutHM_Normalized <- mutHM_Normalization_inTable/mutTab_totSeq
+    mutHM_Normalized <- mutHM_Normalization_inTable/mutTab_totSeq_perReg
     mutHM_Normalized <- mutHM_Normalized*100
     mutHM_Normalized[is.nan(mutHM_Normalized)] <- 0
     
@@ -1323,6 +1376,28 @@ server <- function(input, output){
                              colorsNum = mutHM_Palette_colorsNum)
     
     return(list(mutHM = mutHM_Pal))
+  })
+  
+  #Generating the plot area for the HeatMap (HM).
+  output$mutHM_plotUI <- renderUI({
+    #Defining inputs.
+    mutHM_plotUI_inTable <- mutHM_Normalization()$mutHM
+    mutHM_plotUI_nReg <- nrow(mutHM_plotUI_inTable)
+    mutHM_plotUI_plotHeight <- 15*mutHM_plotUI_nReg+100
+    
+    #Generating the plot area.
+    if (mutHM_plotUI_plotHeight>500) {
+      
+      plotOutput("mutationsHM",
+                 height = paste0(mutHM_plotUI_plotHeight, "px"))
+      
+    } else {
+      
+      plotOutput("mutationsHM",
+                 height = "500px")
+      
+    }
+    
   })
   
   #Generating the HeatMap (HM) and the corresponding legend.
@@ -1431,24 +1506,20 @@ server <- function(input, output){
                 mutCM2 = mutCM2_dataSel))
   })
   
-  #Normalizing the Choropleth Maps (CM) input tables. In the case of the Mutations
-  #Tab normalization is performed using the total number of sequenced genomes for
-  #the user-selected Lineage calculated at national level (not regional as in
-  #other instances) in order to evaluate the regional distribution of Mutations
-  #with respect to the national diffusion of the corresponding Lineage.
+  #Normalizing the Choropleth Maps (CM) input tables.
   mutCM_Normalization <- reactive({
     #Defining inputs.
     mutCM1_Normalization_inTable <- mutCM_dataSelector()$mutCM1
     mutCM2_Normalization_inTable <- mutCM_dataSelector()$mutCM2
-    mutTab_totSeq <- mutTab_seqSum()$mutTab_totSeq
-    
+    mutTab_totSeq_perReg <- mutTab_seqSum()$mutTab_totSeq_perReg
+
     #Normalizing data.
-    mutCM1_Normalized <- mutCM1_Normalization_inTable/mutTab_totSeq
+    mutCM1_Normalized <- mutCM1_Normalization_inTable/mutTab_totSeq_perReg
     mutCM1_Normalized <- mutCM1_Normalized*100
     mutCM1_Normalized[is.nan(mutCM1_Normalized)] <- 0
     mutCM1_Normalized <- signif(mutCM1_Normalized, digits = 3)
     
-    mutCM2_Normalized <- mutCM2_Normalization_inTable/mutTab_totSeq
+    mutCM2_Normalized <- mutCM2_Normalization_inTable/mutTab_totSeq_perReg
     mutCM2_Normalized <- mutCM2_Normalized*100
     mutCM2_Normalized[is.nan(mutCM2_Normalized)] <- 0
     mutCM2_Normalized <- signif(mutCM2_Normalized, digits = 3)
@@ -1462,7 +1533,7 @@ server <- function(input, output){
   #frequency (%). Colors in the palette are used to fill each region
   #of the country of interest according to the frequency (%) of a Mutation
   #of interest.
-  mutCM_generalPalette <- reactive ({
+  mutCM_generalPalette <- reactive({
     #Defining inputs.
     mutCM_generalPalette_tabPal <- mutTheme
     mutCM_generalPalette_colorsNum <- 10
