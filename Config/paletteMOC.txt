@@ -1,4 +1,0 @@
-Spike_N501Y	green
-Spike_E484K	deeppink
-Spike_L452R	mediumspringgreen
-Others	mediumblue
