@@ -1,4 +1,6 @@
-#######CorGAT-tracker App#######
+##############################
+#      DEFINING THE APP      #
+##############################
 
 #Upload packages and data -----
 source("tracker_config.R")
