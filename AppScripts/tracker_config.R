@@ -27,7 +27,7 @@ library(leaflet)
 library(htmltools)
 
 #######DEFINIG PATHS FOR INPUT FILES#######
-inputs_path <- #Path to the InputData folder
+inputs_path <- "../InputData/"
 config_path <- paste0(inputs_path,"Config/")
 var_path <- paste0(inputs_path,"Var/")
 allLin_path <- paste0(inputs_path,"Lin/")
