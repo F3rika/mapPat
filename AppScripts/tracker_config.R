@@ -35,6 +35,15 @@ heatChoromap_path <- paste0(inputs_path,"Heatmaps_Choroplethmaps/")
 mut_path <- paste0(inputs_path,"Mut/")
 totReg_path <- paste0(inputs_path,"totReg/")
 
+#######UNZIPPING INPUT FILES#######
+#Unzipping all the input files in the inputData folder.
+zippedFiles <- list.files(path = inputs_path,
+                          pattern = "*\\.tar\\.gz$")
+
+toUnzip <- sapply(inputs_path, paste0, zippedFiles)
+
+sapply(toUnzip, untar, compressed = TRUE, exdir = inputs_path)
+
 #######OPENING USEFUL FILES#######
 #Opening the Countries List Tracker file. This file collects the ISO-3 codes for all the countries
 #with a total number of sequenced genomes equal or higher than 1000. By developer choice only
