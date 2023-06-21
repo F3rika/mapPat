@@ -30,7 +30,7 @@ library(htmltools)
 inputs_path <- "../InputData/"
 config_path <- paste0(inputs_path,"Config/")
 var_path <- paste0(inputs_path,"Var/")
-allLin_path <- paste0(inputs_path,"Lin/")
+allLin_path <- paste0(inputs_path,"allLin/")
 heatChoromap_path <- paste0(inputs_path,"Heatmaps_Choroplethmaps/")
 mut_path <- paste0(inputs_path,"Mut/")
 totReg_path <- paste0(inputs_path,"totReg/")
