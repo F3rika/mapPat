@@ -453,6 +453,7 @@ dataPlotter_HM <- function(dataTable, dataNum, dataPalette, plotMain, tagColor) 
            number_color = tagColor,
            fontsize_col =  9,
            fontsize_row = 9,
+           fontsize_number = 9,
            cellheight = 15,
            cellwidth = 30,
            treeheight_row = 0,
