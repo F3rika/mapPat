@@ -166,7 +166,7 @@ Configuration tables
 | Information regarding:
 
 + The complete list of countries that can be analysed.
-+ The complete list of regions associated to each analysed country.
++ The complete list of ISO-3 codes and administrative level (ADM, required to design choropleth maps) associated to each analysed country.
 + The association between variants, lineages and their WHO classification.
 
 | Is collected in the configuration tables and used to correctly build specific widgets and/or plots.
@@ -187,38 +187,20 @@ Configuration tables
    | CouN |
    +------+
    
-+ ``countryRegionsConverter.txt``
-   Collects the complete list of regions for each country that can be analysed using Tracker Name. Allows to associate a country (and related ISO code) with the corresponding list of regions.
++ ``CountryISOADM_AssocTab.txt``
+   Collects the complete list of ISO-3 codes and preferred administrative level (ADM, required to design choropleth maps) for each country that can be analysed using Tracker Name.
    
-   +------------+-------------+------------+
-   | Country    | Country_ISO | Region     |
-   +============+=============+============+
-   | Italy      | ITA         | Puglia     |
-   +------------+-------------+------------+
-   | Italy      | ITA         | Veneto     |
-   +------------+-------------+------------+
-   | ...        | ...         | ...        |
-   +------------+-------------+------------+
-   | Italy      | ITA         | RegN       |
-   +------------+-------------+------------+
-   | Japan      | JPN         | Hokkaido   |
-   +------------+-------------+------------+
-   | Japan      | JPN         | Aomori     |
-   +------------+-------------+------------+
-   | ...        | ...         | ...        |
-   +------------+-------------+------------+
-   | Japan      | JPN         | RegN       |
-   +------------+-------------+------------+
-   | ...        | ...         | ...        |
-   +------------+-------------+------------+
-   | CouN       | CouISO      | Reg1       |
-   +------------+-------------+------------+
-   | CouN       | CouISO      | Reg2       |
-   +------------+-------------+------------+
-   | ...        | ...         | ...        |
-   +------------+-------------+------------+
-   | CouN       | CouISO      | RegN       |
-   +------------+-------------+------------+
+   +------------+-------------+-----------------+
+   | Country    | Country_ISO | Country_ADM     |
+   +============+=============+=================+
+   | Italy      | ITA         | ADM2            |
+   +------------+-------------+-----------------+
+   | Japan      | JPN         | ADM1            |
+   +------------+-------------+-----------------+
+   | ...        | ...         | ...             |
+   +------------+-------------+-----------------+
+   | CouN       | CouISO      | ADM1/ADM2       |
+   +------------+-------------+-----------------+
    
 + ``variantsConverterTracker.txt``
    Collects the complete list of SARS-CoV-2 lineages identified worldwide and allows to associate them with the corresponding variant and WHO classification.
