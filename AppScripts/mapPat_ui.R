@@ -4,12 +4,19 @@
 
 #Define UI -----
 ui <- fluidPage(
+  tags$head(
+    tags$style(
+      HTML(".shiny-output-error-validation {
+           color: blue;
+           font-size: 75%;
+           }"))),
+  
   titlePanel("CorGAT-tracker"),
   
   #######OUTPUT REGION LAYOUT#######
   #Defining the layout of the output region.
   #Each group of plots is generated in a different panel.
-  tabsetPanel(
+  tabsetPanel(id = "allTabs",
     #######README TAB#######
     #The ReadMe Tab contains a series of guidelines on the use of the app.
     #RISCRIVERE IL MANUALE DELL'APP E RICOPIARE
@@ -70,8 +77,8 @@ ui <- fluidPage(
                         height = "500px"),
              plotOutput("linTab_perWeekSeq",
                         height = "500px"),
-             plotOutput("lineagesSP",
-                        height = "500px"),
+#             plotOutput("lineagesSP",
+#                        height = "500px"),
              div(style='height:500px;overflow-y: scroll;',
                  uiOutput("allLinHM_plotUI")),
              fluidRow(
@@ -120,112 +127,107 @@ ui <- fluidPage(
   #accompanied by an help text briefly explaining its function.
   fluidRow(
     #######FIRST SET OF WIDGETS#######
-    column(4,
+    column(3,
            h4("General"),
+           #######PATHOGEN SELECTOR#######
+           #Generates a drop down menu that allows to select a pathogen to
+           #analyze.
+           #Default is "SARS-CoV-2".
+           selectInput("pathogen",
+                       "Pathogen",
+                       choices = pathogenList,
+                       selected = "SARS-CoV-2"),
+           helpText("Visualize data for the selected pathogen"),
+           
+           br(),
+           
            #######COUNTRY SELECTOR#######
            #Generates a drop down menu that allows to select a country to
            #analyze.
+           #Countries in the menu are selected among those possessing data
+           #for the pathogen of interest. The widget changes
+           #dynamically depending on the user-selected pathogen.
            #Default is "Italy".
-           selectInput("country",
-                       "Country",
-                       choices = countryList,
-                       selected = "ITA"),
+           uiOutput("countryAll"),
            helpText("Visualize data for the selected country"),
            
            br(),
            
-           #######WEEKS RANGE SELECTOR#######
+           #######TIME RANGE SELECTOR#######
            #Generates a slider that allows to select a time lapse to analyze.
-           #Time is calculated in weeks from a fixed date (2019-12-30).
-           #Default is the last 20 weeks (about 5 months, from maxWeek-20 to maxWeek).
-           sliderInput("weeksRange",
-                       "Weeks range",
-                       min = 1,
-                       max = maxWeek,
-                       step = 5,
-                       value = c(maxWeek-20, maxWeek)),
-           helpText("Time lapse of interest (in weeks from a fixed date)"),
+           #Time is calculated in weeks/months from a fixed date.
+           #maxTime is defined as the number of columns available in the
+           #input tables for the pathogen of interest. The widget changes dynamically.
+           #Default is the last 20 weeks/months (from maxTime-20 to maxTime).
+           uiOutput("timeRangeAll"),
+           helpText("Time lapse of interest (in weeks/months from a fixed date)")),
            
-           hr(style = "border-top: 1px solid #A9A9A9;"),
-           h4("Variants"),
-           
-           #######CATEGORY SELECTOR#######
-           #Generates a drop down menu that allows to select the category
-           #of Variants to be graphically represented.
-           #Default is "All".
-           selectInput("variantCategory",
-                       "Category",
-                       choices = categoryList,
-                       selected = "All"),
-           helpText("Visualize data for the selected category of Variants"),
-           
-           
-           #######VARIANT SELECTOR (VARIANT COMPOSITION BARPLOT)#######
-           #Generates a drop down menu that allows to select a Variant
-           #for which analyze the composition (proportion of Lineages).
-           #Variants in the menu are selected among those that present sequenced
-           #genomes in the user-select time period. The widget changes dynamically.
-           #No default set.
-           uiOutput("variant"),
-           helpText("Analyze the composition (proportion of Lineages) for the selected Variant"),
-           
-           br(),
-           
-           #######VARIANT LINEAGES MIN FREQUENCY (%) SELECTOR#######
-           #Generates a radio buttons selection that allows to select the
-           #minimum frequency (%) required to each Lineage of a user selected
-           #Variant to be represented in the plots
-           #Default is 1%.
-           radioButtons("variantsFreq",
-                        "Min % of genomes",
-                        choices = list("1%"=0.01,
-                                       "2.5%"=0.025,
-                                       "5%"=0.05,
-                                       "7.5%"=0.075,
-                                       "10%"=0.10),
-                        selected = 0.01),
-           helpText("Minimum frequency (%) required to display a Lineage belonging to the selected Variant")),
-    
     #######SECOND SET OF WIDGETS#######
-    column(4,
-           #######VARIANT SELECTOR (MAP1)#######
-           #Generates the drop down menu that allows to select the Variant to be
-           #represented in the first Choropleth Map (CM1).
-           #Variants in the menu are selected among those surviving
-           #previous filters. The widget changes dynamically depending
-           #on the selected time lapse and category.
-           #No default set.
-           uiOutput("variantCM1"),
-           helpText("Produce a Choropleth Map for the selected Variant"),
+    #Widgets dedicated to Variants are shown/hidden depending on the user-selected
+    #pathogen of interest.
+    column(3,
+           conditionalPanel(
+             condition = 'input.pathogen == "SARS-CoV-2"',
+             h4("Variants"),
+             #######CATEGORY SELECTOR#######
+             #Generates a drop down menu that allows to select the category
+             #of Variants to be graphically represented.
+             #Default is "All".
+             uiOutput("varCategory"),
+             helpText("Visualize data for the selected category of Variants"),
+             
+             br(),
+             
+             #######VARIANT SELECTOR (VARIANT COMPOSITION BARPLOT)#######
+             #Generates a drop down menu that allows to select a Variant
+             #for which analyze the composition (proportion of Lineages).
+             #Variants in the menu are selected among those that present sequenced
+             #genomes in the user-select time period. The widget changes dynamically.
+             #No default set.
+             uiOutput("variant"),
+             helpText("Analyze the composition (proportion of Lineages) for the selected Variant"),
            
-           br(),
+             br(),
            
-           #######VARIANT SELECTOR (MAP2)#######
-           #Generates the drop down menu that allows to select the Variant to be
-           #represented in the second Choropleth Map (CM2).
-           #Variants in the menu are selected among those surviving
-           #previous filters. The widget changes dynamically depending
-           #on the selected time lapse and category.
-           #No default set.
-           uiOutput("variantCM2"),
-           helpText("Produce a Choropleth Map for the selected Variant"),
-           
-           hr(style = "border-top: 1px solid #A9A9A9;"),
+             #######VARIANT LINEAGES MIN FREQUENCY (%) SELECTOR#######
+             #Generates a radio buttons selection that allows to select the
+             #minimum frequency (%) required to each Lineage of a user selected
+             #Variant to be represented in the plots
+             #Default is 1%.
+             uiOutput("varFrequency"),
+             helpText("Minimum frequency (%) required to display a Lineage belonging to the selected Variant"),
+             
+             #######VARIANT SELECTOR (MAP1)#######
+             #Generates the drop down menu that allows to select the Variant to be
+             #represented in the first Choropleth Map (CM1).
+             #Variants in the menu are selected among those surviving
+             #previous filters. The widget changes dynamically depending
+             #on the selected time lapse and category.
+             #No default set.
+             uiOutput("variantCM1"),
+             helpText("Produce a Choropleth Map for the selected Variant"),
+             
+             br(),
+             
+             #######VARIANT SELECTOR (MAP2)#######
+             #Generates the drop down menu that allows to select the Variant to be
+             #represented in the second Choropleth Map (CM2).
+             #Variants in the menu are selected among those surviving
+             #previous filters. The widget changes dynamically depending
+             #on the selected time lapse and category.
+             #No default set.
+             uiOutput("variantCM2"),
+             helpText("Produce a Choropleth Map for the selected Variant"))),
+    
+    #######THIRD SET OF WIDGETS#######
+    column(3,
            h4("Lineages"),
-           
            #######LINEAGES MIN FREQUENCY (%) SELECTOR#######
            #Generates a radio buttons selection that allows to select the
            #minimum frequency (%) required to each Lineage to be represented
            #in the plots
            #Default is 1%.
-           radioButtons("lineagesFreq",
-                        "Min % of genomes",
-                        choices = list("1%"=0.01,
-                                       "2.5%"=0.025,
-                                       "5%"=0.05,
-                                       "7.5%"=0.075,
-                                       "10%"=0.10),
-                        selected = 0.01),
+           uiOutput("linFrequency"),
            helpText("Minimum frequency (%) required to display a Lineage"),
            
            br(),
@@ -234,23 +236,9 @@ ui <- fluidPage(
            #Generates a drop down menu that allows to select a number n of
            #Lineages to be graphically represented.
            #Default is 5 Lineages.
-           selectInput("lineagesNum",
-                       "Lineages number",
-                       choices = list("1"=1,
-                                      "2"=2,
-                                      "3"=3,
-                                      "4"=4,
-                                      "5"=5,
-                                      "6"=6,
-                                      "7"=7,
-                                      "8"=8,
-                                      "9"=9,
-                                      "10"=10),
-                       selected = 5),
-           helpText("Maximum number of explicitly displayed Lineages")),
-    
-    #######THIRD SET OF WIDGETS#######
-    column(4,
+           uiOutput("linNumber"),
+           helpText("Maximum number of explicitly displayed Lineages"),
+           
            #######LINEAGE SELECTOR (MAP 1)#######
            #Generates the drop down menu that allows to select the Lineage to be
            #represented in the first Choropleth Map (CM1).
@@ -271,11 +259,11 @@ ui <- fluidPage(
            #on the selected time lapse and frequency (%) threshold.
            #No default set.
            uiOutput("lineageCM2"),
-           helpText("Produce a Chorophlet Map for the selected Lineage"),
-           
-           hr(style = "border-top: 1px solid #A9A9A9;"),
+           helpText("Produce a Chorophlet Map for the selected Lineage")),
+    
+    #######FOURTH SET OF WIDGETS#######
+    column(3,
            h4("Mutations"),
-           
            #######LINEAGE SELECTOR (MUTATIONS TAB)#######
            #Generates the drop down menu that allows to select the Lineage which
            #non-defining mutations are analyzed in the Mutations Tab.
