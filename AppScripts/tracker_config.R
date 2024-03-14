@@ -14,7 +14,19 @@ if (sum(isInstalled)<7) {
   
   toInstall <- requiredPackages[!isInstalled]
   
-  install.packages(toInstall)
+  #Installing "rgeoboundaries" requires some additional steps.
+  if ("rgeoboundaries"%in%toInstall) {
+    
+    toInstall <- toInstall[toInstall!="rgeoboundaries"]
+    install.packages(toInstall)
+    
+    install.packages("remotes")
+    remotes::install_github("wmgeolab/rgeoboundaries")
+    
+  } else {
+    
+    install.packages(toInstall)
+  }
 }
 
 #######UPLOAD REQUIRED PACKAGES#######
@@ -26,12 +38,12 @@ library(rgeoboundaries)
 library(leaflet)
 library(htmltools)
 
-#######DEFINIG PATHS FOR INPUT FILES#######
+#######DEFINING PATHS FOR INPUT FILES#######
 inputs_path <- "../InputData/"
 config_path <- paste0(inputs_path,"Config/")
 var_path <- paste0(inputs_path,"Var/")
 allLin_path <- paste0(inputs_path,"allLin/")
-heatChoromap_path <- paste0(inputs_path,"Heatmaps_Choroplethmaps/")
+heatChoromap_path <- paste0(inputs_path,"HeatChoromap/")
 mut_path <- paste0(inputs_path,"Mut/")
 totReg_path <- paste0(inputs_path,"totReg/")
 
@@ -45,66 +57,57 @@ toUnzip <- sapply(inputs_path, paste0, zippedFiles)
 sapply(toUnzip, untar, compressed = TRUE, exdir = inputs_path)
 
 #######OPENING USEFUL FILES#######
-#Opening the Countries List Tracker file. This file collects the ISO-3 codes for all the countries
-#with a total number of sequenced genomes equal or higher than 1000. By developer choice only
-#countries respecting this requirement are considered.
-countryPass_List <- scan(paste0(config_path,"countriesListTracker.txt"),
-                         what = "character",
-                         sep = "\n",
-                         comment.char = "",
-                         quote = "")
+#Opening the Pathogen Selection Configuration Table. This table allows to associate each pathogen
+#with associated information used for data default and widgets definition.
+pathogenSelConf_Table <- read.table(paste0(config_path, "PathogenSelection_ConfigTab.txt"),
+                                    sep = "\t",
+                                    header = T,
+                                    check.names = F,
+                                    comment.char = "",
+                                    quote = "",
+                                    fileEncoding = "UTF-8")
 
-#Opening the Country Regions Converter table. This table allows to associate each country name in the
-#dropdown menu to the corresponding ISO-3 codes and regions (used for the Choropleth Maps).
-countryRegionsConvertion_Table <- read.table(paste0(config_path, "countryRegionsConverter.txt"),
+#Opening the Country ISO-ADM Association table. This table allows to associate each country name in the
+#dropdown menu to the corresponding ISO-3 codes and ADM level (used for the Choropleth Maps).
+countryISOADMConvertion_Table <- read.table(paste0(config_path, "CountryISOADM_AssocTab.txt"),
                                              sep = "\t",
                                              header = T,
                                              check.names = F,
                                              comment.char = "",
-                                             quote = "")
+                                             quote = "",
+                                             fileEncoding = "UTF-8")
 
-#Opening the Variants Converter Tracker table. This table allows to associate each Lineage to the
-#corresponding Variant or Variant subgroup.
-variantsConvertion_Table <- read.table(paste0(config_path, "variantsConverterTracker.txt"),
+#Opening the Lineage to Variant Tracker Conversion table. This table allows to associate each Lineage to the
+#corresponding Variant, Status (according to WHO risk classification) and if it is currently under monitoring
+#(VBM).
+variantsConvertion_Table <- read.table(paste0(config_path, "LinVar_ConvTabTracker.txt"),
                                        sep = "\t",
                                        header = T,
                                        check.names = F,
                                        comment.char = "",
-                                       quote = "")
-colnames(variantsConvertion_Table) <- c("Lin","Var","Cat","OmiGroup")
+                                       quote = "",
+                                       fileEncoding = "UTF-8")
 
 #######DEFINING WIDGETS CONTENT#######
-#Defining the maximum limit of the week selection slider.
-maxWeek <- ncol(read.table(paste0(allLin_path, "Epiweek.","ITA",".csv"),
-                           sep = " ",
-                           row.names = 1,
-                           header = T,
-                           check.names = F))
+#Defining the content of the Pathogen selection drop down menu.
+pathogenNames <- pathogenSelConf_Table$PathogenName
 
-#Defining the content of the country selection dropdown menu. Only countries with a total number
-#of sequenced genomes equal or higher than 1000 are considered.
-countryNames <- unique(countryRegionsConvertion_Table[countryRegionsConvertion_Table$Country_ISO%in%countryPass_List,]$Country)
+pathogenAbbr <- pathogenSelConf_Table$PathogenAbbr
 
-countryISO <- unique(countryRegionsConvertion_Table[countryRegionsConvertion_Table$Country_ISO%in%countryPass_List,]$Country_ISO)
+names(pathogenAbbr) <- pathogenNames
 
-names(countryISO) <- countryNames
+pathogenList <- as.list(pathogenAbbr)
 
-countryList <- as.list(countryISO)
+#Defining the content of the Variant category selection drop down menu.
+status <- unique(variantsConvertion_Table$Status)
 
-#Defining the content of the Variant category selection dropdown menù.
-cat <- unique(variantsConvertion_Table$Cat)
+status <- append(status, c("VBM", "All"))
 
-omiGr <- unique(variantsConvertion_Table$OmiGroup)
+status <- status[order(status)]
 
-omiGr <- omiGr[!omiGr=="None"]
+names(status) <- status
 
-categoryNames <- c(cat, omiGr)
-
-names(categoryNames) <- categoryNames
-
-categoryList <- as.list(categoryNames)
-
-categoryList <- append(categoryList, list(All = "All"))
+statusList <- as.list(status)
 
 #######DEFINING COLOR PALETTES#######
 #Defining the color palettes characterizing the color theme of each tab in the App.
