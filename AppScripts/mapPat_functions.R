@@ -312,8 +312,9 @@ mapPalette <- function(dataValue, referencePalette) {
 #1. dataTable <- The input data table.
 #2. dataPalette <- The color palette produced for the input table.
 #3. plotMain <- The main title of the SAC.
+#4. timeUn <- The time unit on the x axis.
 #The function gives as an output a Stacked Area Chart (SAC) representing the data of interest.
-dataPlotter_SAC <- function(dataTable, dataPalette, plotMain) {
+dataPlotter_SAC <- function(dataTable, dataPalette, plotMain, timeUn) {
   #Producing a Stacked Area Chart (SAC) and the corresponding legend for the
   #input data table.
   #The original input data table is converted to a ggplot2 suitable format.
@@ -328,7 +329,7 @@ dataPlotter_SAC <- function(dataTable, dataPalette, plotMain) {
   ggplot(plotData,
          aes(x = xValues, y = yValues, fill = fillValues)) +
     geom_area(colour = "black",
-              size = 0.2) +
+              linewidth = 0.2) +
     scale_fill_manual(values = dataPalette) +
     theme_classic() +
     theme(plot.title = element_text(hjust = 0.5),
@@ -339,7 +340,7 @@ dataPlotter_SAC <- function(dataTable, dataPalette, plotMain) {
                        expand = c(0,0)) +
     scale_y_continuous(expand = c(0,0)) +
     labs(title = plotMain,
-         x = "Weeks",
+         x = timeUn,
          y = "Frequency (%)")
 }
 
@@ -396,8 +397,9 @@ perWeekTotSeqPlotter_BP <- function(dataVector) {
 #1. dataTable <- The input data table.
 #2. dataPalette <- The color palette produced for the input table.
 #3. plotMain <- The main title of the SP.
+#4. timeUn <- The time unit on the x axis.
 #The function gives as an output a ScatterPlot (SP) representing the data of interest.
-dataPlotter_SP <- function(dataTable, dataPalette, plotMain) {
+dataPlotter_SP <- function(dataTable, dataPalette, plotMain, timeUn) {
   #Producing a ScatterPlot (SP) and the corresponding legend for the
   #input data table.
   #The original input data table is converted to a ggplot2 suitable format.
@@ -412,7 +414,7 @@ dataPlotter_SP <- function(dataTable, dataPalette, plotMain) {
   ggplot(plotData,
          aes(x = xValues, y = yValues, colour = colValues)) +
     geom_point(size = 2) +
-    geom_line(size = 1) +
+    geom_line(linewidth = 1) +
     scale_colour_manual(values = dataPalette) +
     theme_classic() +
     theme(plot.title = element_text(hjust = 0.5),
@@ -423,7 +425,7 @@ dataPlotter_SP <- function(dataTable, dataPalette, plotMain) {
                        expand = c(0,0)) +
     scale_y_continuous(expand = c(0,0)) +
     labs(title = plotMain,
-         x = "Weeks",
+         x = timeUn,
          y = "#Genomes",
          colour = plotMain)
 }
@@ -461,6 +463,37 @@ dataPlotter_HM <- function(dataTable, dataNum, dataPalette, plotMain, tagColor) 
 }
 
 
+# >>Producing the BarPlot that allows to graphically represent the Regional Frequency (%) of a single element from the data -----
+#Defining the function that allows to produce the BarPlot (BP) representing the regional freqeuncy (%)
+#of a single element in the input data table.
+#This function accepts as an input:
+#1. dataTable <- The input data table.
+#2. dataPalette <- The color palette produced for the input table.
+#3. plotMain <- The main title of the HM.
+#The function gives as an output a BarPlot (BP) representing the data of interest.
+dataPlotter_regBP <- function(dataTable, dataPalette, plotMain) {
+  #Converting the original input data table to a ggplot2 suitable format.
+  xValues <- colnames(dataTable)
+  yValues <- dataTable[1,]
+  
+  plotData <- data.frame(xValues, yValues)
+  
+  #Plotting the BP using ggplot2.
+  ggplot(plotData,
+         aes(x = xValues, y = yValues)) +
+    geom_bar(stat = "identity", fill = dataPalette) +
+    theme_classic() +
+    theme(plot.title = element_text(hjust = 0.5),
+          axis.text.y = element_text(angle = 90, vjust = 0.5, hjust = 0.5),
+          legend.title = element_text(colour = "transparent"),
+          legend.position = "top") +
+    scale_y_continuous(expand = c(0,0)) +
+    labs(title = plotMain,
+         x = "Regions",
+         y = "Frequency (%)")
+}
+
+
 # >>Producing the BarPlot that allows to graphically represent comparisons between elements of interest -----
 #Defining the function that allows to produce the BarPlot (BP) representing the comparison between
 #elements of interest.
@@ -468,13 +501,14 @@ dataPlotter_HM <- function(dataTable, dataNum, dataPalette, plotMain, tagColor) 
 #1. dataTable <- The input data table.
 #2. dataPalette <- The color palette produced for the input table.
 #3. plotMain <- The main title of the BP.
+#4. timeUn <- The time unit on the x axis.
 #The function gives as an output a BarPlot (BP) representing the data of interest, which is different
 #depending on the Tab. More in detail:
 #1. In the Variants Tab this BP represents the composition (defined as proportion of Lineages)
 #   of a user-selected variant of interest for each week of the user-selected time lapse of interest.
 #2. In the Mutations Tab this BP represents the comparison between the frequency (%) of genomes of the
 #   user-selected Lineage presenting a mutation of interest and that of genomes without the mutation.
-dataPlotter_BP <- function(dataTable, dataPalette, plotMain) {
+dataPlotter_BP <- function(dataTable, dataPalette, plotMain, timeUn) {
   #Converting the original input data table to a ggplot2 suitable format.
   xValues <- as.numeric(rep(colnames(dataTable), each = nrow(dataTable)))
   yValues <- as.vector(unlist(dataTable))
@@ -497,7 +531,7 @@ dataPlotter_BP <- function(dataTable, dataPalette, plotMain) {
                        expand = c(0,0)) +
     scale_y_continuous(expand = c(0,0)) +
     labs(title = plotMain,
-         x = "Weeks",
+         x = timeUn,
          y = "Frequency (%)")
 }
 
@@ -586,10 +620,10 @@ dropdownM_widgetGenerator <- function(dataTable, widgetName, widgetMain, posDefa
 #The function gives as an output a table containing data for all the Variants belonging to the
 #user selected category of interest.
 varCat_dataSelector <- function(dataTable, refTable, dataElement) {
-  #The omiGr variable collects the names of the Omicron subgroups that require peculiar treatment
-  #while producing the input data table for the SAC.
-  omiGr <- c("OmicronVOC", "OmicronVUM", "OmicronVOI")
-  
+  #The VBM subgroup collects a series of Lineages that are currently under monitoring by WHO.
+  #Since, at present, Omicron is the only circulating Variant all VBM lineages belong to this
+  #Variant. This subgroup requires careful treatment while producing the input data table
+  #for the SAC in order to avoid data repetition.
   if (dataElement=="All") {
     #If the user-selected Variants category (dataElement) is "All" the complete list of Variants
     #from dataTable (which survived previous filters) is collected.
@@ -597,51 +631,45 @@ varCat_dataSelector <- function(dataTable, refTable, dataElement) {
     dataSel <- row.names(dataTable)
     
     if ("Omicron"%in%dataSel) {
-      #If the  the Omicron variant is included in dataSel it needs to be treated accordingly.
-      #This variant, in fact, includes also "special" subgroups (indicated as OmiGroup in refTable
-      #and collected in the omiGr variable) + Omicron/Omicron recombinants (recOmicron in refTable),
-      #data corresponding to Omicron are adjusted in order to avoid counts repetition.
+      #If the Omicron variant is included in dataSel it needs to be treated accordingly.
+      #The Omicron variant, in fact, includes also Lineages belonging to the VBM subgroup,
+      #so data corresponding to Omicron are adjusted in order to avoid counts repetition.
       omiData <- dataTable["Omicron",]
-      omiGrData <- colSums(dataTable[omiGr,])
-      omiRecData <- dataTable["recOmicron",]
-      omiRemove <- omiGrData+omiRecData
-      omiData <- omiData-omiRemove
+      vbmData <- dataTable["VBM",]
+      omiData <- omiData-vbmData
       
       outputTable <- dataTable[dataSel,]
       outputTable["Omicron",] <- omiData
       
     } else {
-      #If the Omicron Variant does not belong to dataSel data for all Variants in the variable
-      #are collected to produce the final table.
+      #If the Omicron Variant does not belong to dataSel data for all Variants in the
+      #variable are collected to produce the final table.
       outputTable <- dataTable[dataSel,]
       
     }
     
-  } else if (dataElement%in%omiGr) {
-    #If dataElement belongs to the omiGr variable only data for the selected "special" element
-    #is included in the final data table.
+  } else if (dataElement=="VBM") {
+    #If dataElement equals "VBM" only data from this subgroup is included in the final data table.
     outputTable <- dataTable[dataElement,]
     
   } else {
-    #If dataElement is neither equal to "All" nor part of the omiGr variable, data to include in the
-    #final input table for the SAC are collected according to a specific set of conditions.
+    #If dataElement is equal neither to "All" nor to "VBM", data to include in the final input
+    #table for the SAC are collected according to a specific set of conditions.
     #The dataSel variable collects the complete list of Variants belonging to the user-selected
     #category (dataElement).
-    dataSel <- unique(refTable[refTable$Cat==dataElement,]$Var)
+    dataSel <- unique(refTable[refTable$Status==dataElement,]$Variant)
     
     if ("Omicron"%in%dataSel) {
-      #If the Omicron Variant belongs to dataSel, its corresponding input data are adjusted in
-      #order to avoid repetitions (see above). Data from other Variants in dataSel are collected
-      #normally and data for omiGroups and recOmicron are added to the final table too.
+      #If the Omicron Variant belongs to dataSel, input data are adjusted in order to avoid repetitions
+      #(see above). Data from other Variants in dataSel are collected normally and data from the VBM
+      #subgroup is also added to the final table.
       omiData <- dataTable["Omicron",]
-      omiGrData <- dataTable[omiGr,]
-      omiRecData <- dataTable["recOmicron",]
-      omiRemove <- colSums(omiGrData)+omiRecData
-      omiData <- omiData-omiRemove
+      vbmData <- dataTable["VBM",]
+      omiData <- omiData-vbmData
       
       outputTable <- dataTable[dataSel,]
       outputTable["Omicron",] <- omiData
-      outputTable <- rbind(outputTable, omiGrData, omiRecData)
+      outputTable <- rbind(outputTable, vbmData)
       
     } else {
       #If the Omicron Variant does not belong to dataSel, data for all Variants in the variable
@@ -668,33 +696,21 @@ varCat_dataSelector <- function(dataTable, refTable, dataElement) {
 #When applied to the complete collection of Variants the output is a list of tables of regional counts,
 #each one associated to a Variant of interest.
 varReg_tableProducer <- function(dataElement, dataTable, refTable) {
-  #The omiGr variable collects the names of the Omicron subgroups that require peculiar treatment
-  #while producing the regional counts table.
-  omiGr <- c("OmicronVOC", "OmicronVUM", "OmicronVOI")
-  
   #The regOrder variable collects the original order of the regions in dataTable. Maintaining the
   #original order of the data is essential to correctly represent them in graphical representations.
   regOrder <- unique(dataTable$reg)
   
-  #The list of Lineages corresponding to the Variant of interest is collected in a slightly different
-  #way depending on its belonging to the omiGr variable or being equal to "Omicron"/"recOmicron".
-  if (dataElement%in%omiGr) {
+  #The VBM subgroup collects a series of Lineages that are currently under monitoring by WHO.
+  #Since, at present, Omicron is the only circulating Variant all VBM lineages belong to this
+  #Variant. This subgroup requires careful treatment while producing the regional counts table
+  #and the corresponding list of lineages is collected in a slightly different way.
+  if (dataElement=="VBM") {
     
-    linElement <- refTable[refTable$OmiGroup==dataElement,]$Lin
-    
-  } else if (dataElement=="Omicron") {
-    
-    linOmi <- refTable[refTable$Var==dataElement,]$Lin
-    linOmiRec <- refTable[refTable$Var=="recOmicron",]$Lin
-    linElement <- c(linOmi, linOmiRec)
-    
-  } else if (dataElement=="recOmicron") {
-    
-    linElement <- refTable[refTable$Var==dataElement&refTable$OmiGroup=="None",]$Lin
+    linElement <- refTable[refTable$isVBM,]$Lin
     
   } else {
     
-    linElement <- refTable[refTable$Var==dataElement,]$Lin
+    linElement <- refTable[refTable$Variant==dataElement,]$Lin
     
   }
   
@@ -763,10 +779,10 @@ varReg_dataSelector <- function(dataElement, dataTable) {
 #The function gives as an output a table containing the regional counts for all the Variants
 #belonging to the user selected category of interest.
 regVarCat_dataSelector <- function(dataTable, refTable, dataElement) {
-  #The omiGr variable collects the names of the Omicron subgroups that require peculiar treatment
-  #while producing the input data table for the HM.
-  omiGr <- c("OmicronVOC", "OmicronVUM", "OmicronVOI")
-  
+  #The VBM subgroup collects a series of Lineages that are currently under monitoring by WHO.
+  #Since, at present, Omicron is the only circulating Variant all VBM lineages belong to this
+  #Variant. This subgroup requires careful treatment while producing the input data table
+  #for the HM in order to avoid data repetition.
   if (dataElement=="All") {
     #If the user-selected Variants category (dataElement) is "All" the complete list of Variants
     #from dataTable (which survived previous filters) is collected.
@@ -774,15 +790,12 @@ regVarCat_dataSelector <- function(dataTable, refTable, dataElement) {
     dataSel <- colnames(dataTable)
     
     if ("Omicron"%in%dataSel) {
-      #If the Omicron Variant is included in the selection it needs to be treated accordingly.
-      #In fact, this Variant includes also "special" subgroups (indicated as OmiGroup in refTable
-      #and collected in the omiGr variable) + Omicron/Omicron recombinants (recOmicron in refTable),
+      #If the Omicron variant is included in dataSel it needs to be treated accordingly.
+      #The Omicron variant, in fact, includes also Lineages belonging to the VBM subgroup,
       #so data corresponding to Omicron are adjusted in order to avoid counts repetition.
       omiData <- dataTable[,"Omicron"]
-      omiGrData <- rowSums(dataTable[,omiGr])
-      omiRecData <- dataTable[,"recOmicron"]
-      omiRemove <- omiGrData+omiRecData
-      omiData <- omiData-omiRemove
+      vbmData <- dataTable[,"VBM"]
+      omiData <- omiData-vbmData
       
       outputTable <- dataTable
       outputTable[,"Omicron"] <- omiData
@@ -794,9 +807,8 @@ regVarCat_dataSelector <- function(dataTable, refTable, dataElement) {
       
     }
     
-  } else if (dataElement%in%omiGr) {
-    #If dataElement belongs to the omiGr variable only data for the selected "special" element
-    #is included in the final data table.
+  } else if (dataElement=="VBM") {
+    #If dataElement equals "VBM" only data from this subgroup is included in the final data table.
     outputTable <- dataTable[,dataElement]
     
   } else {
@@ -804,21 +816,19 @@ regVarCat_dataSelector <- function(dataTable, refTable, dataElement) {
     #final input table for the HM are collected according to a specific set of conditions.
     #The dataSel variable collects the complete list of Variants belonging to the user-selected
     #category (dataElement).
-    dataSel <- unique(refTable[refTable$Cat==dataElement,]$Var)
+    dataSel <- unique(refTable[refTable$Status==dataElement,]$Variant)
     
     if ("Omicron"%in%dataSel) {
-      #If the Omicron Variant belongs to dataSel, its corresponding input data are adjusted in
-      #order to avoid repetitions (see above). Data from other Variants in dataSel are collected
-      #normally and data for omiGroups and recOmicron are added to the final table too.
+      #If the Omicron Variant belongs to dataSel, input data are adjusted in order to avoid repetitions
+      #(see above). Data from other Variants in dataSel are collected normally and data from the VBM
+      #subgroup is also added to the final table.
       omiData <- dataTable[,"Omicron"]
-      omiGrData <- dataTable[,omiGr]
-      omiRecData <- dataTable[,"recOmicron"]
-      omiRemove <- rowSums(omiGrData)+omiRecData
-      omiData <- omiData-omiRemove
+      vbmData <- dataTable[,"VBM"]
+      omiData <- omiData-vbmData
       
       outputTable <- dataTable[,dataSel]
       outputTable[,"Omicron"] <- omiData
-      outputTable <- cbind(outputTable, omiGrData, omiRecData)
+      outputTable <- cbind(outputTable, vbmData)
       
     } else {
       #If the Omicron Variant does not belong to dataSel, data for all Variants in the dataSel variable
@@ -868,17 +878,32 @@ dataReg_SubSorter <- function(dataTable, totSeq) {
   #period of interest.
   dataSubsetting <- dataTable[,colSums(dataTable)>0]
   
-  #Ordering dataTable in decreasing order according to cumulative freqeuncy (%).
-  dataOrdering <- as.data.frame(cbind(t(dataSubsetting),
-                                      Freq=colSums(dataSubsetting)/totSeq))
+  if (ncol(as.data.frame(dataSubsetting))>1) {
+    #Ordering dataTable in decreasing order according to cumulative freqeuncy (%).
+    dataOrdering <- as.data.frame(cbind(t(dataSubsetting),
+                                        Freq=colSums(dataSubsetting)/totSeq))
+    
+    dataOrdering <- dataOrdering[order(dataOrdering$Freq, decreasing = T),]
+    
+    dataOrdering$Freq <- NULL
+    
+    outTable <- t(dataOrdering)
+    
+    return(outTable)
+    
+  } else if (ncol(as.data.frame(dataSubsetting))==1) {
+    #If only a single feature of interest survives previous filters no ordering is required.
+    regions <- row.names(dataTable)
+    mutations <- names(which(colSums(dataTable)>0))
+    
+    outTable <- matrix(dataSubsetting)
+    row.names(outTable) <- regions
+    colnames(outTable) <- mutations
+    
+    return(outTable)
+    
+  }
   
-  dataOrdering <- dataOrdering[order(dataOrdering$Freq, decreasing = T),]
-  
-  dataOrdering$Freq <- NULL
-  
-  outTable <- t(dataOrdering)
-  
-  return(outTable)
 }
 
 
