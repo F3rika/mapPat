@@ -11,7 +11,7 @@ ui <- fluidPage(
            font-size: 75%;
            }"))),
   
-  titlePanel("CorGAT-tracker"),
+  titlePanel("mapPat"),
   
   #######OUTPUT REGION LAYOUT#######
   #Defining the layout of the output region.
