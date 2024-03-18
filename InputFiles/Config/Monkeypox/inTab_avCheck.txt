@@ -1,0 +1,3 @@
+Country	Lin	Mut	HeatChoroMap	TotReg	Var
+USA	Epiweek.USA.csv	USA_muts_perLin.csv	HeatmapRegLin_USA.csv	Total_USA_regions.csv	NA
+DEU	Epiweek.DEU.csv	DEU_muts_perLin.csv	HeatmapRegLin_DEU.csv	Total_DEU_regions.csv	NA

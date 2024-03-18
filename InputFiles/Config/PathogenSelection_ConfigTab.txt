@@ -1,0 +1,3 @@
+PathogenName	PathogenAbbr	CountryDef	TimeUn
+SARS-CoV-2	SARS-CoV-2	ITA	Weeks
+Monkeypox	Monkeypox	USA	Months
