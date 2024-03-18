@@ -52,9 +52,13 @@ totReg_path <- paste0(inputs_path,"totReg/")
 zippedFiles <- list.files(path = inputs_path,
                           pattern = "*\\.tar\\.gz$")
 
-toUnzip <- sapply(inputs_path, paste0, zippedFiles)
-
-sapply(toUnzip, untar, compressed = TRUE, exdir = inputs_path)
+if (length(zippedFiles)>0) {
+  
+  toUnzip <- sapply(inputs_path, paste0, zippedFiles)
+  
+  sapply(toUnzip, untar, compressed = TRUE, exdir = inputs_path)
+  
+}
 
 #######OPENING USEFUL FILES#######
 #Opening the Pathogen Selection Configuration Table. This table allows to associate each pathogen
