@@ -1238,67 +1238,6 @@ server <- function(input, output){
     perWeekTotSeqPlotter_BP(totSeq_perWeek)
   })
   
-  ###SCATTERPLOT###
-  ###Producing the input for and plotting the ScatterPlot (SP).
-  #Subsetting the Lineages input table respect to the minimum
-  #frequency (%) and the maximum number of displayed Lineages.
-  #The latter is selected by the user through the corresponding
-  #widget.
-#  allLinSP_Subsetting <- reactive({
-    #Checking input tables availability.
-#    linTab_checkInTabs()
-    
-    #Defining inputs.
-#    allLinSP_Subsetting_inTable <- timeSelector()$allLin
-#    totSeq <- seqSum()$totSeq
-#    allLinSP_Subsetting_minFreq <- input$lineagesFreq
-#    allLinSP_Subsetting_maxViz <- input$lineagesNum
-#    allLinSP_timeUnit <- pathogenSelConf_Table[pathogenSelConf_Table$PathogenAbbr==pathogenSel,]$TimeUn
-    
-    #Subsetting data.
-#    allLinSP_Subsetted <- dataFreqViz_Subsetter(allLinSP_Subsetting_inTable,
-#                                                totSeq,
-#                                                allLinSP_Subsetting_minFreq,
-#                                                allLinSP_Subsetting_maxViz,
-#                                                allLinSP_timeUnit)
-    
-    #The final input table MUST contain at least 1 Lineage.
-#    validate(need(nrow(allLinSP_Subsetted)>0,
-#                  paste("0 Lineages with a % of sequenced genomes higher than",
-#                        paste0(as.numeric(allLinSP_Subsetting_minFreq)*100,"%"),
-#                        "in the selected weeks range")))
-    
-#    return(list(allLinSP = allLinSP_Subsetted))
-#  })
-  
-  #Producing the color palette for the ScatterPlot (SP).
-#  allLinSP_Palette <- reactive({
-    #Defining inputs.
-#    allLinSP_tabPal <- allLinTheme
-#    allLinSP_Palette_inTable <- allLinSP_Subsetting()$allLinSP
-    
-    #Producing the color palette.
-#    allLinSP_Pal <- plotPalette(allLinSP_tabPal,
-#                                dataTable = allLinSP_Palette_inTable)
-    
-#    return(list(allLinSP = allLinSP_Pal))
-#  })
-  
-  #Generating a ScatterPlot (SP) that allows to compare the number
-  #of occurrences of a number n of Lineages of interest vs all other
-  #Lineages (if present) and the corresponding legend.
-#  output$lineagesSP <- renderPlot({
-    #Defining inputs.
-#    allLinSP_inTable <- allLinSP_Subsetting()$allLinSP
-#    allLinSP_Palette <- allLinSP_Palette()$allLinSP
-#    allLinSP_plotMain <- "Lineages"
-    
-    #Plotting.
-#    dataPlotter_SP(allLinSP_inTable,
-#                   allLinSP_Palette,
-#                   allLinSP_plotMain)
-#  })
-  
   ###HEATMAP & MAPS###
   ###Producing the common tables for the HeatMap (HM) and the Choropleth Maps (CM).
   #Calculating the total number of sequenced genomes for each Lineage
