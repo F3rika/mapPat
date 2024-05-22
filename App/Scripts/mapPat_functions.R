@@ -332,7 +332,8 @@ dataPlotter_SAC <- function(dataTable, dataPalette, plotMain, timeUn) {
               linewidth = 0.2) +
     scale_fill_manual(values = dataPalette) +
     theme_classic() +
-    theme(plot.title = element_text(hjust = 0.5),
+    theme(text = element_text(size = 15),
+          plot.title = element_text(hjust = 0.5),
           axis.text.y = element_text(angle = 90, vjust = 0.5, hjust = 0.5),
           legend.title = element_text(colour = "transparent"),
           legend.position = "top") +
@@ -371,7 +372,8 @@ perWeekTotSeqPlotter_BP <- function(dataVector) {
     scale_fill_manual(values = "#696969",
                       guide = guide_legend(override.aes = list(alpha = 0))) +
     theme_classic() +
-    theme(axis.text.y = element_text(angle = 90, vjust = 0.5, hjust = 0.5),
+    theme(text = element_text(size = 15),
+          axis.text.y = element_text(angle = 90, vjust = 0.5, hjust = 0.5),
           legend.title = element_text(colour = "transparent"),
           legend.text = element_text(colour = "transparent"),
           legend.position = "bottom") +
@@ -381,9 +383,9 @@ perWeekTotSeqPlotter_BP <- function(dataVector) {
     scale_y_continuous(expand = c(0,0),
                        trans = "reverse") +
     geom_text(aes(label = yValues),
-              hjust = -0.1,
+              position = position_stack(vjust = 0.5),
               angle = 90,
-              size = 3,
+              size = 5,
               colour = "white") +
     labs(x = NULL,
          y = "#Genomes")
@@ -417,7 +419,8 @@ dataPlotter_SP <- function(dataTable, dataPalette, plotMain, timeUn) {
     geom_line(linewidth = 1) +
     scale_colour_manual(values = dataPalette) +
     theme_classic() +
-    theme(plot.title = element_text(hjust = 0.5),
+    theme(text = element_text(size = 15),
+          plot.title = element_text(hjust = 0.5),
           axis.text.y = element_text(angle = 90, vjust = 0.5, hjust = 0.5),
           legend.title = element_text(colour = "transparent"),
           legend.position = "top") +
@@ -453,11 +456,12 @@ dataPlotter_HM <- function(dataTable, dataNum, dataPalette, plotMain, tagColor) 
            main = plotMain,
            display_numbers = T,
            number_color = tagColor,
-           fontsize_col =  9,
-           fontsize_row = 9,
-           fontsize_number = 9,
-           cellheight = 15,
-           cellwidth = 30,
+           fontsize = 13,
+           fontsize_col =  13,
+           fontsize_row = 13,
+           fontsize_number = 13,
+           cellheight = 23,
+           cellwidth = 38,
            treeheight_row = 0,
            treeheight_col = 0)
 }
@@ -483,7 +487,8 @@ dataPlotter_regBP <- function(dataTable, dataPalette, plotMain) {
          aes(x = xValues, y = yValues)) +
     geom_bar(stat = "identity", fill = dataPalette) +
     theme_classic() +
-    theme(plot.title = element_text(hjust = 0.5),
+    theme(text = element_text(size = 15),
+          plot.title = element_text(hjust = 0.5),
           axis.text.y = element_text(angle = 90, vjust = 0.5, hjust = 0.5),
           legend.title = element_text(colour = "transparent"),
           legend.position = "top") +
@@ -523,7 +528,8 @@ dataPlotter_BP <- function(dataTable, dataPalette, plotMain, timeUn) {
     geom_bar(stat = "identity") +
     scale_fill_manual(values = dataPalette) +
     theme_classic() +
-    theme(plot.title = element_text(hjust = 0.5),
+    theme(text = element_text(size = 15),
+          plot.title = element_text(hjust = 0.5),
           axis.text.y = element_text(angle = 90, vjust = 0.5, hjust = 0.5),
           legend.title = element_text(colour = "transparent"),
           legend.position = "top") +
@@ -566,7 +572,8 @@ dataPlotter_ChoroMap <- function(dataTable, dataElement, geomData, dataPalette, 
                 weight = 1.5,
                 fillColor = as.vector(dataPalette),
                 fillOpacity = 1,
-                label = mapLabels) %>%
+                label = mapLabels,
+                labelOptions = labelOptions(textsize = "13px")) %>%
     addLegend(colors = referencePalette,
               labels = legendLabels,
               opacity = 1,
