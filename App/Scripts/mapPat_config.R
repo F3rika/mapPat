@@ -37,9 +37,10 @@ library(pheatmap)
 library(rgeoboundaries)
 library(leaflet)
 library(htmltools)
+gb_get_cache(create = TRUE)
 
 #######DEFINING PATHS FOR INPUT FILES#######
-inputs_path <- "../InputData/"
+inputs_path <- "./inputData/"
 config_path <- paste0(inputs_path,"Config/")
 var_path <- paste0(inputs_path,"Var/")
 allLin_path <- paste0(inputs_path,"allLin/")
