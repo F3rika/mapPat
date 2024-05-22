@@ -1,0 +1,177 @@
+Country	Country_ISO	Country_ADM
+Denmark	DNK	ADM1
+Brazil	BRA	ADM1
+Georgia	GEO	ADM2
+Malaysia	MYS	ADM1
+Kazakhstan	KAZ	ADM1
+Guinea	GIN	ADM2
+Cote d'Ivoire	CIV	ADM1
+Uganda	UGA	ADM2
+Monaco	MCO	ADM1
+Honduras	HND	ADM1
+Ecuador	ECU	ADM1
+Norway	NOR	ADM1
+Nigeria	NGA	ADM2
+Canada	CAN	ADM1
+New Zealand	NZL	ADM1
+Solomon Is	SLB	ADM1
+Panama	PAN	ADM2
+Kiribati	KIR	ADM1
+South Sudan	SSD	ADM2
+Benin	BEN	ADM1
+Djibouti	DJI	ADM1
+Burkina Faso	BFA	ADM1
+Zimbabwe	ZWE	ADM1
+Sweden	SWE	ADM2
+Malta	MLT	ADM1
+Chile	CHL	ADM1
+Maldives	MDV	ADM2
+Pakistan	PAK	ADM2
+South Africa	ZAF	ADM1
+Philippines	PHL	ADM1
+Costa Rica	CRI	ADM2
+Montenegro	MNE	ADM1
+Japan	JPN	ADM2
+Palau	PLW	ADM1
+Nicaragua	NIC	ADM1
+Egypt	EGY	ADM1
+The Bahamas	BHS	ADM1
+Guatemala	GTM	ADM1
+Liechtenstein	LIE	ADM1
+United Kingdom	GBR	ADM1
+Syria	SYR	ADM1
+Latvia	LVA	ADM1
+Tanzania	TZA	ADM1
+Somalia	SOM	ADM1
+Australia	AUS	ADM1
+Lithuania	LTU	ADM1
+Rep of the Congo	COG	ADM1
+Poland	POL	ADM2
+Mongolia	MNG	ADM1
+Liberia	LBR	ADM1
+Netherlands	NLD	ADM1
+Slovakia	SVK	ADM1
+Dominica	DMA	ADM1
+Azerbaijan	AZE	ADM1
+Togo	TGO	ADM2
+Guinea-Bissau	GNB	ADM1
+United States	USA	ADM1
+Taiwan	TWN	ADM1
+Ireland	IRL	ADM1
+Israel	ISR	ADM2
+Thailand	THA	ADM2
+Botswana	BWA	ADM2
+Papua New Guinea	PNG	ADM1
+Belgium	BEL	ADM2
+Sri Lanka	LKA	ADM1
+Slovenia	SVN	ADM1
+Kyrgyzstan	KGZ	ADM2
+Mauritius	MUS	ADM1
+Niger	NER	ADM2
+Cyprus	CYP	ADM1
+Fiji	FJI	ADM1
+China	CHN	ADM2
+Kosovo	XKX	ADM1
+Russia	RUS	ADM1
+Belarus	BLR	ADM2
+St Kitts & Nevis	KNA	ADM1
+Romania	ROU	ADM1
+Timor-Leste	TLS	ADM1
+Belize	BLZ	ADM1
+Argentina	ARG	ADM1
+Kenya	KEN	ADM1
+Lebanon	LBN	ADM2
+India	IND	ADM1
+Ethiopia	ETH	ADM1
+Sierra Leone	SLE	ADM1
+Mozambique	MOZ	ADM1
+Cuba	CUB	ADM1
+Serbia	SRB	ADM1
+Andorra	AND	ADM1
+Lesotho	LSO	ADM2
+Algeria	DZA	ADM1
+Afghanistan	AFG	ADM1
+Burundi	BDI	ADM1
+Namibia	NAM	ADM1
+Ukraine	UKR	ADM2
+Marshall Is	MHL	ADM1
+Vanuatu	VUT	ADM1
+United Arab Emirates	ARE	ADM1
+Albania	ALB	ADM2
+Peru	PER	ADM1
+Greece	GRC	ADM2
+Sudan	SDN	ADM2
+Kuwait	KWT	ADM2
+South Korea	KOR	ADM1
+Gabon	GAB	ADM1
+Estonia	EST	ADM2
+Oman	OMN	ADM1
+Portugal	PRT	ADM2
+Tunisia	TUN	ADM1
+Germany	DEU	ADM1
+Laos	LAO	ADM1
+Cambodia	KHM	ADM1
+Venezuela	VEN	ADM1
+Turkey	TUR	ADM1
+Zambia	ZMB	ADM1
+Armenia	ARM	ADM1
+Bangladesh	BGD	ADM2
+Bolivia	BOL	ADM1
+Paraguay	PRY	ADM2
+Tonga	TON	ADM1
+Senegal	SEN	ADM1
+Cameroon	CMR	ADM1
+Finland	FIN	ADM1
+Luxembourg	LUX	ADM2
+Morocco	MAR	ADM1
+Colombia	COL	ADM1
+Ghana	GHA	ADM1
+Haiti	HTI	ADM1
+Switzerland	CHE	ADM1
+Saudi Arabia	SAU	ADM2
+Malawi	MWI	ADM1
+Libya	LBY	ADM1
+Madagascar	MDG	ADM2
+Iraq	IRQ	ADM1
+Uruguay	URY	ADM1
+Mauritania	MRT	ADM1
+Comoros	COM	ADM2
+Barbados	BRB	ADM1
+Indonesia	IDN	ADM1
+Spain	ESP	ADM1
+France	FRA	ADM1
+Seychelles	SYC	ADM1
+Equatorial Guinea	GNQ	ADM1
+Italy	ITA	ADM2
+Cabo Verde	CPV	ADM1
+Angola	AGO	ADM2
+Dem Rep of the Congo	COD	ADM1
+Singapore	SGP	ADM1
+Moldova	MDA	ADM1
+Samoa	WSM	ADM1
+Central African Rep	CAF	ADM2
+Jamaica	JAM	ADM1
+Vietnam	VNM	ADM2
+Bhutan	BTN	ADM2
+Chad	TCD	ADM2
+Nepal	NPL	ADM1
+Dominican Republic	DOM	ADM1
+Hungary	HUN	ADM2
+Guyana	GUY	ADM1
+Mexico	MEX	ADM1
+Uzbekistan	UZB	ADM1
+Iceland	ISL	ADM1
+Iran	IRN	ADM1
+Rwanda	RWA	ADM2
+Croatia	HRV	ADM1
+El Salvador	SLV	ADM2
+Austria	AUT	ADM1
+Czechia	CZE	ADM2
+Bulgaria	BGR	ADM1
+Brunei	BRN	ADM1
+St Vincent & the Grenadines	VCT	ADM1
+Suriname	SUR	ADM1
+Qatar	QAT	ADM1
+Mali	MLI	ADM1
+Jordan	JOR	ADM1
+Grenada	GRD	ADM1
