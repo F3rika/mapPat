@@ -8,7 +8,7 @@ ui <- fluidPage(
     tags$style(
       HTML(".shiny-output-error-validation {
            color: blue;
-           font-size: 75%;
+           font-size: 85%;
            }"))),
   
   titlePanel("mapPat"),
@@ -44,20 +44,19 @@ ui <- fluidPage(
     #   choice for a user-selected country in the time period of interest.
     tabPanel("Variants",
              plotOutput("variantsSAC",
-                        height = "500px"),
+                        height = "700px"),
              plotOutput("varTab_perWeekSeq",
-                        height = "500px"),
+                        height = "700px"),
              plotOutput("variantsBP_LinVar",
-                        height = "500px"),
-             div(style='height:500px;overflow-y: scroll;',
-                 uiOutput("varHM_plotUI")),
+                        height = "700px"),
+             uiOutput("varHM_plotUI"),
              fluidRow(
                column(6,
                       leafletOutput("variantsCM_1",
-                                    height = "500px")),
+                                    height = "700px")),
                column(6,
                       leafletOutput("variantsCM_2",
-                                    height = "500px")))),
+                                    height = "700px")))),
     
     #######LINEAGES TAB#######
     #Plots are produced using the input tables of Lineages counts.
@@ -74,20 +73,17 @@ ui <- fluidPage(
     #   choice for a user-selected country in the time period of interest.
     tabPanel("Lineages",
              plotOutput("lineagesSAC",
-                        height = "500px"),
+                        height = "700px"),
              plotOutput("linTab_perWeekSeq",
-                        height = "500px"),
-#             plotOutput("lineagesSP",
-#                        height = "500px"),
-             div(style='height:500px;overflow-y: scroll;',
-                 uiOutput("allLinHM_plotUI")),
+                        height = "700px"),
+             uiOutput("allLinHM_plotUI"),
              fluidRow(
                column(6,
                       leafletOutput("lineagesCM_1",
-                                    height = "500px")),
+                                    height = "700px")),
                column(6,
                       leafletOutput("lineagesCM_2",
-                                    height = "500px")))),
+                                    height = "700px")))),
     
     #######MUTATIONS TAB#######
     #These plots are produced using the input tables of Mutations counts.
@@ -103,20 +99,19 @@ ui <- fluidPage(
     #   choice for the user-selected Lineage and country in the time period of interest.
     tabPanel("Mutations",
              plotOutput("mutationsBP_1",
-                        height = "500px"),
+                        height = "700px"),
              plotOutput("mutationsBP_2",
-                        height = "500px"),
+                        height = "700px"),
              plotOutput("mutTab_perWeekSeq",
-                        height = "500px"),
-             div(style='height:500px;overflow-y: scroll;',
-                 uiOutput("mutHM_plotUI")),
+                        height = "700px"),
+             uiOutput("mutHM_plotUI"),
              fluidRow(
                column(6,
                       leafletOutput("mutationsCM_1",
-                                    height = "500px")),
+                                    height = "700px")),
                column(6,
                       leafletOutput("mutationsCM_2",
-                                    height = "500px"))))
+                                    height = "700px"))))
   ),
   
   hr(style = "border-top: 1px solid #A9A9A9;"),
