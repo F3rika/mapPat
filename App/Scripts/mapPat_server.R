@@ -852,20 +852,11 @@ server <- function(input, output){
     #Defining inputs.
     varHM_plotUI_inTable <- varHM_Normalization()$varHM
     varHM_plotUI_nReg <- nrow(varHM_plotUI_inTable)
-    varHM_plotUI_plotHeight <- 15*varHM_plotUI_nReg+100
+    varHM_plotUI_plotHeight <- 30*varHM_plotUI_nReg
     
     #Generating the plot area.
-    if (varHM_plotUI_plotHeight>500) {
-      
-      plotOutput("variantsHM",
-                 height = paste0(varHM_plotUI_plotHeight, "px"))
-      
-    } else {
-      
-      plotOutput("variantsHM",
-                 height = "500px")
-      
-    }
+    plotOutput("variantsHM",
+               height = paste0(varHM_plotUI_plotHeight, "px")
     
   })
   
@@ -1329,21 +1320,11 @@ server <- function(input, output){
     #Defining inputs.
     allLinHM_plotUI_inTable <- allLinHM_Normalization()$allLinHM
     allLinHM_plotUI_nReg <- nrow(allLinHM_plotUI_inTable)
-    allLinHM_plotUI_plotHeight <- 15*allLinHM_plotUI_nReg+100
+    allLinHM_plotUI_plotHeight <- 30*allLinHM_plotUI_nReg
     
-    #Generating the plot area.
-    if (allLinHM_plotUI_plotHeight>500) {
-      
-      plotOutput("lineagesHM",
-                 height = paste0(allLinHM_plotUI_plotHeight, "px"))
-      
-    } else {
-      
-      plotOutput("lineagesHM",
-                 height = "500px")
-      
-    }
-    
+    plotOutput("lineagesHM",
+               height = paste0(allLinHM_plotUI_plotHeight, "px"))
+        
   })
   
   #Generating the HeatMap (HM) and the corresponding legend.
@@ -1898,21 +1879,11 @@ server <- function(input, output){
     #Defining inputs.
     mutHM_plotUI_inTable <- mutHM_Normalization()$mutHM
     mutHM_plotUI_nReg <- nrow(mutHM_plotUI_inTable)
-    mutHM_plotUI_plotHeight <- 15*mutHM_plotUI_nReg+100
+    mutHM_plotUI_plotHeight <- 30*mutHM_plotUI_nReg
     
-    #Generating the plot area.
-    if (mutHM_plotUI_plotHeight>500) {
-      
-      plotOutput("mutationsHM",
-                 height = paste0(mutHM_plotUI_plotHeight, "px"))
-      
-    } else {
-      
-      plotOutput("mutationsHM",
-                 height = "500px")
-      
-    }
-    
+    plotOutput("mutationsHM",
+               height = paste0(mutHM_plotUI_plotHeight, "px"))
+        
   })
   
   #Generating the HeatMap (HM) and the corresponding legend.
