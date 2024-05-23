@@ -26,6 +26,7 @@ if (sum(isInstalled)<7) {
   } else {
     
     install.packages(toInstall)
+    
   }
 }
 
