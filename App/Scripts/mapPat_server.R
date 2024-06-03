@@ -856,7 +856,7 @@ server <- function(input, output){
     
     #Generating the plot area.
     plotOutput("variantsHM",
-               height = paste0(varHM_plotUI_plotHeight, "px")
+               height = paste0(varHM_plotUI_plotHeight, "px"))
     
   })
   
