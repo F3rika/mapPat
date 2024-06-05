@@ -1,2 +1,0 @@
-Country	Lin	Mut	HeatChoroMap	TotReg	Var
-ITA	Epiweek.ITA.csv	ITA_muts_perLin.csv	HeatmapRegLin_ITA.csv	Total_ITA_regions.csv	Epiweek.Var.ITA.csv
