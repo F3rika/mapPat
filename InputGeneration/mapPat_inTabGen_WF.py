@@ -28,7 +28,7 @@ def main():
      parser.add_argument('-i', '--input_file', help='Input file. Metadata dowloaded from either GISAID or Nexstrain.')
      parser.add_argument('-s', '--seq', required=False, help='Sequencing file in FASTA format.')
      parser.add_argument('-p', '--pathogen', choices=['SARS-CoV-2', 'mPox'], help='Name of the pathogen of interest. Allowed values: SARS-CoV-2, mPox.')
-     parser.add_argument('-db', '--database', choices=['GISAID', 'NextStrain'], help='Name of the database from which metadata are dowloaded. Allowed values: GISAID, NextStrain.')
+     parser.add_argument('-db', '--database', choices=['GISAID', 'Nextstrain'], help='Name of the database from which metadata are dowloaded. Allowed values: GISAID, Nextstrain.')
      parser.add_argument('-o', '--output_file', help='Basename of the compressed file where mapPat outputs are stored.')
      
      inputs=parser.parse_args()
@@ -57,7 +57,7 @@ def main():
          command('tar -czvf %s_mapPatInterOut.tar.gz ./%s_mapPatInterOut --remove-files'%(inputs.output_file, inputs.output_file))
          command('tar -czvf %s_mapPatOut.tar.gz ./%s_mapPatOut --remove-files'%(inputs.output_file, inputs.output_file))
      
-     elif inputs.database=='NextStrain' and inputs.pathogen=='mPox':
+     elif inputs.database=='Nextstrain' and inputs.pathogen=='mPox':
          command('mkdir %s_mapPatInterOut'%(inputs.output_file))
          command('mkdir %s_mapPatOut'%(inputs.output_file))
          
