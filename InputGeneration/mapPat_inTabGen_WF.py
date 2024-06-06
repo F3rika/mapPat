@@ -61,7 +61,7 @@ def main():
          command('mkdir %s_mapPatInterOut'%(inputs.output_file))
          command('mkdir %s_mapPatOut'%(inputs.output_file))
          
-         command('perl ./Scripts/addToTableNextStrain.pl --metadata %s --seq %s --outfile MpoxTable.HaploCoV --nproc 18 --ref ./Config/mPox_reference.fasta'%(inputs.input_file, inputs.seq))
+         command('perl ./Scripts/addToTableNextstrain.pl --metadata %s --seq %s --outfile MpoxTable.HaploCoV --nproc 18 --ref ./Config/mPox_reference.fasta'%(inputs.input_file, inputs.seq))
          
          command('perl ./Scripts/countMlin.pl MpoxTable.HaploCoV > linDefMut.csv')
          
