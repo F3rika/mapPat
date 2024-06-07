@@ -3,7 +3,7 @@ use POSIX;
 
 ###########################################################
 # country to ISO
-my $fileConvert="./Config/coutryToISO.txt";
+my $fileConvert="coutryToISO.txt";
 open(IN,$fileConvert);
 my %converter=();
 while(<IN>)
@@ -65,7 +65,7 @@ linearize("tmpOfile.txt",$data,$ofile);
 
 sub metadataToPos
 {
-	my $keepFile="./Config/metaDkeep";
+	my $keepFile="metaDkeep";
 	my %lock=();
 	if (-e $keepFile)
 	{
@@ -90,7 +90,7 @@ sub metadataToPos
 
 sub areas
 {
-        my $areaFile="./Config/areaFile";
+        my $areaFile="areaFile";
 	unless (-e $areaFile)
 	{
 		download_areas();
