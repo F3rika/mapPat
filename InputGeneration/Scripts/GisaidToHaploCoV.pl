@@ -157,7 +157,7 @@ sub metadataToLists
 		my $delta_sub=ceil($delta/7);
 		print OUT "$id\t$d\t$delta\t$s\t$delta_sub\t$continent\t$area\t$country\t$region\t$p\t$var\n";
 	}
-	system("sort -T /home/eferrandi/tmpsort/ -nk 5 $ofile > $ofile.tmp")==0||die("could not sort file\n");
+	system("sort -nk 5 $ofile > $ofile.tmp")==0||die("could not sort file\n");
 	system("mv $ofile.tmp $ofile")==0||die();
 }
 
