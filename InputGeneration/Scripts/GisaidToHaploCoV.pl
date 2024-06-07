@@ -1,7 +1,7 @@
 use strict;
 use POSIX;
 
-my $fileConvert="./Config/coutryToISO.txt";
+my $fileConvert="coutryToISO.txt";
 open(IN,$fileConvert);
 my %converter=();
 while(<IN>)
@@ -70,7 +70,7 @@ sub metadataToPos
 
 sub areas
 {
-        my $areaFile="./Config/areaFile";
+        my $areaFile="areaFile";
 	unless (-e $areaFile)
 	{
 		download_areas();
@@ -161,21 +161,6 @@ sub metadataToLists
 	system("mv $ofile.tmp $ofile")==0||die();
 }
 
-sub process_cities
-{
-	my $file="./Config/worldcities.csv";
-	open(IN,">:utf8",$file);
-	my %citir=();
-	while(<IN>)
-	{
-		my ($city,$admin)=(split(/\,/))[1,7];
-		$city=~s/\s+//;
-		$city=lc $city;
-		#print "$city-> $admin\n";
-		$citir{$city}=$admin;	
-	}
-	return \%citir;
-}
 sub fix_strain
 {
         my $strain=$_[0];
