@@ -29,7 +29,7 @@ def main():
      parser.add_argument('-pc', '--path_config', default='./Config', help='Path to the "Config" folder which collects required configuration files.')
      parser.add_argument('-ps', '--path_scripts', default='./Scripts', help='Path to the "Scripts" folder which collects required scripts.')
      parser.add_argument('-s', '--seq', required=False, help='Sequencing file in FASTA format.')
-     parser.add_argument('-rf', '--refSeq', required=False, help='Reference sequence in FASTA format.')
+     parser.add_argument('-rs', '--refSeq', required=False, help='Reference sequence in FASTA format.')
      parser.add_argument('-p', '--pathogen', help='Name of the pathogen of interest.')
      parser.add_argument('-db', '--database', choices=['GISAID', 'Nextstrain'], help='Name of the database from which metadata are dowloaded. Allowed values: GISAID, Nextstrain.')
      parser.add_argument('-o', '--output_file', help='Basename of the compressed file where mapPat outputs are stored.')
