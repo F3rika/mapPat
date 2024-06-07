@@ -39,7 +39,7 @@ my $metadata=$arguments{"--metadata"}; #file con varianti
 my $ofile=$arguments{"--outfile"};
 my $N=$arguments{"--nproc"};
 my $dayFrom=$arguments{"--dayFrom"};
-
+my $refile=$arguments{"--ref"};
 
 
 check_exists_command('mkdir') or die "$0 requires mkdir to create a temporary directory\n";
@@ -52,7 +52,6 @@ check_exists_command('nucmer') or die "$0 requires nucmer from the mummer packag
 ###########################################################
 # process the data
 
-my $refile=$arguments{"--ref"};
 
 my ($data,$fileTosplit)=metadataToLists($seq,$metadata,$ofile);
 #
@@ -331,7 +330,7 @@ sub parallel_align
                 {
                         die "Cannot fork a child: $!";
                 }elsif ($pid == 0) {
-                        exec("perl ./Scripts/align.pl --infile $file --outfile $file\_variants") || die "can't exec $!";
+                        exec("perl ./Scripts/align.pl --infile $file --ref $refile --outfile $file\_variants") || die "can't exec $!";
                         exit(0);
                 }else {
                         push(@childs,$pid);
