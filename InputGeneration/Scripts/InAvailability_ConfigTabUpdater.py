@@ -34,7 +34,7 @@ def update_inAvTab(inAvFile, selPat, refCountryList=None):
                      
                      outFile.write(outLine)
          
-         elif selPat=='mPox':
+         else:
              for line in AVA_Table:
                  outLine=line.replace('\n', '')+'\tNA\n'
                  
@@ -48,7 +48,7 @@ def main():
      
      parser=argparse.ArgumentParser()
      
-     parser.add_argument('-p', '--pathogen', choices=['SARS-CoV-2', 'mPox'], help='Name of the pathogen of interest. Allowed values: SARS-CoV-2, mPox.')
+     parser.add_argument('-p', '--pathogen', help='Name of the pathogen of interest.')
      parser.add_argument('-rc', '--refCountry_file', required=False, help='Reference file in .txt format. Complete list of countries for which counts tables are generaed.')
      parser.add_argument('-iav', '--inAvail_file', help='Input availability file in .txt format. Configuration table that lists which input tables are available for each analysed country')
      
@@ -59,7 +59,7 @@ def main():
          
          update_inAvTab(inputs.inAvail_file, inputs.pathogen, REF_Country)
      
-     elif inputs.pathogen=='mPox':
+     else:
          update_inAvTab(inputs.inAvail_file, inputs.pathogen)
 
 
