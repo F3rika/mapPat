@@ -3,30 +3,6 @@
 # input: file con i metadati e mutazioni
 # file richiesti: allADM_CountryRegion_AssocTab.txt LinDefMut.csv 
 
-%tests=
-(
-"ITA"=>1,
-"DEU"=>1,
-"FRA"=>1,
-"SWE"=>1,
-"ESP"=>1,
-"AUT"=>1,
-"TUR"=>1,
-"MEX"=>1,
-"CZE"=>1,
-"PRT"=>1,
-"CHL"=>1,
-"ARG"=>1,
-"KEN"=>1,
-"ECU"=>1,
-"MUS"=>1,
-"NGA"=>1,
-"PAK"=>1,
-"GTM"=>1,
-"BWA"=>1
-);
-
-
 open(IN,'<:encoding(UTF-8)',"./Config/NEW_allADM_CountryRegion_AssocTab.txt");
 while(<IN>)
 {
@@ -88,7 +64,6 @@ while(<IN>)
 	chomp();
 	($week,$country,$region,$mut,$lin)=(split(/\t/))[4,7,8,10,9];
 	$region=$CVR{$region} if $CVR{$region};
-	#next unless $tests{$country};
 	#print "$country\n";
 	#print "$week $country $region $mut $lin\n"; #if $country ne "FRA";		
 	#print("non trovo $region, il paese era $country\n") if  (!$listRegTarget{$region} && $region ne "NA");
