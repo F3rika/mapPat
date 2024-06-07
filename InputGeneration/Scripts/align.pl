@@ -6,6 +6,7 @@ use strict;
 my %arguments=
 (
 "--infile"=>"na",		 # name of the input file
+"--ref"=>"na",
 "--outfile"=>"varcall.list", # folder for genome sequence file
 "--genomes"=>"Tgenomes"
 );
@@ -19,8 +20,8 @@ check_input_arg_valid();
 my $file=$arguments{"--infile"};
 my $outfile=$arguments{"--outfile"};
 my $genomesF=$arguments{"--genomes"};
+my $refile=$arguments{"--ref"};
 
-my $refile="./Config/mPox_reference.fasta";
 
 check_exists_command('mkdir') or die "$0 requires mkdir to create a temporary directory\n";
 
@@ -224,6 +225,10 @@ sub check_input_arg_valid
 		my $f=$arguments{"--infile"};
                 die("No valid input file provided. $f does not exist!");
         	
+	}elsif($arguments{"--ref"} eq "na" ||  (! -e $arguments{"--ref"})){
+		print_help();
+                my $f=$arguments{"--ref"};
+                die("No valid input reference file provided. $f does not exist!");
 	}
 
 }
@@ -238,13 +243,12 @@ sub print_help
         print " Input genomes, in multifasta format are provided by the --file parameter.\n"; 
 	print " While --genomes specify the name of the temporary output files directory\n\n";
         print "##INPUT PARAMETERS\n\n";
-        print "--infile <<filename>>\t provides a multifasta of genome sequences\n";
+        print "--infile <<filename>>\t multifasta of genome sequences\n";
+	print "--ref <<filename>>\t reference genome file\n";
         print "--genomes <<dir name>>\t defaults to ./genomes\n";
 	print "--outfile <<filename>>\t name of the output file. Defaults to varcall.list\n";
-        print "\nTo run the program you MUST provide at least --infile\n";
+        print "\nTo run the program you MUST provide at least --infile and  --ref\n";
         print "the file needs to be in the current folder.\n\n";
         print "\n##EXAMPLE:\n\n";
-        print "1# input is multi-fasta (apollo.fa):\nperl align.pl --infile apollo.fa\n\n";
+        print "1# input is multi-fasta (apollo.fa):\nperl align.pl --infile apollo.fa --ref ref.fa\n\n";
 }
-
-
