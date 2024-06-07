@@ -39,6 +39,8 @@ def main():
      if inputs.database=='GISAID' and inputs.pathogen=='SARS-CoV-2':
          command('mkdir %s_mapPatInterOut'%(inputs.output_file))
          command('mkdir %s_mapPatOut'%(inputs.output_file))
+
+         command('cp %s/{LinVar_AssocTab.txt,LinVBM_AssocTab.txt,SARS-CoV-2_LineagesAliases.json,coutryToISO.txt,areaFile,NEW_allADM_CountryRegion_AssocTab.txt} .'%(inputs.path_config))
          
          command('perl %s/GisaidToHaploCoV.pl --metadata %s --outfile SARS-CoV-2.HaploCoV'%(inputs.path_scripts, inputs.input_file))
          
@@ -53,6 +55,8 @@ def main():
          command('python3 %s/Var_CountsTabBuilder.py -rc countriesListTracker.txt -rv LinVar_ConvTabTracker.txt'%(inputs.path_scripts))
          
          command('python3 %s/InAvailability_ConfigTabUpdater.py -iav inTab_avCheck_tmp.txt -rc countriesListTracker.txt -p SARS-CoV-2'%(inputs.path_scripts))
+
+         command('rm LinVar_AssocTab.txt LinVBM_AssocTab.txt SARS-CoV-2_LineagesAliases.json coutryToISO.txt areaFile NEW_allADM_CountryRegion_AssocTab.txt')
          
          command('mv -t ./%s_mapPatInterOut linDefMut.csv SARS-CoV-2.HaploCoV inTab_avCheck_tmp.txt'%(inputs.output_file))
          command('mv -t ./%s_mapPatOut Epiweek.*.csv *_muts_perLin.csv HeatmapRegLin_*.csv Total_*_regions.csv countriesListTracker.txt inTab_avCheck.txt LinVar_ConvTabTracker.txt'%(inputs.output_file))
@@ -63,6 +67,8 @@ def main():
      elif inputs.database=='Nextstrain' and inputs.pathogen!='SARS-CoV-2':
          command('mkdir %s_mapPatInterOut'%(inputs.output_file))
          command('mkdir %s_mapPatOut'%(inputs.output_file))
+
+         command('cp %s/{coutryToISO.txt,areaFile,NEW_allADM_CountryRegion_AssocTab.txt,metaDkeep} .'%(inputs.path_config))
          
          command('perl %s/addToTableNextstrain.pl --metadata %s --seq %s --outfile %sTable.HaploCoV --nproc 18 --ref %s'%(inputs.path_scripts, inputs.input_file, inputs.seq, inputs.pathogen, inputs.refSeq))
          
@@ -73,6 +79,8 @@ def main():
          build_coutriesListTracker('inTab_avCheck_tmp.txt')
          
          command('python3 %s/InAvailability_ConfigTabUpdater.py -iav inTab_avCheck_tmp.txt -p mPox'%(inputs.path_scripts))
+
+         command('rm coutryToISO.txt areaFile NEW_allADM_CountryRegion_AssocTab.txt metaDkeep')
          
          command('mv -t ./%s_mapPatInterOut %sTable.HaploCoV linDefMut.csv inTab_avCheck_tmp.txt'%(inputs.output_file, inputs.pathogen))
          command('mv ./Tgenomes ./%s_mapPatInterOut'%(inputs.output_file))
