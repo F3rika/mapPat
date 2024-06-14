@@ -91,7 +91,6 @@ sub metadataToLists
 {
 	my $metadataFile=$_[0];
 	my $ofile=$_[1];
-	my %cities=process_cities();
 	open (OUT,">$ofile");	
 	open(IN,$metadataFile);
 	my $header=<IN>;
@@ -144,7 +143,6 @@ sub metadataToLists
 		$continent=~s/\s+//g;
 		$region=~s/\s+//g;
 		my $lregion=lc $region;
-		$region=$cities{$lregion} if $cities{$lregion};
 		$continent="NA" if $continent eq "";
 		$country="NA" if $country eq "";
 		$region="NA" if $region eq "";
