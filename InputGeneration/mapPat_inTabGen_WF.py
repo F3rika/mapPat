@@ -40,7 +40,10 @@ def main():
          command('mkdir %s_mapPatInterOut'%(inputs.output_file))
          command('mkdir %s_mapPatOut'%(inputs.output_file))
 
-         command('cp %s/{LinVar_AssocTab.txt,LinVBM_AssocTab.txt,SARS-CoV-2_LineagesAliases.json,coutryToISO.txt,areaFile,NEW_allADM_CountryRegion_AssocTab.txt} .'%(inputs.path_config))
+         filesToCopy=['LinVar_AssocTab.txt', 'LinVBM_AssocTab.txt', 'SARS-CoV-2_LineagesAliases.json', 'coutryToISO.txt', 'areaFile', 'NEW_allADM_CountryRegion_AssocTab.txt']
+
+         for fileName in filesToCopy:
+             command('cp %s/%s .'%(inputs.path_config, fileName))
          
          command('perl %s/GisaidToHaploCoV.pl --metadata %s --outfile SARS-CoV-2.HaploCoV'%(inputs.path_scripts, inputs.input_file))
          
@@ -68,7 +71,10 @@ def main():
          command('mkdir %s_mapPatInterOut'%(inputs.output_file))
          command('mkdir %s_mapPatOut'%(inputs.output_file))
 
-         command('cp %s/{coutryToISO.txt,areaFile,NEW_allADM_CountryRegion_AssocTab.txt,metaDkeep} .'%(inputs.path_config))
+         filesToCopy=['coutryToISO.txt', 'areaFile', 'NEW_allADM_CountryRegion_AssocTab.txt', 'metaDkeep']
+
+         for fileName in filesToCopy:
+             command('cp %s/%s .'%(inputs.path_config, fileName))
          
          command('perl %s/addToTableNextstrain.pl --metadata %s --seq %s --outfile %sTable.HaploCoV --nproc 18 --ref %s'%(inputs.path_scripts, inputs.input_file, inputs.seq, inputs.pathogen, inputs.refSeq))
          
