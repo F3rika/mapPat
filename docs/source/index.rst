@@ -48,5 +48,4 @@ A more detailed description of the control panel, customizable parameters and pl
    inReqIntro.rst
    inReqCounts.rst
    inReqConfig.rst
-   useGuide.rst
    customGuide.rst
