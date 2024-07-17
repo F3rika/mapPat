@@ -8,5 +8,5 @@ Data and plots customisation
 | Note that all widgets associated with the Variants Tab are available only for pathogens with named variants. At the moment this property applies only to SARS-CoV-2.
 
 .. figure:: _static/WidgIntro.png
-   :scale: 75%
+   :scale: 50%
    :align: center
