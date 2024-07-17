@@ -17,10 +17,9 @@ ui <- fluidPage(
   #Defining the layout of the output region.
   #Each group of plots is generated in a different panel.
   tabsetPanel(id = "allTabs",
-    #######README TAB#######
-    #The ReadMe Tab contains a series of guidelines on the use of the app.
-    #RISCRIVERE IL MANUALE DELL'APP E RICOPIARE
-    tabPanel("README"),
+    #######DASHBOARD TAB#######
+    #The Dashboard Tab contains an overview of the personalisation parameters of the app.
+    tabPanel("Dashboard"),
     
     #######GENERAL PRESENTATION OF THE TABS#######
     #Each Tab of the app consists of a similar series of plots that allow to efficiently
