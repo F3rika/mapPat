@@ -9,5 +9,5 @@ Graphical representation of data
 | Note that not all possible tabs are available for all pathogens analysed using mapPat. Specifically, the Variants Tab is produced only when SARS-CoV-2 is selected, since at present named variants were defined only for this pathogen.
 
 .. figure:: _static/GraphIntro.png
-   :scale: 75%
+   :scale: 50%
    :align: center
