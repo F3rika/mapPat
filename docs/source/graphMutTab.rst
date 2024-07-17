@@ -8,14 +8,14 @@ This tab describes the national and regional distribution of mutations for a use
 	| By default the two most frequent (%) non-defining mutations (based on relative global frequency at national level, limit set by the developer) are displayed.
 
 .. figure:: _static/MutBP.png
-   :scale: 75%
+   :scale: 50%
    :align: center
 
 + **Sequenced genomes barplot**
 	| Represents the total number of genomes sequenced weekly/monthly for the lineage of interest.
 
 .. figure:: _static/MutSeqBP.png
-   :scale: 75%
+   :scale: 50%
    :align: center
 
 + **Regional frequency heatmap**
@@ -24,7 +24,7 @@ This tab describes the national and regional distribution of mutations for a use
 	| To make the representation more compact and easily readable the number of elements to be visualised in the chart is limited to the first 25 most frequent mutations (based on national relative global frequency, limit set by the developer).
 
 .. figure:: _static/MutHM.png
-   :scale: 75%
+   :scale: 50%
    :align: center
 
 + **Regional frequency choropleth map**
@@ -33,5 +33,5 @@ This tab describes the national and regional distribution of mutations for a use
 	| Up to two choropleth maps, representing data for two different non-defining mutations from the lineage of interest, are displayed.
 
 .. figure:: _static/MutCM.png
-   :scale: 75%
+   :scale: 50%
    :align: center
