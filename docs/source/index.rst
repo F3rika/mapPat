@@ -15,6 +15,12 @@ A more detailed description of the control panel, customizable parameters and pl
 
 .. toctree::
    :maxdepth: 2
+   :caption: FOR IMPATIENT PEOPLE
+
+   useGuide.rst
+
+.. toctree::
+   :maxdepth: 2
    :caption: DATA REPRESENTATION 
    
    graphIntro.rst
