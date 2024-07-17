@@ -10,14 +10,14 @@ This tab describes the national and regional distribution of lineages over a tim
 	| All lineages not explicitly represented are aggregated under the label “Others”.
 
 .. figure:: _static/LinSAC.png
-   :scale: 75%
+   :scale: 50%
    :align: center
 
 + **Sequenced genomes barplot**
 	| Represents the total number of genomes sequenced weekly/monthly.
 
 .. figure:: _static/LinVarSeqBP.png
-   :scale: 75%
+   :scale: 50%
    :align: center
 
 + **Regional frequency heatmap**
@@ -26,7 +26,7 @@ This tab describes the national and regional distribution of lineages over a tim
 	| To make the representation more compact and easily readable the number of elements to be visualised on the plot is limited to the first 25 most prevalent lineages (based on national global frequency, limit set by the developer).
 
 .. figure:: _static/LinHM.png
-   :scale: 75%
+   :scale: 50%
    :align: center
 
 + **Regional frequency choropleth map**
@@ -35,5 +35,5 @@ This tab describes the national and regional distribution of lineages over a tim
 	| Up to two choropleth maps, representing data for two different lineages, are displayed.
 
 .. figure:: _static/LinCM.png
-   :scale: 75%
+   :scale: 50%
    :align: center
