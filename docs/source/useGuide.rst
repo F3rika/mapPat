@@ -11,7 +11,7 @@ Here is a quick guide on how to download and run a local installation of mapPat:
  
 	| If your operating system is MAC OSX or Linux and you prefer to use a shell environment, run the ``mapPat_appShell.sh`` script from the App folder. Make sure to make the script executable before using it. Then copy the generated url on any browser to correctly visualise mapPat.
  
-	| Please mind that If mapPat is not run from the ``App`` folder:
+	| Please mind that if mapPat is not run from the ``App`` folder:
  
 		+ The ``mapPat_app.R`` file must be updated so that paths pointing to required ``.R`` files in the ``Scripts`` folder are correct.
 		+ The ``mapPat_config.R`` file must be updated so that the ``inputs_path`` variable at line 44 of the file matches the path to the ``Input`` folder.
