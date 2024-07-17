@@ -8,14 +8,14 @@ This tab describes the national and regional distribution of variants over a tim
 	| Only variants that present at least one sequenced genome are displayed.
 
 .. figure:: _static/VarSAC.png
-   :scale: 75%
+   :scale: 50%
    :align: center
 
 + **Sequenced genomes barplot**
 	| Represents the total number of genomes sequenced weekly/monthly.
 
 .. figure:: _static/LinVarSeqBP.png
-   :scale: 75%
+   :scale: 50%
    :align: center
 
 + **Variants national composition barplot**
@@ -26,7 +26,7 @@ This tab describes the national and regional distribution of variants over a tim
 	| All lineages not explicitly represented are aggregated under the label “Others”.
 
 .. figure:: _static/VarBP.png
-   :scale: 75%
+   :scale: 50%
    :align: center
 
 + **Regional frequency heatmap**
@@ -34,7 +34,7 @@ This tab describes the national and regional distribution of variants over a tim
 	| Only variants that present at least one sequenced genome are represented.
 
 .. figure:: _static/VarHM.png
-   :scale: 75%
+   :scale: 50%
    :align: center
 
 + **Regional frequency choropleth map**
@@ -43,5 +43,5 @@ This tab describes the national and regional distribution of variants over a tim
 	| Up to two choropleth maps, representing data for two different variants, are displayed.
 
 .. figure:: _static/VarCM.png
-   :scale: 75%
+   :scale: 50%
    :align: center
