@@ -14,20 +14,8 @@ if (sum(isInstalled)<7) {
   
   toInstall <- requiredPackages[!isInstalled]
   
-  #Installing "rgeoboundaries" requires some additional steps.
-  if ("rgeoboundaries"%in%toInstall) {
-    
-    toInstall <- toInstall[toInstall!="rgeoboundaries"]
-    install.packages(toInstall)
-    
-    install.packages("remotes")
-    remotes::install_github("wmgeolab/rgeoboundaries")
-    
-  } else {
-    
-    install.packages(toInstall)
-    
-  }
+  install.packages(toInstall)
+  
 }
 
 #######UPLOAD REQUIRED PACKAGES#######
@@ -38,7 +26,6 @@ library(pheatmap)
 library(rgeoboundaries)
 library(leaflet)
 library(htmltools)
-gb_get_cache(create = TRUE)
 
 #######DEFINING PATHS FOR INPUT FILES#######
 inputs_path <- "./Input/"
