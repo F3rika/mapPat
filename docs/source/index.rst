@@ -6,7 +6,7 @@
 Welcome to mapPat documentation!
 ======================================
 
-Welcome to mapPat, a `Shiny <https://shiny.posit.co/>`_ application for the interactive tracking of pathogens’ variants, lineages and mutations in space and time. mapPat facilitates genomic surveillance of pathogens by summarising their distribution and evolution through intuitive data visuals.
+Welcome to mapPat, a `Shiny <https://shiny.posit.co/>`_ application for the interactive tracking of pathogens variants, lineages and mutations in space and time. mapPat facilitates genomic surveillance of pathogens by summarising their distribution and evolution through intuitive data visuals.
 
 | The dashboard of the app consists of three different tabs: Variants, Lineages and Mutations that provide a rich graphical representation of genomic features and evolution of pathogens. The behaviour of each plot can be customised by the user by adjusting a series of parameters through the control panel at the bottom of the interface.
 | Currently, mapPat features data from SARS-CoV-2 and mPox.
