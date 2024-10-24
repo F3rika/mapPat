@@ -3,7 +3,7 @@
 # input: file con i metadati e mutazioni
 # file richiesti: allADM_CountryRegion_AssocTab.txt LinDefMut.csv 
 
-open(IN,'<:encoding(UTF-8)',"NEW_allADM_CountryRegion_AssocTab.txt");
+open(IN,'<:encoding(UTF-8)',"allADM_CountryRegion_AssocTab.txt");
 while(<IN>)
 {
 	chomp();
