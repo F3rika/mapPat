@@ -40,7 +40,7 @@ def main():
          command('mkdir %s_mapPatInterOut'%(inputs.output_file))
          command('mkdir %s_mapPatOut'%(inputs.output_file))
 
-         filesToCopy=['LinVar_AssocTab.txt', 'LinVBM_AssocTab.txt', 'SARS-CoV-2_LineagesAliases.json', 'coutryToISO.txt', 'areaFile', 'NEW_allADM_CountryRegion_AssocTab.txt']
+         filesToCopy=['LinVar_AssocTab.txt', 'LinVBM_AssocTab.txt', 'SARS-CoV-2_LineagesAliases.json', 'coutryToISO.txt', 'areaFile', 'allADM_CountryRegion_AssocTab.txt']
 
          for fileName in filesToCopy:
              command('cp %s/%s .'%(inputs.path_config, fileName))
@@ -59,7 +59,7 @@ def main():
          
          command('python3 %s/InAvailability_ConfigTabUpdater.py -iav inTab_avCheck_tmp.txt -rc countriesListTracker.txt -p SARS-CoV-2'%(inputs.path_scripts))
 
-         command('rm LinVar_AssocTab.txt LinVBM_AssocTab.txt SARS-CoV-2_LineagesAliases.json coutryToISO.txt areaFile NEW_allADM_CountryRegion_AssocTab.txt')
+         command('rm LinVar_AssocTab.txt LinVBM_AssocTab.txt SARS-CoV-2_LineagesAliases.json coutryToISO.txt areaFile allADM_CountryRegion_AssocTab.txt')
          
          command('mv -t ./%s_mapPatInterOut linDefMut.csv SARS-CoV-2.HaploCoV inTab_avCheck_tmp.txt'%(inputs.output_file))
          command('mv -t ./%s_mapPatOut Epiweek.*.csv *_muts_perLin.csv HeatmapRegLin_*.csv Total_*_regions.csv countriesListTracker.txt inTab_avCheck.txt LinVar_ConvTabTracker.txt'%(inputs.output_file))
@@ -71,7 +71,7 @@ def main():
          command('mkdir %s_mapPatInterOut'%(inputs.output_file))
          command('mkdir %s_mapPatOut'%(inputs.output_file))
 
-         filesToCopy=['coutryToISO.txt', 'areaFile', 'NEW_allADM_CountryRegion_AssocTab.txt', 'metaDkeep']
+         filesToCopy=['coutryToISO.txt', 'areaFile', 'allADM_CountryRegion_AssocTab.txt', 'metaDkeep']
 
          for fileName in filesToCopy:
              command('cp %s/%s .'%(inputs.path_config, fileName))
@@ -86,7 +86,7 @@ def main():
          
          command('python3 %s/InAvailability_ConfigTabUpdater.py -iav inTab_avCheck_tmp.txt -p mPox'%(inputs.path_scripts))
 
-         command('rm coutryToISO.txt areaFile NEW_allADM_CountryRegion_AssocTab.txt metaDkeep')
+         command('rm coutryToISO.txt areaFile allADM_CountryRegion_AssocTab.txt metaDkeep')
          
          command('mv -t ./%s_mapPatInterOut %sTable.HaploCoV linDefMut.csv inTab_avCheck_tmp.txt'%(inputs.output_file, inputs.pathogen))
          command('mv ./Tgenomes ./%s_mapPatInterOut'%(inputs.output_file))
