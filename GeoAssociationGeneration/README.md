@@ -1,4 +1,4 @@
-The `GeoAssociationGeneration` folder collects the workflow, scripts and configuration files that allow to generate the `allADM_CountryRegion_AssocTab.txt` summarising countries/regions association and correcting inconsistencies in geographic metada annotation. `allADM_CountryRegion_AssocTab.txt` is a configuration file required to correctly generate mapPat input tables.
+The `GeoAssociationGeneration` folder collects the workflow, scripts and configuration files that allow to generate the `allADM_CountryRegion_AssocTab.txt` table that summarises countries/regions association and corrects inconsistencies in geographic metada annotation. `allADM_CountryRegion_AssocTab.txt` is a configuration file required to correctly generate mapPat input tables.
 
 Currently, the `mapPat_CouRegAssTabGen_WF.py` workflow can process:
 
