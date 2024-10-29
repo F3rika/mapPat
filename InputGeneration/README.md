@@ -16,4 +16,4 @@ The workflow accepts as inputs:
 + The name of the database from which metadata is obtained. Can be either *GISAID* or *Nextstrain*. Flagged as `-db` or `--database`.
 + A string indicating the *BASENAME* of the final output. Flagged as `-o` or `--output_file`.
 
-`mapPat_inTabGen_WF.py` produces as final output two compressed directories named *BASENAME_mapPatOut* and *BASENAME_mapPatInterOut* that respectively collect the tables used as mapPat input and the intermediate files produced while running the workflow. *BASENAME* is chosen by the user.
+`mapPat_inTabGen_WF.py` produces as final outputs two compressed directories named `BASENAME_mapPatOut` and `BASENAME_mapPatInterOut` that respectively collect the tables used as mapPat input and the intermediate files produced while running the workflow. *BASENAME* is chosen by the user.
