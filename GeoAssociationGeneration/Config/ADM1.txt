@@ -1,0 +1,3246 @@
+Country	Country_ISO	Region
+Afghanistan	AFG	Kandahar
+Afghanistan	AFG	Zabul
+Afghanistan	AFG	Uruzgan
+Afghanistan	AFG	Daykundi
+Afghanistan	AFG	Ghanzi
+Afghanistan	AFG	Paktika
+Afghanistan	AFG	Khost
+Afghanistan	AFG	Paktia
+Afghanistan	AFG	Logar
+Afghanistan	AFG	Wardak
+Afghanistan	AFG	Kabul
+Afghanistan	AFG	Nangarhar
+Afghanistan	AFG	Laghman
+Afghanistan	AFG	Kapisa
+Afghanistan	AFG	Parwan
+Afghanistan	AFG	Panjshir
+Afghanistan	AFG	Kunar
+Afghanistan	AFG	Nuristan
+Afghanistan	AFG	Baghlan
+Afghanistan	AFG	Bamyan
+Afghanistan	AFG	Samangan
+Afghanistan	AFG	Kunduz
+Afghanistan	AFG	Takhar
+Afghanistan	AFG	Balkh
+Afghanistan	AFG	Sar-e Pol
+Afghanistan	AFG	Jowzjan
+Afghanistan	AFG	Faryab
+Afghanistan	AFG	Badghis
+Afghanistan	AFG	Ghor
+Afghanistan	AFG	Herat
+Afghanistan	AFG	Farah
+Afghanistan	AFG	Nimruz
+Afghanistan	AFG	Helmand
+Afghanistan	AFG	Badakhshan
+Albania	ALB	Berat
+Albania	ALB	Dibër
+Albania	ALB	Durrës
+Albania	ALB	Elbasan
+Albania	ALB	Fier
+Albania	ALB	Gjirokastër
+Albania	ALB	Korçë
+Albania	ALB	Kukës
+Albania	ALB	Lezhë
+Albania	ALB	Shkodër
+Albania	ALB	Tiranë
+Albania	ALB	Vlorë
+Algeria	DZA	Tiaret
+Algeria	DZA	Ouargla
+Algeria	DZA	Saïda
+Algeria	DZA	Aïn Defla
+Algeria	DZA	Adrar
+Algeria	DZA	Aïn Témouchent
+Algeria	DZA	Béchar
+Algeria	DZA	Biskra
+Algeria	DZA	Bordj Bou Arreridj<U+200E>
+Algeria	DZA	Chlef
+Algeria	DZA	Constantine
+Algeria	DZA	El Tarf
+Algeria	DZA	Ghardaia
+Algeria	DZA	Tindouf
+Algeria	DZA	Skikda
+Algeria	DZA	Tipaza
+Algeria	DZA	Tissemsilt
+Algeria	DZA	Tlemcen
+Algeria	DZA	Sidi Bel Abbès
+Algeria	DZA	Sétif
+Algeria	DZA	Relizane
+Algeria	DZA	Oum El Bouaghi
+Algeria	DZA	Naâma
+Algeria	DZA	M'Sila
+Algeria	DZA	Mila
+Algeria	DZA	Illizi
+Algeria	DZA	Guelma
+Algeria	DZA	Djelfa
+Algeria	DZA	El Oued
+Algeria	DZA	Batna
+Algeria	DZA	Algiers
+Algeria	DZA	Laghouat
+Algeria	DZA	Jijel
+Algeria	DZA	Mascara
+Algeria	DZA	Médéa
+Algeria	DZA	Mostaganem
+Algeria	DZA	Tébessa
+Algeria	DZA	Boumerdès
+Algeria	DZA	Blida
+Algeria	DZA	Bejaia
+Algeria	DZA	Tamanrasset
+Algeria	DZA	Khenchela
+Algeria	DZA	Oran
+Algeria	DZA	Bouira
+Algeria	DZA	El Bayadh
+Algeria	DZA	Annaba
+Algeria	DZA	Souk Ahras
+Algeria	DZA	Tizi Ouzou
+Andorra	AND	Sant Julia de Loria
+Andorra	AND	Canillo
+Andorra	AND	Ordino
+Andorra	AND	La Massana
+Andorra	AND	Encamp
+Andorra	AND	Escaldes-Engordany
+Andorra	AND	Andorra la Vella
+Angola	AGO	Bengo
+Angola	AGO	Benguela
+Angola	AGO	Bié
+Angola	AGO	Cabinda
+Angola	AGO	Cunene
+Angola	AGO	Huambo
+Angola	AGO	Huíla
+Angola	AGO	Cuando Cubango
+Angola	AGO	Cuanza Norte
+Angola	AGO	Cuanza Sul
+Angola	AGO	Luanda
+Angola	AGO	Lunda Norte
+Angola	AGO	Lunda Sul
+Angola	AGO	Malanje
+Angola	AGO	Moxico
+Angola	AGO	Namibe
+Angola	AGO	Uíge
+Angola	AGO	Zaire
+Antigua & Barbuda	ATG	Redonda
+Antigua & Barbuda	ATG	Saint Philip
+Antigua & Barbuda	ATG	Saint John
+Antigua & Barbuda	ATG	Barbuda
+Antigua & Barbuda	ATG	Saint Mary
+Antigua & Barbuda	ATG	Saint Paul
+Antigua & Barbuda	ATG	Saint Peter
+Antigua & Barbuda	ATG	Saint George
+Argentina	ARG	Buenos Aires
+Argentina	ARG	Catamarca
+Argentina	ARG	Chaco
+Argentina	ARG	Chubut
+Argentina	ARG	Ciudad Autónoma de Buenos Aires
+Argentina	ARG	Córdoba
+Argentina	ARG	Corrientes
+Argentina	ARG	Formosa
+Argentina	ARG	Jujuy
+Argentina	ARG	La Pampa
+Argentina	ARG	La Roja
+Argentina	ARG	Mendoza
+Argentina	ARG	Misiones
+Argentina	ARG	Neuquén
+Argentina	ARG	Río Negro
+Argentina	ARG	Salta
+Argentina	ARG	San Juan
+Argentina	ARG	San Luis
+Argentina	ARG	Santa Cruz
+Argentina	ARG	Santa Fe
+Argentina	ARG	Santiago del Estero
+Argentina	ARG	Tierra del Fuego
+Argentina	ARG	Tucumán
+Armenia	ARM	Gegharkunik
+Armenia	ARM	Syunik
+Armenia	ARM	Tavush
+Armenia	ARM	Shirak
+Armenia	ARM	Lori
+Armenia	ARM	Kotayk
+Armenia	ARM	Vayots Dzor
+Armenia	ARM	Armavir
+Armenia	ARM	Aragatsotn
+Armenia	ARM	Yerevan
+Armenia	ARM	Ararat
+Australia	AUS	New South Wales
+Australia	AUS	Victoria
+Australia	AUS	Queensland
+Australia	AUS	South Australia
+Australia	AUS	Western Australia
+Australia	AUS	Tasmania
+Australia	AUS	Northern Territory
+Australia	AUS	Australian Capital Territory
+Australia	AUS	Other Territories
+Austria	AUT	Burgenland
+Austria	AUT	Kärnten
+Austria	AUT	Niederösterreich
+Austria	AUT	Oberösterreich
+Austria	AUT	Salzburg
+Austria	AUT	Steiermark
+Austria	AUT	Tirol
+Austria	AUT	Vorarlberg
+Austria	AUT	Wien
+Azerbaijan	AZE	Nakhchivan Autonomous Republic
+Azerbaijan	AZE	Contiguous Azerbaijan
+Bahamas, The	BHS	Acklins
+Bahamas, The	BHS	Biminis
+Bahamas, The	BHS	Berry Islands
+Bahamas, The	BHS	Black Point
+Bahamas, The	BHS	Cat Island
+Bahamas, The	BHS	Central Abaco
+Bahamas, The	BHS	Central Andros
+Bahamas, The	BHS	Central Eleuthera
+Bahamas, The	BHS	City of Freeport
+Bahamas, The	BHS	Crooked Island
+Bahamas, The	BHS	East Grand Bahama
+Bahamas, The	BHS	Exuma
+Bahamas, The	BHS	Grand Cay
+Bahamas, The	BHS	Harbour Island
+Bahamas, The	BHS	Hope Town
+Bahamas, The	BHS	Inagua
+Bahamas, The	BHS	Long Island
+Bahamas, The	BHS	Mangrove Cay
+Bahamas, The	BHS	Mayaguana
+Bahamas, The	BHS	Moore's Island
+Bahamas, The	BHS	New Providence
+Bahamas, The	BHS	North Abaco
+Bahamas, The	BHS	North Andros
+Bahamas, The	BHS	North Eleuthera
+Bahamas, The	BHS	Ragged Island
+Bahamas, The	BHS	Rum Cay
+Bahamas, The	BHS	San Salvador
+Bahamas, The	BHS	South Abaco
+Bahamas, The	BHS	South Andros
+Bahamas, The	BHS	South Eleuthera
+Bahamas, The	BHS	Spanish Wells
+Bahamas, The	BHS	West Grand Bahama
+Bahrain	BHR	Northern Governorate
+Bahrain	BHR	Southern Governorate
+Bahrain	BHR	Capital Governorate
+Bahrain	BHR	Muharraq Governorate
+Bangladesh	BGD	Chittagong
+Bangladesh	BGD	Dhaka
+Bangladesh	BGD	Mymensingh
+Bangladesh	BGD	Rajshani
+Bangladesh	BGD	Rangpur
+Bangladesh	BGD	Sylhet
+Bangladesh	BGD	Khulna
+Bangladesh	BGD	Barisal
+Barbados	BRB	Saint George
+Barbados	BRB	Saint Lucy
+Barbados	BRB	Saint Andrew
+Barbados	BRB	Saint Peter
+Barbados	BRB	Saint James
+Barbados	BRB	Saint Thomas
+Barbados	BRB	Saint Joseph
+Barbados	BRB	Christ Church
+Barbados	BRB	Saint Michael
+Barbados	BRB	Saint Philip
+Barbados	BRB	Saint John
+Belarus	BLR	Gomel
+Belarus	BLR	Vitebsk
+Belarus	BLR	Grodno
+Belarus	BLR	Brest
+Belarus	BLR	Mogilev
+Belarus	BLR	Minsk
+Belarus	BLR	Minsk City
+Belgium	BEL	Brussels Hoofdstedelijk
+Belgium	BEL	Vlaams Gewest
+Belgium	BEL	Wallonne Gewest
+Belize	BLZ	Orange Walk
+Belize	BLZ	Corozal
+Belize	BLZ	Belize
+Belize	BLZ	Cayo
+Belize	BLZ	Stann Creek
+Belize	BLZ	Toledo
+Benin	BEN	Borgou
+Benin	BEN	Alibori
+Benin	BEN	Atakora
+Benin	BEN	Donga
+Benin	BEN	Collines
+Benin	BEN	Plateau
+Benin	BEN	Zou
+Benin	BEN	Littoral
+Benin	BEN	Kouffo
+Benin	BEN	Oueme
+Benin	BEN	Atlanique
+Benin	BEN	Mono
+Bhutan	BTN	Trashigang
+Bhutan	BTN	Trashiyangtse
+Bhutan	BTN	Mongar
+Bhutan	BTN	Lhuntse
+Bhutan	BTN	Bumthang
+Bhutan	BTN	Sarpang
+Bhutan	BTN	Trongsa
+Bhutan	BTN	Tsirang
+Bhutan	BTN	Dagana
+Bhutan	BTN	Wangdue Phodrang
+Bhutan	BTN	Punakha
+Bhutan	BTN	Thimpu
+Bhutan	BTN	Gasa
+Bhutan	BTN	Chukha
+Bhutan	BTN	Samtse
+Bhutan	BTN	Haa
+Bhutan	BTN	Paro
+Bhutan	BTN	Pemagatshel
+Bhutan	BTN	Samdrup Jongkhar
+Bhutan	BTN	Zhemgang
+Bolivia	BOL	Beni
+Bolivia	BOL	Chuquisaca
+Bolivia	BOL	Cochabamba
+Bolivia	BOL	La Paz
+Bolivia	BOL	Oruro
+Bolivia	BOL	Pando
+Bolivia	BOL	Potosí
+Bolivia	BOL	Santa Cruz
+Bolivia	BOL	Tarija
+Bosnia & Herzegovina	BIH	Brcko district of Bosnia and Herzegowina
+Bosnia & Herzegovina	BIH	Entity Federation of Bosnia and Herzegovina
+Bosnia & Herzegovina	BIH	Republika Srpska
+Botswana	BWA	South-East District
+Botswana	BWA	Kgatleng District
+Botswana	BWA	North-East District
+Botswana	BWA	Central District
+Botswana	BWA	Ghanzi District
+Botswana	BWA	Kweneng District
+Botswana	BWA	Southern District
+Botswana	BWA	Kgalagadi District
+Botswana	BWA	North-West District
+Botswana	BWA	Chobe District
+Brazil	BRA	Roraima
+Brazil	BRA	Amapa
+Brazil	BRA	Amazonas
+Brazil	BRA	Para
+Brazil	BRA	Maranhao
+Brazil	BRA	Ceara
+Brazil	BRA	Rio Granda do Norte
+Brazil	BRA	Paraiba
+Brazil	BRA	Piaui
+Brazil	BRA	Pernambuco
+Brazil	BRA	Alagoas
+Brazil	BRA	Acre
+Brazil	BRA	Rondonia
+Brazil	BRA	Sergipe
+Brazil	BRA	Tocantins
+Brazil	BRA	Bahia
+Brazil	BRA	Mato Grosso
+Brazil	BRA	Goias
+Brazil	BRA	Distrito Federal
+Brazil	BRA	Minas Gerais
+Brazil	BRA	Espirito Santo
+Brazil	BRA	Mato Grosso do Sul
+Brazil	BRA	Rio de Jeneiro
+Brazil	BRA	Sao Paulo
+Brazil	BRA	Parana
+Brazil	BRA	Santa Catarina
+Brazil	BRA	Rio Grande do Sul
+Brunei	BRN	Belait
+Brunei	BRN	Tutong
+Brunei	BRN	Brunei-Muara
+Brunei	BRN	Temburong
+Bulgaria	BGR	Blagoevgrad
+Bulgaria	BGR	Burgas
+Bulgaria	BGR	Dobrich
+Bulgaria	BGR	Gabrovo
+Bulgaria	BGR	Haskovo
+Bulgaria	BGR	Kardzhali
+Bulgaria	BGR	Kyustendil
+Bulgaria	BGR	Lovech
+Bulgaria	BGR	Montana
+Bulgaria	BGR	Pazardzhik
+Bulgaria	BGR	Pernik
+Bulgaria	BGR	Pleven
+Bulgaria	BGR	Plovdiv
+Bulgaria	BGR	Razgrad
+Bulgaria	BGR	Ruse
+Bulgaria	BGR	Shumen
+Bulgaria	BGR	Silistra
+Bulgaria	BGR	Sliven
+Bulgaria	BGR	Smolyan
+Bulgaria	BGR	Sofia
+Bulgaria	BGR	Sofia City
+Bulgaria	BGR	Stara Zagora
+Bulgaria	BGR	Targovishte
+Bulgaria	BGR	Varna
+Bulgaria	BGR	Veliko Tarnovo
+Bulgaria	BGR	Vidin
+Bulgaria	BGR	Vratsa
+Bulgaria	BGR	Yambol
+Burkina Faso	BFA	Centre
+Burkina Faso	BFA	Boucle du Mouhoun
+Burkina Faso	BFA	Cascades
+Burkina Faso	BFA	Centre-Est
+Burkina Faso	BFA	Centre-Nord
+Burkina Faso	BFA	Centre-Ouest
+Burkina Faso	BFA	Centre-Sud
+Burkina Faso	BFA	Est
+Burkina Faso	BFA	Hauts-Bassins
+Burkina Faso	BFA	Nord
+Burkina Faso	BFA	Plateau Central
+Burkina Faso	BFA	Sahel
+Burkina Faso	BFA	Sud-Ouest
+Burma	MMR	Ayeyarwady
+Burma	MMR	Chin
+Burma	MMR	Saigang
+Burma	MMR	Kachin
+Burma	MMR	Kayah
+Burma	MMR	Kayin
+Burma	MMR	Magway
+Burma	MMR	Mandalay
+Burma	MMR	Mon
+Burma	MMR	Rakhine
+Burma	MMR	Tanitharyi
+Burma	MMR	Bago
+Burma	MMR	Yangon
+Burma	MMR	Shan
+Burundi	BDI	Gitega
+Burundi	BDI	Kirundo
+Burundi	BDI	Muyinga
+Burundi	BDI	Ngozi
+Burundi	BDI	Makamba
+Burundi	BDI	Rutana
+Burundi	BDI	Ruyigi
+Burundi	BDI	Cankuzo
+Burundi	BDI	Karuzi
+Burundi	BDI	Cibitoke
+Burundi	BDI	Kayanza
+Burundi	BDI	Bubanza
+Burundi	BDI	Muramvya
+Burundi	BDI	Bujumbura Rural
+Burundi	BDI	Bujumbura Mairie
+Burundi	BDI	Bururi
+Burundi	BDI	Mwaro
+Burundi	BDI	Rumonge
+Cabo Verde	CPV	Boa Vista
+Cabo Verde	CPV	Brava
+Cabo Verde	CPV	Maio
+Cabo Verde	CPV	Sal
+Cabo Verde	CPV	São Vicente
+Cabo Verde	CPV	Ribeira Brava
+Cabo Verde	CPV	Tarrafal de São Nicolau
+Cabo Verde	CPV	Porto Novo
+Cabo Verde	CPV	Ribeira Grande
+Cabo Verde	CPV	Paul
+Cabo Verde	CPV	Mosteiros
+Cabo Verde	CPV	Santa Catarina do Fogo
+Cabo Verde	CPV	São Filipe
+Cabo Verde	CPV	São Miguel
+Cabo Verde	CPV	Tarrafal
+Cabo Verde	CPV	Santa Catarina
+Cabo Verde	CPV	Santa Cruz
+Cabo Verde	CPV	São Salvador do Mundo
+Cabo Verde	CPV	São Lourenço dos Órgãos
+Cabo Verde	CPV	São Domingos
+Cabo Verde	CPV	Praia
+Cabo Verde	CPV	Ribeira Grande de Santiago
+Cambodia	KHM	Stung Treng
+Cambodia	KHM	Preah Vihear
+Cambodia	KHM	Kampong Thom
+Cambodia	KHM	Phnom Penh
+Cambodia	KHM	Koh Kong
+Cambodia	KHM	Kep
+Cambodia	KHM	Kampot
+Cambodia	KHM	Takeo
+Cambodia	KHM	Kandal
+Cambodia	KHM	Pursat
+Cambodia	KHM	Ratanakiri Province
+Cambodia	KHM	Kampong Chhnang
+Cambodia	KHM	Pailin
+Cambodia	KHM	Bantey Meanchey
+Cambodia	KHM	Siem Reap
+Cambodia	KHM	Oddar Meanchey
+Cambodia	KHM	Kampong Cham
+Cambodia	KHM	Mondulkiri
+Cambodia	KHM	Kratie
+Cambodia	KHM	Prey Veng
+Cambodia	KHM	Kampong Speu
+Cambodia	KHM	Svay Rieng
+Cambodia	KHM	Preah Sihanouk
+Cambodia	KHM	Tbong Khmum
+Cambodia	KHM	Battambang
+Cameroon	CMR	Centre
+Cameroon	CMR	Far North
+Cameroon	CMR	North
+Cameroon	CMR	North-West
+Cameroon	CMR	Adamaoua
+Cameroon	CMR	East
+Cameroon	CMR	South
+Cameroon	CMR	South-West
+Cameroon	CMR	West
+Cameroon	CMR	Littoral
+Canada	CAN	Newfoundland and Labrador
+Canada	CAN	Prince Edward Island
+Canada	CAN	Nova Scotia
+Canada	CAN	New Brunswick
+Canada	CAN	Quebec
+Canada	CAN	Ontario
+Canada	CAN	Manitoba
+Canada	CAN	Saskatchewan
+Canada	CAN	Alberta
+Canada	CAN	British Columbia
+Canada	CAN	Yukon
+Canada	CAN	Northwest Territories
+Canada	CAN	Nunavut
+Central African Rep	CAF	Mbomou
+Central African Rep	CAF	Sangha-Mbaéré
+Central African Rep	CAF	Mambéré-Kadéï
+Central African Rep	CAF	Lobaye
+Central African Rep	CAF	Nana-Mambéré
+Central African Rep	CAF	Ombella-M'Poko
+Central African Rep	CAF	Ouham-Pendé
+Central African Rep	CAF	Ouham
+Central African Rep	CAF	Nana-Grébizi
+Central African Rep	CAF	Kémo
+Central African Rep	CAF	Vakaga
+Central African Rep	CAF	Bamingui-Bangoran
+Central African Rep	CAF	Ouaka
+Central African Rep	CAF	Basse-Kotto
+Central African Rep	CAF	Haute-Kotto
+Central African Rep	CAF	Haut-Mbomou
+Central African Rep	CAF	Bangui
+Chad	TCD	Tibesti
+Chad	TCD	Borkou
+Chad	TCD	Ennedi-Ouest
+Chad	TCD	Wadi Fira
+Chad	TCD	Salamat
+Chad	TCD	Sila
+Chad	TCD	Ouaddaï
+Chad	TCD	Guéra
+Chad	TCD	Batha
+Chad	TCD	Hadjer-Lamis
+Chad	TCD	Bahr el Gazel
+Chad	TCD	Kanem
+Chad	TCD	Chari-Baguirmi
+Chad	TCD	Lac
+Chad	TCD	Logone Occidental
+Chad	TCD	Logone Oriental
+Chad	TCD	Mandoul
+Chad	TCD	Mayo-Kebbi Est
+Chad	TCD	Mayo-Kebbi Ouest
+Chad	TCD	Moyen-Chari
+Chad	TCD	Tandjilé
+Chad	TCD	N'Djamena Region
+Chad	TCD	Ennedi-Est
+Chile	CHL	RegiÃ³n de Antofagasta
+Chile	CHL	RegiÃ³n de Arica y Parinacota
+Chile	CHL	RegiÃ³n de Atacama
+Chile	CHL	RegiÃ³n de AysÃ©n del Gral.IbaÃ±ez del Campo
+Chile	CHL	RegiÃ³n de Coquimbo
+Chile	CHL	RegiÃ³n de La AraucanÃ­a
+Chile	CHL	RegiÃ³n de Los Lagos
+Chile	CHL	RegiÃ³n de Los RÃ­os
+Chile	CHL	RegiÃ³n de Magallanes y AntÃ¡rtica Chilena
+Chile	CHL	RegiÃ³n de Ã<U+0091>uble
+Chile	CHL	RegiÃ³n de TarapacÃ¡
+Chile	CHL	RegiÃ³n de ValparaÃ­so
+Chile	CHL	RegiÃ³n del BÃ­o-BÃ­o
+Chile	CHL	RegiÃ³n del Libertador Bernardo O'Higgins
+Chile	CHL	RegiÃ³n del Maule
+Chile	CHL	RegiÃ³n Metropolitana de Santiago
+China	CHN	Hainan Province
+China	CHN	Taiwan Province
+China	CHN	Guangxi Zhuang Autonomous Region
+China	CHN	Fujian Province
+China	CHN	Yunnan Province
+China	CHN	Guizhou Province
+China	CHN	Jiangxi Province
+China	CHN	Hunan Province
+China	CHN	Zhejiang Province
+China	CHN	Shanghai Municipality
+China	CHN	Chongqing Municipality
+China	CHN	Hubei Province
+China	CHN	Sichuan Province
+China	CHN	Anhui Province
+China	CHN	Jiangsu Province
+China	CHN	Henan Province
+China	CHN	Tibet Autonomous Region
+China	CHN	Shandong Province
+China	CHN	Qinghai Province
+China	CHN	Ningxia Ningxia Hui Autonomous Region
+China	CHN	Shaanxi Province
+China	CHN	Tianjin Municipality
+China	CHN	Shanxi Province
+China	CHN	Beijing Municipality
+China	CHN	Gansu Province
+China	CHN	Hebei Province
+China	CHN	Liaoning Province
+China	CHN	Jilin Province
+China	CHN	Xinjiang Uyghur Autonomous Region
+China	CHN	Inner Mongolia Autonomous Region
+China	CHN	Heilongjiang Province
+China	CHN	Macau Special Administrative Region
+China	CHN	Hong Kong Special Administrative Region
+China	CHN	Guangzhou Province
+Colombia	COL	Caldas
+Colombia	COL	Amazonas
+Colombia	COL	Meta
+Colombia	COL	Cundinamarca
+Colombia	COL	Tolima
+Colombia	COL	Antioquia
+Colombia	COL	Atlántico
+Colombia	COL	Bolívar
+Colombia	COL	Cesar
+Colombia	COL	Magdalena
+Colombia	COL	Sucre
+Colombia	COL	Córdoba
+Colombia	COL	La Guajira
+Colombia	COL	Chocó
+Colombia	COL	Valle del Cauca
+Colombia	COL	Norte de Santander
+Colombia	COL	Quindío
+Colombia	COL	Vichada
+Colombia	COL	Vaupés
+Colombia	COL	Santander
+Colombia	COL	Risaralda
+Colombia	COL	Putumayo
+Colombia	COL	Nariño
+Colombia	COL	Guaviare
+Colombia	COL	Guainía
+Colombia	COL	Bogota Capital District
+Colombia	COL	Arauca
+Colombia	COL	Boyacá
+Colombia	COL	Casanare
+Colombia	COL	Cauca
+Colombia	COL	Caquetá
+Colombia	COL	Huila
+Colombia	COL	Archipiélago de San Andrés, Providencia y Santa Catalina
+Comoros	COM	Moheli
+Comoros	COM	Anjouan
+Comoros	COM	Grande Comore
+Congo, Dem Rep of the	COD	Upper Uele
+Congo, Dem Rep of the	COD	Ituri
+Congo, Dem Rep of the	COD	Tshopo
+Congo, Dem Rep of the	COD	Lower Uele
+Congo, Dem Rep of the	COD	Mongala
+Congo, Dem Rep of the	COD	Nord-Ubangi
+Congo, Dem Rep of the	COD	Tshuapa
+Congo, Dem Rep of the	COD	Équateur
+Congo, Dem Rep of the	COD	Haut-Katanga
+Congo, Dem Rep of the	COD	Haut-Lomami
+Congo, Dem Rep of the	COD	Kongo-Central
+Congo, Dem Rep of the	COD	Kwango
+Congo, Dem Rep of the	COD	Sankuru
+Congo, Dem Rep of the	COD	Sud-Ubangi
+Congo, Dem Rep of the	COD	Tanganyika
+Congo, Dem Rep of the	COD	Kasai
+Congo, Dem Rep of the	COD	Kasai-Oriental
+Congo, Dem Rep of the	COD	Maniema
+Congo, Dem Rep of the	COD	North Kivu
+Congo, Dem Rep of the	COD	South Kivu
+Congo, Dem Rep of the	COD	Central Kasai
+Congo, Dem Rep of the	COD	Lomami
+Congo, Dem Rep of the	COD	Lualaba
+Congo, Dem Rep of the	COD	Kinshasa
+Congo, Dem Rep of the	COD	Kwilu
+Congo, Dem Rep of the	COD	Mai-Ndombe
+Congo, Rep of the	COG	Bouenza
+Congo, Rep of the	COG	Cuvette
+Congo, Rep of the	COG	Cuvette-Ouest
+Congo, Rep of the	COG	Kouilou
+Congo, Rep of the	COG	Likouala
+Congo, Rep of the	COG	Lékoumou
+Congo, Rep of the	COG	Niari
+Congo, Rep of the	COG	Plateaux
+Congo, Rep of the	COG	Pool
+Congo, Rep of the	COG	Sangha
+Congo, Rep of the	COG	Brazzaville
+Congo, Rep of the	COG	Pointe-Noire
+Costa Rica	CRI	Provincia Heredia
+Costa Rica	CRI	Provincia Guanacaste
+Costa Rica	CRI	Provincia Alajuela
+Costa Rica	CRI	Provincia San José
+Costa Rica	CRI	Provincia Puntarenas
+Costa Rica	CRI	Provincia Cartago
+Costa Rica	CRI	Provincia Limón
+Cote d'Ivoire	CIV	Bas-Sassandra
+Cote d'Ivoire	CIV	Denguele
+Cote d'Ivoire	CIV	District Autonome D'Abidjan
+Cote d'Ivoire	CIV	District Autonome De Yamoussoukro
+Cote d'Ivoire	CIV	Goh-Djiboua
+Cote d'Ivoire	CIV	Lacs
+Cote d'Ivoire	CIV	Montagnes
+Cote d'Ivoire	CIV	Sassandra-Marahoue
+Cote d'Ivoire	CIV	Savanes
+Cote d'Ivoire	CIV	Valle Du Bandama
+Cote d'Ivoire	CIV	Woroba
+Cote d'Ivoire	CIV	Zanzan
+Cote d'Ivoire	CIV	Lagunes
+Cote d'Ivoire	CIV	Comoe
+Croatia	HRV	Osijek-Baranja
+Croatia	HRV	Vukovar-Syrmia
+Croatia	HRV	Brod-Posavina
+Croatia	HRV	Virovitica-Podravina
+Croatia	HRV	Požega-Slavonia
+Croatia	HRV	Sisak-Moslavina
+Croatia	HRV	Bjelovar-Bilogora
+Croatia	HRV	Medimurje
+Croatia	HRV	Koprivnica-Križevci
+Croatia	HRV	Varaždin
+Croatia	HRV	Krapina-Zagorje
+Croatia	HRV	City of Zagreb
+Croatia	HRV	Zagreb County
+Croatia	HRV	Karlovac
+Croatia	HRV	Istria
+Croatia	HRV	Primorje-Gorski Kotar
+Croatia	HRV	Lika-Senj
+Croatia	HRV	Zadar County
+Croatia	HRV	Šibenik-Knin
+Croatia	HRV	Split-Dalmatia
+Croatia	HRV	Dubrovnik-Neretva
+Cuba	CUB	Isle of Youth
+Cuba	CUB	Havana
+Cuba	CUB	Matanzas
+Cuba	CUB	Pinar del Rio
+Cuba	CUB	Camagüey
+Cuba	CUB	Ciego de Avila
+Cuba	CUB	Cienfuegos
+Cuba	CUB	Granma
+Cuba	CUB	Guantánamo
+Cuba	CUB	Holguín
+Cuba	CUB	Las Tunas
+Cuba	CUB	Santiago de Cuba
+Cuba	CUB	Sancti Spiritus
+Cuba	CUB	Villa Clara
+Cuba	CUB	Artemisa
+Cuba	CUB	Mayabeque
+Cyprus	CYP	Larnaca
+Cyprus	CYP	Limassol
+Cyprus	CYP	Paphos
+Cyprus	CYP	Nicosia
+Cyprus	CYP	Famagusta
+Cyprus	CYP	Kyrenia
+Czechia	CZE	Hlavní mesto Praha
+Czechia	CZE	Stredoceský kraj
+Czechia	CZE	Jihoceský kraj
+Czechia	CZE	Plzenský kraj
+Czechia	CZE	Karlovarský kraj
+Czechia	CZE	Ústecký kraj
+Czechia	CZE	Liberecký kraj
+Czechia	CZE	Královéhradecký kraj
+Czechia	CZE	Pardubický kraj
+Czechia	CZE	Kraj Vysocina
+Czechia	CZE	Jihomoravský kraj
+Czechia	CZE	Olomoucký kraj
+Czechia	CZE	Moravskoslezský kraj
+Czechia	CZE	Zlínský kraj
+Denmark	DNK	Nordjylland
+Denmark	DNK	Midtjylland
+Denmark	DNK	Sjælland
+Denmark	DNK	Hovedstaden
+Denmark	DNK	Syddanmark
+Djibouti	DJI	Ali Sabieh
+Djibouti	DJI	Arta
+Djibouti	DJI	Dikhil
+Djibouti	DJI	Tadjourah
+Djibouti	DJI	Obock
+Djibouti	DJI	Djibouti
+Dominica	DMA	Saint Andrew
+Dominica	DMA	Saint Joseph
+Dominica	DMA	Saint Patrick
+Dominica	DMA	Saint David
+Dominica	DMA	Saint Mark
+Dominica	DMA	Saint Luke
+Dominica	DMA	Saint George
+Dominica	DMA	Saint Paul
+Dominica	DMA	Saint John
+Dominica	DMA	Saint Peter
+Dominican Republic	DOM	Monte Cristi
+Dominican Republic	DOM	Dajabón
+Dominican Republic	DOM	La Estrelleta
+Dominican Republic	DOM	Independencia
+Dominican Republic	DOM	Pedernales
+Dominican Republic	DOM	La Altagracia
+Dominican Republic	DOM	El Seybo
+Dominican Republic	DOM	Hato Mayor
+Dominican Republic	DOM	Samaná
+Dominican Republic	DOM	María Trinidad Sánchez
+Dominican Republic	DOM	Espaillat
+Dominican Republic	DOM	Puerto Plata
+Dominican Republic	DOM	Barahona
+Dominican Republic	DOM	Azua
+Dominican Republic	DOM	Peravia
+Dominican Republic	DOM	San Cristóbal
+Dominican Republic	DOM	Santo Domingo
+Dominican Republic	DOM	Distrito Nacional
+Dominican Republic	DOM	San Pedro de Macorís
+Dominican Republic	DOM	La Romana
+Dominican Republic	DOM	Valverde
+Dominican Republic	DOM	Santiago Rodríguez
+Dominican Republic	DOM	La Vega
+Dominican Republic	DOM	Hermanas
+Dominican Republic	DOM	Duarte
+Dominican Republic	DOM	Santiago
+Dominican Republic	DOM	Bahoruco
+Dominican Republic	DOM	San Juan
+Dominican Republic	DOM	Monseñor Nouel
+Dominican Republic	DOM	Sánchez Ramírez
+Dominican Republic	DOM	San José de Ocoa
+Dominican Republic	DOM	Monte Plata
+Ecuador	ECU	Pastaza
+Ecuador	ECU	Carchi
+Ecuador	ECU	Loja
+Ecuador	ECU	Zamora Chinchipe
+Ecuador	ECU	El Oro
+Ecuador	ECU	Esmeraldas
+Ecuador	ECU	Imbabura
+Ecuador	ECU	Sucumbios
+Ecuador	ECU	Santa Elena
+Ecuador	ECU	Santo Domingo de los Tsáchilas
+Ecuador	ECU	Pichincha
+Ecuador	ECU	Manabi
+Ecuador	ECU	Azuay
+Ecuador	ECU	Cañar
+Ecuador	ECU	Guayas
+Ecuador	ECU	Los Ríos
+Ecuador	ECU	Cotopaxi
+Ecuador	ECU	Bolívar
+Ecuador	ECU	Tungurahua
+Ecuador	ECU	Chimborazo
+Ecuador	ECU	Morona Santiago
+Ecuador	ECU	Napo
+Ecuador	ECU	Orellana
+Ecuador	ECU	Galápagos
+Egypt	EGY	North Sinai Governorate
+Egypt	EGY	South Sinai Governorate
+Egypt	EGY	Aswan Governorate
+Egypt	EGY	Red Sea Governorate
+Egypt	EGY	Matrouh Governorate
+Egypt	EGY	New Valley Governorate
+Egypt	EGY	Alexandria Governorate
+Egypt	EGY	Ismailia Governorate
+Egypt	EGY	Suez Governorate
+Egypt	EGY	Gharbiyya Governorate
+Egypt	EGY	Faiyum Governorate
+Egypt	EGY	Beni Suef Governorate
+Egypt	EGY	Minya Governate
+Egypt	EGY	Asyut Governorate
+Egypt	EGY	Sohag Governorate
+Egypt	EGY	Qena Governorate
+Egypt	EGY	Luxor Governate
+Egypt	EGY	Giza Governorate
+Egypt	EGY	Monufia Governorate
+Egypt	EGY	Beheira Governorate
+Egypt	EGY	Cairo Governorate
+Egypt	EGY	Qalyubia Governorate
+Egypt	EGY	Dakahlia Governorate
+Egypt	EGY	Damietta Governorate
+Egypt	EGY	Kafr el-Sheikh Governorate
+Egypt	EGY	Port Said Governorate
+Egypt	EGY	Al Sharqia Governorate
+El Salvador	SLV	Departamento de Cuscatlán
+El Salvador	SLV	Departamento de Usulután
+El Salvador	SLV	La Libertad
+El Salvador	SLV	Departamento de Ahuachapán
+El Salvador	SLV	Departamento de Sonsonate
+El Salvador	SLV	San Vicente
+El Salvador	SLV	Departamento de San Miguel
+El Salvador	SLV	Departamento de La Unión
+El Salvador	SLV	Departamento de Morazán
+El Salvador	SLV	Departamento de La Paz
+El Salvador	SLV	Departamento de Santa Ana
+El Salvador	SLV	Departamento de Chalatenango
+El Salvador	SLV	Departamento de San Salvador
+El Salvador	SLV	Departamento de Cabañas
+Equatorial Guinea	GNQ	Annobón
+Equatorial Guinea	GNQ	Bioko Norte
+Equatorial Guinea	GNQ	Bioko Sur
+Equatorial Guinea	GNQ	Litoral Province
+Equatorial Guinea	GNQ	Kié-Ntem Province
+Equatorial Guinea	GNQ	Centro Sur Province
+Equatorial Guinea	GNQ	Wele-Nzas Province
+Eritrea	ERI	Anseba Region
+Eritrea	ERI	Gash-Barka Region
+Eritrea	ERI	Debub Region
+Eritrea	ERI	Maekel Region
+Eritrea	ERI	Northen Red Sea Region
+Eritrea	ERI	Southern Red Sea Region
+Estonia	EST	Saare maakond
+Estonia	EST	Pärnu maakond
+Estonia	EST	Hiiu maakond
+Estonia	EST	Lääne maakond
+Estonia	EST	Ida-Viru maakond
+Estonia	EST	Harju maakond
+Estonia	EST	Lääne-Viru maakond
+Estonia	EST	Tartu maakond
+Estonia	EST	Valga maakond
+Estonia	EST	Viljandi maakond
+Estonia	EST	Põlva maakond
+Estonia	EST	Järva maakond
+Estonia	EST	Rapla maakond
+Estonia	EST	Võru maakond
+Estonia	EST	Jõgeva maakond
+Ethiopia	ETH	Addis Ababa
+Ethiopia	ETH	Afar
+Ethiopia	ETH	Amhara
+Ethiopia	ETH	Beneshangul Gumu
+Ethiopia	ETH	Dire Dawa
+Ethiopia	ETH	Gambela
+Ethiopia	ETH	Hareri
+Ethiopia	ETH	Oromia
+Ethiopia	ETH	SNNPR
+Ethiopia	ETH	Somali
+Ethiopia	ETH	Tigray
+Fiji	FJI	Northern
+Fiji	FJI	Eastern
+Fiji	FJI	Central
+Fiji	FJI	Western
+Finland	FIN	Uusimaa
+Finland	FIN	Finland Proper
+Finland	FIN	Southern Savonia
+Finland	FIN	Northern Savonia
+Finland	FIN	Tavastia Proper
+Finland	FIN	Central Finland
+Finland	FIN	Pirkanmaa
+Finland	FIN	South Ostrobothnia
+Finland	FIN	Keski-Pohjanmaa
+Finland	FIN	Päijät-Häme
+Finland	FIN	Lapland
+Finland	FIN	Northern Ostrobothnia
+Finland	FIN	Kainuu
+Finland	FIN	North Karelia
+Finland	FIN	Ostrobothnia
+Finland	FIN	Satakunta
+Finland	FIN	South Karelia
+Finland	FIN	Kymenlaakso
+Finland	FIN	Åland Islands
+France	FRA	Île-de-France
+France	FRA	Centre-Val de Loire
+France	FRA	Bourgogne-Franche-Comté
+France	FRA	Normandie
+France	FRA	Hauts-de-France
+France	FRA	Grand Est
+France	FRA	Pays de la Loire
+France	FRA	Bretagne
+France	FRA	Nouvelle-Aquitaine
+France	FRA	Occitanie
+France	FRA	Auvergne-Rhône-Alpes
+France	FRA	Provence-Alpes-Côte d'Azur
+France	FRA	Corse
+Gabon	GAB	Woleu-Ntem
+Gabon	GAB	Estuaire
+Gabon	GAB	Moyen-Ogooué
+Gabon	GAB	Ogooué-Lolo
+Gabon	GAB	Haut-Ogooué
+Gabon	GAB	Ngounié
+Gabon	GAB	Ogooué-Maritime
+Gabon	GAB	Nyanga
+Gabon	GAB	Ogooué-Ivindo	
+Gambia, The	GMB	Banjul
+Gambia, The	GMB	Basse
+Gambia, The	GMB	Brikama
+Gambia, The	GMB	Janjanbureh
+Gambia, The	GMB	Kanifing
+Gambia, The	GMB	Kerewan
+Gambia, The	GMB	Kuntaur
+Gambia, The	GMB	Mansakonko
+Georgia	GEO	Abkhazia
+Georgia	GEO	Kakheti
+Georgia	GEO	Kvemo Kartli
+Georgia	GEO	Tbilisi
+Georgia	GEO	Mtskheta-Mtianeti
+Georgia	GEO	Samtskhe–Javakheti
+Georgia	GEO	Adjara
+Georgia	GEO	Guria
+Georgia	GEO	Shida Kartli
+Georgia	GEO	Imereti
+Georgia	GEO	Racha-Lechkhumi and Kvemo Svaneti
+Georgia	GEO	Samegrelo-Zemo Svaneti
+Germany	DEU	Baden-Württemberg
+Germany	DEU	Bayern
+Germany	DEU	Berlin
+Germany	DEU	Brandenburg
+Germany	DEU	Bremen
+Germany	DEU	Hamburg
+Germany	DEU	Hessen
+Germany	DEU	Mecklenburg-Vorpommern
+Germany	DEU	Niedersachsen
+Germany	DEU	Nordrhein-Westfalen
+Germany	DEU	Rheinland-Pfalz
+Germany	DEU	Saarland
+Germany	DEU	Sachsen
+Germany	DEU	Sachsen-Anhalt
+Germany	DEU	Schleswig-Holstein
+Germany	DEU	Thüringen
+Ghana	GHA	Western North Region
+Ghana	GHA	Ahafo Region
+Ghana	GHA	Bono East Region
+Ghana	GHA	Savannah Region
+Ghana	GHA	North East Region
+Ghana	GHA	Oti Region
+Ghana	GHA	Western Region
+Ghana	GHA	Eastern Region
+Ghana	GHA	Northern Region
+Ghana	GHA	Central Region
+Ghana	GHA	Ashanti Region
+Ghana	GHA	Bono Region
+Ghana	GHA	Volta Region
+Ghana	GHA	Upper West Region
+Ghana	GHA	Upper East Region
+Ghana	GHA	Greater Accra Region
+Greece	GRC	Agion Oros
+Greece	GRC	Crete
+Greece	GRC	Attica
+Greece	GRC	Macedonia-Thrace
+Greece	GRC	Epirus-Western Macedonia
+Greece	GRC	Peloponisos-W. Greece & Ionian
+Greece	GRC	Egean
+Greece	GRC	Thessalia-Central Greece
+Greenland	GRL	Northeast Greenland National Park
+Greenland	GRL	Avannaata
+Greenland	GRL	Sermersooq
+Greenland	GRL	Kujalleq
+Greenland	GRL	Qeqqata
+Greenland	GRL	Qeqertalik
+Grenada	GRD	Saint Andrew
+Grenada	GRD	Saint David
+Grenada	GRD	Saint Mark
+Grenada	GRD	Saint John
+Grenada	GRD	Saint George
+Grenada	GRD	Saint Patrick
+Grenada	GRD	Southern Grenadine Islands
+Guatemala	GTM	Alta Verapaz
+Guatemala	GTM	Suchitepéquez
+Guatemala	GTM	El Progreso
+Guatemala	GTM	Zacapa
+Guatemala	GTM	Petén
+Guatemala	GTM	Quiché
+Guatemala	GTM	Chiquimula
+Guatemala	GTM	Sacatepéquez
+Guatemala	GTM	Guatemala
+Guatemala	GTM	Izabal
+Guatemala	GTM	Jalapa
+Guatemala	GTM	San Marcos
+Guatemala	GTM	Huehuetenango
+Guatemala	GTM	Totonicapán
+Guatemala	GTM	Quetzaltenango
+Guatemala	GTM	Retalhuleu
+Guatemala	GTM	Baja Verapaz
+Guatemala	GTM	Sololá
+Guatemala	GTM	Escuintla
+Guatemala	GTM	Chimaltenango
+Guatemala	GTM	Jutiapa
+Guatemala	GTM	Santa Rosa
+Guinea	GIN	Boke
+Guinea	GIN	Conakry
+Guinea	GIN	Faranah
+Guinea	GIN	Kankan
+Guinea	GIN	Kindia
+Guinea	GIN	Labe
+Guinea	GIN	Mamou
+Guinea	GIN	Nzerekore
+Guinea-Bissau	GNB	Bissau
+Guinea-Bissau	GNB	Bafatá
+Guinea-Bissau	GNB	Biombo
+Guinea-Bissau	GNB	Bolama
+Guinea-Bissau	GNB	Cacheu
+Guinea-Bissau	GNB	Gabu
+Guinea-Bissau	GNB	Oio
+Guinea-Bissau	GNB	Quinara
+Guinea-Bissau	GNB	Tombali
+Guyana	GUY	Barina-Waini
+Guyana	GUY	Pomeroon-Supenaam
+Guyana	GUY	Essequibo Islands-West Demerara
+Guyana	GUY	Demerara-Mahaica
+Guyana	GUY	Cuyuni-Mazaruni
+Guyana	GUY	Potaro-Siparuni
+Guyana	GUY	Upper Takutu-Upper Essequibo
+Guyana	GUY	Mahaica-Berbice
+Guyana	GUY	East Berbice-Corentyne
+Guyana	GUY	Upper Demerara-Berbice
+Haiti	HTI	Département de l'Ouest
+Haiti	HTI	Département de la Grande-Anse
+Haiti	HTI	Département des Nippes
+Haiti	HTI	Département du Sud-Est
+Haiti	HTI	Nord-Ouest Department
+Haiti	HTI	Département du Nord
+Haiti	HTI	Nord-Est Department
+Haiti	HTI	Centre Department
+Haiti	HTI	Artibonite Department
+Haiti	HTI	Sud Department
+Honduras	HND	Gracias a Dios
+Honduras	HND	Bay Islands
+Honduras	HND	Choluteca
+Honduras	HND	Colón
+Honduras	HND	El Paraíso
+Honduras	HND	Olancho
+Honduras	HND	Valle
+Honduras	HND	Atlántida
+Honduras	HND	Comayagua
+Honduras	HND	Copán
+Honduras	HND	Cortés
+Honduras	HND	Francisco Morazán
+Honduras	HND	Intibucá
+Honduras	HND	La Paz
+Honduras	HND	Lempira
+Honduras	HND	Ocotepeque
+Honduras	HND	Santa Bárbara
+Honduras	HND	Yoro
+Hungary	HUN	Pest
+Hungary	HUN	Szabolcs-Szatmár-Bereg
+Hungary	HUN	Hajdú-Bihar
+Hungary	HUN	Borsod-Abaúj-Zemplén
+Hungary	HUN	Nógrád
+Hungary	HUN	Heves
+Hungary	HUN	Békés
+Hungary	HUN	Csongrád-Csanád
+Hungary	HUN	Jász-Nagykun-Szolnok
+Hungary	HUN	Komárom-Esztergom
+Hungary	HUN	Gyor-Moson-Sopron
+Hungary	HUN	Vas
+Hungary	HUN	Zala
+Hungary	HUN	Veszprém
+Hungary	HUN	Baranya
+Hungary	HUN	Somogy
+Hungary	HUN	Tolna
+Hungary	HUN	Bács-Kiskun
+Hungary	HUN	Fejér
+Iceland	ISL	Capital Region
+Iceland	ISL	Eastern Region
+Iceland	ISL	Northeastern Region
+Iceland	ISL	Northwestern Region
+Iceland	ISL	Westfjords
+Iceland	ISL	Western Region
+Iceland	ISL	Southern Peninsula
+Iceland	ISL	Southern Region
+India	IND	Puducherry
+India	IND	Maharashtra
+India	IND	Nagaland
+India	IND	Lakshadweep
+India	IND	Uttar Pradesh
+India	IND	Tamil Nadu
+India	IND	Chhattisgarh
+India	IND	Gujarat
+India	IND	Delhi
+India	IND	Sikkim
+India	IND	Tripura
+India	IND	West Bengal
+India	IND	Odisha
+India	IND	Bihar
+India	IND	Ladakh
+India	IND	Rajasthan
+India	IND	Telangana
+India	IND	Andhra Pradesh
+India	IND	Mizoram
+India	IND	Arunachal Pradesh
+India	IND	Meghalaya
+India	IND	Jharkhand
+India	IND	Assam
+India	IND	Manipur
+India	IND	Karnataka
+India	IND	Uttarakhand
+India	IND	Dadra and Nagar Haveli and Daman and Diu
+India	IND	Madhya Pradesh
+India	IND	Goa
+India	IND	Kerala
+India	IND	Chandigarh
+India	IND	Andaman and Nicobar Islands
+India	IND	Himachal Pradesh
+India	IND	Jammu and Kashmir
+India	IND	Punjab
+India	IND	Haryana
+Indonesia	IDN	Bali
+Indonesia	IDN	West Nusa Tenggara
+Indonesia	IDN	Banten
+Indonesia	IDN	Central Java
+Indonesia	IDN	West Java
+Indonesia	IDN	Central Kalimantan
+Indonesia	IDN	South Kalimantan
+Indonesia	IDN	West Kalimantan
+Indonesia	IDN	Central Sulawesi
+Indonesia	IDN	Gorontalo
+Indonesia	IDN	North Sulawesi
+Indonesia	IDN	South Sulawesi
+Indonesia	IDN	Southeast Sulawesi
+Indonesia	IDN	West Sulawesi
+Indonesia	IDN	Aceh
+Indonesia	IDN	Bengkulu
+Indonesia	IDN	Jambi
+Indonesia	IDN	Lampung
+Indonesia	IDN	Riau
+Indonesia	IDN	West Sumatra
+Indonesia	IDN	South Sumatra
+Indonesia	IDN	North Sumatra
+Indonesia	IDN	East Nusa Tenggara
+Indonesia	IDN	Maluku
+Indonesia	IDN	North Maluku
+Indonesia	IDN	East Java
+Indonesia	IDN	Bangka-Belitung Islands
+Indonesia	IDN	Riau Islands
+Indonesia	IDN	Papua
+Indonesia	IDN	West Papua
+Indonesia	IDN	East Kalimantan
+Indonesia	IDN	North Kalimantan
+Indonesia	IDN	Special Region of Yogyakarta
+Indonesia	IDN	Jakarta Special Capital Region
+Iran	IRN	Mazandaran
+Iran	IRN	North Khorasan
+Iran	IRN	Kerman
+Iran	IRN	Ilam
+Iran	IRN	Lorestan
+Iran	IRN	Markazi
+Iran	IRN	Chaharmahal and Bakhtiari
+Iran	IRN	Kermanshah
+Iran	IRN	Hamadan
+Iran	IRN	Qazvin
+Iran	IRN	Gilan
+Iran	IRN	Zanjan
+Iran	IRN	Semnan
+Iran	IRN	Isfahan
+Iran	IRN	Kohgiluyeh and Boyer-Ahmad
+Iran	IRN	Kurdistan
+Iran	IRN	West Azerbaijan
+Iran	IRN	Fars
+Iran	IRN	Bushehr
+Iran	IRN	Ardabil
+Iran	IRN	Golestan
+Iran	IRN	Razavi Khorasan
+Iran	IRN	South Khorasan
+Iran	IRN	Sistan and Baluchestan
+Iran	IRN	Qom
+Iran	IRN	Alborz
+Iran	IRN	East Azerbaijan
+Iran	IRN	Yazd
+Iran	IRN	Hormozgan
+Iran	IRN	Khuzestan
+Iran	IRN	Tehran
+Iran	IRN	Mazandaran
+Iraq	IRQ	Al-Anbar
+Iraq	IRQ	Karbala
+Iraq	IRQ	An-Najaf
+Iraq	IRQ	Babil
+Iraq	IRQ	Baghdad
+Iraq	IRQ	Al-Qadisiyah
+Iraq	IRQ	Al-Muthanna
+Iraq	IRQ	Dhi Qar
+Iraq	IRQ	Al-Basrah
+Iraq	IRQ	Maysan
+Iraq	IRQ	Wasit
+Iraq	IRQ	Ninawa
+Iraq	IRQ	Dohuk
+Iraq	IRQ	Salah al-Din
+Iraq	IRQ	Diyala
+Iraq	IRQ	Kirkuk
+Iraq	IRQ	Erbil
+Iraq	IRQ	Al-Sulaimaniyah
+Ireland	IRL	Ulster
+Ireland	IRL	Leinster
+Ireland	IRL	Munster
+Ireland	IRL	Connacht
+Israel	ISR	Southern District
+Israel	ISR	Central District
+Israel	ISR	Jerusalem District
+Israel	ISR	Tel Aviv
+Israel	ISR	Haifa
+Israel	ISR	Northern District
+Italy	ITA	Nord-Ovest
+Italy	ITA	Nord-Est
+Italy	ITA	Centro
+Italy	ITA	Sud
+Italy	ITA	Isole
+Jamaica	JAM	Saint Ann
+Jamaica	JAM	Trelawny
+Jamaica	JAM	Saint Mary
+Jamaica	JAM	Portland
+Jamaica	JAM	Saint James
+Jamaica	JAM	Hanover
+Jamaica	JAM	Westmoreland
+Jamaica	JAM	Saint Elizabeth
+Jamaica	JAM	Saint Thomas
+Jamaica	JAM	Clarendon
+Jamaica	JAM	Saint Catherine
+Jamaica	JAM	Manchester
+Jamaica	JAM	Kingston
+Jamaica	JAM	Saint Andrew
+Japan	JPN	Osaka Prefecture
+Japan	JPN	Oita
+Japan	JPN	Hyogo Prefecture
+Japan	JPN	Fukui Prefecture
+Japan	JPN	Shiga
+Japan	JPN	Nara Prefecture
+Japan	JPN	Gifu Prefecture
+Japan	JPN	Mie Prefecture
+Japan	JPN	Wakayama Prefecture
+Japan	JPN	Tokyo
+Japan	JPN	Fukuoka Prefecture
+Japan	JPN	Saitama
+Japan	JPN	Fukushima
+Japan	JPN	Tochigi
+Japan	JPN	Aomori
+Japan	JPN	Saga Prefecture
+Japan	JPN	Nagasaki Prefecture
+Japan	JPN	Miyazaki Prefecture
+Japan	JPN	Kumamoto
+Japan	JPN	Kagoshima Prefecture
+Japan	JPN	Gunma
+Japan	JPN	Kyoto Prefecture
+Japan	JPN	Chiba
+Japan	JPN	Ibaraki
+Japan	JPN	Kanagawa
+Japan	JPN	Hiroshima
+Japan	JPN	Tottori Prefecture
+Japan	JPN	Shimane
+Japan	JPN	Niigata
+Japan	JPN	Nagano
+Japan	JPN	Aichi Prefecture
+Japan	JPN	Yamanashi
+Japan	JPN	Miyagi
+Japan	JPN	Yamagata
+Japan	JPN	Akita
+Japan	JPN	Iwate
+Japan	JPN	Toyama
+Japan	JPN	Shizuoka
+Japan	JPN	Ishikawa Prefecture
+Japan	JPN	Okayama Prefecture
+Japan	JPN	Tokushima Prefecture
+Japan	JPN	Kochi Prefecture
+Japan	JPN	Ehime Prefecture
+Japan	JPN	Kagawa Prefecture
+Japan	JPN	Okinawa Prefecture
+Japan	JPN	Hokkaido
+Japan	JPN	Yamaguchi
+Jordan	JOR	Ma'an
+Jordan	JOR	Karak
+Jordan	JOR	Madaba
+Jordan	JOR	Balqa
+Jordan	JOR	Jerash
+Jordan	JOR	Ajloun
+Jordan	JOR	Irbid
+Jordan	JOR	Mafraq
+Jordan	JOR	Tafilah
+Jordan	JOR	Aqaba
+Jordan	JOR	Amman
+Jordan	JOR	Zarqa
+Kazakhstan	KAZ	Pavlodar Region
+Kazakhstan	KAZ	Jambyl Region
+Kazakhstan	KAZ	Kostanay Region
+Kazakhstan	KAZ	Mangystau Region
+Kazakhstan	KAZ	Karaganda Region
+Kazakhstan	KAZ	Kyzylorda Region
+Kazakhstan	KAZ	East Kazakhstan Region
+Kazakhstan	KAZ	Aktobe Region
+Kazakhstan	KAZ	Atyrau Region
+Kazakhstan	KAZ	South Kazakhstan Region
+Kazakhstan	KAZ	Akmola Region
+Kazakhstan	KAZ	Almaty Region
+Kazakhstan	KAZ	North Kazakhstan Region
+Kazakhstan	KAZ	Almaty
+Kazakhstan	KAZ	West Kazakhstan Region
+Kazakhstan	KAZ	Astana
+Kenya	KEN	Turkana
+Kenya	KEN	Marsabit
+Kenya	KEN	Mandera
+Kenya	KEN	Wajir
+Kenya	KEN	West Pokot
+Kenya	KEN	Samburu
+Kenya	KEN	Isiolo
+Kenya	KEN	Baringo
+Kenya	KEN	Elgeyo-Marakwet
+Kenya	KEN	Trans Nzoia
+Kenya	KEN	Bungoma
+Kenya	KEN	Garissa
+Kenya	KEN	Uasin Gishu
+Kenya	KEN	Kakamega
+Kenya	KEN	Laikipia
+Kenya	KEN	Busia
+Kenya	KEN	Meru
+Kenya	KEN	Nandi
+Kenya	KEN	Siaya
+Kenya	KEN	Nakuru
+Kenya	KEN	Vihiga
+Kenya	KEN	Nyandarua
+Kenya	KEN	Tharaka
+Kenya	KEN	Kericho
+Kenya	KEN	Kisumu
+Kenya	KEN	Nyeri
+Kenya	KEN	Tana River
+Kenya	KEN	Kitui
+Kenya	KEN	Kirinyaga
+Kenya	KEN	Embu
+Kenya	KEN	Homa Bay
+Kenya	KEN	Bomet
+Kenya	KEN	Nyamira
+Kenya	KEN	Narok
+Kenya	KEN	Kisii
+Kenya	KEN	Murang'a
+Kenya	KEN	Migori
+Kenya	KEN	Kiambu
+Kenya	KEN	Machakos
+Kenya	KEN	Kajiado
+Kenya	KEN	Nairobi
+Kenya	KEN	Makueni
+Kenya	KEN	Lamu
+Kenya	KEN	Kilifi
+Kenya	KEN	Taita Taveta
+Kenya	KEN	Kwale
+Kenya	KEN	Mombasa
+Kiribati	KIR	Gilbert Islands
+Kiribati	KIR	Phoenix Islands
+Kiribati	KIR	Line Islands
+Korea, North	PRK	Jagang
+Korea, North	PRK	Kangwon
+Korea, North	PRK	Nampo
+Korea, North	PRK	North Hamgyong
+Korea, North	PRK	North Hwanghae
+Korea, North	PRK	North Pyongan
+Korea, North	PRK	Pyongyang
+Korea, North	PRK	Ryanggang
+Korea, North	PRK	South Hamgyong
+Korea, North	PRK	South Hwanghae
+Korea, North	PRK	South Pyongan
+Korea, South	KOR	Gangwon
+Korea, South	KOR	Gyeonggi
+Korea, South	KOR	South Chungcheong
+Korea, South	KOR	Incheon
+Korea, South	KOR	North Jeolla
+Korea, South	KOR	South Jeolla
+Korea, South	KOR	South Gyeongsang
+Korea, South	KOR	Busan
+Korea, South	KOR	Ulsan
+Korea, South	KOR	North Gyeongsang
+Korea, South	KOR	Jeju
+Korea, South	KOR	Seoul
+Korea, South	KOR	Daejeon
+Korea, South	KOR	Sejong
+Korea, South	KOR	North Chungcheong
+Korea, South	KOR	Gwangju
+Korea, South	KOR	Daegu
+Kosovo	XKX	District of Prishtina
+Kosovo	XKX	District of Mitrovica
+Kosovo	XKX	District of Peja
+Kosovo	XKX	District of Gjilan
+Kosovo	XKX	District of Gjakova
+Kosovo	XKX	District of Prizren
+Kosovo	XKX	District of Ferizaj
+Kuwait	KWT	Ahmadi
+Kuwait	KWT	Al Asimah
+Kuwait	KWT	Farwaniya
+Kuwait	KWT	Hawalli
+Kuwait	KWT	Jahra
+Kuwait	KWT	Mubarak Al-Kabeer
+Kyrgyzstan	KGZ	Batken Region
+Kyrgyzstan	KGZ	Osh Region
+Kyrgyzstan	KGZ	Talas Region
+Kyrgyzstan	KGZ	Jalal-Abad Region
+Kyrgyzstan	KGZ	Issyk-Kul Region
+Kyrgyzstan	KGZ	Chuy Region
+Kyrgyzstan	KGZ	Naryn Region
+Laos	LAO	Xaignabouli
+Laos	LAO	Attapeu
+Laos	LAO	Bokeo
+Laos	LAO	Bolikhamsai
+Laos	LAO	Champasak
+Laos	LAO	Houaphan
+Laos	LAO	Khammouane
+Laos	LAO	Luang Namtha
+Laos	LAO	Luang Prabang
+Laos	LAO	Oudomxay
+Laos	LAO	Phongsaly
+Laos	LAO	Salavan
+Laos	LAO	Savannakhet
+Laos	LAO	Vientiane Capital
+Laos	LAO	Vientiane
+Laos	LAO	Xaisomboun
+Laos	LAO	Xekong
+Laos	LAO	Xiangkhouang
+Latvia	LVA	Aluksnes novads
+Latvia	LVA	Livanu novads
+Latvia	LVA	Gulbenes novads
+Latvia	LVA	Ventspils novads
+Latvia	LVA	Valkas novads
+Latvia	LVA	Salaspils novads
+Latvia	LVA	Jelgavas
+Latvia	LVA	Rezeknes
+Latvia	LVA	Jurmalas
+Latvia	LVA	Ventspils
+Latvia	LVA	Riga
+Latvia	LVA	Liepajas
+Latvia	LVA	Dienvidkurzemes novads
+Latvia	LVA	Kuldigas novads
+Latvia	LVA	Saldus novads
+Latvia	LVA	Talsu novads
+Latvia	LVA	Tukuma novads
+Latvia	LVA	Dobeles novads
+Latvia	LVA	Jelgavas novads
+Latvia	LVA	Marupes novads
+Latvia	LVA	Bauskas novads
+Latvia	LVA	Ogres novads
+Latvia	LVA	Aizkraukles novads
+Latvia	LVA	Jekabpils novads
+Latvia	LVA	Ludzas novads
+Latvia	LVA	Rezeknes novads
+Latvia	LVA	Balvu novads
+Latvia	LVA	Madonas novads
+Latvia	LVA	Smiltenes novads
+Latvia	LVA	Cesu novads
+Latvia	LVA	Valmieras novads
+Latvia	LVA	Adažu novads
+Latvia	LVA	Ropažu novads
+Latvia	LVA	Siguldas novads
+Latvia	LVA	Preilu novads
+Latvia	LVA	Kraslavas novads
+Latvia	LVA	Daugavpils
+Latvia	LVA	Kekavas novads
+Latvia	LVA	Olaines novads
+Latvia	LVA	Saulkrastu novads
+Latvia	LVA	Limbažu novads
+Latvia	LVA	Augšdaugavas novads
+Latvia	LVA	Varaklanu novads
+Lebanon	LBN	Baalbek-Hermel
+Lebanon	LBN	Baalbek-Hermel
+Lebanon	LBN	Beyrouth
+Lebanon	LBN	Beyrouth
+Lebanon	LBN	Liban-Nord
+Lebanon	LBN	Liban-Nord
+Lebanon	LBN	Mont-Liban
+Lebanon	LBN	Mont-Liban
+Lebanon	LBN	Liban-Sud
+Lebanon	LBN	Liban-Sud
+Lebanon	LBN	Nabatîyé
+Lebanon	LBN	Nabatîyé
+Lebanon	LBN	Béqaa
+Lebanon	LBN	Béqaa
+Lebanon	LBN	Aakkâr
+Lebanon	LBN	Aakkâr
+Lebanon	LBN	Keserwan-Jbeil
+Lebanon	LBN	Keserwan-Jbeil
+Lebanon	LBN	Baalbek-Hermel
+Lebanon	LBN	Baalbek-Hermel
+Lebanon	LBN	Beyrouth
+Lebanon	LBN	Beyrouth
+Lebanon	LBN	Liban-Nord
+Lebanon	LBN	Liban-Nord
+Lebanon	LBN	Mont-Liban
+Lebanon	LBN	Mont-Liban
+Lebanon	LBN	Liban-Sud
+Lebanon	LBN	Liban-Sud
+Lebanon	LBN	Nabatîyé
+Lebanon	LBN	Nabatîyé
+Lebanon	LBN	Béqaa
+Lebanon	LBN	Béqaa
+Lebanon	LBN	Aakkâr
+Lebanon	LBN	Aakkâr
+Lebanon	LBN	Keserwan-Jbeil
+Lebanon	LBN	Keserwan-Jbeil
+Lesotho	LSO	Mokhotlong District
+Lesotho	LSO	Maseru District
+Lesotho	LSO	Butha-Buthe District
+Lesotho	LSO	Mohale's Hoek District
+Lesotho	LSO	Mafeteng District
+Lesotho	LSO	Quthing District
+Lesotho	LSO	Berea District
+Lesotho	LSO	Thaba-Tseka District
+Lesotho	LSO	Qacha's Nek District
+Lesotho	LSO	Leribe District
+Liberia	LBR	Bomi
+Liberia	LBR	Bong
+Liberia	LBR	Gbarpolu
+Liberia	LBR	Grand Bassa
+Liberia	LBR	Grand Cape Mount
+Liberia	LBR	Grand Gedeh
+Liberia	LBR	Grand Kru
+Liberia	LBR	Lofa
+Liberia	LBR	Margibi
+Liberia	LBR	Maryland
+Liberia	LBR	Montserrado
+Liberia	LBR	Nimba
+Liberia	LBR	River Gee
+Liberia	LBR	Rivercess
+Liberia	LBR	Sinoe
+Libya	LBY	Ghadamis
+Libya	LBY	An Nuqat al Khams
+Libya	LBY	Al Kufrah
+Libya	LBY	Murzuq
+Libya	LBY	Al Butnan
+Libya	LBY	Ajdabiya
+Libya	LBY	Ash Shati'
+Libya	LBY	Ghat
+Libya	LBY	Surt
+Libya	LBY	Misratah
+Libya	LBY	Al Marqab
+Libya	LBY	Tajura' wa an Nawahi al Arba
+Libya	LBY	Az Zawiyah
+Libya	LBY	Al Qubbah
+Libya	LBY	Al Jabal al Akhdar
+Libya	LBY	Al Marj
+Libya	LBY	Benghazi
+Libya	LBY	Al Jifarah
+Libya	LBY	Mizdah
+Libya	LBY	Al Jufrah
+Libya	LBY	Sabha
+Libya	LBY	Wadi al Hayaa
+Liechtenstein	LIE	Triesen
+Liechtenstein	LIE	Schellenberg
+Liechtenstein	LIE	Gamprin
+Liechtenstein	LIE	Triesenberg
+Liechtenstein	LIE	Eschen
+Liechtenstein	LIE	Ruggell
+Liechtenstein	LIE	Mauren
+Liechtenstein	LIE	Schaan
+Liechtenstein	LIE	Balzers
+Liechtenstein	LIE	Planken
+Liechtenstein	LIE	Vaduz
+Lithuania	LTU	Utena County
+Lithuania	LTU	Marijampole County
+Lithuania	LTU	Vilnius County
+Lithuania	LTU	Panevezys County
+Lithuania	LTU	Kaunas County
+Lithuania	LTU	Alytus County
+Lithuania	LTU	Klaipeda County
+Lithuania	LTU	Telsiai County
+Lithuania	LTU	Siauliai County
+Lithuania	LTU	Taurage County
+Luxembourg	LUX	Canton Echternach
+Luxembourg	LUX	Canton Grevenmacher
+Luxembourg	LUX	Canton Remich
+Luxembourg	LUX	Canton Mersch
+Luxembourg	LUX	Canton Capellen
+Luxembourg	LUX	Canton Luxembourg
+Luxembourg	LUX	Canton Redange
+Luxembourg	LUX	Canton Diekirch
+Luxembourg	LUX	Canton Esch-sur-Alzette
+Luxembourg	LUX	Canton Clervaux
+Luxembourg	LUX	Canton Wiltz
+Luxembourg	LUX	Canton Vianden
+Macedonia	MKD	Pelagonia
+Macedonia	MKD	Southwest
+Macedonia	MKD	Vardar
+Macedonia	MKD	Polog
+Macedonia	MKD	Southeast
+Macedonia	MKD	East
+Macedonia	MKD	Skopje
+Macedonia	MKD	Northeast
+Madagascar	MDG	Diana
+Madagascar	MDG	Sava
+Madagascar	MDG	Analanjirofo
+Madagascar	MDG	Amoron'i Mania
+Madagascar	MDG	Ihorombe
+Madagascar	MDG	Melaky
+Madagascar	MDG	Menabe
+Madagascar	MDG	Vakinankaratra
+Madagascar	MDG	Atsinanana
+Madagascar	MDG	Alaotra-Mangoro
+Madagascar	MDG	Sofia
+Madagascar	MDG	Anosy
+Madagascar	MDG	Boeny
+Madagascar	MDG	Betsiboka
+Madagascar	MDG	Analamanga
+Madagascar	MDG	Bongolava
+Madagascar	MDG	Itasy
+Madagascar	MDG	Atsimo-Andrefana
+Madagascar	MDG	Androy
+Madagascar	MDG	Atsimo-Atsinanana
+Madagascar	MDG	Matsiatra Ambony
+Madagascar	MDG	Vatovavy-Fitovinany
+Malawi	MWI	Central Region
+Malawi	MWI	Southern Region
+Malawi	MWI	Northern Region
+Malaysia	MYS	Selangor
+Malaysia	MYS	Johor
+Malaysia	MYS	Kuala Lumpur
+Malaysia	MYS	Malacca
+Malaysia	MYS	Negeri Sembilan
+Malaysia	MYS	Sabah
+Malaysia	MYS	Sarawak
+Malaysia	MYS	Kelantan
+Malaysia	MYS	Putrajaya
+Malaysia	MYS	Terengganu
+Malaysia	MYS	Pahang
+Malaysia	MYS	Kedah
+Malaysia	MYS	Perlis
+Malaysia	MYS	Perak
+Malaysia	MYS	Penang
+Malaysia	MYS	Labuan
+Maldives	MDV	Haa Alif
+Maldives	MDV	Haa Dhaalu
+Maldives	MDV	Noonu
+Maldives	MDV	Shaviyani
+Maldives	MDV	Lhaviyani
+Maldives	MDV	Raa
+Maldives	MDV	Baa
+Maldives	MDV	Malé
+Maldives	MDV	Alif Alif
+Maldives	MDV	Alif Dhaalu
+Maldives	MDV	Meemu
+Maldives	MDV	Dhaalu
+Maldives	MDV	Faafu
+Maldives	MDV	Thaa
+Maldives	MDV	Laamu
+Maldives	MDV	Gaafu Alif
+Maldives	MDV	Gaafu Dhaalu
+Maldives	MDV	Gnaviyani
+Maldives	MDV	Addu
+Maldives	MDV	Kaafu
+Maldives	MDV	Vaavu
+Mali	MLI	Bamako
+Mali	MLI	Gao
+Mali	MLI	Kayes
+Mali	MLI	Kidal
+Mali	MLI	Koulikouro
+Mali	MLI	Mopti
+Mali	MLI	Segou
+Mali	MLI	Sikasso
+Mali	MLI	Tombouctou
+Malta	MLT	Ghajnsielem
+Malta	MLT	Qala
+Malta	MLT	Saint Lawerence
+Malta	MLT	Gharb
+Malta	MLT	Ghasri
+Malta	MLT	Zebbug Gozo
+Malta	MLT	Kercem
+Malta	MLT	Munxar
+Malta	MLT	Fontana
+Malta	MLT	Rabat Gozo
+Malta	MLT	Xghajra
+Malta	MLT	Sannat
+Malta	MLT	Xewkija
+Malta	MLT	Nadur
+Malta	MLT	Marsaskala
+Malta	MLT	Mellieha
+Malta	MLT	Gzira
+Malta	MLT	Mgarr
+Malta	MLT	Saint Paul's Bay
+Malta	MLT	Naxxar
+Malta	MLT	Gharghur
+Malta	MLT	Pembroke
+Malta	MLT	Saint Julian's
+Malta	MLT	Sliema
+Malta	MLT	Swieqi
+Malta	MLT	Saint John
+Malta	MLT	Iklin
+Malta	MLT	Valletta
+Malta	MLT	Ta' Xbiex
+Malta	MLT	Floriana
+Malta	MLT	Pietà
+Malta	MLT	Msida
+Malta	MLT	Hamrun
+Malta	MLT	Santa Venera
+Malta	MLT	Birkirkara
+Malta	MLT	Balzan
+Malta	MLT	Lija
+Malta	MLT	Mosta
+Malta	MLT	Mdina
+Malta	MLT	Mtarfa
+Malta	MLT	Rabat Malta
+Malta	MLT	Dingli
+Malta	MLT	Attard
+Malta	MLT	Xaghra
+Malta	MLT	Kalkara
+Malta	MLT	Birgu
+Malta	MLT	Zebbug Malta
+Malta	MLT	Qormi
+Malta	MLT	Isla
+Malta	MLT	Siggiewi
+Malta	MLT	Luqa
+Malta	MLT	Marsa
+Malta	MLT	Qrendi
+Malta	MLT	Mqabba
+Malta	MLT	Kirkop
+Malta	MLT	Safi
+Malta	MLT	Zurrieq
+Malta	MLT	Paola
+Malta	MLT	Bormla
+Malta	MLT	Tarxien
+Malta	MLT	Fgura
+Malta	MLT	Saint Lucia's
+Malta	MLT	Gudja
+Malta	MLT	Ghaxaq
+Malta	MLT	Birzebbuga
+Malta	MLT	Zejtun
+Malta	MLT	Zabbar
+Malta	MLT	Marsaxlokk
+Marshall Is	MHL	Kwajalein
+Marshall Is	MHL	Kili
+Marshall Is	MHL	Rongelap
+Marshall Is	MHL	Likiep
+Marshall Is	MHL	Lib
+Marshall Is	MHL	Namu
+Marshall Is	MHL	Ailinglaplap
+Marshall Is	MHL	Ailuk
+Marshall Is	MHL	Arno
+Marshall Is	MHL	Aur
+Marshall Is	MHL	Ebon
+Marshall Is	MHL	Enewetak
+Marshall Is	MHL	Jabat
+Marshall Is	MHL	Lae
+Marshall Is	MHL	Majuro
+Marshall Is	MHL	Mejit
+Marshall Is	MHL	Namdrik
+Marshall Is	MHL	Ujae
+Marshall Is	MHL	Utirik
+Marshall Is	MHL	Wotho
+Marshall Is	MHL	Jaluit
+Marshall Is	MHL	Mili
+Marshall Is	MHL	Maloelap
+Marshall Is	MHL	Wotje
+Mauritania	MRT	Adrar
+Mauritania	MRT	Assaba
+Mauritania	MRT	Brakna
+Mauritania	MRT	Dakhlet Nouadhibou
+Mauritania	MRT	Gorgol
+Mauritania	MRT	Guidimaka
+Mauritania	MRT	Hodh ech Chargui
+Mauritania	MRT	Hodh el Gharbi
+Mauritania	MRT	Inchiri
+Mauritania	MRT	Nouakchott
+Mauritania	MRT	Tagant
+Mauritania	MRT	Tiris Zemmour
+Mauritania	MRT	Trarza
+Mauritius	MUS	Black River
+Mauritius	MUS	Flacq
+Mauritius	MUS	Grand Port
+Mauritius	MUS	Moka
+Mauritius	MUS	Pamplemousses
+Mauritius	MUS	Plaines Wilhems
+Mauritius	MUS	Port Louis
+Mauritius	MUS	Rivière du Rempart
+Mauritius	MUS	Savanne
+Mauritius	MUS	Rodrigues
+Mauritius	MUS	St. Brandon
+Mauritius	MUS	Agaléga
+Mexico	MEX	Aguascalientes
+Mexico	MEX	Baja California
+Mexico	MEX	Baja California Sur
+Mexico	MEX	Campeche
+Mexico	MEX	Chiapas
+Mexico	MEX	Chihuahua
+Mexico	MEX	Coahuila de Zaragoza
+Mexico	MEX	Colima
+Mexico	MEX	Distrito Federal
+Mexico	MEX	Durango
+Mexico	MEX	Guanajuato
+Mexico	MEX	Guerrero
+Mexico	MEX	Hidalgo
+Mexico	MEX	Jalisco
+Mexico	MEX	MÃ©xico
+Mexico	MEX	MichoacÃ¡n de Ocampo
+Mexico	MEX	Morelos
+Mexico	MEX	Nayarit
+Mexico	MEX	Nuevo LeÃ³n
+Mexico	MEX	Oaxaca
+Mexico	MEX	Puebla
+Mexico	MEX	QuerÃ©taro de Arteaga
+Mexico	MEX	Quintana Roo
+Mexico	MEX	San Luis PotosÃ­
+Mexico	MEX	Sinaloa
+Mexico	MEX	Sonora
+Mexico	MEX	Tabasco
+Mexico	MEX	Tamaulipas
+Mexico	MEX	Tlaxcala
+Mexico	MEX	Veracruz de Ignacio de la Llave
+Mexico	MEX	YucatÃ¡n
+Mexico	MEX	Zacatecas
+Micronesia, Fed States of	FSM	Yap
+Micronesia, Fed States of	FSM	Chuuk
+Micronesia, Fed States of	FSM	Pohnpei
+Micronesia, Fed States of	FSM	Kosrae
+Moldova	MDA	Cahul
+Moldova	MDA	Gagauzia
+Moldova	MDA	Taraclia
+Moldova	MDA	Cantemir
+Moldova	MDA	Basarabeasca
+Moldova	MDA	Leova
+Moldova	MDA	Cimislia
+Moldova	MDA	Stefan Voda
+Moldova	MDA	Bender
+Moldova	MDA	Causeni
+Moldova	MDA	Hincesti
+Moldova	MDA	Ialoveni
+Moldova	MDA	Nisporeni
+Moldova	MDA	Chisinau
+Moldova	MDA	Anenii Noi
+Moldova	MDA	Criuleni
+Moldova	MDA	Straseni
+Moldova	MDA	Ungheni
+Moldova	MDA	Dubasari
+Moldova	MDA	Calarasi
+Moldova	MDA	Transnistria
+Moldova	MDA	Falesti
+Moldova	MDA	Orhei
+Moldova	MDA	Glodeni
+Moldova	MDA	Balti
+Moldova	MDA	Telenesti
+Moldova	MDA	SIngerei
+Moldova	MDA	RIscani
+Moldova	MDA	Rezina
+Moldova	MDA	Soldanesti
+Moldova	MDA	Floresti
+Moldova	MDA	Drochia
+Moldova	MDA	Edinet
+Moldova	MDA	Briceni
+Moldova	MDA	Soroca
+Moldova	MDA	Donduseni
+Moldova	MDA	Ocnita
+Monaco	MCO	Monaco
+Mongolia	MNG	Uvs
+Mongolia	MNG	Khovd
+Mongolia	MNG	Zavkhan
+Mongolia	MNG	Bulgan
+Mongolia	MNG	Dornogovi
+Mongolia	MNG	Ulaanbaatar
+Mongolia	MNG	Govisumber
+Mongolia	MNG	Sükhbaatar
+Mongolia	MNG	Govi-Altai
+Mongolia	MNG	Orkhon
+Mongolia	MNG	Arkhangai
+Mongolia	MNG	Bayankhongor
+Mongolia	MNG	Dundgovi
+Mongolia	MNG	Ömnögovi
+Mongolia	MNG	Övörkhangai
+Mongolia	MNG	Töv
+Mongolia	MNG	Dornod
+Mongolia	MNG	Selenge
+Mongolia	MNG	Hovsgel
+Mongolia	MNG	Bayan-Ölgii
+Mongolia	MNG	Darkhan-Uul
+Mongolia	MNG	Khentii
+Montenegro	MNE	Herceg Novi Municipality
+Montenegro	MNE	Plav Municipality
+Montenegro	MNE	Rožaje Municipality
+Montenegro	MNE	Andrijevica Municipality
+Montenegro	MNE	Berane Municipality
+Montenegro	MNE	Podgorica Municipality
+Montenegro	MNE	Bar Municipality
+Montenegro	MNE	Bijelo Polje Municipality
+Montenegro	MNE	Budva Municipality
+Montenegro	MNE	Cetinje Municipality
+Montenegro	MNE	Danilovgrad Municipality
+Montenegro	MNE	Kolašin Municipality
+Montenegro	MNE	Kotor Municipality
+Montenegro	MNE	Mojkovac Municipality
+Montenegro	MNE	Nikšic Municipality
+Montenegro	MNE	Pljevlja Municipality
+Montenegro	MNE	Plužine Municipality
+Montenegro	MNE	Tivat Municipality
+Montenegro	MNE	Ulcinj Municipality
+Montenegro	MNE	Šavnik Municipality
+Montenegro	MNE	Žabljak Municipality
+Montenegro	MNE	Gusinje Municipality
+Montenegro	MNE	Petnjica Municipality
+Morocco	MAR	Laâyoune-Sakia El Hamra
+Morocco	MAR	Tangier-Tetouan-Al Hoceima
+Morocco	MAR	Oriental
+Morocco	MAR	Drâa-Tafilalet
+Morocco	MAR	Souss-Massa
+Morocco	MAR	Guelmim-Oued Noun
+Morocco	MAR	Casablanca-Settat
+Morocco	MAR	Marrakech-Safi
+Morocco	MAR	Dakhla-Oued Ed-Dahab
+Morocco	MAR	Rabat-Salé-Kenitra
+Morocco	MAR	Fez-Meknes
+Morocco	MAR	Béni Mellal-Khénifra
+Mozambique	MOZ	Cabo Delgado
+Mozambique	MOZ	Nampula
+Mozambique	MOZ	Niassa
+Mozambique	MOZ	Gaza
+Mozambique	MOZ	Inhambane
+Mozambique	MOZ	Manica
+Mozambique	MOZ	Maputo
+Mozambique	MOZ	Sofala
+Mozambique	MOZ	Tete
+Mozambique	MOZ	Zambézia
+Namibia	NAM	Karas
+Namibia	NAM	Kunene
+Namibia	NAM	Omusati
+Namibia	NAM	Ohangwena
+Namibia	NAM	Kavango
+Namibia	NAM	Caprivi
+Namibia	NAM	Hardap
+Namibia	NAM	Otjozondjupa
+Namibia	NAM	Omaheke
+Namibia	NAM	Erongo
+Namibia	NAM	Khomas
+Namibia	NAM	Oshana
+Namibia	NAM	Oshikoto
+Nauru	NRU	Meneng
+Nauru	NRU	Buada
+Nauru	NRU	Anibare
+Nauru	NRU	Ijuw
+Nauru	NRU	Anabar
+Nauru	NRU	Anetan
+Nauru	NRU	Ewa
+Nauru	NRU	Baiti
+Nauru	NRU	Uaboe
+Nauru	NRU	Nibok
+Nauru	NRU	Denigomodu
+Nauru	NRU	Aiwo
+Nauru	NRU	Yaren
+Nauru	NRU	Boe
+Nepal	NPL	Province 1
+Nepal	NPL	Province 2
+Nepal	NPL	Bagmati
+Nepal	NPL	Gandaki
+Nepal	NPL	Lumbini
+Nepal	NPL	Karnali
+Nepal	NPL	Sudurpaschim
+Netherlands	NLD	Groningen
+Netherlands	NLD	Drenthe
+Netherlands	NLD	Utrecht
+Netherlands	NLD	Flevoland
+Netherlands	NLD	Overijssel
+Netherlands	NLD	Noord-Holland
+Netherlands	NLD	Gelderland
+Netherlands	NLD	Zuid-Holland
+Netherlands	NLD	Fryslân
+Netherlands	NLD	Noord-Brabant
+Netherlands	NLD	Limburg
+Netherlands	NLD	Zeeland
+New Zealand	NZL	Northland Region
+New Zealand	NZL	Auckland Region
+New Zealand	NZL	Waikato Region
+New Zealand	NZL	Bay of Plenty Region
+New Zealand	NZL	Gisborne Region
+New Zealand	NZL	Hawke's Bay Region
+New Zealand	NZL	Taranaki Region
+New Zealand	NZL	Manawatu-Wanganui Region
+New Zealand	NZL	Wellington Region
+New Zealand	NZL	West Coast Region
+New Zealand	NZL	Canterbury Region
+New Zealand	NZL	Otago Region
+New Zealand	NZL	Southland Region
+New Zealand	NZL	Tasman Region
+New Zealand	NZL	Nelson Region
+New Zealand	NZL	Marlborough Region
+New Zealand	NZL	Chatham Islands Territory
+Nicaragua	NIC	Rio San Juan
+Nicaragua	NIC	Boaco
+Nicaragua	NIC	Chontales
+Nicaragua	NIC	Managua
+Nicaragua	NIC	Leon
+Nicaragua	NIC	Chinandega
+Nicaragua	NIC	Madriz
+Nicaragua	NIC	Estelí
+Nicaragua	NIC	Nueva Segovia
+Nicaragua	NIC	Matagalpa (Departemento)
+Nicaragua	NIC	North Carribean Coast Autonomous Region
+Nicaragua	NIC	South Atlantic Autonomous Region
+Nicaragua	NIC	Jinotega (Departamento)
+Nicaragua	NIC	Carazo
+Nicaragua	NIC	Granada
+Nicaragua	NIC	Masaya
+Nicaragua	NIC	Rivas
+Niger	NER	Tahoua/Agadez
+Niger	NER	Dossa
+Niger	NER	Niamey
+Niger	NER	Tillaberi
+Niger	NER	Maradi
+Niger	NER	Zinder/Diffa
+Nigeria	NGA	Cross River
+Nigeria	NGA	Abuja Federal Capital Territory
+Nigeria	NGA	Ogun
+Nigeria	NGA	Oyo
+Nigeria	NGA	Sokoto
+Nigeria	NGA	Zamfara
+Nigeria	NGA	Lagos
+Nigeria	NGA	Akwa Ibom
+Nigeria	NGA	Bayelsa
+Nigeria	NGA	Ondo
+Nigeria	NGA	Delta
+Nigeria	NGA	Rivers
+Nigeria	NGA	Kwara
+Nigeria	NGA	Kogi
+Nigeria	NGA	Benue
+Nigeria	NGA	Borno
+Nigeria	NGA	Katsina
+Nigeria	NGA	Plateau
+Nigeria	NGA	Edo
+Nigeria	NGA	Jigawa
+Nigeria	NGA	Anambra
+Nigeria	NGA	Kano
+Nigeria	NGA	Nasarawa
+Nigeria	NGA	Kebbi
+Nigeria	NGA	Imo
+Nigeria	NGA	Gombe
+Nigeria	NGA	Adamawa
+Nigeria	NGA	Yobe
+Nigeria	NGA	Abia
+Nigeria	NGA	Ekiti
+Nigeria	NGA	Osun
+Nigeria	NGA	Bauchi
+Nigeria	NGA	Niger
+Nigeria	NGA	Kaduna
+Nigeria	NGA	Enugu
+Nigeria	NGA	Taraba
+Nigeria	NGA	Ebonyi
+Norway	NOR	Vestfold og Telemark
+Norway	NOR	Agder
+Norway	NOR	Viken
+Norway	NOR	Rogaland
+Norway	NOR	Nordland
+Norway	NOR	Møre og Romsdal
+Norway	NOR	Vestland
+Norway	NOR	Oslo
+Norway	NOR	Trøndelag
+Norway	NOR	Troms og Finnmark
+Norway	NOR	Innlandet
+Oman	OMN	Dhofar
+Oman	OMN	Al Batinah
+Oman	OMN	Az Zahirah
+Oman	OMN	Muscat
+Oman	OMN	Ash Sharqiyah
+Oman	OMN	Ad Dakhiliyah
+Oman	OMN	Al Wusta
+Pakistan	PAK	Balochistan
+Pakistan	PAK	Sindh
+Pakistan	PAK	Gilgit-Baltistan
+Pakistan	PAK	Azad Kashmir
+Pakistan	PAK	Khyber Pakhtunkhwa
+Pakistan	PAK	Punjab
+Pakistan	PAK	Islamabad Capital Territory
+Palau	PLW	Aimeliik
+Palau	PLW	Airai
+Palau	PLW	Angaur
+Palau	PLW	Hatohobei
+Palau	PLW	Koror
+Palau	PLW	Melekeok
+Palau	PLW	Ngaraard
+Palau	PLW	Ngarchelong
+Palau	PLW	Ngardmau
+Palau	PLW	Ngeremlengui
+Palau	PLW	Ngatpang
+Palau	PLW	Ngchesar
+Palau	PLW	Ngiwal
+Palau	PLW	Peleliu
+Palau	PLW	Sonsorol
+Palau	PLW	Kayangel
+Panama	PAN	Provincia de Bocas del Toro
+Panama	PAN	Colón Province
+Panama	PAN	Provincia de Darién
+Panama	PAN	Comarca Emberá-Wounaan
+Panama	PAN	Comarca Guna Yala
+Panama	PAN	Provincia de Herrera
+Panama	PAN	Provincia de Los Santos
+Panama	PAN	Comarca Ngäbe-Buglé
+Panama	PAN	Provincia de Panamá Oeste
+Panama	PAN	Provincia de Panamá
+Panama	PAN	Provincia de Veraguas
+Panama	PAN	Provincia de Chiriquí
+Panama	PAN	Provincia de Coclé
+Papua New Guinea	PNG	Autonomous Region of Bougainville
+Papua New Guinea	PNG	Central Province
+Papua New Guinea	PNG	Chimbu (Simbu) Province
+Papua New Guinea	PNG	East New Britain Province
+Papua New Guinea	PNG	East Sepik Province
+Papua New Guinea	PNG	Eastern Highlands Province
+Papua New Guinea	PNG	Enga Province
+Papua New Guinea	PNG	Gulf Province
+Papua New Guinea	PNG	Hela Province
+Papua New Guinea	PNG	Jiwaka Province
+Papua New Guinea	PNG	Madang Province
+Papua New Guinea	PNG	Manus Province
+Papua New Guinea	PNG	Milne Bay Province
+Papua New Guinea	PNG	Morobe Province
+Papua New Guinea	PNG	National Capital District
+Papua New Guinea	PNG	New Ireland Province
+Papua New Guinea	PNG	Northern (Oro) Province
+Papua New Guinea	PNG	Southern Highlands Province
+Papua New Guinea	PNG	West New Britain Province
+Papua New Guinea	PNG	West Sepik (Sandaun) Province
+Papua New Guinea	PNG	Western Highlands Province
+Papua New Guinea	PNG	Western Province
+Paraguay	PRY	ASUNCION
+Paraguay	PRY	CONCEPCION
+Paraguay	PRY	SAN PEDRO
+Paraguay	PRY	CORDILLERA
+Paraguay	PRY	GUAIRA
+Paraguay	PRY	CAAGUAZU
+Paraguay	PRY	CAAZAPA
+Paraguay	PRY	ITAPUA
+Paraguay	PRY	MISIONES
+Paraguay	PRY	PARAGUARI
+Paraguay	PRY	ALTO PARANA
+Paraguay	PRY	CENTRAL
+Paraguay	PRY	ÑEEMBUCU
+Paraguay	PRY	AMAMBAY
+Paraguay	PRY	CANINDEYU
+Paraguay	PRY	PRESIDENTE HAYES
+Paraguay	PRY	BOQUERON
+Paraguay	PRY	ALTO PARAGUAY
+Peru	PER	Tacna
+Peru	PER	Moquegua
+Peru	PER	Arequipa
+Peru	PER	Madre de Dios
+Peru	PER	Cajamarca
+Peru	PER	Ica
+Peru	PER	Puno
+Peru	PER	Ucayali
+Peru	PER	Cusco
+Peru	PER	Apurímac
+Peru	PER	Ayacucho
+Peru	PER	Huancavelica
+Peru	PER	Callao
+Peru	PER	Lima
+Peru	PER	Junín
+Peru	PER	Pasco
+Peru	PER	Ancash
+Peru	PER	Huánuco
+Peru	PER	La Libertad
+Peru	PER	Lambayeque
+Peru	PER	San Martín
+Peru	PER	Amazonas
+Peru	PER	Piura
+Peru	PER	Tumbes
+Peru	PER	Loreto
+Philippines	PHL	ARMM
+Philippines	PHL	CAR
+Philippines	PHL	NCR
+Philippines	PHL	Ilocos Region
+Philippines	PHL	Cagayan Valley
+Philippines	PHL	Central Luzon
+Philippines	PHL	Calabarzon
+Philippines	PHL	Mimaropa
+Philippines	PHL	Zamboanga Peninsula
+Philippines	PHL	Bicol Region
+Philippines	PHL	Western Visayas
+Philippines	PHL	Central Visayas
+Philippines	PHL	Eastern Visayas
+Philippines	PHL	Northern Mindanao
+Philippines	PHL	Davao Region
+Philippines	PHL	Soccsksargen
+Philippines	PHL	Caraga
+Poland	POL	Subcarpathian Voivodeship
+Poland	POL	Podlaskie Voivodeship
+Poland	POL	Lódz Voivodeship
+Poland	POL	Lower Silesian Voivodeship
+Poland	POL	Opole Voivodeship
+Poland	POL	Swietokrzyskie Voivodeship
+Poland	POL	Masovian Voivodeship
+Poland	POL	Greater Poland Voivodeship
+Poland	POL	Lesser Poland Voivodeship
+Poland	POL	Lubusz Voivodeship
+Poland	POL	Kuyavian-Pomeranian Voivodeship
+Poland	POL	Pomeranian Voivodeship
+Poland	POL	West Pomeranian Voivodeship
+Poland	POL	Lublin Voivodeship
+Poland	POL	Warmian-Masurian Voivodeship
+Poland	POL	Silesian Voivodeship
+Portugal	PRT	RegiÃ£o AutÃ³noma da Madeira
+Portugal	PRT	RegiÃ£o AutÃ³noma dos AÃ§ores
+Portugal	PRT	AVEIRO
+Portugal	PRT	BEJA
+Portugal	PRT	BRAGA
+Portugal	PRT	BRAGANÃ<U+0087>A
+Portugal	PRT	CASTELO BRANCO
+Portugal	PRT	COIMBRA
+Portugal	PRT	Ã<U+0089>VORA
+Portugal	PRT	FARO
+Portugal	PRT	GUARDA
+Portugal	PRT	LEIRIA
+Portugal	PRT	LISBOA
+Portugal	PRT	PORTALEGRE
+Portugal	PRT	PORTO
+Portugal	PRT	SANTARÃ<U+0089>M
+Portugal	PRT	SETÃ<U+009A>BAL
+Portugal	PRT	VIANA DO CASTELO
+Portugal	PRT	VILA REAL
+Portugal	PRT	VISEU
+Qatar	QAT	Al Khor and Al Thakhira
+Qatar	QAT	Al Wakra
+Qatar	QAT	Al Shamal
+Qatar	QAT	Al Rayyan
+Qatar	QAT	Al Sheehaniya
+Qatar	QAT	Doha
+Qatar	QAT	Umm Slal
+Qatar	QAT	Al Daayen
+Romania	ROU	ALBA
+Romania	ROU	ARAD
+Romania	ROU	ARGES
+Romania	ROU	BACAU
+Romania	ROU	BIHOR
+Romania	ROU	BISTRITA-NASAUD
+Romania	ROU	BOTOSANI
+Romania	ROU	BRAILA
+Romania	ROU	BRASOV
+Romania	ROU	BUZAU
+Romania	ROU	CALARASI
+Romania	ROU	CARAS-SEVERIN
+Romania	ROU	CLUJ
+Romania	ROU	CONSTANTA
+Romania	ROU	COVASNA
+Romania	ROU	DAMBOVITA
+Romania	ROU	DOLJ
+Romania	ROU	GALATI
+Romania	ROU	GIURGIU
+Romania	ROU	GORJ
+Romania	ROU	HARGHITA
+Romania	ROU	HUNEDOARA
+Romania	ROU	IALOMITA
+Romania	ROU	IASI
+Romania	ROU	ILFOV
+Romania	ROU	MARAMURES
+Romania	ROU	MEHEDINTI
+Romania	ROU	BUCURESTI
+Romania	ROU	MURES
+Romania	ROU	NEAMT
+Romania	ROU	OLT
+Romania	ROU	PRAHOVA
+Romania	ROU	SALAJ
+Romania	ROU	SATU MARE
+Romania	ROU	SIBIU
+Romania	ROU	SUCEAVA
+Romania	ROU	TELEORMAN
+Romania	ROU	TIMIS
+Romania	ROU	TULCEA
+Romania	ROU	VALCEA
+Romania	ROU	VASLUI
+Romania	ROU	VRANCEA
+Russia	RUS	Altai Krai
+Russia	RUS	Republic of Mordovia
+Russia	RUS	Tula Oblast
+Russia	RUS	Kurgan Oblast
+Russia	RUS	Ingushetia
+Russia	RUS	Khanty-Mansiysk Autonomous Okrug – Ugra
+Russia	RUS	Kirov Oblast
+Russia	RUS	Komi Republic
+Russia	RUS	Kostroma Oblast
+Russia	RUS	Krasnoyarsk Krai
+Russia	RUS	Zabaykalsky Krai
+Russia	RUS	Sverdlovsk Oblast
+Russia	RUS	Volgograd Oblast
+Russia	RUS	Irkutsk Oblast
+Russia	RUS	Perm Krai
+Russia	RUS	Pskov Oblast
+Russia	RUS	Rostov Oblast
+Russia	RUS	Ryazan Oblast
+Russia	RUS	Adygea
+Russia	RUS	Samara Oblast
+Russia	RUS	Khakassia
+Russia	RUS	Tambov Oblast
+Russia	RUS	Tatarstan
+Russia	RUS	Tomsk Oblast
+Russia	RUS	Nizhny Novgorod Oblast
+Russia	RUS	Republic of Karelia
+Russia	RUS	Arkhangelsk Oblast
+Russia	RUS	Astrakhan Oblast
+Russia	RUS	Belgorod Oblast
+Russia	RUS	Bryansk Oblast
+Russia	RUS	Buryatia
+Russia	RUS	Chechnya
+Russia	RUS	Chelyabinsk Oblast
+Russia	RUS	Chuvashia
+Russia	RUS	Tyumen Oblast
+Russia	RUS	North Ossetia–Alania
+Russia	RUS	Penza Oblast
+Russia	RUS	Amur Oblast
+Russia	RUS	Kabardino-Balkaria
+Russia	RUS	Krasnodar Krai
+Russia	RUS	Kursk Oblast
+Russia	RUS	Leningrad oblast
+Russia	RUS	Mari El
+Russia	RUS	Moscow
+Russia	RUS	Moscow Oblast
+Russia	RUS	Murmansk Oblast
+Russia	RUS	Nenets Autonomous Okrug
+Russia	RUS	Novgorod Oblast
+Russia	RUS	Novosibirsk Oblast
+Russia	RUS	Omsk Oblast
+Russia	RUS	Oryol Oblast
+Russia	RUS	Saint Petersburg
+Russia	RUS	Sakhalin Oblast
+Russia	RUS	Sakha Republic
+Russia	RUS	Saratov Oblast
+Russia	RUS	Smolensk Oblast
+Russia	RUS	Stavropol Krai
+Russia	RUS	Tuva
+Russia	RUS	Tver Oblast
+Russia	RUS	Udmurtia
+Russia	RUS	Kaluga Oblast
+Russia	RUS	Lipetsk Oblast
+Russia	RUS	Magadan Oblast
+Russia	RUS	Ulyanovsk Oblast
+Russia	RUS	Vladimir Oblast
+Russia	RUS	Vologda Oblast
+Russia	RUS	Yaroslavl Oblast
+Russia	RUS	Voronezh Oblast
+Russia	RUS	Yamalo-Nenets Autonomous Okrug
+Russia	RUS	Altai Republic
+Russia	RUS	Ivanovo Oblast
+Russia	RUS	Jewish Autonomous Oblast
+Russia	RUS	Kalmykia
+Russia	RUS	Kamchatka Krai
+Russia	RUS	Karachay-Cherkessia
+Russia	RUS	Kemerovo Oblast
+Russia	RUS	Khabarovsk Krai
+Russia	RUS	Chukotka Autonomous Okrug
+Russia	RUS	Dagestan
+Russia	RUS	Kaliningrad
+Russia	RUS	Orenburg Oblast
+Russia	RUS	Primorsky Krai
+Russia	RUS	Bashkortostan
+Rwanda	RWA	City of Kigali
+Rwanda	RWA	Southern Province
+Rwanda	RWA	Northern Province
+Rwanda	RWA	Eastern Province
+Rwanda	RWA	Western Province
+Samoa	WSM	A'ana
+Samoa	WSM	Aiga-i-le-Tai
+Samoa	WSM	Atua
+Samoa	WSM	Fa'asaleleage
+Samoa	WSM	Gaga'emauga
+Samoa	WSM	Gaga'ifomauga
+Samoa	WSM	Palauli
+Samoa	WSM	Satupa'itea
+Samoa	WSM	Tuamasaga
+Samoa	WSM	Va'a-o-Fonoti
+Samoa	WSM	Vaisigano
+San Marino	SMR	Acquaviva
+San Marino	SMR	Borgo Maggiore
+San Marino	SMR	Chiesanuova
+San Marino	SMR	Domagnano
+San Marino	SMR	Faetano
+San Marino	SMR	Fiorentino
+San Marino	SMR	Montegiardino
+San Marino	SMR	Città di San Marino
+San Marino	SMR	Serravalle
+Sao Tome & Principe	STP	Príncipe Province
+Sao Tome & Principe	STP	São Tomé Province
+Saudi Arabia	SAU	Eastern Region
+Saudi Arabia	SAU	Najran Region
+Saudi Arabia	SAU	Northern Borders Region
+Saudi Arabia	SAU	Hayel Region
+Saudi Arabia	SAU	Riyadh Region
+Saudi Arabia	SAU	'Asir Region
+Saudi Arabia	SAU	Makkah Region
+Saudi Arabia	SAU	Tabuk Region
+Saudi Arabia	SAU	Al Madinah Region
+Saudi Arabia	SAU	Al-Qassim Region
+Saudi Arabia	SAU	Al Bahah Region
+Saudi Arabia	SAU	Jazan Region
+Saudi Arabia	SAU	Al Jawf Region
+Senegal	SEN	Dakar
+Senegal	SEN	Diourbel
+Senegal	SEN	Fatick
+Senegal	SEN	Kaffrine
+Senegal	SEN	Kaolack
+Senegal	SEN	Kolda
+Senegal	SEN	Louga
+Senegal	SEN	Matam
+Senegal	SEN	Saint Louis
+Senegal	SEN	Sedhiou
+Senegal	SEN	Tambacounda
+Senegal	SEN	Thies
+Senegal	SEN	Ziguinchor
+Senegal	SEN	Kedougou
+Serbia	SRB	Syrmia District
+Serbia	SRB	South Banat District
+Serbia	SRB	North Banat District
+Serbia	SRB	North Backa District
+Serbia	SRB	Central Banat District
+Serbia	SRB	West Backa District
+Serbia	SRB	South Backa District
+Serbia	SRB	Belgrade
+Serbia	SRB	Bor District
+Serbia	SRB	Macva District
+Serbia	SRB	Pcinja District
+Serbia	SRB	Kolubara District
+Serbia	SRB	Podunavlje District
+Serbia	SRB	Branicevo District
+Serbia	SRB	Sumadija District
+Serbia	SRB	Pomoravlje District
+Serbia	SRB	Moravica District
+Serbia	SRB	Zajecar District
+Serbia	SRB	Zlatibor District
+Serbia	SRB	Raska District
+Serbia	SRB	Pirot District
+Serbia	SRB	Jablanica District
+Serbia	SRB	Toplica District
+Serbia	SRB	Nisava District
+Serbia	SRB	Rasina District
+Seychelles	SYC	Outer Isla
+Seychelles	SYC	Baie Saint
+Seychelles	SYC	Grand Anse
+Seychelles	SYC	La Digue a
+Seychelles	SYC	Anse Aux P
+Seychelles	SYC	Anse Boile
+Seychelles	SYC	Anse Etoil
+Seychelles	SYC	Anse Royal
+Seychelles	SYC	Au Cap
+Seychelles	SYC	Baie Lazar
+Seychelles	SYC	Beau Vallo
+Seychelles	SYC	Bel Air
+Seychelles	SYC	Bel Ombre
+Seychelles	SYC	Cascade
+Seychelles	SYC	Glacis
+Seychelles	SYC	Grand'Anse
+Seychelles	SYC	La RiviÃ¨re
+Seychelles	SYC	Les Mamell
+Seychelles	SYC	Mont Buxto
+Seychelles	SYC	Mont Fleur
+Seychelles	SYC	Plaisance
+Seychelles	SYC	Pointe La
+Seychelles	SYC	Port Glaud
+Seychelles	SYC	Roche CaÃ¯m
+Seychelles	SYC	Saint Loui
+Seychelles	SYC	Takamaka
+Sierra Leone	SLE	Southern
+Sierra Leone	SLE	Eastern
+Sierra Leone	SLE	Western Area
+Sierra Leone	SLE	Northern
+Singapore	SGP	CENTRAL REGION
+Singapore	SGP	EAST REGION
+Singapore	SGP	NORTH-EAST REGION
+Singapore	SGP	NORTH REGION
+Singapore	SGP	WEST REGION
+Slovakia	SVK	Region of Bratislava
+Slovakia	SVK	Region of Trnava
+Slovakia	SVK	Region of Trencín
+Slovakia	SVK	Region of Nitra
+Slovakia	SVK	Region of Žilina
+Slovakia	SVK	Region of Banská Bystrica
+Slovakia	SVK	Region of Prešov
+Slovakia	SVK	Region of Košice
+Slovenia	SVN	Vzhodna
+Slovenia	SVN	Zahodna Slovenija
+Solomon Is	SLB	Rennell and Bellona
+Solomon Is	SLB	Makira
+Solomon Is	SLB	Temotu
+Solomon Is	SLB	Malaita
+Solomon Is	SLB	Capital Territory (Honiara)
+Solomon Is	SLB	Guadalcanal
+Solomon Is	SLB	Central
+Solomon Is	SLB	Western
+Solomon Is	SLB	Isabel
+Solomon Is	SLB	Choiseul
+Somalia	SOM	Hiiraan
+Somalia	SOM	Sanaag
+Somalia	SOM	Banadir
+Somalia	SOM	Togdheer
+Somalia	SOM	Bakool
+Somalia	SOM	Gedo
+Somalia	SOM	Middle Shebelle
+Somalia	SOM	Woqooyi Galbeed
+Somalia	SOM	Sool
+Somalia	SOM	Nugaal
+Somalia	SOM	Mudug
+Somalia	SOM	Middle Juba
+Somalia	SOM	Lower Shebelle
+Somalia	SOM	Lower Juba
+Somalia	SOM	Galgaduud
+Somalia	SOM	Bay
+Somalia	SOM	Bari
+Somalia	SOM	Awdal
+South Africa	ZAF	Eastern Cape
+South Africa	ZAF	Free State
+South Africa	ZAF	Gauteng
+South Africa	ZAF	KwaZulu-Natal
+South Africa	ZAF	Limpopo
+South Africa	ZAF	Mpumalanga
+South Africa	ZAF	North West
+South Africa	ZAF	Nothern Cape
+South Africa	ZAF	Western Cape
+South Sudan	SSD	Lakes
+South Sudan	SSD	Central Equatoria
+South Sudan	SSD	Eastern Equatoria
+South Sudan	SSD	Upper Nile
+South Sudan	SSD	Western Bahr el Ghazal
+South Sudan	SSD	Unity
+South Sudan	SSD	Northern Bahr el Ghazal
+South Sudan	SSD	Jonglei
+South Sudan	SSD	Western Equatoria
+South Sudan	SSD	Warrap
+Spain	ESP	Canarias
+Spain	ESP	Ciudad Autónoma de Melilla
+Spain	ESP	Ciudad Autónoma de Ceuta
+Spain	ESP	La Rioja
+Spain	ESP	País Vasco/Euskadi
+Spain	ESP	Comunidad Foral de Navarra
+Spain	ESP	Región de Murcia
+Spain	ESP	Comunidad de Madrid
+Spain	ESP	Galicia
+Spain	ESP	Extremadura
+Spain	ESP	Comunitat Valenciana
+Spain	ESP	Cataluña/Catalunya
+Spain	ESP	Castilla-La Mancha
+Spain	ESP	Castilla y León
+Spain	ESP	Cantabria
+Spain	ESP	Illes Balears
+Spain	ESP	Principado de Asturias
+Spain	ESP	Aragón
+Spain	ESP	Andalucía
+Sri Lanka	LKA	Northern Province
+Sri Lanka	LKA	Eastern Province
+Sri Lanka	LKA	Central Province
+Sri Lanka	LKA	North Central Province
+Sri Lanka	LKA	North Western Province
+Sri Lanka	LKA	Sabaragamuwa Province
+Sri Lanka	LKA	Southern Province
+Sri Lanka	LKA	Uva Province
+Sri Lanka	LKA	Western Province
+St Kitts & Nevis	KNA	Christ Church Nichola Town
+St Kitts & Nevis	KNA	Saint Anne Sandy Point
+St Kitts & Nevis	KNA	Saint George Basseterre
+St Kitts & Nevis	KNA	Saint George Gingerland
+St Kitts & Nevis	KNA	Saint James Windward
+St Kitts & Nevis	KNA	Saint John Capisterre
+St Kitts & Nevis	KNA	Saint John Figtree
+St Kitts & Nevis	KNA	Saint Mary Cayon
+St Kitts & Nevis	KNA	Saint Paul Capisterre
+St Kitts & Nevis	KNA	Saint Paul Charlestown
+St Kitts & Nevis	KNA	Saint Peter Basseterre
+St Kitts & Nevis	KNA	Saint Thomas Lowland
+St Kitts & Nevis	KNA	Saint Thomas Middle Island
+St Kitts & Nevis	KNA	Trinity Palmetto Point
+St Lucia	LCA	Vieux Fort
+St Lucia	LCA	Anse la Raya
+St Lucia	LCA	Castries
+St Lucia	LCA	Gros Islet
+St Lucia	LCA	Dennery
+St Lucia	LCA	Micoud
+St Lucia	LCA	Soufrière
+St Lucia	LCA	Choiseul
+St Lucia	LCA	Laborie
+St Lucia	LCA	Canaries
+St Vincent & the Grenadines	VCT	Charlotte
+St Vincent & the Grenadines	VCT	Saint Andrew
+St Vincent & the Grenadines	VCT	Saint David
+St Vincent & the Grenadines	VCT	Saint George
+St Vincent & the Grenadines	VCT	Saint Patrick
+St Vincent & the Grenadines	VCT	Grenadines
+Sudan	SDN	Abyei PCA
+Sudan	SDN	Gezira
+Sudan	SDN	Blue Nile
+Sudan	SDN	Central Darfur
+Sudan	SDN	East Darfur
+Sudan	SDN	Gedaref
+Sudan	SDN	Kassala
+Sudan	SDN	Khartoum
+Sudan	SDN	North Darfur
+Sudan	SDN	North Kordofan
+Sudan	SDN	Northern
+Sudan	SDN	Red Sea
+Sudan	SDN	River Nile
+Sudan	SDN	Sennar
+Sudan	SDN	South Darfur
+Sudan	SDN	South Kordofan
+Sudan	SDN	West Darfur
+Sudan	SDN	West Kordofan
+Sudan	SDN	White Nile
+Suriname	SUR	Brokopondo
+Suriname	SUR	Commewijne
+Suriname	SUR	Coronie
+Suriname	SUR	Marowijne
+Suriname	SUR	Nickerie
+Suriname	SUR	Para
+Suriname	SUR	Paramaribo
+Suriname	SUR	Saramacca
+Suriname	SUR	Sipaliwini
+Suriname	SUR	Wanica
+Swaziland	SWZ	Manzini
+Swaziland	SWZ	Lubombo
+Swaziland	SWZ	Shiselweni
+Swaziland	SWZ	Hhohho
+Sweden	SWE	Västernorrlands län
+Sweden	SWE	Västerbottens län
+Sweden	SWE	Jämtlands län
+Sweden	SWE	Gävleborgs län
+Sweden	SWE	Dalarnas län
+Sweden	SWE	Uppsala län
+Sweden	SWE	Västmanlands län
+Sweden	SWE	Örebro län
+Sweden	SWE	Värmlands län
+Sweden	SWE	Västra Götalands län
+Sweden	SWE	Hallands län
+Sweden	SWE	Skåne län
+Sweden	SWE	Kronobergs län
+Sweden	SWE	Blekinge län
+Sweden	SWE	Kalmar län
+Sweden	SWE	Jönköpings län
+Sweden	SWE	Stockholms län
+Sweden	SWE	Östergötlands län
+Sweden	SWE	Södermanlands län
+Sweden	SWE	Norrbottens län
+Sweden	SWE	Gotlands län
+Switzerland	CHE	Aargau
+Switzerland	CHE	Appenzell Ausserrhoden
+Switzerland	CHE	Appenzell Innerrhoden
+Switzerland	CHE	Basel-Landschaft
+Switzerland	CHE	Basel-Stadt
+Switzerland	CHE	Bern
+Switzerland	CHE	Fribourg
+Switzerland	CHE	Genève
+Switzerland	CHE	Glarus
+Switzerland	CHE	Graubünden
+Switzerland	CHE	Jura
+Switzerland	CHE	Luzern
+Switzerland	CHE	Neuchâtel
+Switzerland	CHE	Nidwalden
+Switzerland	CHE	Obwalden
+Switzerland	CHE	Schaffhausen
+Switzerland	CHE	Schwyz
+Switzerland	CHE	Solothurn
+Switzerland	CHE	St. Gallen
+Switzerland	CHE	Thurgau
+Switzerland	CHE	Ticino
+Switzerland	CHE	Uri
+Switzerland	CHE	Valais
+Switzerland	CHE	Vaud
+Switzerland	CHE	Zug
+Switzerland	CHE	Zürich
+Syria	SYR	Damascus
+Syria	SYR	Aleppo
+Syria	SYR	Rural Damascus
+Syria	SYR	Homs
+Syria	SYR	Hama
+Syria	SYR	Lattakia
+Syria	SYR	Idleb
+Syria	SYR	Al-Hasakeh
+Syria	SYR	Deir-ez-Zor
+Syria	SYR	Tartous
+Syria	SYR	Ar-Raqqa
+Syria	SYR	Dar'a
+Syria	SYR	As-Sweida
+Syria	SYR	Quneitra
+Taiwan	TWN	Hsinchu County
+Taiwan	TWN	Miaoli County
+Taiwan	TWN	Matsu Islands
+Taiwan	TWN	Kinmen
+Taiwan	TWN	Chiayi County
+Taiwan	TWN	Yilan County
+Taiwan	TWN	Nantou County
+Taiwan	TWN	Changhua County
+Taiwan	TWN	Pingtung County
+Taiwan	TWN	Taitung County
+Taiwan	TWN	Hualien County
+Taiwan	TWN	Penghu
+Taiwan	TWN	Yunlin County
+Taiwan	TWN	Chiayi
+Taiwan	TWN	Hsinchu
+Taiwan	TWN	Keelung
+Taiwan	TWN	Taichung
+Taiwan	TWN	Taoyuan
+Taiwan	TWN	New Taipei
+Taiwan	TWN	Tainan
+Taiwan	TWN	Taipei
+Taiwan	TWN	Kaohsiung
+Tajikistan	TJK	Sughd Region
+Tajikistan	TJK	Gorno-Badakhshan Autonomous Region
+Tajikistan	TJK	Districts of Republican Subordination
+Tajikistan	TJK	Khatlon Region
+Tajikistan	TJK	Dushanbe
+Tanzania	TZA	Kilimanjaro
+Tanzania	TZA	Mara
+Tanzania	TZA	Manyara
+Tanzania	TZA	Arusha
+Tanzania	TZA	Kagera
+Tanzania	TZA	Mbeya
+Tanzania	TZA	Singida
+Tanzania	TZA	Mtwara
+Tanzania	TZA	Iringa
+Tanzania	TZA	Dar es Salaam
+Tanzania	TZA	Lindi
+Tanzania	TZA	Tabora
+Tanzania	TZA	Pwani
+Tanzania	TZA	Ruvuma
+Tanzania	TZA	Morogoro
+Tanzania	TZA	Rukwa
+Tanzania	TZA	Kigoma
+Tanzania	TZA	Tanga
+Tanzania	TZA	Dodoma
+Tanzania	TZA	Zanzibar South & Central
+Tanzania	TZA	North Pemba
+Tanzania	TZA	Zanzibar North
+Tanzania	TZA	Zanzibar Urban/West
+Tanzania	TZA	South Pemba
+Tanzania	TZA	Katavi
+Tanzania	TZA	Njombe
+Tanzania	TZA	Geita
+Tanzania	TZA	Simiyu
+Tanzania	TZA	Mwanza
+Tanzania	TZA	Shinyanga
+Thailand	THA	Roi Et Province
+Thailand	THA	Phayao Province
+Thailand	THA	Nakhon Sawan Province
+Thailand	THA	Nong Bua Lam Phu Province
+Thailand	THA	Chachoengsao Province
+Thailand	THA	Surin Province
+Thailand	THA	Nakhon Ratchasima Province
+Thailand	THA	Sukhothai Province
+Thailand	THA	Phetchaburi Province
+Thailand	THA	Chaiyaphum Province
+Thailand	THA	Phetchabun Province
+Thailand	THA	Surat Thani Province
+Thailand	THA	Si Sa Ket Province
+Thailand	THA	Nong Khai Province
+Thailand	THA	Bangkok
+Thailand	THA	Khon Kaen Province
+Thailand	THA	Loei Province
+Thailand	THA	Saraburi Province
+Thailand	THA	Uthai Thani Province
+Thailand	THA	Chumphon Province
+Thailand	THA	Kalasin
+Thailand	THA	Phitsanulok Province
+Thailand	THA	Ranong Province
+Thailand	THA	Udon Thani Province
+Thailand	THA	Sakon Nakhon Province
+Thailand	THA	Chiang Rai Province
+Thailand	THA	Tak Province
+Thailand	THA	Nakhon Pathom Province
+Thailand	THA	Lamphun Province
+Thailand	THA	Trat Province
+Thailand	THA	Ratchaburi Province
+Thailand	THA	Yasothon Province
+Thailand	THA	Phrae Province
+Thailand	THA	Yala Province
+Thailand	THA	Uttaradit Province
+Thailand	THA	Buri Ram Province
+Thailand	THA	Kamphaeng Phet Province
+Thailand	THA	Lampang Province
+Thailand	THA	Nonthaburi Province
+Thailand	THA	Bueng Kan Province
+Thailand	THA	Narathiwat Province
+Thailand	THA	Ubon Ratchathani Province
+Thailand	THA	Prachuap Khiri Khan Province
+Thailand	THA	Songkhla Province
+Thailand	THA	Phuket Province
+Thailand	THA	Ang Thong Province
+Thailand	THA	Maha Sarakham Province
+Thailand	THA	Trang Province
+Thailand	THA	Suphan Buri Province
+Thailand	THA	Sing Buri Province
+Thailand	THA	Samut Songkhram Province
+Thailand	THA	Rayong Province
+Thailand	THA	Prachin Buri Province
+Thailand	THA	Phra Nakhon Si Ayutthaya Province
+Thailand	THA	Phichit Province
+Thailand	THA	Phatthalung Province
+Thailand	THA	Phangnga Province
+Thailand	THA	Pattani Province
+Thailand	THA	Pathum Thani Province
+Thailand	THA	Nakhon Si Thammarat Province
+Thailand	THA	Nakhon Nayok Province
+Thailand	THA	Mukdahan Province
+Thailand	THA	Lopburi Province
+Thailand	THA	Krabi Province
+Thailand	THA	Chon Buri Province
+Thailand	THA	Chiang Mai Province
+Thailand	THA	Chai Nat Province
+Thailand	THA	Amnat Charoen Province
+Thailand	THA	Samut Sakhon Province
+Thailand	THA	Samut Prakan Province
+Thailand	THA	Nan Province
+Thailand	THA	Chanthaburi Province
+Thailand	THA	Nakhon Phanom Province
+Thailand	THA	Kanchanaburi Province
+Thailand	THA	Mae Hong Son Province
+Thailand	THA	Sa Kaeo Province
+Thailand	THA	Satun Province
+Timor-Leste	TLS	Oecusse
+Timor-Leste	TLS	Aileu
+Timor-Leste	TLS	Ainaro
+Timor-Leste	TLS	Baucau
+Timor-Leste	TLS	Bobonaro
+Timor-Leste	TLS	Cova Lima
+Timor-Leste	TLS	Dili
+Timor-Leste	TLS	Ermera
+Timor-Leste	TLS	Lautém
+Timor-Leste	TLS	Liquiçá
+Timor-Leste	TLS	Manatuto
+Timor-Leste	TLS	Manufahi
+Timor-Leste	TLS	Viqueque
+Togo	TGO	Savanes Region
+Togo	TGO	Kara Region
+Togo	TGO	Centrale Region
+Togo	TGO	Plateaux Region
+Togo	TGO	Maritime Region
+Tonga	TON	Ha'apai
+Tonga	TON	Niuas
+Tonga	TON	Tongatapu
+Tonga	TON	Vava'u
+Tonga	TON	'Eua
+Trinidad & Tobago	TTO	Tobago
+Trinidad & Tobago	TTO	Princes Town
+Trinidad & Tobago	TTO	Rio Claro-Mayaro
+Trinidad & Tobago	TTO	Couva-Tabaquite-Talparo
+Trinidad & Tobago	TTO	San Fernando
+Trinidad & Tobago	TTO	Siparia
+Trinidad & Tobago	TTO	Point Fortin
+Trinidad & Tobago	TTO	Penal-Debe
+Trinidad & Tobago	TTO	Diego Martin
+Trinidad & Tobago	TTO	Port of Spain
+Trinidad & Tobago	TTO	San Juan-Laventille
+Trinidad & Tobago	TTO	Tunapuna-Piarco
+Trinidad & Tobago	TTO	Sangre Grande
+Trinidad & Tobago	TTO	Chaguanas
+Tunisia	TUN	Tunis
+Tunisia	TUN	Ben Arous
+Tunisia	TUN	El Kef
+Tunisia	TUN	Sousse
+Tunisia	TUN	Sfax
+Tunisia	TUN	Jendouba
+Tunisia	TUN	Kairouan
+Tunisia	TUN	Kasserine
+Tunisia	TUN	Mahdia
+Tunisia	TUN	Manouba
+Tunisia	TUN	Sidi Bouzid
+Tunisia	TUN	Kébili
+Tunisia	TUN	Béja
+Tunisia	TUN	Tataouine
+Tunisia	TUN	Gabès
+Tunisia	TUN	Bizerte
+Tunisia	TUN	Ariana
+Tunisia	TUN	Nabeul
+Tunisia	TUN	Monastir
+Tunisia	TUN	Siliana
+Tunisia	TUN	Zaghouan
+Tunisia	TUN	Gafsa
+Tunisia	TUN	Médenine
+Tunisia	TUN	Tozeur
+Turkey	TUR	Adana
+Turkey	TUR	Adiyaman
+Turkey	TUR	Afyonkarahisar
+Turkey	TUR	Agri
+Turkey	TUR	Amasya
+Turkey	TUR	Antalya
+Turkey	TUR	Artvin
+Turkey	TUR	Aydin
+Turkey	TUR	Balikesir
+Turkey	TUR	Ankara
+Turkey	TUR	Aksaray
+Turkey	TUR	Ardahan
+Turkey	TUR	Bartin
+Turkey	TUR	Batman
+Turkey	TUR	Bayburt
+Turkey	TUR	Bilecik
+Turkey	TUR	Bingöl
+Turkey	TUR	Bitlis
+Turkey	TUR	Bolu
+Turkey	TUR	Burdur
+Turkey	TUR	Bursa
+Turkey	TUR	Çanakkale
+Turkey	TUR	Çankiri
+Turkey	TUR	Çorum
+Turkey	TUR	Denizli
+Turkey	TUR	Diyarbakir
+Turkey	TUR	Düzce
+Turkey	TUR	Edirne
+Turkey	TUR	Elazig
+Turkey	TUR	Erzincan
+Turkey	TUR	Erzurum
+Turkey	TUR	Eskisehir
+Turkey	TUR	Gaziantep
+Turkey	TUR	Giresun
+Turkey	TUR	Gümüshane
+Turkey	TUR	Hakkâri
+Turkey	TUR	Hatay
+Turkey	TUR	Igdir
+Turkey	TUR	Isparta
+Turkey	TUR	Istanbul
+Turkey	TUR	Izmir
+Turkey	TUR	Kahramanmaras
+Turkey	TUR	Karabük
+Turkey	TUR	Karaman
+Turkey	TUR	Kars
+Turkey	TUR	Kastamonu
+Turkey	TUR	Kayseri
+Turkey	TUR	Kilis
+Turkey	TUR	Kirikkale
+Turkey	TUR	Kirklareli
+Turkey	TUR	Kirsehir
+Turkey	TUR	Kocaeli
+Turkey	TUR	Konya
+Turkey	TUR	Kütahya
+Turkey	TUR	Malatya
+Turkey	TUR	Manisa
+Turkey	TUR	Mardin
+Turkey	TUR	Mersin
+Turkey	TUR	Mugla
+Turkey	TUR	Mus
+Turkey	TUR	Nevsehir
+Turkey	TUR	Nigde
+Turkey	TUR	Ordu
+Turkey	TUR	Osmaniye
+Turkey	TUR	Rize
+Turkey	TUR	Sakarya
+Turkey	TUR	Samsun
+Turkey	TUR	Siirt
+Turkey	TUR	Sinop
+Turkey	TUR	Sivas
+Turkey	TUR	Tekirdag
+Turkey	TUR	Tokat
+Turkey	TUR	Trabzon
+Turkey	TUR	Tunceli
+Turkey	TUR	Usak
+Turkey	TUR	Van
+Turkey	TUR	Yalova
+Turkey	TUR	Yozgat
+Turkey	TUR	Zonguldak
+Turkey	TUR	Sirnak
+Turkey	TUR	Sanliurfa
+Turkmenistan	TKM	Balkan
+Turkmenistan	TKM	Ahai
+Turkmenistan	TKM	Dasoguz
+Turkmenistan	TKM	Lebap
+Turkmenistan	TKM	Mary
+Tuvalu	TUV	Nanumanga
+Tuvalu	TUV	Nanumea
+Tuvalu	TUV	Niutao
+Tuvalu	TUV	Nui
+Tuvalu	TUV	Vaitupu
+Tuvalu	TUV	Nukufetau
+Tuvalu	TUV	Funafuti
+Tuvalu	TUV	Nukulaelae
+Uganda	UGA	Northern Region
+Uganda	UGA	Eastern Region
+Uganda	UGA	Central Region
+Uganda	UGA	Western Region
+Ukraine	UKR	Kherson Oblast
+Ukraine	UKR	Volyn Oblast
+Ukraine	UKR	Rivne Oblast
+Ukraine	UKR	Zhytomyr Oblast
+Ukraine	UKR	Kyiv Oblast
+Ukraine	UKR	Chernihiv Oblast
+Ukraine	UKR	Sumy Oblast
+Ukraine	UKR	Kharkiv Oblast
+Ukraine	UKR	Luhansk Oblast
+Ukraine	UKR	Donetsk Oblast
+Ukraine	UKR	Zaporizhia Oblast
+Ukraine	UKR	Lviv Oblast
+Ukraine	UKR	Ivano-Frankivsk Oblast
+Ukraine	UKR	Zakarpattia Oblast
+Ukraine	UKR	Ternopil Oblast
+Ukraine	UKR	Chernivtsi Oblast
+Ukraine	UKR	Odessa Oblast
+Ukraine	UKR	Mykolaiv Oblast
+Ukraine	UKR	Autonomous Republic of Crimea
+Ukraine	UKR	Vinnytsia Oblast
+Ukraine	UKR	Khmelnytskyi Oblast
+Ukraine	UKR	Cherkasy Oblast
+Ukraine	UKR	Poltava Oblast
+Ukraine	UKR	Dnipropetrovsk Oblast
+Ukraine	UKR	Kirovohrad Oblast
+Ukraine	UKR	Kyiv
+Ukraine	UKR	Sevastopol
+United Arab Emirates	ARE	Abu Dhabi
+United Arab Emirates	ARE	Ajman
+United Arab Emirates	ARE	Dubai
+United Arab Emirates	ARE	Fujairah
+United Arab Emirates	ARE	Ras al-Khaimah
+United Arab Emirates	ARE	Sharjah
+United Arab Emirates	ARE	Umm al-Quwain
+United Kingdom	GBR	Northern Ireland
+United Kingdom	GBR	England
+United Kingdom	GBR	Scotland
+United Kingdom	GBR	Wales
+United States	USA	Mississippi
+United States	USA	North Carolina
+United States	USA	Oklahoma
+United States	USA	Virginia
+United States	USA	West Virginia
+United States	USA	Louisiana
+United States	USA	Michigan
+United States	USA	Massachusetts
+United States	USA	Idaho
+United States	USA	Florida
+United States	USA	Nebraska
+United States	USA	Washington
+United States	USA	New Mexico
+United States	USA	Puerto Rico
+United States	USA	South Dakota
+United States	USA	Texas
+United States	USA	California
+United States	USA	Alabama
+United States	USA	Georgia
+United States	USA	Pennsylvania
+United States	USA	Missouri
+United States	USA	Colorado
+United States	USA	Utah
+United States	USA	Tennessee
+United States	USA	Wyoming
+United States	USA	New York
+United States	USA	Kansas
+United States	USA	Alaska
+United States	USA	Nevada
+United States	USA	Illinois
+United States	USA	Vermont
+United States	USA	Montana
+United States	USA	Iowa
+United States	USA	South Carolina
+United States	USA	New Hampshire
+United States	USA	Arizona
+United States	USA	District of Columbia
+United States	USA	American Samoa
+United States	USA	United States Virgin Islands
+United States	USA	New Jersey
+United States	USA	Maryland
+United States	USA	Maine
+United States	USA	Hawaii
+United States	USA	Delaware
+United States	USA	Guam
+United States	USA	Commonwealth of the Northern Mariana Islands
+United States	USA	Rhode Island
+United States	USA	Kentucky
+United States	USA	Ohio
+United States	USA	Wisconsin
+United States	USA	Oregon
+United States	USA	North Dakota
+United States	USA	Arkansas
+United States	USA	Indiana
+United States	USA	Minnesota
+United States	USA	Connecticut
+Uruguay	URY	Salto
+Uruguay	URY	Artigas
+Uruguay	URY	Canelones
+Uruguay	URY	Rivera
+Uruguay	URY	Montevideo
+Uruguay	URY	Maldonado
+Uruguay	URY	Lavalleja
+Uruguay	URY	Florida
+Uruguay	URY	San José
+Uruguay	URY	Treinta y Tres
+Uruguay	URY	Flores
+Uruguay	URY	Durazno
+Uruguay	URY	Soriano
+Uruguay	URY	Colonia
+Uruguay	URY	Rocha
+Uruguay	URY	Cerro Largo
+Uruguay	URY	Tacuarembó
+Uruguay	URY	Paysandú
+Uruguay	URY	Río Negro
+Uzbekistan	UZB	Andijan Region
+Uzbekistan	UZB	Namangan Region
+Uzbekistan	UZB	Fergana Region
+Uzbekistan	UZB	Republic of Karakalpakstan
+Uzbekistan	UZB	Xorazm Region
+Uzbekistan	UZB	Navoiy Region
+Uzbekistan	UZB	Surxondaryo Region
+Uzbekistan	UZB	Samarqand Region
+Uzbekistan	UZB	Tashkent Region
+Uzbekistan	UZB	Sirdaryo Region
+Uzbekistan	UZB	Jizzakh Region
+Uzbekistan	UZB	Bukhara Region
+Uzbekistan	UZB	Qashqadaryo Region
+Uzbekistan	UZB	Tashkent
+Vanuatu	VUT	Sanma
+Vanuatu	VUT	Torba
+Vanuatu	VUT	Penama
+Vanuatu	VUT	Malampa
+Vanuatu	VUT	Shefa Province
+Vanuatu	VUT	Tafea
+Venezuela	VEN	Amazonas
+Venezuela	VEN	Anzoátegui
+Venezuela	VEN	Apure
+Venezuela	VEN	Aragua
+Venezuela	VEN	Barinas
+Venezuela	VEN	Bolívar
+Venezuela	VEN	Carabobo
+Venezuela	VEN	Cojedes
+Venezuela	VEN	Delta Amacuro
+Venezuela	VEN	Distrito Capital
+Venezuela	VEN	Falcón
+Venezuela	VEN	Guárico
+Venezuela	VEN	La Guaira
+Venezuela	VEN	Lara
+Venezuela	VEN	Mérida
+Venezuela	VEN	Miranda
+Venezuela	VEN	Monagas
+Venezuela	VEN	Nueva Esparta
+Venezuela	VEN	Portuguesa
+Venezuela	VEN	Sucre
+Venezuela	VEN	Táchira
+Venezuela	VEN	Trujillo
+Venezuela	VEN	Yaracuy
+Venezuela	VEN	Zulia
+Venezuela	VEN	Dependencias Federales
+Vietnam	VNM	An Giang
+Vietnam	VNM	Bà R<U+1ECB>a–Vung Tàu
+Vietnam	VNM	B<U+1EAF>c Giang
+Vietnam	VNM	B<U+1EAF>c K<U+1EA1>n
+Vietnam	VNM	B<U+1EA1>c Liêu
+Vietnam	VNM	B<U+1EAF>c Ninh
+Vietnam	VNM	B<U+1EBF>n Tre
+Vietnam	VNM	Bình Ð<U+1ECB>nh
+Vietnam	VNM	Bình Duong
+Vietnam	VNM	Bình Phu<U+1EDB>c
+Vietnam	VNM	Bình Thu<U+1EAD>n
+Vietnam	VNM	Cà Mau
+Vietnam	VNM	C<U+1EA7>n Tho
+Vietnam	VNM	Cao B<U+1EB1>ng
+Vietnam	VNM	Côn Ð<U+1EA3>o
+Vietnam	VNM	Ðà N<U+1EB5>ng
+Vietnam	VNM	Ð<U+1EAF>k L<U+1EAF>k
+Vietnam	VNM	Ð<U+1EAF>k Nông
+Vietnam	VNM	Ði<U+1EC7>n Biên
+Vietnam	VNM	Ð<U+1ED3>ng Nai
+Vietnam	VNM	Ð<U+1ED3>ng Tháp
+Vietnam	VNM	Gia Lai
+Vietnam	VNM	Hà Giang
+Vietnam	VNM	Hà Nam
+Vietnam	VNM	Hà N<U+1ED9>i	
+Vietnam	VNM	Hà Tinh
+Vietnam	VNM	H<U+1EA3>i Duong
+Vietnam	VNM	H<U+1EA3>i Phòng
+Vietnam	VNM	H<U+1EAD>u Giang
+Vietnam	VNM	Ho Chi Minh
+Vietnam	VNM	Hòa Bình
+Vietnam	VNM	Hung Yên
+Vietnam	VNM	Khánh Hòa
+Vietnam	VNM	Kiên Giang
+Vietnam	VNM	Kon Tum
+Vietnam	VNM	Lai Châu
+Vietnam	VNM	Lâm Ð<U+1ED3>ng
+Vietnam	VNM	L<U+1EA1>ng Son
+Vietnam	VNM	Lào Cai
+Vietnam	VNM	Long An
+Vietnam	VNM	Nam Ð<U+1ECB>nh
+Vietnam	VNM	Ngh<U+1EC7> An
+Vietnam	VNM	Ninh Bình
+Vietnam	VNM	Ninh Thu<U+1EAD>n
+Vietnam	VNM	Phú Th<U+1ECD>
+Vietnam	VNM	Phú Yên
+Vietnam	VNM	Qu<U+1EA3>ng Bình
+Vietnam	VNM	Qu<U+1EA3>ng Nam
+Vietnam	VNM	Qu<U+1EA3>ng Ngãi
+Vietnam	VNM	Qu<U+1EA3>ng Ninh
+Vietnam	VNM	Qu<U+1EA3>ng Tr<U+1ECB>
+Vietnam	VNM	Sóc Trang
+Vietnam	VNM	Son La
+Vietnam	VNM	Tây Ninh
+Vietnam	VNM	Thái Bình
+Vietnam	VNM	Thái Nguyên
+Vietnam	VNM	Thanh Hóa
+Vietnam	VNM	Th<U+1EEB>a Thiên Hu<U+1EBF>
+Vietnam	VNM	Ti<U+1EC1>n Giang
+Vietnam	VNM	Trà Vinh
+Vietnam	VNM	Tuyên Quang
+Vietnam	VNM	Vinh Long
+Vietnam	VNM	Vinh Phúc
+Vietnam	VNM	Yên Bái
+Yemen	YEM	San<U+02BF>a<U+02BE>
+Yemen	YEM	San<U+02BF>a<U+02BE> Governorate
+Yemen	YEM	Lahij Governorate
+Yemen	YEM	‘Adan Governorate
+Yemen	YEM	Al Hudaydah Governorate
+Yemen	YEM	Ta'izz Governorate
+Yemen	YEM	Shabwah Governorate
+Yemen	YEM	Hadhramaut
+Yemen	YEM	Abyan Governorate
+Yemen	YEM	Al Jawf Governorate
+Yemen	YEM	Ibb Governorate
+Yemen	YEM	Al Bayda' Governorate
+Yemen	YEM	Ad Dali' Governorate
+Yemen	YEM	Al Mahwit Governorate
+Yemen	YEM	Sa'dah Governorate
+Yemen	YEM	Hajjah Governorate
+Yemen	YEM	Dhamar Governorate
+Yemen	YEM	'Amran Governorate
+Yemen	YEM	Al Mahrah Governorate
+Yemen	YEM	Ma'rib Governorate
+Yemen	YEM	Raymah Governorate
+Yemen	YEM	Socotra
+Zambia	ZMB	Eastern
+Zambia	ZMB	Muchinga
+Zambia	ZMB	North-Western
+Zambia	ZMB	Luapula
+Zambia	ZMB	Central
+Zambia	ZMB	Southern
+Zambia	ZMB	Lusaka
+Zambia	ZMB	Copperbelt
+Zambia	ZMB	Northern
+Zambia	ZMB	Western
+Zimbabwe	ZWE	Bulawayo
+Zimbabwe	ZWE	Harare
+Zimbabwe	ZWE	Manicaland
+Zimbabwe	ZWE	Mashonaland Central
+Zimbabwe	ZWE	Mashonaland East
+Zimbabwe	ZWE	Mashonaland West
+Zimbabwe	ZWE	Masvingo
+Zimbabwe	ZWE	Matabeleland North
+Zimbabwe	ZWE	Matabeleland South
+Zimbabwe	ZWE	Midlands

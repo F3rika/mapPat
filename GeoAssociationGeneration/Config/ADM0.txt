@@ -1,0 +1,219 @@
+Country	Country_ISO
+Abyei	None
+Afghanistan	AFG
+Aksai Chin	None
+Albania	ALB
+Algeria	DZA
+Andorra	AND
+Angola	AGO
+Antarctica	ATA
+Antigua & Barbuda	ATG
+Argentina	ARG
+Armenia	ARM
+Australia	AUS
+Austria	AUT
+Azerbaijan	AZE
+Bahamas, The	BHS
+Bahrain	BHR
+Bangladesh	BGD
+Barbados	BRB
+Belarus	BLR
+Belgium	BEL
+Belize	BLZ
+Benin	BEN
+Bhutan	BTN
+Bolivia	BOL
+Bosnia & Herzegovina	BIH
+Botswana	BWA
+Brazil	BRA
+Brunei	BRN
+Bulgaria	BGR
+Burkina Faso	BFA
+Burma	MMR
+Burundi	BDI
+Cabo Verde	CPV
+Cambodia	KHM
+Cameroon	CMR
+Canada	CAN
+Central African Rep	CAF
+CH-IN	None
+Chad	TCD
+Chile	CHL
+China	CHN
+Colombia	COL
+Comoros	COM
+Congo, Dem Rep of the	COD
+Congo, Rep of the	COG
+Costa Rica	CRI
+Cote d'Ivoire	CIV
+Croatia	HRV
+Cuba	CUB
+Cyprus	CYP
+Czechia	CZE
+Demchok	None
+Denmark	DNK
+Djibouti	DJI
+Dominica	DMA
+Dominican Republic	DOM
+Dragonja	None
+Dramana-Shakatoe	None
+Ecuador	ECU
+Egypt	EGY
+El Salvador	SLV
+Equatorial Guinea	GNQ
+Eritrea	ERI
+Estonia	EST
+Ethiopia	ETH
+Falkland Islands (UK)	None
+Fiji	FJI
+Finland	FIN
+France	FRA
+Gabon	GAB
+Gambia, The	GMB
+Gaza Strip	None
+Georgia	GEO
+Germany	DEU
+Ghana	GHA
+Greece	GRC
+Greenland	GRL
+Grenada	GRD
+Guatemala	GTM
+Guinea	GIN
+Guinea-Bissau	GNB
+Guyana	GUY
+Haiti	HTI
+Honduras	HND
+Hungary	HUN
+Iceland	ISL
+India	IND
+Indonesia	IDN
+Iran	IRN
+Iraq	IRQ
+Ireland	IRL
+Isla Brasilera	None
+Israel	ISR
+Italy	ITA
+Jamaica	JAM
+Japan	JPN
+Jordan	JOR
+Kalapani	None
+Kazakhstan	KAZ
+Kenya	KEN
+Kiribati	KIR
+Korea, North	PRK
+Korea, South	KOR
+Kosovo	XKX
+Koualou	None
+Kuwait	KWT
+Kyrgyzstan	KGZ
+Laos	LAO
+Latvia	LVA
+Lebanon	LBN
+Lesotho	LSO
+Liancourt Rocks	None
+Liberia	LBR
+Libya	LBY
+Liechtenstein	LIE
+Lithuania	LTU
+Luxembourg	LUX
+Macedonia	MKD
+Madagascar	MDG
+Malawi	MWI
+Malaysia	MYS
+Maldives	MDV
+Mali	MLI
+Malta	MLT
+Marshall Is	MHL
+Mauritania	MRT
+Mauritius	MUS
+Mexico	MEX
+Micronesia, Fed States of	FSM
+Moldova	MDA
+Monaco	MCO
+Mongolia	MNG
+Montenegro	MNE
+Morocco	MAR
+Mozambique	MOZ
+Namibia	NAM
+Nauru	NRU
+Nepal	NPL
+Netherlands	NLD
+New Zealand	NZL
+Nicaragua	NIC
+Niger	NER
+Nigeria	NGA
+No Man's Land	None
+Norway	NOR
+Oman	OMN
+Pakistan	PAK
+Palau	PLW
+Panama	PAN
+Papua New Guinea	PNG
+Paracel Is	None
+Paraguay	PRY
+Peru	PER
+Philippines	PHL
+Poland	POL
+Portugal	PRT
+Qatar	QAT
+Romania	ROU
+Russia	RUS
+Rwanda	RWA
+Samoa	WSM
+San Marino	SMR
+Sanafir & Tiran Is.	None
+Sao Tome & Principe	STP
+Saudi Arabia	SAU
+Senegal	SEN
+Senkakus	None
+Serbia	SRB
+Seychelles	SYC
+Siachen-Saltoro	None
+Sierra Leone	SLE
+Singapore	SGP
+Slovakia	SVK
+Slovenia	SVN
+Solomon Is	SLB
+Somalia	SOM
+South Africa	ZAF
+South Sudan	SSD
+Spain	ESP
+Spratly Is	None
+Sri Lanka	LKA
+St Kitts & Nevis	KNA
+St Lucia	LCA
+St Vincent & the Grenadines	VCT
+Sudan	SDN
+Suriname	SUR
+Swaziland	SWZ
+Sweden	SWE
+Switzerland	CHE
+Syria	SYR
+Taiwan	TWN
+Tajikistan	TJK
+Tanzania	TZA
+Thailand	THA
+Timor-Leste	TLS
+Togo	TGO
+Tonga	TON
+Trinidad & Tobago	TTO
+Tunisia	TUN
+Turkey	TUR
+Turkmenistan	TKM
+Tuvalu	TUV
+Uganda	UGA
+Ukraine	UKR
+United Arab Emirates	ARE
+United Kingdom	GBR
+United States	USA
+Uruguay	URY
+Uzbekistan	UZB
+Vanuatu	VUT
+Vatican City	VAT
+Venezuela	VEN
+Vietnam	VNM
+West Bank	None
+Western Sahara	ESH
+Yemen	YEM
+Zambia	ZMB
+Zimbabwe	ZWE

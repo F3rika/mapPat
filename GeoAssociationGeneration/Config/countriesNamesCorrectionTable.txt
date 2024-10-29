@@ -1,0 +1,10 @@
+Country	TEST_Country	COR_Country
+United States	USA	United States
+Central African Rep	Central African Republic	Central African Rep
+Czechia	Czech Republic	Czechia
+Dem Rep of the Congo	Democratic Republic of the Congo	Dem Rep of the Congo
+Marshall Is	Marshall Islands	Marshall Is
+Rep of the Congo	Republic of the Congo	Rep of the Congo
+St Kitts & Nevis	Saint Kitts and Nevis	St Kitts & Nevis
+St Vincent & the Grenadines	Saint Vincent and the Grenadines	St Vincent & the Grenadines
+Solomon Is	Solomon Islands	Solomon Is

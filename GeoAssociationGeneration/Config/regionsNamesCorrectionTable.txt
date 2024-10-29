@@ -1,0 +1,528 @@
+Country	TEST_Region	COR_Region
+Austria	Scharnstein	Oberösterreich
+Austria	Oberwang	Oberösterreich
+Austria	Pettneu am Arlberg	Tirol
+Austria	Kufstein	Tirol
+Austria	Hochficht	Oberösterreich
+Austria	Losenstein	Oberösterreich
+Austria	Ried im Innkreis	Oberösterreich
+Austria	Kirchham bei Vorchdorf	Oberösterreich
+Austria	Vorchdorf	Oberösterreich
+Austria	Nussdorf am Attersee	Oberösterreich
+Austria	Kematen In Tirol	Tirol
+Austria	Bad Gastein	Salzburg
+Austria	Seefeld in Tirol	Tirol
+Austria	Steinach am Brenner	Tirol
+Austria	Elbigenalp	Tirol
+Austria	Seewalchen am Attersee	Oberösterreich
+Austria	Laengenfeld	Tirol
+Austria	Pettenbach	Oberösterreich
+Austria	Altmuenster	Oberösterreich
+Austria	East Tyrol	Tirol
+Austria	Frankenburg am Hausruck	Oberösterreich
+Austria	Altenhof am Hausruck	Oberösterreich
+Austria	Patergassen	Kärnten
+Austria	Nauders	Tirol
+Austria	St.Georgen im Attergau	Oberösterreich
+Austria	Oberndorf	Niederösterreich
+Austria	St. Georgen im Attergau	Oberösterreich
+Austria	Oberweis	Oberösterreich
+Austria	Altmünster	Oberösterreich
+Austria	Klagenfurt	Kärnten
+Austria	Salzburg-Gnigl	Salzburg
+Austria	Matrei am Brenner	Tirol
+Austria	St.Margarethen	Burgenland
+Austria	Schorfling Am Attersee	Oberösterreich
+Austria	Gschwandt bei Gmunden	Oberösterreich
+Austria	Weyregg am Attersee	Oberösterreich
+Austria	Unterach am Attersee	Oberösterreich
+Austria	Strass im Attergau	Oberösterreich
+Austria	Vöcklamarkt	Oberösterreich
+Austria	Aigen-Voglhub	Oberösterreich
+Austria	Frankenmarkt	Oberösterreich
+Austria	Schoerfling am Attersee	Oberösterreich
+Austria	Seiersberg	Steiermark
+Austria	Steinerkirchen	Oberösterreich
+Austria	Voecklamarkt	Oberösterreich
+Austria	Attersee	Oberösterreich
+Austria	Carinthia	Kärnten
+Austria	Styria	Steiermark
+Austria	Lower Austria	Niederösterreich
+Austria	Upper Austria	Oberösterreich
+Austria	Gmunden	Oberösterreich
+Austria	St. Anton	Tirol
+Austria	Lenzing	Oberösterreich
+Austria	St. Wolfgang	Oberösterreich
+Austria	Ischgl	Tirol
+Austria	Tösens	Tirol
+Austria	Galtür	Tirol
+Austria	Sölden	Tirol
+Austria	See	Tirol
+Austria	Kappl	Tirol
+Austria	Innsbruck	Tirol
+Austria	Linz	Oberösterreich
+Austria	Mayrhofen	Tirol
+Austria	Oed	Niederösterreich
+Austria	Schlatt	Oberösterreich
+Austria	Roitham	Oberösterreich
+Austria	Traunkirchen	Oberösterreich
+Austria	Attnang-Puchheim	Oberösterreich
+Austria	Pinsdorf	Oberösterreich
+Austria	Laakirchen	Oberösterreich
+Austria	Sistrans	Tirol
+Austria	Zams	Tirol
+Austria	Aldrans	Tirol
+Austria	Carinthis	Kärnten
+Austria	PUCHKIRCHEN	Oberösterreich
+Austria	Timelkam	Oberösterreich
+Austria	Nis	Wien
+Austria	Austria	Wien
+Austria	Bad Ischl	Oberösterreich
+Austria	Stadt-Predlitz	Steiermark
+Austria	Ramsau im Zillertal	Tirol
+Austria	Pilsbach	Oberösterreich
+Austria	Voecklabruck	Oberösterreich
+Austria	Pögstall	Niederösterreich
+Austria	Aurach am Hongar	Oberösterreich
+Austria	Ebensee	Oberösterreich
+Austria	Gosau	Oberösterreich
+Austria	Schwanenstadt	Oberösterreich
+Austria	Bad Goisern	Oberösterreich
+Austria	Thaur	Tirol
+Austria	Waidhofen	Niederösterreich
+Austria	Regau	Oberösterreich
+Austria	Manning	Oberösterreich
+Austria	Ziar nad Hronom	Wien
+Austria	Gams	Steiermark
+Austria	Pfunden	Tirol
+Austria	Vöcklabruck	Oberösterreich
+Austria	Ampflwang im Hausruckwald	Oberösterreich
+Austria	Pöndorf	Oberösterreich
+Austria	Heinfeld	Tirol
+Austria	Fornach	Oberösterreich
+Austria	Mondsee	Oberösterreich
+Austria	Graz	Steiermark
+Austria	Grünau im Almtal	Oberösterreich
+Austria	Vocklabruck	Oberösterreich
+Austria	Gampern	Oberösterreich
+Austria	Neukirchen	Oberösterreich
+Austria	Rüstorf	Oberösterreich
+Austria	St.Konrad	Oberösterreich
+Austria	St.Lorenz	Oberösterreich
+Austria	Engerwitzdorf	Oberösterreich
+Austria	St.Valentin	Niederösterreich
+Austria	Strass im Zillertal	Tirol
+Austria	Pfaffing	Oberösterreich
+Austria	Launsdorf	Kärnten
+Austria	Rudolfsheim Funfhaus	Wien
+Austria	Grunddorf	Niederösterreich
+Austria	Seekirchen	Salzburg
+Austria	Chalupki	Wien
+Austria	Bad Aussee	Steiermark
+Austria	Gruenau im Almtal	Oberösterreich
+Austria	Ebensee am Traunsee	Oberösterreich
+Austria	Zell am Moos	Oberösterreich
+Austria	Ohlsdorf	Oberösterreich
+Czechia	Moravian-Silesian Region	Ostrava-City
+Czechia	Hradec Kralove Region	Hradec Králové
+Czechia	Plzen Region	Plzen-City
+Czechia	Olomouc Region	Olomouc
+Czechia	ÃšstÃ­ nad Labem Region	Ústí nad Labem
+Czechia	Central Bohemian Region	Prague
+Czechia	South Moravian Region	Brno-City
+Czechia	Pilsen Region	Plzen-City
+Czechia	Vysocina Region	Jihlava
+Czechia	Usti nad Labem Region	Ústí nad Labem
+Czechia	South Bohemian Region	?eské Bud?jovice
+Czechia	Brno	Brno-City
+Czechia	Liberec Region	Liberec
+Czechia	Pardubice Region	Pardubice
+Czechia	Olomouc region	Olomouc
+Czechia	Ustecky Region	Ústí nad Labem
+Czechia	Karlovy Vary Region	Karlovy Vary
+Czechia	Prague Region	Prague
+Czechia	Plzen	Plzen-City
+Czechia	Hradec Kralove region	Hradec Králové
+Czechia	Stredocesky Kraj	Prague
+Czechia	Northern Bohemia Region	Ústí nad Labem
+Czechia	Southern Bohemia Region	?eské Bud?jovice
+Czechia	PlzeÅˆ	Plzen-City
+Czechia	Litovel	Olomouc
+Czechia	Pardubice region	Pardubice
+Czechia	Vysocina	Jihlava
+Czechia	Litomerice-Brnay	Litomerice
+Czechia	Plzensky Kraj	Plzen-City
+Czechia	Pilsen	Plzen-City
+Czechia	Kralovehradecky region	Hradec Králové
+Czechia	Central Czechia and Prague	Prague
+Czechia	South Bohemian	?eské Bud?jovice
+Czechia	Hradec KrÄ‚Ë‡love Region	Hradec Králové
+Czechia	The Moravian-Silesian Region	Ostrava-City
+Czechia	Moravian Silesian Region	Ostrava-City
+Czechia	Central Bohemia Region	Prague
+Czechia	Central Bohemian	Prague
+Czechia	South Bohemia Region	?eské Bud?jovice
+Czechia	South Bohemia	?eské Bud?jovice
+Czechia	Hostivice	Prague-West
+Czechia	Usti nad Labem region	Ústí nad Labem
+Czechia	Highlands Region	Jihlava
+Czechia	LiberecRegion	Liberec
+Czechia	Pilsen region	Plzen-City
+Czechia	Carlsbad	Karlovy Vary
+Czechia	North Moravian Region	Ostrava-City
+Czechia	Brno Region	Brno-City
+Czechia	Ostrava Region	Ostrava-City
+Czechia	SlanÃ½	Kladno
+Czechia	Trutnov District	Trutnov
+Czechia	Moravian-Slesian Region	Ostrava-City
+Czechia	Velke Popovice	Prague-East
+Czechia	Region Pardubice	Pardubice
+Czechia	South Bohemian region	?eské Bud?jovice
+Czechia	Pruhonice	Prague-West
+Czechia	Lochovice	Beroun
+Czechia	Hlavni Mesto Praha	Prague
+Czechia	ZlÃ­n Region	Zlín
+Czechia	Uhlirske Janovice	Kutná Hora
+Czechia	Moravian-South Region	Brno-City
+Czechia	Moravian-North Region	Ostrava-City
+Czechia	Moravian-Silesian	Ostrava-City
+Czechia	South Moravian	Brno-City
+Czechia	Drzovice	Olomouc
+Czechia	Moravian-Silesian region	Ostrava-City
+Czechia	South Bomemian Region	?eské Bud?jovice
+Czechia	Praha Region	Prague
+Czechia	JihomoravskÃ½ kraj	Brno-City
+Czechia	Hl. m. Prague	Prague
+Czechia	Karlovarsky Kraj	Karlovy Vary
+Czechia	Ustecky Kraj	Ústí nad Labem
+Czechia	Kralovehradecky Kraj	Hradec Králové
+Czechia	Hlavni mesto Praha	Prague
+Czechia	Stredocesky Region	Prague
+Czechia	Stare Mesto pod Landstejn	Jindrichuv Hradec
+Czechia	South moravian Region	Brno-City
+Czechia	Cental Bohemian Region	Prague
+Czechia	Eastern Bohemia	Hradec Králové
+Czechia	HruÅ¡ovany nad JeviÅ¡ovkou	Znojmo
+Czechia	Slavkov u Brna	Brno-City
+Czechia	VÃ©myslice	Znojmo
+Czechia	HruÅ¡ovany u Brna	Brno-City
+Czechia	Prague-Miskovice	Kutná Hora
+Czechia	Cesky Brod	Prague
+Czechia	Namest na Oslavou	T?ebí?
+Czechia	Cernosice	Prague-West
+Czechia	Praha 5 Stodulky	Prague
+Czechia	Zabrezi	Hradec Králové
+Czechia	Slavetin	Ústí nad Labem
+Czechia	Sezimovo Usti	Tábor
+Czechia	Kunice	Prague-East
+Czechia	Stara Boleslav	Prague-East
+Czechia	Caslavice	T?ebí?
+Czechia	Zabreh na Morave	Olomouc
+Czechia	Plana	Tachov
+Czechia	Odolena Voda	Prague-East
+Czechia	Stredocesky region	Prague
+Czechia	Pardubicky region	Pardubice
+Czechia	Liberecky region	Liberec
+Czechia	Olomoucky region	Olomouc
+Czechia	Rudna u Prahy	Prague
+Czechia	Moravskoslezsky region	Ostrava-City
+Czechia	Hranice na Morave	Olomouc
+Czechia	Zlonice	Kladno
+Czechia	NuÄice	Prague-West
+Czechia	Libochovicky	Kladno
+Czechia	Liberec region	Liberec
+Czechia	Pardubicky Kraj	Pardubice
+Czechia	Jihocesky kraj	?eské Bud?jovice
+Czechia	Jihomoravsky Kraj	Brno-City
+Germany	North Rhine-Westphalia	Nordrhein-Westfalen
+Germany	Rhineland-Palatinate	Rheinland-Pfalz
+Germany	Lower Saxony	Niedersachsen
+Germany	Saxony-Anhalt	Sachsen-Anhalt
+Germany	Mecklenburg-Western Pomerania	Mecklenburg-Vorpommern
+Germany	Unterreichenbach	Baden-Württemberg
+Germany	Langen	Hessen
+Germany	Saxony	Sachsen
+Germany	Bavaria	Bayern
+Germany	Duren	Nordrhein-Westfalen
+Ireland	Waterford	Munster
+Ireland	Leitrim	Connacht
+Ireland	Constituency of Limerick County	Munster
+Ireland	Constituency of Limerick City	Munster
+Ireland	Constituency of Clare	Munster
+Ireland	Constituency of Tipperary	Munster
+Ireland	Constituency of Limerick	Munster
+Ireland	Constituency of Galway	Connacht
+Ireland	Constituency Of Limerick	Munster
+Ireland	Constituency Of Tipperary	Munster
+Ireland	Constituency Of Clare	Munster
+Ireland	Constituency Of Cork	Munster
+Ireland	Constituency of Louth	Leinster
+Ireland	Constituency of Kilkenny	Leinster
+Ireland	Dublin	Leinster
+Ireland	Limerick	Munster
+Ireland	Galway	Connacht
+Ireland	Kildare	Leinster
+Ireland	Westmeath	Leinster
+Ireland	Sligo	Connacht
+Ireland	Offaly	Leinster
+Ireland	Laois	Leinster
+Ireland	Donegal	Ulster
+Ireland	Kerry	Munster
+Ireland	Cork	Munster
+Ireland	Clare	Munster
+Ireland	Meath	Leinster
+Ireland	Louth	Leinster
+Ireland	Tipperary	Munster
+Ireland	Roscommon	Connacht
+Ireland	Cavan	Ulster
+Ireland	Carlow	Leinster
+Ireland	Kilkenny	Leinster
+Ireland	Longford	Leinster
+Ireland	Mayo	Connacht
+Ireland	Monaghan	Ulster
+Ireland	Wicklow	Leinster
+Ireland	Wexford	Leinster
+Ireland	NO	Ulster
+Ireland	Limerick City	Munster
+Ireland	Dublin 3	Leinster
+Ireland	Athlone	Leinster
+Ireland	Limerick County	Munster
+Ireland	LK	Munster
+Ireland	DUblin	Leinster
+Ireland	RM	Connacht
+Ireland	WH-	Leinster
+Lithuania	Vilniaus apskritis	Vilnius County
+Lithuania	Utenos apskritis	Utena County
+Lithuania	Klaipedos apskritis	Klaipeda County
+Lithuania	Panevezio	Panevezys County
+Lithuania	Kauno	Kaunas County
+Lithuania	Marijampoles	Marijampole County
+Lithuania	Taurage	Taurage County
+Lithuania	Siauliu apskritis	Siauliai County
+Lithuania	Alytaus apskritis	Alytus County
+Lithuania	Utena	Utena County
+Lithuania	Vilnius	Vilnius County
+Lithuania	Telsiai	Telsiai County
+Lithuania	Siauliai	Siauliai County
+Lithuania	Kaunas	Kaunas County
+Lithuania	Kauno apskr.	Kaunas County
+Lithuania	Kauno apskr	Kaunas County
+Lithuania	Marijampoles apskritis	Marijampole County
+Lithuania	Vilniaus apskr	Vilnius County
+Lithuania	Panevezys	Panevezys County
+Lithuania	Alytus	Alytus County
+Lithuania	Panevezys apskr.	Panevezys County
+Lithuania	Alytaus	Alytus County
+Lithuania	Kauno apskritis	Kaunas County
+Lithuania	Vilniaus apskr.	Vilnius County
+Lithuania	Kaunas apskr	Kaunas County
+Lithuania	Siauliai apksr.	Siauliai County
+Lithuania	Klaipeda	Klaipeda County
+Lithuania	Vilniaus	Vilnius County
+Lithuania	Klaipedos apskr.	Klaipeda County
+Lithuania	Utenos apskr.	Utena County
+Lithuania	Siauliu apskr.	Siauliai County
+Lithuania	Taurages apskritis	Taurage County
+Lithuania	Marijampole apskritis	Marijampole County
+Lithuania	Alytaus apskr.	Alytus County
+Lithuania	Panevezio apskr	Panevezys County
+Lithuania	Telsiu	Telsiai County
+Lithuania	Klaipedos	Klaipeda County
+Lithuania	Siauliu	Siauliai County
+Lithuania	Taurages	Taurage County
+Lithuania	Vilnius r.	Vilnius County
+Lithuania	Alytus apskr.	Alytus County
+Lithuania	Telsiu apskr.	Telsiai County
+Lithuania	Panevezio apskr.	Panevezys County
+Lithuania	Marijampoles apskr.	Marijampole County
+Lithuania	Taurages apskr.	Taurage County
+Lithuania	Taurages apskr	Taurage County
+Lithuania	Marijampoles apskr	Marijampole County
+Lithuania	Utenos	Utena County
+Lithuania	Siauliu apskr	Siauliai County
+Lithuania	Panevezio apskritis	Panevezys County
+Lithuania	Klaipedos apskr	Klaipeda County
+Lithuania	KlaipÄ—dos apskr.	Klaipeda County
+Lithuania	Telsiu apskr	Telsiai County
+Lithuania	Utenos apskr	Utena County
+Lithuania	Å iauliÅ³ apskr.	Siauliai County
+Lithuania	PanevÄ—Å¾io apskr.	Panevezys County
+Lithuania	Marijampole	Marijampole County
+Lithuania	TelÅ¡iÅ³ apskr.	Telsiai County
+Lithuania	Telsiu apskritis	Telsiai County
+Lithuania	Alytaus apskr	Alytus County
+Lithuania	MarijampolÄ—s apskr.	Marijampole County
+Lithuania	Telsiy apskr	Telsiai County
+Lithuania	Raseiniai	Kaunas County
+Lithuania	Prienai	Kaunas County
+Lithuania	Kedainiai	Kaunas County
+Lithuania	Marijampole apskr.	Marijampole County
+Lithuania	Utena apskr.	Utena County
+Lithuania	TauragÄ—s apskr.	Taurage County
+Lithuania	Taurage apskr.	Taurage County
+Lithuania	Radviliskis	Siauliai County
+Lithuania	KlaipÄ—da	Klaipeda County
+Lithuania	Vilkaviskis	Marijampole County
+Lithuania	Telsiai apskr.	Telsiai County
+Lithuania	Kaisiadorys	Kaunas County
+Lithuania	Vilniaus r.	Vilnius County
+Lithuania	Visaginas	Utena County
+Lithuania	Radviliskio apskritis	Siauliai County
+Poland	Malopolskie	Krakow
+Poland	Dolnoslaskie	Wroclaw
+Poland	Zachodniopomorskie	Szczecin
+Poland	Mazowieckie	Warszawa
+Poland	Lubelskie	powiat lubelski
+Poland	Lubuskie	Zielona Góra
+Poland	Warminsko-Mazurskie	Olsztyn
+Poland	Podlaskie	Bialystok
+Poland	Wielkopolskie	Poznan
+Poland	Slask	powiat zabkowicki
+Poland	Lodzkie	Lódz
+Poland	Kujawsko-Pomorskie	Bydgoszcz
+Poland	Podkarpackie	Rzeszów
+Poland	Slaskie	Katowice
+Poland	Pomorskie	Gdansk
+Poland	Swietokrzyskie	Kielce
+Poland	Dolnoslakie	Wroclaw
+Poland	zachodniopomorskie	Szczecin
+Poland	Pomorze	Gdansk
+Poland	Ma?opolskie	Krakow
+Poland	Lower Silesian Voivodeship	Wroclaw
+Poland	Wielkopolskie voivodeship	Poznan
+Poland	Swietokrzyskie Voivodeship	Kielce
+Poland	Masovia	Warszawa
+Poland	West Pomeranian Voivodeship	Szczecin
+Poland	Pomerania	Gdansk
+Poland	Lower Silesia	Wroclaw
+Poland	Warminsko-mazurskie	Olsztyn
+Poland	Kujawsko-pomorskie	Bydgoszcz
+Poland	Warmia	Olsztyn
+Poland	Kuyavian- Pomeranian	Bydgoszcz
+Poland	Grybow	Nowy Sacz
+Poland	Silesia	Wroclaw
+Poland	Lebus	Zielona Góra
+Poland	lodzkie	Lódz
+Poland	woj. slaskie	Katowice
+Poland	Warmi?sko-Mazurskie	Olsztyn
+Poland	Swietokrzyski	Kielce
+Poland	podkarpackie	Rzeszów
+Poland	malopolskie	Krakow
+Poland	lubelskie	powiat lubelski
+Poland	mazowieckie	Warszawa
+Poland	lubuskie	Zielona Góra
+Poland	?l?skie	Katowice
+Poland	Krotoszynski	powiat krotoszynski
+Poland	Zgierski	powiat zgierski
+Poland	Lodz	Lódz
+Poland	Rawski	powiat rawski
+Poland	Kepinski	powiat kepinski
+Poland	Czarnkowsko-Trzcianecki	powiat czarnkowsko-trzcianecki
+Poland	Gnieznienski	powiat gnieznienski
+Poland	Zlotowski	powiat zlotowski
+Poland	Wolsztynski	powiat wolsztynski
+Poland	Sremski	powiat sremski
+Poland	Lodzki Wschodni	powiat lódzki wschodni
+Poland	Malopolska	Krakow
+Poland	Kuyavian-Pomeranian	Bydgoszcz
+Poland	Lubelskie voivodeship	Lublin
+Poland	Podlaskie Voivodeship	Bialystok
+Poland	Koscianski	powiat koscianski
+Poland	Kutnowski	Kutno County
+Poland	Sredzki	powiat sredzki
+Poland	Malpolskie	Krakow
+Poland	Pabianice	powiat pabianicki
+Poland	Opoczynski	powiat opoczynski
+Poland	Greater Poland Voivodeship	Poznan
+Poland	woj. Slaskie	Katowice
+Poland	Welkopolskie	Poznan
+Poland	Kujawskopomorskie	Bydgoszcz
+Poland	Warmia and Mazury	Olsztyn
+Poland	wielkopolskie	Poznan
+Poland	warminsko - mazurskie	Olsztyn
+Poland	Lubelskie Voivodeship	Lublin
+Poland	Pomorskie Voivodeship	Gdansk
+Poland	Pabianicki	powiat pabianicki
+Poland	Pilski	powiat pilski
+Poland	Jarocinski	powiat jarocinski
+Poland	Gostynin	powiat gostyninski
+Poland	Pleszewski	powiat pleszewski
+Poland	Kujawsko-Europe	Bydgoszcz
+Poland	Wielkopolska	Poznan
+Slovenia	Jugovzhodna	Vzhodna
+Slovenia	Osrednjeslovenska	Zahodna Slovenija
+Slovenia	Podravska	Vzhodna
+Slovenia	Obalnokraska	Zahodna Slovenija
+Slovenia	Savinjska	Vzhodna
+Slovenia	Gorenjska	Zahodna Slovenija
+Slovenia	Pomurska	Vzhodna
+Slovenia	Posavska	Vzhodna
+Slovenia	Koroska	Vzhodna
+Slovenia	Primorskonotranjska	Vzhodna
+Slovenia	Goriska	Zahodna Slovenija
+Slovenia	Zasavska	Vzhodna
+Slovenia	GoriA!ka	Zahodna Slovenija
+Spain	Balearic Islands	Illes Balears
+Spain	Asturias	Principado de Asturias
+Spain	Catalunya	Cataluña/Catalunya
+Spain	Madrid	Comunidad de Madrid
+Spain	Navarra	Comunidad Foral de Navarra
+Spain	Melilla	Ciudad Autónoma de Melilla
+Spain	Ceuta	Ciudad Autónoma de Ceuta
+Spain	Murcia	Región de Murcia
+Spain	Balearic Island	Illes Balears
+Spain	Cataluna	Cataluña/Catalunya
+Spain	Santiago de Compostela	Galicia
+Spain	Catalonia	Cataluña/Catalunya
+Spain	Valencian Community	Comunitat Valenciana
+Spain	Cuenca	Castilla-La Mancha
+Spain	Alicante	Comunitat Valenciana
+Spain	Canary Island	Canarias
+Spain	Tossa de Mar	Cataluña/Catalunya
+Spain	Sevilla	Andalucía
+Spain	Asturiash	Principado de Asturias
+Spain	Cadiz	Andalucía
+Spain	Valence	Comunitat Valenciana
+Spain	Pais Vasco	País Vasco/Euskadi
+Spain	Ciudad Real	Castilla-La Mancha
+Spain	Basque Country	País Vasco/Euskadi
+Spain	Logrono	La Rioja
+Spain	Toledo	Castilla-La Mancha
+Spain	Albacete	Castilla-La Mancha
+Spain	Barcelona	Cataluña/Catalunya
+Spain	Albacet	Castilla-La Mancha
+Spain	FUERNGIROLA	Andalucía
+Spain	Leganes	Comunidad de Madrid
+Sweden	Vastra Gotaland County	Gothenburg
+Sweden	Vastra Gotaland	Gothenburg
+Sweden	Vasterbotten	Umeå
+Sweden	Kronoberg	Växjö
+Sweden	Vastragotaland	Gothenburg
+Sweden	Sodermanland	Söderhamn
+Sweden	Blekinge	Karlskrona
+Sweden	Vastmanland	Västerås
+Sweden	Varmland	Karlstad
+Sweden	Jamtland Harjedalen	Härjedalen
+Sweden	Dalarna	Falun
+Sweden	Gavleborg County	Gävle
+Sweden	Ostergotland	Linköping
+Sweden	Vasternorrland	Härnösand
+Sweden	Norrbotten	Luleå
+Sweden	Vastra Gotalandsregionen	Gothenburg
+Sweden	Region Skane	Malmö
+Sweden	Region Stockholm	Stockholm
+Sweden	Region Vastra Gotaland	Gothenburg
+Sweden	AstergAPtland	Linköping
+Sweden	Västra Götaland	Gothenburg
+Sweden	Jonkopings lan	Jönköping
+Sweden	Gavleborgs	Gävle
+Sweden	Orebro lan	Örebro
+Sweden	Västmanland	Västerås
+Sweden	Region Norrbotten	Luleå
+Sweden	Region Halland	Halmstad
+Sweden	Region Kalmar	Kalmar
+Sweden	Västerbotten	Umeå
+Sweden	Gavleborgs lan	Gävle
+Sweden	Västernorrland	Härnösand
+Sweden	Sörmland	Nyköping
+Sweden	Östergötland	Linköping
