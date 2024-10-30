@@ -867,7 +867,7 @@ server <- function(input, output){
     varHM_dataNum <- ncol(varHM_inTable)
     varHM_Palette <- varHM_Palette()$varHM
     varHM_Main <- "Variants Regional Frequency (%)"
-    varHM_tagColor <- "gray49"
+    varHM_tagColor <- "gray59"
 
     #Plotting.
     if (ncol(varHM_inTable)>1) {
@@ -881,7 +881,7 @@ server <- function(input, output){
     } else if (ncol(varHM_inTable)==1) {
       
       varHM_inTable <- t(varHM_inTable)
-      varHM_Palette <- "#FD8D3C"
+      varHM_Palette <- "#DE77AE"
       varHM_Main <- paste(row.names(varHM_inTable), "Regional Frequency (%)")
       
       dataPlotter_regBP(varHM_inTable,
@@ -1334,7 +1334,7 @@ server <- function(input, output){
     allLinHM_dataNum <- ifelse(ncol(allLinHM_inTable)>=25, 25, ncol(allLinHM_inTable))
     allLinHM_Palette <- allLinHM_Palette()$allLinHM
     allLinHM_Main <- "Lineages Regional Frequency (%)"
-    allLinHM_tagColor <- "gray49"
+    allLinHM_tagColor <- "gray59"
     
     #Plotting.
     if (ncol(allLinHM_inTable)>1) {
@@ -1348,7 +1348,7 @@ server <- function(input, output){
     } else if (ncol(allLinHM_inTable)==1) {
       
       allLinHM_inTable <- t(allLinHM_inTable)
-      allLinHM_Palette <- "#41B6C4"
+      allLinHM_Palette <- "#8073AC"
       allLinHM_Main <- paste(row.names(allLinHM_inTable), "Regional Frequency (%)")
       
       dataPlotter_regBP(allLinHM_inTable,
@@ -1743,7 +1743,7 @@ server <- function(input, output){
     pathogenSel <- input$pathogen
     
     mutBP1_inTable <- mutBP_Normalization()$mutBP1
-    mutBP1_Palette <- c("#3690C0", "#014636")
+    mutBP1_Palette <- c("#BF812D", "#35978F")
     mutBP1_plotMain <- paste(row.names(mutBP1_inTable)[1], "Frequency (%)")
     mutBP1_timeUnit <- pathogenSelConf_Table[pathogenSelConf_Table$PathogenAbbr==pathogenSel,]$TimeUn
     
@@ -1760,7 +1760,7 @@ server <- function(input, output){
     pathogenSel <- input$pathogen
     
     mutBP2_inTable <- mutBP_Normalization()$mutBP2
-    mutBP2_Palette <- c("#3690C0", "#014636")
+    mutBP2_Palette <- c("#BF812D", "#35978F")
     mutBP2_plotMain <- paste(row.names(mutBP2_inTable)[1], "Frequency (%)")
     mutBP2_timeUnit <- pathogenSelConf_Table[pathogenSelConf_Table$PathogenAbbr==pathogenSel,]$TimeUn
     
@@ -1893,7 +1893,7 @@ server <- function(input, output){
     mutHM_dataNum <- ifelse(ncol(mutHM_inTable)>=25, 25, ncol(mutHM_inTable))
     mutHM_Palette <- mutHM_Palette()$mutHM
     mutHM_Main <- "Mutations Regional Frequency (%)"
-    mutHM_tagColor <- "gray49"
+    mutHM_tagColor <- "gray59"
     
     #Plotting.
     if (ncol(mutHM_inTable)>1) {
@@ -1907,7 +1907,7 @@ server <- function(input, output){
     } else if (ncol(mutHM_inTable)==1) {
       
       mutHM_inTable <- t(mutHM_inTable)
-      mutHM_Palette <- "#67A9CF"
+      mutHM_Palette <- "#35978F"
       mutHM_Main <- paste(row.names(mutHM_inTable), "Regional Frequency (%)")
       
       dataPlotter_regBP(mutHM_inTable,
