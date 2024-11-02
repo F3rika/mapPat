@@ -27,7 +27,7 @@ def read_VBM(VbmFile):
          VBM_Table.readline()
          
          for line in VBM_Table:
-             lin=line.replace('\n','')
+             lin=line.replace('\n','').split('\t')[0]
              
              if lin not in ref_LinVBM:
                  ref_LinVBM.append(lin)
@@ -43,7 +43,7 @@ def read_TEST(testFile):
          
          for line in TEST_table:
              l=line.replace('\n', '').replace('*', '').split('\t')
-             lin=l[13]
+             lin=l[9]
              
              if lin not in test_Lin:
                  test_Lin.append(lin)
