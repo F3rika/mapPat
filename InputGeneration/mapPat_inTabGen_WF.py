@@ -53,7 +53,38 @@ def main():
          
          build_coutriesListTracker('inTab_avCheck_tmp.txt')
          
-         command('python3 %s/LinVar_ConvTabBuilder.py -rv LinVar_AssocTab.txt -rs LinVBM_AssocTab.txt -ra SARS-CoV-2_LineagesAliases.json -t %s -o LinVar_ConvTabTracker.txt'%(inputs.path_scripts, inputs.input_file))
+         command('python3 %s/LinVar_ConvTabBuilder.py -rv LinVar_AssocTab.txt -rs LinVBM_AssocTab.txt -ra SARS-CoV-2_LineagesAliases.json -t SARS-CoV-2.HaploCoV -o LinVar_ConvTabTracker.txt'%(inputs.path_scripts))
+         
+         command('python3 %s/Var_CountsTabBuilder.py -rc countriesListTracker.txt -rv LinVar_ConvTabTracker.txt'%(inputs.path_scripts))
+         
+         command('python3 %s/InAvailability_ConfigTabUpdater.py -iav inTab_avCheck_tmp.txt -rc countriesListTracker.txt -p SARS-CoV-2'%(inputs.path_scripts))
+
+         command('rm LinVar_AssocTab.txt LinVBM_AssocTab.txt SARS-CoV-2_LineagesAliases.json coutryToISO.txt areaFile allADM_CountryRegion_AssocTab.txt')
+         
+         command('mv -t ./%s_mapPatInterOut linDefMut.csv SARS-CoV-2.HaploCoV inTab_avCheck_tmp.txt'%(inputs.output_file))
+         command('mv -t ./%s_mapPatOut Epiweek.*.csv *_muts_perLin.csv HeatmapRegLin_*.csv Total_*_regions.csv countriesListTracker.txt inTab_avCheck.txt LinVar_ConvTabTracker.txt'%(inputs.output_file))
+         
+         command('tar -czvf %s_mapPatInterOut.tar.gz ./%s_mapPatInterOut --remove-files'%(inputs.output_file, inputs.output_file))
+         command('tar -czvf %s_mapPatOut.tar.gz ./%s_mapPatOut --remove-files'%(inputs.output_file, inputs.output_file))
+     
+     elif inputs.database=='Nextstrain' and inputs.pathogen=='SARS-CoV-2':
+         command('mkdir %s_mapPatInterOut'%(inputs.output_file))
+         command('mkdir %s_mapPatOut'%(inputs.output_file))
+
+         filesToCopy=['LinVar_AssocTab.txt', 'LinVBM_AssocTab.txt', 'SARS-CoV-2_LineagesAliases.json', 'coutryToISO.txt', 'areaFile', 'allADM_CountryRegion_AssocTab.txt']
+
+         for fileName in filesToCopy:
+             command('cp %s/%s .'%(inputs.path_config, fileName))
+         
+         command('perl %s/NextStrainToHaploCoV.pl --metadata %s --outfile SARS-CoV-2.HaploCoV'%(inputs.path_scripts, inputs.input_file))
+         
+         command('perl %s/countMlin.pl SARS-CoV-2.HaploCoV > linDefMut.csv'%(inputs.path_scripts))
+         
+         command('perl %s/BuildTables.pl SARS-CoV-2.HaploCoV SI'%(inputs.path_scripts))
+         
+         build_coutriesListTracker('inTab_avCheck_tmp.txt')
+         
+         command('python3 %s/LinVar_ConvTabBuilder.py -rv LinVar_AssocTab.txt -rs LinVBM_AssocTab.txt -ra SARS-CoV-2_LineagesAliases.json -t SARS-CoV-2.HaploCoV -o LinVar_ConvTabTracker.txt'%(inputs.path_scripts))
          
          command('python3 %s/Var_CountsTabBuilder.py -rc countriesListTracker.txt -rv LinVar_ConvTabTracker.txt'%(inputs.path_scripts))
          
@@ -84,7 +115,7 @@ def main():
          
          build_coutriesListTracker('inTab_avCheck_tmp.txt')
          
-         command('python3 %s/InAvailability_ConfigTabUpdater.py -iav inTab_avCheck_tmp.txt -p mPox'%(inputs.path_scripts))
+         command('python3 %s/InAvailability_ConfigTabUpdater.py -iav inTab_avCheck_tmp.txt -p %s'%(inputs.path_scripts, inputs.pathogen))
 
          command('rm coutryToISO.txt areaFile allADM_CountryRegion_AssocTab.txt metaDkeep')
          
