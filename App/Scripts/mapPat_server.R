@@ -518,7 +518,7 @@ server <- function(input, output){
     
     #The final input table MUST contain at least 1 Variant.
     validate(need(nrow(varSAC_Subsetted)>0,
-                  "0 Variants with a n. of sequenced genomes higher than 1 in the selected weeks range"))
+                  "0 Variants with at least 1 sequenced genome in the selected weeks range"))
     
     return(list(varSAC = varSAC_Subsetted))
   })
@@ -645,6 +645,10 @@ server <- function(input, output){
     varBP_dataSelector_inTable <- timeSelector()$allLin
     varBP_dataSelector_refTable <- variantsConvertion_Table
     varBP_dataSelector_varSel <- input$variantSel_BP
+
+    #Checking if there are selectable Variants in the time period of interest.
+    validate(need(length(varBP_dataSelector_varSel)>0,
+                  "0 Variants with a at least 1 sequenced genome in the selected weeks range"))
     
     #Collecting the data.
     if (varBP_dataSelector_varSel=="VBM") {
@@ -939,6 +943,10 @@ server <- function(input, output){
   #Collecting data for the selected Variants and producing the corresponding
   #input tables for both Choropleth Maps (CM1 and CM2).
   varCM1_dataSelector <- reactive({
+    #The final input table MUST contain at least 1 Variant to produce CM1.
+    validate(need(nrow(varSAC_Subsetting()$varSAC)>0,
+                  "0 Variants with at least 1 sequenced genome in the selected weeks range"))
+    
     #Defining inputs.
     varCM1_dataSelector_inTable <- varHMxCM_tableProducer()$varHMxCM
     varCM1_dataSelector_regNames <- unique(varCM1_dataSelector_inTable$reg)
@@ -957,7 +965,7 @@ server <- function(input, output){
   varCM2_dataSelector <- reactive({
     #The final input table MUST contain at least 2 Variants to produce CM2 as well.
     validate(need(nrow(varSAC_Subsetting()$varSAC)>1,
-                  "Only 1 Variant with a n. of sequenced genomes higher than 1 in the selected weeks range"))
+                  "Only 1 Variant with at least 1 sequenced genome in the selected weeks range"))
     
     #Defining inputs.
     varCM2_dataSelector_inTable <- varHMxCM_tableProducer()$varHMxCM
@@ -1434,6 +1442,12 @@ server <- function(input, output){
   #Collecting data for the selected Lineages and producing the corresponding input
   #tables for both Choropleth Maps (CM1 and CM2).
   allLinCM1_dataSelector <- reactive({
+    #The final input table MUST contain at least 1 Lineage to produce CM1.
+    validate(need(nrow(allLinCM_dataSubsetting()$allLinCM)>0,
+                  paste("0 Lineages with a % of sequenced genomes higher than",
+                        paste0(as.numeric(input$lineagesFreq)*100,"%"),
+                        "in the selected weeks range")))
+    
     #Defining inputs.
     allLinCM1_dataSelector_inTable <- allLinHMxCM_totSeq()$allLinHMxCM
     allLinCM1_dataSelector_regNames <- unique(allLinCM1_dataSelector_inTable$reg)
@@ -1733,6 +1747,10 @@ server <- function(input, output){
                                         mutTab_totSeq_perWeek)
     mutBP2_Normalized <- mutBP2_Normalized*100
     
+    #The input table MUST contain numeric data to produce BP1.
+    validate(need(!all(is.na(mutBP1_inTable)),
+                  "0 Mutations with sequenced genomes in the selected weeks range"))
+    
     return(list(mutBP1 = mutBP1_Normalized,
                 mutBP2 = mutBP2_Normalized))
   })
@@ -1766,7 +1784,7 @@ server <- function(input, output){
     
     #The input table MUST contain numeric data to produce BP2 as well. If only a single
     #non-defining Mutation is identified for the Lineage of interest BP2 can not be
-    #prodiced.
+    #produced.
     validate(need(!all(is.na(mutBP2_inTable)),
                   "Only 1 Mutations with sequenced genomes in the selected weeks range"))
     
