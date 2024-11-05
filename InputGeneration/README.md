@@ -3,7 +3,7 @@ The `InputGeneration` folder collects the workflow, scripts and configuration fi
 Currently, the `mapPat_inTabGen_WF.py` workflow can process:
 
 + SARS-CoV-2 metadata from *GISAID* or *Nextstrain*.
-+ mPox or other pathogens (excluding SARS-CoV-2) metadata from *Nextstrain* or produced through the *Nextstrain workflows*. Metadata should be accompanied by matched genomic sequences. Incomplete or low quality sequences should be excluded.
++ mPox or other pathogens (excluding SARS-CoV-2) metadata from *Nextstrain* or produced through the *Nextstrain workflows*. In this case metadata should be accompanied by matched genomic sequences. Incomplete or low quality sequences should be excluded.
 
 The workflow accepts as inputs:
 
