@@ -1748,7 +1748,7 @@ server <- function(input, output){
     mutBP2_Normalized <- mutBP2_Normalized*100
     
     #The input table MUST contain numeric data to produce BP1.
-    validate(need(!all(is.na(mutBP1_inTable)),
+    validate(need(!all(is.na(mutBP1_Normalized)),
                   "0 Mutations with sequenced genomes in the selected weeks range"))
     
     return(list(mutBP1 = mutBP1_Normalized,
