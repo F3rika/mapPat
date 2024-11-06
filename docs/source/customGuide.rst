@@ -6,15 +6,15 @@ It is also possible to use mapPat to analyse custom datasets; in order to do so 
 #. When producing counts tables for custom data make sure to follow the layout described at :doc:`inReqCounts`.
 #. When producing pathogen specific configuration tables for custom data make sure to follow the layout described at :doc:`inReqConfig`.
 #. Make sure to update the general configuration tables in order to include information about your data. This is required for mapPat to handle data properly. Follow the layout described at :doc:`inReqConfig` to avoid any issues.
-#. If possible follow the same structure of data folders as in the `mapPat GitHub repository <https://github.com/F3rika/mapPat.git>`_, and put your custom data in a new folder. Doing so avoids the necessity of updating the ``mapPat_config.R`` file. Mind that the name of the newly added folder must match information from the ``PathogenSelection_ConfigTab.txt`` configuration table.
+#. If possible follow the same structure of data folders as in the `mapPat GitHub repository <https://github.com/F3rika/mapPat/tree/mapPat_Current/App/Input>`_, and put your custom data in a new folder. Doing so avoids the necessity of updating the ``mapPat_config.R`` file. Mind that the name of the newly added folder must match information from the ``PathogenSelection_ConfigTab.txt`` configuration table.
 #. Otherwise it is required to update the ``mapPat_config.R`` file in order to match variables at lines 44-50 with the paths to folders where the new mapPat input is found.
 
 Moreover, if custom data to be analysed using mapPat are:
 
-+ SARS-CoV-2 metadata from `GISAID <https://weekly.chinacdc.cn/en/article/doi/10.46234/ccdcw2021.255>`_.
-+ mPox or other pathogens’ (excluding SARS-CoV-2) metadata from `Nexstrain <https://nextstrain.org/>`_ or produced through the Nextstrain workflows. This metadata should also be accompanied by matched (by identifier) genomic sequences. Incomplete or low quality sequences should be excluded.
++ SARS-CoV-2 metadata from `GISAID <https://weekly.chinacdc.cn/en/article/doi/10.46234/ccdcw2021.255>`_ or `Nexstrain <https://nextstrain.org/>`_.
++ mPox or other pathogens (excluding SARS-CoV-2) metadata from `Nexstrain <https://nextstrain.org/>`_ or produced through the Nextstrain workflows. In this case metadata should also be accompanied by matched (by identifier) genomic sequences. Incomplete or low quality sequences should be excluded.
 
-In Unix-like systems, mapPat input tables can be generated using a dedicated workflow available through the `mapPat GitHub repository <https://github.com/F3rika/mapPat.git>`_. This workflow, named ``mapPat_inTabGen_WF.py``, collects and organises a series of custom `Perl <https://www.perl.org/>`_ and `Python3 <https://www.python.org/>`_ scripts and generates all the pathogen specific tables required by mapPat.
+In Unix-like systems, mapPat input tables can be generated using a dedicated workflow available through the `mapPat GitHub repository <https://github.com/F3rika/mapPat/tree/mapPat_Current/InputGeneration>`_. This workflow, named ``mapPat_inTabGen_WF.py``, collects and organises a series of custom `Perl <https://www.perl.org/>`_ and `Python3 <https://www.python.org/>`_ scripts and generates all the pathogen specific tables required by mapPat.
 
 The ``mapPat_inTabGen_WF.py`` accepts as inputs:
 
@@ -30,8 +30,8 @@ The ``mapPat_inTabGen_WF.py`` accepts as inputs:
 
 For correct functioning ``mapPat_inTabGen_WF.py`` requires:
 
-+ `Perl <https://www.perl.org/>`_ (devt. vers. 5.10.1)
-+ `Python3 <https://www.python.org/>`_ (devt. vers. 3.4.5)
++ `Perl <https://www.perl.org/>`_ (devt. vers. 5.30.0)
++ `Python3 <https://www.python.org/>`_ (devt. vers. 3.8.10)
 + `Nucmer <https://github.com/mummer4/mummer>`_ (devt. vers. 4.0.0beta2)
 
 Here a quick guide on how to run ``mapPat_inTabGen_WF.py`` in order to generate mapPat pathogen specific input tables:
@@ -41,17 +41,22 @@ Here a quick guide on how to run ``mapPat_inTabGen_WF.py`` in order to generate 
 #. Enter the ``InputGeneration`` folder of the repository.
 #. Run the ``mapPat_inTabGen_WF.py`` script using Python3.
 
-| It is possible to test ``mapPat_inTabGen_WF.py`` using a pre-made dataset available through the `mapPat Github repository <https://github.com/F3rika/mapPat>`__. To download the test dataset, run the ``downloadTestData.sh`` script in the ``TestData`` subfolder from the ``InputGeneration`` folder of the repository (make sure to make the script executable before using it).
-| Once the test dataset is available run the ``mapPat_inTabGen_WF.py`` in the ``InputGeneration`` folder  using the following command to generate input data for mapPat:
+| Here are some brief examples of commands used to generate input data for mapPat:
 
-+ For SARS-CoV-2
++ For SARS-CoV-2 (GISAID metadata)
 
 ::
 
- nohup python3 mapPat_inTabGen_WF.py -i ./TestData/SARS-CoV-2_metadataGISAID.tsv -pc ./Config -ps ./Scripts -p SARS-CoV-2 -db GISAID -o SARS-CoV-2_testData &
+ nohup python3 mapPat_inTabGen_WF.py -i SARS-CoV-2_metadataGISAID.tsv -pc ./Config -ps ./Scripts -p SARS-CoV-2 -db GISAID -o SARS-CoV-2_metadataGISAID &
+
++ For SARS-CoV-2 (Nextstrain metadata)
+
+::
+
+ nohup python3 mapPat_inTabGen_WF.py -i SARS-CoV-2_metadataNextstrain.tsv -pc ./Config -ps ./Scripts -p SARS-CoV-2 -db Nextstrain -o SARS-CoV-2_metadataNextstrain &
 
 + For mPox
 	
 ::
 	
- nohup python3 mapPat_inTabGen_WF.py -i ./TestData/mPox_metadataNextstrain.tsv -pc ./Config -ps ./Scripts -s ./TestData/mPox_sequences.fasta -rs ./TestData/mPox_reference.fasta -p mPox -db Nextstrain -o mPox_testData &
+ nohup python3 mapPat_inTabGen_WF.py -i mPox_metadataNextstrain.tsv -pc ./Config -ps ./Scripts -s mPox_sequences.fasta -rs mPox_reference.fasta -p mPox -db Nextstrain -o mPox_metadataNextstrain &
