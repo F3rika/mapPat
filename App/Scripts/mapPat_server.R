@@ -1824,6 +1824,10 @@ server <- function(input, output){
     mutHMxCM_totSeq_Table <- mutHMxCM_totSeq_inTable[,1:2]
     mutHMxCM_totSeq_Table <- cbind(mutHMxCM_totSeq_Table,
                                    totSeq = rowSums(mutHMxCM_totSeq_inTable[,3:length(mutHMxCM_totSeq_inTable)]))
+
+    #The final input table MUST contain at least 1 Mutation.
+    validate(need(sum(mutHMxCM_totSeq_Table$totSeq)>0,
+                  "0 Mutations with sequenced genomes in the selected weeks range"))
     
     return(list(mutHMxCM = mutHMxCM_totSeq_Table))
   })
@@ -1856,10 +1860,6 @@ server <- function(input, output){
     #Subsetting and sorting the input table.
     mutHM_SubsetSorted <- dataReg_SubSorter(mutHM_SubsetSort_inTable,
                                             mutTab_totSeq)
-    
-    #The final input table MUST contain at least 1 Mutation.
-    validate(need(ncol(mutHM_SubsetSorted)>0,
-                  "0 Mutations with at least 1 appearance in the selected weeks range"))
     
     return(list(mutHM = mutHM_SubsetSorted))
   })
@@ -2013,6 +2013,9 @@ server <- function(input, output){
   #Collecting data for the selected Mutations and producing the corresponding input
   #tables for both Choropleth Maps (CM1 and CM2).
   mutCM1_dataSelector <- reactive({
+    validate(need(nrow(mutCM_dataSubsetting()$mutCM)>0,
+                  "0 Mutations with a % of sequenced genomes higher than 1% in the selected weeks range"))
+    
     #Defining inputs.
     mutCM1_dataSelector_inTable <- mutHMxCM_totSeq()$mutHMxCM
     mutCM1_dataSelector_regNames <- unique(mutCM1_dataSelector_inTable$region)
