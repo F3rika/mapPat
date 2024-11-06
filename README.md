@@ -27,7 +27,7 @@ Here is a quick guide on how to download and run a local installation of mapPat:
 
 Please, when testing that mapPat is correctly installed and functioning use data from Italy (for SARS-CoV-2) or United States (for mPox).
 
-##Input tables
+## Input tables
 
 The workflow, scripts and configuration files used to produce mapPat's input tables are available in the [InputGeneration](https://github.com/F3rika/mapPat/tree/mapPat_Current/InputGeneration) folder of this GitHub.
 
