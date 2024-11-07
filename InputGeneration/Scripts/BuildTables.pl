@@ -87,7 +87,7 @@ while(<IN>)
 	{
 		if ($cov eq "SI")
 		{
-			next unless $m=~/Spike/;
+			next unless $m=~/Spike/ || $m=~/S_/;
 		}
 		$muts{$m}++;
 		$muTc{$country}{$m}{$week}++;
