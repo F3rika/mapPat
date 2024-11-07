@@ -10,6 +10,7 @@ while(<>)
 {
 	#per ogni riga/genoma
 	#leggo le colonne con lineage (11) e lista mutazioni (14)
+	chomp();
 	($lin,$muts)=(split(/\t/))[9,10];
 	next if $lin eq "";
 	next if $lin eq "Unassigned";
