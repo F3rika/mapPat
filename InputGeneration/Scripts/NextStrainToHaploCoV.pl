@@ -90,10 +90,10 @@ sub metadataToLists
 		my $continent=$data[$lock{"region"}];
 		my $country=$data[$lock{"country"}];
 		my $region=$data[$lock{"division"}];
-		my $alleles=$data[$lock{"substitutions"}];
+		my $alleles=$data[$lock{"aaSubstitutions"}];
 		my $ins=$data[$lock{"insertions"}];
 		my $del=$data[$lock{"deletions"}];
-		my $lvar=build_listVar($alleles,$ins,$del,$ref);
+		my $lvar=build_listVar($alleles);#,$ins,$del,$ref);
 
 		$id=fix_strain($id);
         	$country=~s/\s+//g;
@@ -177,14 +177,15 @@ sub build_listVar
 	my @vars=(split(/\,/,$var));
 	foreach my $v (@vars)
 	{
-		my $ref=substr($v,0,1);
-		my $pos=substr($v,1,length($v)-2);
-		my $alt=chop($v);
-		next if $ref=~/[RYSWKMBDHVN]/;
-		next if $alt=~/[RYSWKMBDHVN]/;
-		#print "$v $ref $pos $alt\n";
+		#my $ref=substr($v,0,1);
+		#my $pos=substr($v,1,length($v)-2);
+		#my $alt=chop($v);
+		#next if $ref=~/[RYSWKMBDHVN]/;
+		#next if $alt=~/[RYSWKMBDHVN]/;
+		$v=~s/\:/\_/;
+		#print "$v\n"; #$ref $pos $alt\n";
 		#die();
-		$ovar.="$pos\_$ref|$alt,";
+		$ovar.="$v,";
 		#print "$v $ovar\n";
 	}
 	if ($ins ne "")
@@ -195,8 +196,8 @@ sub build_listVar
 			next unless $i=~/\:/;
 			my ($pos,$alt)=(split(/\:/,$i));
 			my $ref=$alt;
-			next if $ref=~/[RYSWKMBDHVN]/;
-			$ref=~s/[ACTGN]/\./g;
+			#next if $ref=~/[RYSWKMBDHVN]/;
+			#$ref=~s/[ACTGN]/\./g;
 			$ovar.="$pos\_$ref|$alt,";
 		}
 	}
@@ -210,14 +211,15 @@ sub build_listVar
 			my $length=$e-$s+1;
 			my $ref=substr($seq,$s-1,$length);
                         my $alt=$ref;
-			next if $ref=~/[RYSWKMBDHVN]/;
-                        $alt=~s/[ACTGN]/\./g;
+			#next if $ref=~/[RYSWKMBDHVN]/;
+                        #$alt=~s/[ACTGN]/\./g;
 			$ovar.="$s\_$ref|$alt,";
                 }
 
 	}
 	chop($ovar);
 	#print "$ovar\n";
+	#die();
 	return($ovar);
 }
 
