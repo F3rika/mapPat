@@ -92,7 +92,7 @@ def main():
 
          command('rm LinVar_AssocTab.txt LinVBM_AssocTab.txt SARS-CoV-2_LineagesAliases.json coutryToISO.txt areaFile allADM_CountryRegion_AssocTab.txt')
          
-         command('mv -t ./%s_mapPatInterOut linDefMut.csv SARS-CoV-2.HaploCoV inTab_avCheck_tmp.txt'%(inputs.output_file))
+         command('mv -t ./%s_mapPatInterOut GCF_009858895.2_ASM985889v3_genomic.fna linDefMut.csv SARS-CoV-2.HaploCoV inTab_avCheck_tmp.txt'%(inputs.output_file))
          command('mv -t ./%s_mapPatOut Epiweek.*.csv *_muts_perLin.csv HeatmapRegLin_*.csv Total_*_regions.csv countriesListTracker.txt inTab_avCheck.txt LinVar_ConvTabTracker.txt'%(inputs.output_file))
          
          command('tar -czvf %s_mapPatInterOut.tar.gz ./%s_mapPatInterOut --remove-files'%(inputs.output_file, inputs.output_file))
