@@ -35,4 +35,4 @@ Please, when testing that mapPat is correctly installed and functioning use data
 
 The workflow, scripts and configuration files used to produce mapPat's input tables are available in the [InputGeneration](https://github.com/F3rika/mapPat/tree/mapPat_Current/InputGeneration) folder of this GitHub.
 
-Please notice that up to date versions of the input tables for mapPat are made available through a dedicated Zenodo Repository for all the countries for which an adequate number of sequences is available through Nextstrain. The repository is regularly updated.
+Please notice that up to date versions of the input tables for mapPat are made available through a dedicated [Zenodo Repository](https://doi.org/10.5281/zenodo.14060120) for all the countries for which an adequate number of sequences is available through Nextstrain. The repository is regularly updated.
