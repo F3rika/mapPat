@@ -856,7 +856,7 @@ server <- function(input, output){
     #Defining inputs.
     varHM_plotUI_inTable <- varHM_Normalization()$varHM
     varHM_plotUI_nReg <- nrow(varHM_plotUI_inTable)
-    varHM_plotUI_plotHeight <- 30*varHM_plotUI_nReg
+    varHM_plotUI_plotHeight <- ifelse(varHM_plotUI_nReg>10, 30*varHM_plotUI_nReg, 70*varHM_plotUI_nReg)
     
     #Generating the plot area.
     plotOutput("variantsHM",
@@ -1328,7 +1328,7 @@ server <- function(input, output){
     #Defining inputs.
     allLinHM_plotUI_inTable <- allLinHM_Normalization()$allLinHM
     allLinHM_plotUI_nReg <- nrow(allLinHM_plotUI_inTable)
-    allLinHM_plotUI_plotHeight <- 30*allLinHM_plotUI_nReg
+    allLinHM_plotUI_plotHeight <- ifelse(allLinHM_plotUI_nReg>10, 30*allLinHM_plotUI_nReg, 70*allLinHM_plotUI_nReg)
     
     plotOutput("lineagesHM",
                height = paste0(allLinHM_plotUI_plotHeight, "px"))
@@ -1897,7 +1897,7 @@ server <- function(input, output){
     #Defining inputs.
     mutHM_plotUI_inTable <- mutHM_Normalization()$mutHM
     mutHM_plotUI_nReg <- nrow(mutHM_plotUI_inTable)
-    mutHM_plotUI_plotHeight <- 30*mutHM_plotUI_nReg
+    mutHM_plotUI_plotHeight <- ifelse(mutHM_plotUI_nReg>10, 30*mutHM_plotUI_nReg, 70*mutHM_plotUI_nReg)
     
     plotOutput("mutationsHM",
                height = paste0(mutHM_plotUI_plotHeight, "px"))
