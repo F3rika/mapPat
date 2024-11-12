@@ -1,4 +1,5 @@
 use strict;
+use POSIX;
 
 ############################################################
 ### Arguments
@@ -111,6 +112,8 @@ sub metadataToLists
 
 		my $delta=diff_d($d);
 		my $delta_sub=diff_d($s);
+		next if $delta<0;
+		my $delta_sub=ceil($delta/7);
 		print OUT "$id\t$d\t$delta\t$s\t$delta_sub\t$continent\t$area\t$country\t$region\t$p\t$lvar\n";
 
 	}
