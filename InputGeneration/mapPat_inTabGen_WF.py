@@ -47,7 +47,7 @@ def main():
          
          command('perl %s/GisaidToHaploCoV.pl --metadata %s --outfile SARS-CoV-2.HaploCoV'%(inputs.path_scripts, inputs.input_file))
          
-         command('perl %s/countMlin.pl SARS-CoV-2.HaploCoV > linDefMut.csv'%(inputs.path_scripts))
+         command('perl %s/countMlin.pl SARS-CoV-2.HaploCoV > LinDefMut.csv'%(inputs.path_scripts))
          
          command('perl %s/BuildTables.pl SARS-CoV-2.HaploCoV SI'%(inputs.path_scripts))
          
@@ -61,7 +61,7 @@ def main():
 
          command('rm LinVar_AssocTab.txt LinVBM_AssocTab.txt SARS-CoV-2_LineagesAliases.json coutryToISO.txt areaFile allADM_CountryRegion_AssocTab.txt')
          
-         command('mv -t ./%s_mapPatInterOut linDefMut.csv SARS-CoV-2.HaploCoV inTab_avCheck_tmp.txt'%(inputs.output_file))
+         command('mv -t ./%s_mapPatInterOut LinDefMut.csv SARS-CoV-2.HaploCoV inTab_avCheck_tmp.txt'%(inputs.output_file))
          command('mv -t ./%s_mapPatOut Epiweek.*.csv *_muts_perLin.csv HeatmapRegLin_*.csv Total_*_regions.csv countriesListTracker.txt inTab_avCheck.txt LinVar_ConvTabTracker.txt'%(inputs.output_file))
          
          command('tar -czvf %s_mapPatInterOut.tar.gz ./%s_mapPatInterOut --remove-files'%(inputs.output_file, inputs.output_file))
@@ -78,7 +78,7 @@ def main():
          
          command('perl %s/NextStrainToHaploCoV.pl --metadata %s --outfile SARS-CoV-2.HaploCoV'%(inputs.path_scripts, inputs.input_file))
          
-         command('perl %s/countMlin.pl SARS-CoV-2.HaploCoV > linDefMut.csv'%(inputs.path_scripts))
+         command('perl %s/countMlin.pl SARS-CoV-2.HaploCoV > LinDefMut.csv'%(inputs.path_scripts))
          
          command('perl %s/BuildTables.pl SARS-CoV-2.HaploCoV SI'%(inputs.path_scripts))
          
@@ -92,7 +92,7 @@ def main():
 
          command('rm LinVar_AssocTab.txt LinVBM_AssocTab.txt SARS-CoV-2_LineagesAliases.json coutryToISO.txt areaFile allADM_CountryRegion_AssocTab.txt')
          
-         command('mv -t ./%s_mapPatInterOut GCF_009858895.2_ASM985889v3_genomic.fna linDefMut.csv SARS-CoV-2.HaploCoV inTab_avCheck_tmp.txt'%(inputs.output_file))
+         command('mv -t ./%s_mapPatInterOut GCF_009858895.2_ASM985889v3_genomic.fna LinDefMut.csv SARS-CoV-2.HaploCoV inTab_avCheck_tmp.txt'%(inputs.output_file))
          command('mv -t ./%s_mapPatOut Epiweek.*.csv *_muts_perLin.csv HeatmapRegLin_*.csv Total_*_regions.csv countriesListTracker.txt inTab_avCheck.txt LinVar_ConvTabTracker.txt'%(inputs.output_file))
          
          command('tar -czvf %s_mapPatInterOut.tar.gz ./%s_mapPatInterOut --remove-files'%(inputs.output_file, inputs.output_file))
@@ -109,7 +109,7 @@ def main():
          
          command('perl %s/addToTableNextstrain.pl --metadata %s --seq %s --outfile %sTable.HaploCoV --nproc 18 --ref %s'%(inputs.path_scripts, inputs.input_file, inputs.seq, inputs.pathogen, inputs.refSeq))
          
-         command('perl %s/countMlin.pl %sTable.HaploCoV > linDefMut.csv'%(inputs.path_scripts, inputs.pathogen))
+         command('perl %s/countMlin.pl %sTable.HaploCoV > LinDefMut.csv'%(inputs.path_scripts, inputs.pathogen))
          
          command('perl %s/BuildTables.pl %sTable.HaploCoV NO'%(inputs.path_scripts, inputs.pathogen))
          
@@ -119,7 +119,7 @@ def main():
 
          command('rm coutryToISO.txt areaFile allADM_CountryRegion_AssocTab.txt metaDkeep')
          
-         command('mv -t ./%s_mapPatInterOut %sTable.HaploCoV linDefMut.csv inTab_avCheck_tmp.txt'%(inputs.output_file, inputs.pathogen))
+         command('mv -t ./%s_mapPatInterOut %sTable.HaploCoV LinDefMut.csv inTab_avCheck_tmp.txt'%(inputs.output_file, inputs.pathogen))
          command('mv ./Tgenomes ./%s_mapPatInterOut'%(inputs.output_file))
          command('mv -t ./%s_mapPatOut Epiweek.*.csv *_muts_perLin.csv HeatmapRegLin_*.csv Total_*_regions.csv countriesListTracker.txt inTab_avCheck.txt'%(inputs.output_file))
          
