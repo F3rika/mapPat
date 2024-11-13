@@ -64,7 +64,7 @@ server <- function(input, output){
                 "Time range",
                 min = 1,
                 max = maxTime,
-                step = 5,
+                step = 1,
                 value = c(maxTime-20, maxTime))
     
   })
