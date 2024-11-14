@@ -840,7 +840,7 @@ server <- function(input, output){
   #Producing the color palette for the HeatMap (HM).
   varHM_Palette <- reactive({
     #Defining inputs.
-    varHM_tabPal <- varTheme
+    varHM_tabPal <- varThemeHC
     varHM_Palette_inTable <- varHM_Normalization()$varHM
     varHM_Palette_colorsNum <- ceiling(max(varHM_Palette_inTable)/10)
     
@@ -1019,7 +1019,7 @@ server <- function(input, output){
   #of interest.
   varCM_generalPalette <- reactive ({
     #Defining inputs.
-    varCM_generalPalette_tabPal <- varTheme
+    varCM_generalPalette_tabPal <- varThemeHC
     varCM_generalPalette_colorsNum <- 10
     
     #Producing the color palette.
@@ -1309,7 +1309,7 @@ server <- function(input, output){
   #Producing the color palette for the HeatMap (HM).
   allLinHM_Palette <- reactive({
     #Defining inputs.
-    allLinHM_tabPal <- allLinTheme
+    allLinHM_tabPal <- allLinThemeHC
     allLinHM_Palette_inTable <- allLinHM_Normalization()$allLinHM
     allLinHM_Palette_colorsNum <- ceiling(max(allLinHM_Palette_inTable)/10)
     
@@ -1522,7 +1522,7 @@ server <- function(input, output){
   #of interest.
   allLinCM_generalPalette <- reactive ({
     #Defining inputs.
-    allLinCM_generalPalette_tabPal <- allLinTheme
+    allLinCM_generalPalette_tabPal <- allLinThemeHC
     allLinCM_generalPalette_colorsNum <- 10
     
     #Producing the color palette.
@@ -1881,7 +1881,7 @@ server <- function(input, output){
   #Producing the color palette for the HeatMap (HM)
   mutHM_Palette <- reactive({
     #Defining inputs.
-    mutHM_tabPal <- mutTheme
+    mutHM_tabPal <- mutThemeHC
     mutHM_Palette_inTable <- mutHM_Normalization()$mutHM
     mutHM_Palette_colorsNum <- ceiling(max(mutHM_Palette_inTable)/10)
     
@@ -2087,7 +2087,7 @@ server <- function(input, output){
   #of interest.
   mutCM_generalPalette <- reactive({
     #Defining inputs.
-    mutCM_generalPalette_tabPal <- mutTheme
+    mutCM_generalPalette_tabPal <- mutThemeHC
     mutCM_generalPalette_colorsNum <- 10
     
     #Producing the color palette.
