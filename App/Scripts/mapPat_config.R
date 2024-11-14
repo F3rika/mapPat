@@ -106,9 +106,12 @@ statusList <- as.list(status)
 #Defining the color palettes characterizing the color theme of each tab in the App.
 #Variants Tab Theme.
 varTheme <- brewer.pal(9, "PiYG")
+varThemeHC <- brewer.pal(9, "RdPu")
 
 #Lineages Tab Theme.
 allLinTheme <- brewer.pal(9, "PuOr")
+allLinThemeHC <- brewer.pal(9, "BuPu")
 
 #Mutations Tab Theme.
 mutTheme <- brewer.pal(9, "BrBG")
+mutThemeHC <- brewer.pal(9, "YlOrBr")
