@@ -58,7 +58,7 @@ def main():
      
      command('rm ADM0.txt ADM1.txt ADM2.txt countriesNamesCorrectionTable.txt regionsNamesCorrectionTable.txt')
      
-     command('mv -t ./CouRegAssTab_InterOut ADM1_CountryRegion_LDTab.txt ADM1_NoMatch.txt ADM2_CountryRegion_LDTab.txt ADM2_NoMatch.txt DataADM_DistrTab.txt CountryADM_AssocTab.txt CountryISOADM_AssocTab.txt ADM1_CountryRegion_AssocTab.txt ADM2_CountryRegion_AssocTab.txt ISO_ADM1List.txt ISO_ADM2List.txt')
+     command('mv -t ./CouRegAssTab_InterOut ADM1_CountryRegion_LDTab.txt ADM1_NoMatch.txt ADM2_CountryRegion_LDTab.txt ADM2_NoMatch.txt DataADM_DistrTab.txt CountryADM_AssocTab.txt ADM1_CountryRegion_AssocTab.txt ADM2_CountryRegion_AssocTab.txt ISO_ADM1List.txt ISO_ADM2List.txt')
      
      command('tar -czvf CouRegAssTab_InterOut.tar.gz ./CouRegAssTab_InterOut --remove-files')
 
