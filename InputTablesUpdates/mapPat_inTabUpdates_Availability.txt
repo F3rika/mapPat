@@ -1,0 +1,3 @@
+UpdateName	UpdateFile	UpdateURL
+Default	mapPat_inTabDefault.tar.gz	https://github.com/F3rika/mapPat/tree/mapPat_Current/InputTablesUpdates/mapPat_inTabDefault.tar.gz
+November 2024	mapPat_inTabUpdate_Nov24.tar.gz	https://github.com/F3rika/mapPat/tree/mapPat_Current/InputTablesUpdates/mapPat_inTabUpdate_Nov24.tar.gz
