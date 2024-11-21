@@ -11,7 +11,7 @@ The following settings are common to all panels and govern the first layer of da
 	| *Controlled plots*: All
 
 .. figure:: _static/GenDatasetSel.png
-   :scale: 80%
+   :scale: 60%
    :align: center
 
 + **Pathogen**
