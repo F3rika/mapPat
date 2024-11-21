@@ -3,6 +3,17 @@ General
 
 The following settings are common to all panels and govern the first layer of data selection. This group of widgets impacts data selection throughout all the panels:
 
++ **Dataset update**
+	| Selection of the dataset to be displayed. Only one dataset can be selected at a time. The selected dataset is loaded to mapPat only after confirming the selection through the "Load dataset" action button. If needed, datasets are automatically downloaded from the dedicated `Zenodo Repository <https://doi.org/10.5281/zenodo.14163899>`_.
+
+	| *Type*: Drop down menu and action button
+	| *Default value*: Default
+	| *Controlled plots*: All
+
+.. figure:: _static/GenDatasetSel.png
+   :scale: 100%
+   :align: center
+
 + **Pathogen**
 	| Selection of the pathogen for which data is displayed. Only one pathogen can be selected at a time.
 	
