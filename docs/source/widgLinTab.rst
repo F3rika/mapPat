@@ -1,7 +1,7 @@
 Lineages
 --------
 
-The following widgets allows the customisation of data from the Lineages Tab:
+The following widgets allow the customisation of data from the Lineages Tab:
 
 + **Min % of genomes**
 	| Selection of the minimum global prevalence (%, calculated at national level) required to consider a lineage for graphical representation. Only lineages with a frequency (%) above the selected threshold can be visualised. All remaining lineages are aggregated under the label “Others”. The available options are 1%, 2.5%, 5%, 7.5%, 10%.
