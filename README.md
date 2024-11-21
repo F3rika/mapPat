@@ -29,10 +29,12 @@ Here is a quick guide on how to download and run a local installation of mapPat:
 	>Some packages used by mapPat present `sf` among their dependencies, which installation may require the `gdal` and `udunits` system packages to be present on your device. \
 	>Please refer to the [sf documentation](https://r-spatial.github.io/sf/#installing) for further information.
 
+4. Explore mapPat by clicking on the tabs in the top left corner of the user interface or modify visualisation parameters by using the dedicated control panel.
+
 Please, when testing that mapPat is correctly installed and functioning use data from Italy (for SARS-CoV-2) or United States (for mPox).
 
 ## Input tables
 
 The workflow, scripts and configuration files used to produce mapPat's input tables are available in the [InputGeneration](https://github.com/F3rika/mapPat/tree/mapPat_Current/InputGeneration) folder of this GitHub.
 
-Please notice that up to date versions of the input tables for mapPat are made available through a dedicated [Zenodo Repository](https://doi.org/10.5281/zenodo.14163899) for all the countries for which an adequate number of sequences is available through Nextstrain. The repository is regularly updated.
+Please notice that up to date versions of the input tables for mapPat are made available through a dedicated [Zenodo Repository](https://doi.org/10.5281/zenodo.14163899) for all the countries for which an adequate number of sequences is available through Nextstrain. The repository is regularly updated. Additionally, mapPat also provides a built-in option that allows the user to select the dataset to be visualised. The selected dataset will be automatically downloaded from the repository if not already present on the user device.
