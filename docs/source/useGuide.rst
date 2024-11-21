@@ -21,5 +21,6 @@ Here is a quick guide on how to download and run a local installation of mapPat:
 		| Some packages used by mapPat present ``sf`` among their dependencies, which installation may require the ``gdal`` and ``udunits`` system packages to be present on your device.
 		| Please refer to the `sf documentation <https://r-spatial.github.io/sf/#installing>`_ for further information.
 
+#. Explore mapPat by clicking on the tabs in the top left corner of the user interface or modify filtering and visualisation parameters by using the dedicated control panel.
 
 Please, when testing that mapPat is correctly installed and functioning use data from Italy (for SARS-CoV-2) or United States (for mPox).
