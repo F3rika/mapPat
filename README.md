@@ -23,7 +23,7 @@ Here is a quick guide on how to download and run a local installation of mapPat:
    >
    >Please mind that if mapPat is not run from the `App` folder:
    >  - The `mapPat_app.R` file must be updated so that paths pointing to required `.R` files in the `Scripts` folder are correct.
-   >  - The `mapPat_config.R` file must be updated so that the `inputs_path` variable at line 44 of the file matches the path to the `Input` folder.
+   >  - The `mapPat_config.R` file must be updated so that the `datasets_path` variable at line 32 of the file matches the path to the `Datasets` folder.
    
    >Note for MAC OSX users: \
 	>Some packages used by mapPat present `sf` among their dependencies, which installation may require the `gdal` and `udunits` system packages to be present on your device. \
