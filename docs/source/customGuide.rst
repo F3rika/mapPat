@@ -6,8 +6,8 @@ It is also possible to use mapPat to analyse custom datasets; in order to do so 
 #. When producing counts tables for custom data make sure to follow the layout described at :doc:`inReqCounts`.
 #. When producing pathogen specific configuration tables for custom data make sure to follow the layout described at :doc:`inReqConfig`.
 #. Make sure to update the general configuration tables in order to include information about your data. This is required for mapPat to handle data properly. Follow the layout described at :doc:`inReqConfig` to avoid any issues.
-#. If possible follow the same structure of data folders as in the `mapPat GitHub repository <https://github.com/F3rika/mapPat/tree/mapPat_Current/App/Input>`_, and put your custom data in a new folder. Doing so avoids the necessity of updating the ``mapPat_config.R`` file. Mind that the name of the newly added folder must match information from the ``PathogenSelection_ConfigTab.txt`` configuration table.
-#. Otherwise it is required to update the ``mapPat_config.R`` file in order to match variables at lines 44-50 with the paths to folders where the new mapPat input is found.
+#. Please follow the same folders structure as in the precomputed mapPat datasets, and put your custom data in a new set of folders. Mind that the name of the newly added dataset and folders must match information from the ``mapPat_inTabUpdates_Availability.txt`` and ``PathogenSelection_ConfigTab.txt`` configuration tables.
+#. Store the custom dataset in the ``Datasets`` folder. Otherwise it is required to update the ``mapPat_config.R`` file in order to match the variable at line 39 with the path to the folder where the new mapPat dataset is found.
 
 Moreover, if custom data to be analysed using mapPat are:
 
