@@ -15,17 +15,17 @@ Configuration tables collect information regarding data availability and key cha
 More in detail the collection of configuration tables consists of:
 
 #. ``mapPat_inTabUpdates_Availability.txt``
-	| Lists the available datasets, together with file names and URLs for download. The names of the folders storing each dataset after its acquisition and the path to the directory collecting the corresponding input tables are also reported.
+	| Lists available datasets, together with file names and URLs for download. The names of the folders storing each dataset after its acquisition and the path to the directory collecting the corresponding input tables are also reported.
 
-	+------------+----------------------------+---------------------+----------------------------+------------------------------------------------------+
-	| UpdateName | UpdateFile                 | UpdateFolder        | UpdatePath                 | UpdateURL                                            |
-	+============+============================+=====================+============================+======================================================+
-	| Default    | mapPat_inTabDefault.tar.gz | mapPat_inTabDefault | mapPat_inTabDefault/Input/ | https://URL/To/Repository/mapPat_inTabDefault.tar.gz |
-	+------------+----------------------------+---------------------+----------------------------+------------------------------------------------------+
-	| ...        | ...                        | ...                 | ...                        | ...                                                  |
-	+------------+----------------------------+---------------------+----------------------------+------------------------------------------------------+
-	| UpdateN    | UpdateN.tar.gz             | UpdateN             | UpdateN/Input/             | https://URL/To/Repository/UpdateN.tar.gz             |
-	+------------+----------------------------+---------------------+----------------------------+------------------------------------------------------+
+	+------------+----------------------------+---------------------+----------------------------+----------------------------------------------+
+	| UpdateName | UpdateFile                 | UpdateFolder        | UpdatePath                 | UpdateURL                                    |
+	+============+============================+=====================+============================+==============================================+
+	| Default    | mapPat_inTabDefault.tar.gz | mapPat_inTabDefault | mapPat_inTabDefault/Input/ | URL/To/Repository/mapPat_inTabDefault.tar.gz |
+	+------------+----------------------------+---------------------+----------------------------+----------------------------------------------+
+	| ...        | ...                        | ...                 | ...                        | ...                                          |
+	+------------+----------------------------+---------------------+----------------------------+----------------------------------------------+
+	| UpdateN    | UpdateN.tar.gz             | UpdateN             | UpdateN/Input/             | URL/To/Repository/UpdateN.tar.gz             |
+	+------------+----------------------------+---------------------+----------------------------+----------------------------------------------+
 
 #. ``PathogenSelection_ConfigTab.txt``
 	| Sets country defaults (ISO-3 codes), time unit defaults and the reference date for the computation of time offsets for all the pathogens available in mapPat.
