@@ -17,3 +17,5 @@ The workflow accepts as inputs:
 + A string indicating the *BASENAME* of the final output. Flagged as `-o` or `--output_file`.
 
 `mapPat_inTabGen_WF.py` produces as final outputs two compressed directories named `BASENAME_mapPatOut` and `BASENAME_mapPatInterOut` that respectively collect the tables used as mapPat input and the intermediate files produced while running the workflow. *BASENAME* is chosen by the user.
+
+Please refer to the [mapPat quick customisation guide](https://mappat.readthedocs.io/en/latest/customGuide.html) for further information.
