@@ -1,3 +1,3 @@
 UpdateName	UpdateFile	UpdateFolder	UpdatePath	UpdateURL
 Default	mapPat_inTabDefault.tar.gz	mapPat_inTabDefault	mapPat_inTabDefault/Input/	https://zenodo.org/records/14163900/files/mapPat_inTabDefault.tar.gz
-2024 November 01	mapPat_inTabUpdate_2024Nov01.tar.gz	mapPat_inTabUpdate_2024Nov01	mapPat_inTabUpdate_2024Nov01/Input/	https://zenodo.org/records/14202596/files/mapPat_inTabUpdate_Nov24.tar.gz
+2024 November 01	mapPat_inTabUpdate_2024Nov01.tar.gz	mapPat_inTabUpdate_2024Nov01	mapPat_inTabUpdate_2024Nov01/Input/	https://zenodo.org/records/14202596/files/mapPat_inTabUpdate_2024Nov01.tar.gz
