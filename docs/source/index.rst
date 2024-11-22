@@ -49,3 +49,4 @@ A more detailed description of the control panel, customizable parameters and pl
    inReqCounts.rst
    inReqConfig.rst
    customGuide.rst
+   troubleGuide.rst
