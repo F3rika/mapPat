@@ -33,6 +33,11 @@ If any issue regarding R, RStudio or R packages installation arises please refer
 
 ## Input tables
 
-The workflow, scripts and configuration files used to produce mapPat's input tables are available in the [InputGeneration](https://github.com/F3rika/mapPat/tree/mapPat_Current/InputGeneration) folder of this GitHub. A comprehensive guide about datasets customisation is provided in the [mapPat quick customisation guide](https://mappat.readthedocs.io/en/latest/customGuide.html) of the mapPat manual.
+MapPat can natively load a collection of pre-processed input tables available through a dedicated [Zenodo Repository](https://doi.org/10.5281/zenodo.14163899). Users can select and load available data through a dropdown menu in the user interface. These data currently include:
+- SARS-CoV-2 (2024 November 01).
+- mPox (2024 November 01).
 
-Please notice that up to date versions of the input tables for mapPat are made available through a dedicated [Zenodo Repository](https://doi.org/10.5281/zenodo.14163899) for all the countries for which an adequate number of sequences is available through Nextstrain. The repository is regularly updated. Additionally, mapPat also provides a built-in option that allows the user to select the dataset to be visualised. The selected dataset will be automatically downloaded from the repository if not already present on the user device.
+Users who need to add and visualise custom datasets can:
+
+1. Generate mapPat's input files by using the workflow, scripts and configuration files available in the [InputGeneration](https://github.com/F3rika/mapPat/tree/mapPat_Current/InputGeneration) folder of this GitHub. A comprehensive guide about datasets customisation is provided in the [mapPat quick customisation guide](https://mappat.readthedocs.io/en/latest/customGuide.html) section of the mapPat manual.
+2. If their data are publicly available, open an issue on GitHub to request the inclusion of additional data and pathogens in the Zenodo repository.
