@@ -7,7 +7,7 @@ Currently, mapPat features data from SARS-CoV-2 and mPox.
 
 A more detailed description of the control panel, customizable parameters and plots included in the dashboard is reported in the [mapPat Manual](https://mappat.readthedocs.io/en/latest/) on Read the Docs.
 
-If you have any inquiries about mapPat please feel free to contact us at matteo.chiara@unimi.it, erika.ferrandi@gmail.com or here on GitHub.
+If you have any inquiries about mapPat please feel free to contact us at matteo.chiara@unimi.it, erika.ferrandi@unimi.it or here on GitHub.
 
 ## mapPat quick use guide
 
@@ -15,26 +15,24 @@ Here is a quick guide on how to download and run a local installation of mapPat:
 
 1. Download the repository and unzip it (if needed).
 2. Enter the `App` folder of the repository.
-3. Run mapPat using R or R Studio.
+3. Run mapPat using R or RStudio.
 
-   >If your operating system is Microsoft Windows or MAC OSX open the `mapPat_app.R` script in R Studio and set the working directory to the `App` folder using the dedicated menu (Session > Set Working Directory > Choose Directory). Then run the `mapPat_app.R` script clicking on the “Run App” button in the top right corner of the “Source” panel.
+   >If your operating system is Microsoft Windows or MAC OSX open the `mapPat_app.R` script in RStudio and set the working directory to the `App` folder using the dedicated menu (Session > Set Working Directory > Choose Directory). Then run the `mapPat_app.R` script clicking on the “Run App” button in the top right corner of the “Source” panel.
    >
    >If your operating system is MAC OSX or Linux and you prefer to use a shell environment, run the `mapPat_appShell.sh` script from the `App` folder. Make sure to make the script executable before using it. Then copy the generated url on any browser to correctly visualise mapPat.
    >
    >Please mind that if mapPat is not run from the `App` folder:
    >  - The `mapPat_app.R` file must be updated so that paths pointing to required `.R` files in the `Scripts` folder are correct.
    >  - The `mapPat_config.R` file must be updated so that the `datasets_path` variable at line 39 of the file matches the path to the `Datasets` folder.
-   
-   >Note for MAC OSX users: \
-	>Some packages used by mapPat present `sf` among their dependencies, which installation may require the `gdal` and `udunits` system packages to be present on your device. \
-	>Please refer to the [sf documentation](https://r-spatial.github.io/sf/#installing) for further information.
 
 4. Explore mapPat by clicking on the tabs in the top left corner of the user interface or modify filtering and visualisation parameters by using the dedicated control panel.
 
 Please, when testing that mapPat is correctly installed and functioning use data from Italy (for SARS-CoV-2) or United States (for mPox).
 
+If any issue regarding R, RStudio or R packages installation arises please refer to the [mapPat troubleshooting guide](https://mappat.readthedocs.io/en/latest/troubleGuide.html) sections of the mapPat manual.
+
 ## Input tables
 
-The workflow, scripts and configuration files used to produce mapPat's input tables are available in the [InputGeneration](https://github.com/F3rika/mapPat/tree/mapPat_Current/InputGeneration) folder of this GitHub.
+The workflow, scripts and configuration files used to produce mapPat's input tables are available in the [InputGeneration](https://github.com/F3rika/mapPat/tree/mapPat_Current/InputGeneration) folder of this GitHub. A comprehensive guide about datasets customisation is provided in the [mapPat quick customisation guide](https://mappat.readthedocs.io/en/latest/customGuide.html) of the mapPat manual.
 
 Please notice that up to date versions of the input tables for mapPat are made available through a dedicated [Zenodo Repository](https://doi.org/10.5281/zenodo.14163899) for all the countries for which an adequate number of sequences is available through Nextstrain. The repository is regularly updated. Additionally, mapPat also provides a built-in option that allows the user to select the dataset to be visualised. The selected dataset will be automatically downloaded from the repository if not already present on the user device.
