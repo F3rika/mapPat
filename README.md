@@ -29,7 +29,7 @@ Here is a quick guide on how to download and run a local installation of mapPat:
 
 Please, when testing that mapPat is correctly installed and functioning use data from Italy (for SARS-CoV-2) or United States (for mPox).
 
-If any issue regarding R, RStudio or R packages installation arises please refer to the [mapPat troubleshooting guide](https://mappat.readthedocs.io/en/latest/troubleGuide.html) sections of the mapPat manual.
+If any issue regarding R, RStudio or R packages installation arises please refer to the [mapPat troubleshooting guide](https://mappat.readthedocs.io/en/latest/troubleGuide.html) section of the mapPat manual.
 
 ## Input tables
 
