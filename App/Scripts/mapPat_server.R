@@ -4,12 +4,144 @@
 
 #Define server -----
 server <- function(input, output){
+  #######APP CONFIGURATION AND DATASET UPDATE#######
+  ####Defining configuration parameters required to launching the app.
+  #Defining the complete list of reactive values required to configure the app and setting defaults.
+  dataUpdate <- reactiveValues(
+    #Listing all reactive values required to configure the app.
+    inputs_pathREA = inputs_pathDEF,
+    config_pathREA = config_pathDEF,
+    var_pathREA = var_pathDEF,
+    allLin_pathREA = allLin_pathDEF,
+    heatChoromap_pathREA = heatChoromap_pathDEF,
+    mut_pathREA = mut_pathDEF,
+    totReg_pathREA = totReg_pathDEF,
+    
+    pathogenSelConf_TableREA = pathogenSelConf_TableDEF,
+    countryISOADMConvertion_TableREA = countryISOADMConvertion_TableDEF,
+    variantsConvertion_TableREA = variantsConvertion_TableDEF,
+    
+    pathogenListREA = pathogenListDEF,
+    statusListREA = statusListDEF
+  )
+  
+  #Defining the condition that allows to change the analyzed dataset. Datasets are stored in a dedicated
+  #repository, periodically updated and dynamically downloaded by the app if needed.
+  #Reactive values are updated based on the user-selected dataset and the configuration of the app
+  #changes accordingly.
+  observeEvent(input$datasetUpdate, {
+    #Defining inputs.
+    selDataset <- input$dataset
+    selDataset_file  <- inTabAvail_Table[inTabAvail_Table$UpdateFolder==selDataset,]$UpdateFile
+    selDataset_path <- inTabAvail_Table[inTabAvail_Table$UpdateFolder==selDataset,]$UpdatePath
+    selDataset_url <- inTabAvail_Table[inTabAvail_Table$UpdateFolder==selDataset,]$UpdateURL
+    
+    #Checking availability of a local copy of the user selcted dataset.
+    #If not available, the dataset of interest is downloaded from the dedicated repository and unzipped.
+    checkCurrUpd <- list.files(datasets_path)
+    
+    if (!(selDataset_file %in% checkCurrUpd)) {
+      
+      download.file(selDataset_url, destfile = paste0(datasets_path, selDataset_file))
+      
+      untar(paste0(datasets_path, selDataset_file), exdir = paste0(datasets_path, selDataset))
+      
+    }
+    
+    #Updating the reactive parameters that define app configuration.
+    #Updating paths for input files.
+    selDataset_inputsPath <- paste0(datasets_path, selDataset_path)
+    
+    dataUpdate$inputs_pathREA <- selDataset_inputsPath
+    dataUpdate$config_pathREA <- paste0(selDataset_inputsPath,"Config/")
+    dataUpdate$var_pathREA <- paste0(selDataset_inputsPath,"Var/")
+    dataUpdate$allLin_pathREA <- paste0(selDataset_inputsPath,"allLin/")
+    dataUpdate$heatChoromap_pathREA <- paste0(selDataset_inputsPath,"HeatChoromap/")
+    dataUpdate$mut_pathREA <- paste0(selDataset_inputsPath,"Mut/")
+    dataUpdate$totReg_pathREA <- paste0(selDataset_inputsPath,"totReg/")
+    
+    ###Opening and updating useful files.
+    #Defining the path to the files.
+    selDataset_configPath <- paste0(selDataset_inputsPath,"Config/")
+    
+    #Opening and updating the Pathogen Selection Configuration Table.
+    selDataset_pathogenSelConf_Table <- read.table(paste0(selDataset_configPath, "PathogenSelection_ConfigTab.txt"),
+                                                   sep = "\t",
+                                                   header = T,
+                                                   check.names = F,
+                                                   comment.char = "",
+                                                   quote = "",
+                                                   fileEncoding = "UTF-8")
+    
+    dataUpdate$pathogenSelConf_TableREA <- selDataset_pathogenSelConf_Table
+    
+    #Opening and updating the Country ISO-ADM Association table.
+    selDataset_countryISOADMConvertion_Table <- read.table(paste0(selDataset_configPath, "CountryISOADM_AssocTab.txt"),
+                                                           sep = "\t",
+                                                           header = T,
+                                                           check.names = F,
+                                                           comment.char = "",
+                                                           quote = "",
+                                                           fileEncoding = "UTF-8")
+    
+    dataUpdate$countryISOADMConvertion_TableREA <- selDataset_countryISOADMConvertion_Table
+    
+    #Opening and updating the Lineage to Variant Tracker Conversion table.
+    selDataset_variantsConvertion_Table <- read.table(paste0(selDataset_configPath, "LinVar_ConvTabTracker.txt"),
+                                                      sep = "\t",
+                                                      header = T,
+                                                      check.names = F,
+                                                      comment.char = "",
+                                                      quote = "",
+                                                      fileEncoding = "UTF-8")
+    
+    dataUpdate$variantsConvertion_TableREA <- selDataset_variantsConvertion_Table
+    
+    ###Updating the content of drop down menus.
+    #Updating the content of the Pathogen selection drop down menu.
+    selDataset_pathogenNames <- selDataset_pathogenSelConf_Table$PathogenName
+    
+    selDataset_pathogenAbbr <- selDataset_pathogenSelConf_Table$PathogenAbbr
+    
+    names(selDataset_pathogenAbbr) <- selDataset_pathogenNames
+    
+    dataUpdate$pathogenListREA <- as.list(selDataset_pathogenAbbr)
+    
+    #Updating the content of the Variant category selection drop down menu.
+    selDataset_status <- unique(selDataset_variantsConvertion_Table$Status)
+    
+    selDataset_status <- append(selDataset_status, c("VBM", "All"))
+    
+    selDataset_status <- selDataset_status[order(selDataset_status)]
+    
+    names(selDataset_status) <- selDataset_status
+    
+    dataUpdate$statusListREA <- as.list(selDataset_status)
+    
+  })
+  
   #######COMMON WIDGETS GENERATION AND INPUTS TABLES AVAILABILITY CHECK#######
   #####Generating widgets to control parameters that are common to multiple tabs.
   #####Checking if all the required inputs tables are available for the country of interest.
+  #Generating the drop down menu for pathogen selection.
+  output$pathogenAll <- renderUI({
+    #Defining inputs.
+    pathogenList <- dataUpdate$pathogenListREA
+    
+    #Generating the pathogen selection drop down menu.
+    selectInput("pathogen",
+                "Pathogen",
+                choices = pathogenList,
+                selected = "SARS-CoV-2")
+    
+  })
+  
   #Generating the drop down menu for country selection.
   output$countryAll <- renderUI({
     #Defining inputs.
+    config_path <- dataUpdate$config_pathREA
+    pathogenSelConf_Table <- dataUpdate$pathogenSelConf_TableREA
+    countryISOADMConvertion_Table <- dataUpdate$countryISOADMConvertion_TableREA
     pathogenSel <- input$pathogen
     countryDefault <- pathogenSelConf_Table[pathogenSelConf_Table$PathogenAbbr==pathogenSel,]$CountryDef
     
@@ -47,6 +179,8 @@ server <- function(input, output){
   #Generating the slider for week selection.
   output$timeRangeAll <- renderUI({
     #Defining inputs.
+    allLin_path <- dataUpdate$allLin_pathREA
+    pathogenSelConf_Table <- dataUpdate$pathogenSelConf_TableREA
     pathogenSel <- input$pathogen
     countryDefault <- pathogenSelConf_Table[pathogenSelConf_Table$PathogenAbbr==pathogenSel,]$CountryDef
     timeUnit <- pathogenSelConf_Table[pathogenSelConf_Table$PathogenAbbr==pathogenSel,]$TimeUn
@@ -72,6 +206,7 @@ server <- function(input, output){
   #Checking input tables availability.
   checkInTabs <- reactive({
     #Defining inputs.
+    config_path <- dataUpdate$config_pathREA
     pathogenSel <- input$pathogen
     countrySel <- input$country
     
@@ -113,6 +248,12 @@ server <- function(input, output){
   #Reading the input tables for the selected country.
   countrySelector <- reactive({
     #Defining inputs.
+    var_path <- dataUpdate$var_pathREA
+    allLin_path <- dataUpdate$allLin_pathREA
+    heatChoromap_path <- dataUpdate$heatChoromap_pathREA
+    mut_path <- dataUpdate$mut_pathREA
+    totReg_path <- dataUpdate$totReg_pathREA
+    
     pathogenSel <- input$pathogen
     
     check_var <- checkInTabs()$var
@@ -385,6 +526,7 @@ server <- function(input, output){
   #to draw the map of the user-selected country.
   geomDataSelector <- reactive({
     #Defining inputs.
+    countryISOADMConvertion_Table <- dataUpdate$countryISOADMConvertion_TableREA
     check_totReg <- checkInTabs()$totReg
     
     geomDataSelector_CountryISO <- input$country
@@ -456,6 +598,9 @@ server <- function(input, output){
   
   #Generating the drop down menu for variant category selection.
   output$varCategory <- renderUI({
+    #Defining inputs.
+    statusList <- dataUpdate$statusListREA
+    
     #Checking input tables availability.
     varTab_checkInTabs()
     
@@ -494,7 +639,7 @@ server <- function(input, output){
 
     #Defining inputs.
     varSAC_dataSelector_inTable <- timeSelector()$var
-    varSAC_dataSelector_refTable <- variantsConvertion_Table
+    varSAC_dataSelector_refTable <- dataUpdate$variantsConvertion_TableREA
     varSAC_dataSelector_catSel <- input$variantCategory
     
     #Selecting data.
@@ -554,6 +699,7 @@ server <- function(input, output){
   #for the Variants input table.
   output$variantsSAC <- renderPlot({
     #Defining inputs.
+    pathogenSelConf_Table <- dataUpdate$pathogenSelConf_TableREA
     pathogenSel <- input$pathogen
     
     varSAC_inTable <- varSAC_Normalization()$varSAC
@@ -643,7 +789,7 @@ server <- function(input, output){
     
     #Defining inputs.
     varBP_dataSelector_inTable <- timeSelector()$allLin
-    varBP_dataSelector_refTable <- variantsConvertion_Table
+    varBP_dataSelector_refTable <- dataUpdate$variantsConvertion_TableREA
     varBP_dataSelector_varSel <- input$variantSel_BP
 
     #Checking if there are selectable Variants in the time period of interest.
@@ -722,6 +868,7 @@ server <- function(input, output){
   #the user-selected Variant of interest and the corresponding legend.
   output$variantsBP_LinVar <- renderPlot({
     #Defining inputs.
+    pathogenSelConf_Table <- dataUpdate$pathogenSelConf_TableREA
     pathogenSel <- input$pathogen
     
     varBP_inTable <- varBP_Normalization()$varBP
@@ -760,7 +907,7 @@ server <- function(input, output){
   varHMxCM_tableProducer <- reactive({
     #Defining inputs.
     varHMxCM_tableProducer_inTable <- varHMxCM_totSeq()$varHMxCM
-    varHMxCM_tableProducer_refTable <- variantsConvertion_Table
+    varHMxCM_tableProducer_refTable <- dataUpdate$variantsConvertion_TableREA
     
     varHMxCM_tableProducer_Var <- unique(varHMxCM_tableProducer_refTable$Variant)
     varHMxCM_tableProducer_dataElement <- c(varHMxCM_tableProducer_Var, "VBM")
@@ -783,7 +930,7 @@ server <- function(input, output){
   varHM_dataSelector <- reactive({
     #Defining inputs.
     varHM_dataSelector_inTable <- varHMxCM_tableProducer()$varHMxCM
-    varHM_dataSelector_refTable <- variantsConvertion_Table
+    varHM_dataSelector_refTable <- dataUpdate$variantsConvertion_TableREA
     varHM_dataSelector_regNames <- unique(varHM_dataSelector_inTable$reg)
     varHM_dataSelector_varNames <- unique(varHM_dataSelector_inTable$var)
     varHM_dataSelector_catSel <- input$variantCategory
@@ -1210,6 +1357,7 @@ server <- function(input, output){
   #for the Lineages input table.
   output$lineagesSAC <- renderPlot({
     #Defining inputs.
+    pathogenSelConf_Table <- dataUpdate$pathogenSelConf_TableREA
     pathogenSel <- input$pathogen
     
     allLinSAC_inTable <- allLinSAC_Normalization()$allLinSAC
@@ -1758,6 +1906,7 @@ server <- function(input, output){
   #Generating the first BarPlot (BP1) and the corresponding legend.
   output$mutationsBP_1 <- renderPlot({
     #Defining inputs.
+    pathogenSelConf_Table <- dataUpdate$pathogenSelConf_TableREA
     pathogenSel <- input$pathogen
     
     mutBP1_inTable <- mutBP_Normalization()$mutBP1
@@ -1775,6 +1924,7 @@ server <- function(input, output){
   #Generating the second BarPlot (BP2) and the corresponding legend.
   output$mutationsBP_2 <- renderPlot({
     #Defining inputs.
+    pathogenSelConf_Table <- dataUpdate$pathogenSelConf_TableREA
     pathogenSel <- input$pathogen
     
     mutBP2_inTable <- mutBP_Normalization()$mutBP2
@@ -2153,5 +2303,8 @@ server <- function(input, output){
                          mutCM2_Palette,
                          refPalette)
   })
+  
+  #######APP TERMINATION#######
+  onStop(function() rm(list = ls(envir = .GlobalEnv), envir = .GlobalEnv))
   
 }
