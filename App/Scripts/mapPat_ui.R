@@ -123,14 +123,25 @@ ui <- fluidPage(
     #######FIRST SET OF WIDGETS#######
     column(3,
            h4("General"),
+           #######DATASET SELECTION#######
+           #Generates a drop down menu and action button that allow to select
+           #and load a dataset to analyze.
+           #Default is "Default".
+           selectInput("dataset",
+                       "Dataset update",
+                       choices = datasetList,
+                       selected = "Default"),
+           actionButton("datasetUpdate",
+                        "Load dataset"),
+           helpText("Visualize data from the selected dataset"),
+           
+           br(),
+           
            #######PATHOGEN SELECTOR#######
            #Generates a drop down menu that allows to select a pathogen to
            #analyze.
            #Default is "SARS-CoV-2".
-           selectInput("pathogen",
-                       "Pathogen",
-                       choices = pathogenList,
-                       selected = "SARS-CoV-2"),
+           uiOutput("pathogenAll"),
            helpText("Visualize data for the selected pathogen"),
            
            br(),
