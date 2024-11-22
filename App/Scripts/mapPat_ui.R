@@ -128,7 +128,7 @@ ui <- fluidPage(
            #and load a dataset to analyze.
            #Default is "Default".
            selectInput("dataset",
-                       "Dataset update",
+                       "Dataset",
                        choices = datasetList,
                        selected = "Default"),
            actionButton("datasetUpdate",
