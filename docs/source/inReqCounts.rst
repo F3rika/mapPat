@@ -14,7 +14,7 @@ Briefly counts tables collect, from available data, information regarding:
 
 These data are essential to visualise and represent the circulation of pathogens variants, lineages and mutations using mapPat.
 
-The following counts table are required/used by mapPat:
+The following counts table are used by mapPat:
 
 #. ``Epiweek.Var.COUNTRY.csv``
 	| Collects the number of sequenced genomes for each named variant calculated per week/month at national level.
