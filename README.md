@@ -40,4 +40,4 @@ MapPat can natively load a collection of pre-processed input tables available th
 Users who need to add and visualise custom datasets can:
 
 1. Generate mapPat's input files by using the workflow, scripts and configuration files available in the [InputGeneration](https://github.com/F3rika/mapPat/tree/mapPat_Current/InputGeneration) folder of this GitHub. A comprehensive guide about datasets customisation is provided in the [mapPat quick customisation guide](https://mappat.readthedocs.io/en/latest/customGuide.html) section of the mapPat manual.
-2. If their data are publicly available, open an issue on GitHub to request the inclusion of additional data and pathogens in the Zenodo repository.
+2. If their data are publicly available, open an Issue on GitHub to request the inclusion of additional data and pathogens in the Zenodo repository.
