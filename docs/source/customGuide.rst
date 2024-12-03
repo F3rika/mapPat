@@ -3,11 +3,12 @@ mapPat quick customisation guide
 
 It is also possible to use mapPat to analyse custom datasets; in order to do so it is essential to follow some simple key rules during input generation:
 
-#. When producing counts tables for custom data make sure to follow the layout described at :doc:`inReqCounts`.
-#. When producing pathogen specific configuration tables for custom data make sure to follow the layout described at :doc:`inReqConfig`.
-#. Make sure to update the general configuration tables in order to include information about your data. This is required for mapPat to handle data properly. Follow the layout described at :doc:`inReqConfig` to avoid any issues.
+#. When producing counts tables for custom data make sure to follow the layouts described at :doc:`inReqCounts`.
+#. When producing pathogen specific configuration tables for custom data make sure to follow the layouts described at :doc:`inReqConfig`.
+#. Make sure to add to your dataset copies of each general configuration table updated so to include information about your data. This is required for mapPat to handle data properly. Follow the layouts described at :doc:`inReqConfig` to avoid any issues.
 #. Please follow the same folders structure as in the precomputed mapPat datasets and put your custom data in a new set of folders. Mind that the name of the newly added dataset and folders must match information from the ``mapPat_inTabUpdates_Availability.txt`` and ``PathogenSelection_ConfigTab.txt`` configuration tables.
 #. Store your custom dataset in the ``Datasets`` folder.
+#. Remember to comment the code at line 42 of the ``mapPat_config.R`` file. To guarantee periodical updates mapPat automathically downloads a new copy of ``mapPat_inTabUpdates_Availability.txt`` from GitHub every time it is launched; commeting the abovementioned line allows to avoid the unwanted overwriting of your custom file.
 
 Moreover, if custom data to be analysed using mapPat are:
 
