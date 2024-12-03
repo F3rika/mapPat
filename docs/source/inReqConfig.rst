@@ -15,7 +15,7 @@ Configuration tables collect information regarding data availability and key cha
 More in detail the collection of configuration tables consists of:
 
 #. ``mapPat_inTabUpdates_Availability.txt``
-	| Lists available datasets, together with file names and URLs for download. The names of the folders storing each dataset after its acquisition and the path to the directory collecting the corresponding input tables are also reported.
+	| Lists available datasets, together with file names and URLs for download. Also sets the name of and the path to the folders storing each dataset after acquisition.
 
 	+------------+----------------------------+---------------------+----------------------------+----------------------------------------------+
 	| UpdateName | UpdateFile                 | UpdateFolder        | UpdatePath                 | UpdateURL                                    |
