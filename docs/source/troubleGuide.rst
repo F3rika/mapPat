@@ -12,7 +12,7 @@ mapPat troubleshooting guide
 
 + **Setting a CRAN mirror in R**
 	| mapPat is programmed to install required R packages automatically any time they are not already available on the user device. However, in some cases, it could be necessary to manually set a CRAN mirror from which packages will be installed. The suggested CRAN mirror for mapPat is ``https://cloud.r-project.org``.
-	| The complete guide to set a CRAN mirror in R is available `here <ran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-packages>`_.
+	| The complete guide to set a CRAN mirror in R is available `here <https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-packages>`_.
 
 + **Setting a CRAN mirror in RStudio**
 	| mapPat is programmed to install required R packages automatically any time they are not already available on the user device. However, in some cases, it could be necessary to manually set a CRAN mirror from which packages will be installed. The suggested CRAN mirror for mapPat is ``https://cloud.r-project.org``.
