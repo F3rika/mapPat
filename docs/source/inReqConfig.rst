@@ -15,6 +15,7 @@ Configuration tables collect information regarding data availability and key cha
 More in detail the collection of configuration tables consists of:
 
 #. ``mapPat_inTabUpdates_Availability.txt``
+	| General table.
 	| Lists available datasets, together with file names and URLs for download. Also sets the name of and the path to the folders storing each dataset after acquisition.
 
 	+------------+----------------------------+---------------------+----------------------------+----------------------------------------------+
@@ -28,6 +29,7 @@ More in detail the collection of configuration tables consists of:
 	+------------+----------------------------+---------------------+----------------------------+----------------------------------------------+
 
 #. ``PathogenSelection_ConfigTab.txt``
+	| General table.
 	| Sets country defaults (ISO-3 codes), time unit defaults and the reference date for the computation of time offsets for all the pathogens available in mapPat.
 	
 	+--------------+--------------+------------+--------------+------------+
@@ -43,6 +45,7 @@ More in detail the collection of configuration tables consists of:
 	+--------------+--------------+------------+--------------+------------+
 
 #. ``countriesListTracker.txt``
+	| Pathogen specific table.
 	| Collects the complete list of the ISO-3 codes for all the countries with available data to be visualised using mapPat. A distinct table is generated for every pathogen for which data is available.
 	
 	+-------+
@@ -58,6 +61,7 @@ More in detail the collection of configuration tables consists of:
 	+-------+
 
 #. ``inTab_avCheck.txt``
+	| Pathogen specific table.
 	| Associates ISO-3 country codes with the corresponding list of counts tables. In this table columns represent input files categories and rows represent countries. When available, file names are reported, otherwise NA (Not Available) is indicated. A specific table is produced for every pathogen included in mapPat.
 
 	+---------+-----------------+---------------------+-----------------------+-----------------------+---------------------+
@@ -73,6 +77,7 @@ More in detail the collection of configuration tables consists of:
 	+---------+-----------------+---------------------+-----------------------+-----------------------+---------------------+
 
 #. ``CountryISOADM_AssocTab.txt``
+	| General table.
 	| Specifies the preferred administrative level (ADM according to RGeoboundaries) used to represent regions in maps. Includes also the corresponding country name and ISO-3 code.
 
 	+-------------+-------------+-----------------+
