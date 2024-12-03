@@ -61,3 +61,6 @@ Here a quick guide on how to run ``mapPat_inTabGen_WF.py`` in order to generate 
 ::
 	
  nohup python3 mapPat_inTabGen_WF.py -i mPox_metadataNextstrain.tsv -pc ./Config -ps ./Scripts -s mPox_sequences.fasta -rs mPox_reference.fasta -p mPox -db Nextstrain -o mPox_metadataNextstrain &
+
+| If you need help to generate a custom dataset contact us at `GitHub <https://github.com/F3rika/mapPat.git>`_.
+| If you want your custom dataset, your publicly available data or a specific pathogen to be added to the `mapPat Zenodo repository <https://doi.org/10.5281/zenodo.14163899>`_ and made available to all fell free to `open an Issue <https://github.com/F3rika/mapPat/issues>`_.
