@@ -4,7 +4,7 @@
 
 #######CHECKING REQUIREMENTS#######
 #Checking if all required packages are already installed.
-requiredPackages <- c("shiny", "RColorBrewer", "ggplot2", "pheatmap", "rgeoboundaries", "leaflet", "htmltools")
+requiredPackages <- c("shiny", "RColorBrewer", "ggplot2", "pheatmap", "rgeoboundaries", "leaflet", "htmltools", "remotes", "hoardr")
 installedPackages <- rownames(installed.packages())
 
 isInstalled <- requiredPackages%in%installedPackages
@@ -17,11 +17,22 @@ local({
 })
 
 #Installing missing packages.
-if (sum(isInstalled)<7) {
+if (sum(isInstalled)<length(requiredPackages)) {
   
   toInstall <- requiredPackages[!isInstalled]
   
-  install.packages(toInstall)
+  if ("rgeoboundaries"%in%toInstall) {
+    
+    toInstall <- toInstall[!toInstall%in%"rgeoboundaries"]
+    
+    install.packages(toInstall)
+    remotes::install_github("wmgeolab/rgeoboundaries")
+    
+  } else {
+    
+    install.packages(toInstall)
+    
+  }
   
 }
 
