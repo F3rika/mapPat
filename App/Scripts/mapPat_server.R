@@ -531,7 +531,7 @@ server <- function(input, output){
     
     geomDataSelector_CountryISO <- input$country
     geomDataSelector_CountryADM <- countryISOADMConvertion_Table[countryISOADMConvertion_Table$Country_ISO==geomDataSelector_CountryISO,]$Country_ADM
-    geomDataSelector_CountryRegList <- rownames(countrySelector()$totReg)
+    geomDataSelector_CountryRegList <- iconv(rownames(countrySelector()$totReg), from = "UTF-8", to = "ASCII//TRANSLIT")
     
     #Opening the geometric data file that allows to draw the map of the
     #user-selected country. Each country requires a map at a specific ADM
@@ -541,12 +541,16 @@ server <- function(input, output){
     if (geomDataSelector_CountryADM=="ADM1" & !is.na(check_totReg)) {
       
       geomData <- gb_adm1(geomDataSelector_CountryISO)
-      geomData <- geomData[geomData$shapeName %in% geomDataSelector_CountryRegList,]
+      geomData <- unique.data.frame(geomData)
+      geomNames <- iconv(geomData$shapeName, from = "UTF-8", to = "ASCII//TRANSLIT")
+      geomData <- geomData[geomNames %in% geomDataSelector_CountryRegList,]
       
     } else if (geomDataSelector_CountryADM=="ADM2" & !is.na(check_totReg)) {
       
       geomData <- gb_adm2(geomDataSelector_CountryISO)
-      geomData <- geomData[geomData$shapeName %in% geomDataSelector_CountryRegList,]
+      geomData <- unique.data.frame(geomData)
+      geomNames <- iconv(geomData$shapeName, from = "UTF-8", to = "ASCII//TRANSLIT")
+      geomData <- geomData[geomNames %in% geomDataSelector_CountryRegList,]
       
     } else if (is.na(check_totReg)) {
       
